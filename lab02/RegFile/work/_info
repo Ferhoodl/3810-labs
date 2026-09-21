@@ -1,21 +1,29 @@
 m255
 K4
 z2
-Z0 !s12c _opt
+Z0 !s12c _opt2
 Z1 !s99 nomlopt
 R0
 R1
-Z2 !s12c _opt1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt
+R1
+R2
+R1
+Z3 !s12c _opt1
+R1
+R3
+R1
+R3
 R1
 R2
 R1
 R2
 R1
-R0
-R1
-R0
-R1
-R0
+R2
 R1
 !s11e vcom 2026.2 2026.05, May 18 2026
 13
@@ -24,7 +32,7 @@ R1
 !i10e 25
 !i10f 100
 cModel Technology
-Z3 d/home/iwsteele/Documents/classes/3810/lab02/RegFile
+Z4 d/home/iwsteele/Documents/classes/3810/lab02/RegFile
 T_opt
 !i145 1
 !i144 0
@@ -33,15 +41,16 @@ VS;Z2E;bUd[<9R0JD5`daO1
 04 15 8 work tb_decoder_5t32 behavior 1
 =1-005056b6a6a3-6ab0b676-63146-164fb
 R1
-Z4 !s12f OEM100
-Z5 !s12b OEM100
-Z6 !s124 OEM100
-Z7 !s135 nogc
+Z5 !s12f OEM100
+Z6 !s12b OEM100
+Z7 !s124 OEM100
+Z8 !s135 nogc
 !i152 0
-Z8 o-quiet -auto_acc_if_foreign -work work +acc
-Z9 tCvgOpt 0
+Z9 o-quiet -auto_acc_if_foreign -work work +acc
+Z10 tCvgOpt 0
 n@_opt
-Z10 OL;O;2026.2;84
+Z11 OL;O;2026.2;84
+R4
 T_opt1
 !i145 1
 !i144 0
@@ -50,550 +59,653 @@ V7RInQnjZSZ6QHR^?BXECh1
 04 13 8 work tb_mux32t1_32 behavior 1
 =1-005056b6a6a3-6ab0a8c5-2954a-14443
 R1
-R4
 R5
 R6
 R7
-!i152 0
 R8
+!i152 0
 R9
-n@_opt1
 R10
-R3
+n@_opt1
+R11
+R4
+T_opt2
+!i145 1
+!i144 0
+!s110 1789973480
+VVjdn[A@Mig_@lKc[[5_HG1
+04 11 9 work tb_reg_file structure 1
+=1-005056b6a6a3-6ab0d3e8-88def-1adf5
+R1
+R5
+R6
+R7
+R8
+!i152 0
+R9
+R10
+n@_opt2
+R11
 Eandg2
-Z11 w1789952145
-Z12 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
-Z13 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
-!i122 346
-R3
-Z14 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd
-Z15 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd
+Z12 w1789952145
+Z13 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z14 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 518
+R4
+Z15 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd
+Z16 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd
 l0
-Z16 L23 1
+Z17 L23 1
 VzJ2OoPJ=<ja2?Y;OcjQk;3
 !s100 YT?bGzEmcFo:DlnoC^B4_0
-Z17 OL;C;2026.2;84
+Z18 OL;C;2026.2;84
 33
-Z18 !s110 1789965932
+Z19 !s110 1789973470
 !i10b 1
-Z19 !s108 1789965932.000000
-Z20 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd|
-Z21 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd|
+Z20 !s108 1789973470.000000
+Z21 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd|
+Z22 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd|
 !i113 0
-Z22 o-work work
-Z23 tExplicit 1 NoCoverage 1 CvgOpt 0
+Z23 o-work work
+Z24 tExplicit 1 NoCoverage 1 CvgOpt 0
 Adataflow
-R12
 R13
+R14
 DEx4 work 5 andg2 0 22 zJ2OoPJ=<ja2?Y;OcjQk;3
-!i122 346
+!i122 518
 l32
-Z24 L31 6
+Z25 L31 6
 V3oa1[>iDZj;2zVo:oz1>e2
 !s100 I`@Z@UBObS]<7m8bPgKUS1
-R17
-33
 R18
-!i10b 1
+33
 R19
+!i10b 1
 R20
 R21
-!i113 0
 R22
+!i113 0
 R23
+R24
 Edecoder_5t32
-Z25 w1789965837
-R12
+Z26 w1789965837
 R13
-!i122 347
-R3
-Z26 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd
-Z27 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd
+R14
+!i122 519
+R4
+Z27 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd
+Z28 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd
 l0
-Z28 L19 1
+Z29 L19 1
 VJj`0lz;NI3KQ4dWY2h>452
 !s100 BV38_Q]EGQD7D_P:cl1Io2
-R17
-33
 R18
-!i10b 1
+33
 R19
-Z29 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd|
-Z30 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd|
+!i10b 1
+R20
+Z30 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd|
+Z31 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd|
 !i113 0
-R22
 R23
+R24
 Aflow
-R12
 R13
+R14
 DEx4 work 12 decoder_5t32 0 22 Jj`0lz;NI3KQ4dWY2h>452
-!i122 347
+!i122 519
 l26
 L24 38
 VQACg_ig0oAOL^B``Y[BcW3
 !s100 dM3hU3ZV8mVRe=LehYKzB2
-R17
-33
 R18
-!i10b 1
+33
 R19
-R29
+!i10b 1
+R20
 R30
+R31
 !i113 0
-R22
 R23
+R24
 Edffg
-Z31 w1789579400
-R12
+Z32 w1789579400
 R13
-!i122 348
-R3
-Z32 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd
-Z33 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd
+R14
+!i122 520
+R4
+Z33 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd
+Z34 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd
 l0
-R16
+R17
 V@W@EXa]H1EoQ`cKSFEEc@0
 !s100 35EQIZbl^2>iZK7?LKjQV3
-R17
-33
 R18
-!i10b 1
+33
 R19
-Z34 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd|
-Z35 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd|
+!i10b 1
+R20
+Z35 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd|
+Z36 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd|
 !i113 0
-R22
 R23
+R24
 Amixed
-R12
 R13
+R14
 DEx4 work 4 dffg 0 22 @W@EXa]H1EoQ`cKSFEEc@0
-!i122 348
+!i122 520
 l35
 L31 29
 VN=XUlN^2LBK7<Nnbi[C9;3
 !s100 _fgZ]iW0X:CNWYnZV0Ich1
-R17
-33
 R18
-!i10b 1
+33
 R19
-R34
+!i10b 1
+R20
 R35
+R36
 !i113 0
-R22
 R23
+R24
 Einvg
-Z36 w1789952152
-R12
+Z37 w1789952152
 R13
-!i122 349
-R3
-Z37 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd
-Z38 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd
+R14
+!i122 521
+R4
+Z38 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd
+Z39 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd
 l0
-R16
+R17
 VzJhOLc0g_4RfSF]IXa;:73
 !s100 _XK?_^5z0Rm1<k12?;5R?2
-R17
-33
 R18
-!i10b 1
+33
 R19
-Z39 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd|
-Z40 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd|
+!i10b 1
+R20
+Z40 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd|
+Z41 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd|
 !i113 0
-R22
 R23
+R24
 Adataflow
-R12
 R13
+R14
 DEx4 work 4 invg 0 22 zJhOLc0g_4RfSF]IXa;:73
-!i122 349
+!i122 521
 l31
 L30 6
 VT@AA60h>IXVJ?D^`RRiZk1
 !s100 bk7I76o8e1LURdoZEQb8H0
-R17
-33
 R18
-!i10b 1
+33
 R19
-R39
+!i10b 1
+R20
 R40
+R41
 !i113 0
-R22
 R23
+R24
 Emux2t1_n
-Z41 w1789961488
-R12
+Z42 w1789961488
 R13
-!i122 350
-R3
-Z42 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd
-Z43 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd
+R14
+!i122 522
+R4
+Z43 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd
+Z44 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd
 l0
-L21 1
+Z45 L21 1
 V56Id<?0DMV[UO_a4WW05Z1
 !s100 1AMd`RJD`hIf>jB@a2Od41
-R17
-33
 R18
-!i10b 1
+33
 R19
-Z44 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd|
-Z45 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd|
+!i10b 1
+R20
+Z46 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd|
+Z47 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd|
 !i113 0
-R22
 R23
+R24
 Astructural
-R12
 R13
+R14
 DEx4 work 8 mux2t1_n 0 22 56Id<?0DMV[UO_a4WW05Z1
-!i122 350
+!i122 522
 l38
 L29 21
 VQV]8l2bNQ?0iRLPdj8?j02
 !s100 RQi]B]g]XaXI9MH]ODWg61
-R17
-33
 R18
-!i10b 1
+33
 R19
-R44
-R45
+!i10b 1
+R20
+R46
+R47
 !i113 0
-R22
 R23
+R24
 Emux32t1_32
-Z46 w1789962410
-R12
+Z48 w1789962410
 R13
-!i122 351
-R3
-Z47 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd
-Z48 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd
+R14
+!i122 523
+R4
+Z49 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd
+Z50 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd
 l0
-R28
+R29
 V8Z=S>1k[>9;`M7Pmk0m[f3
 !s100 V<9hQU<o3J_z3b`zR42i`3
-R17
-33
 R18
-!i10b 1
+33
 R19
-Z49 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd|
-Z50 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd|
+!i10b 1
+R20
+Z51 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd|
+Z52 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd|
 !i113 0
-R22
 R23
+R24
 Astructural
-R12
 R13
+R14
 DEx4 work 10 mux32t1_32 0 22 8Z=S>1k[>9;`M7Pmk0m[f3
-!i122 351
+!i122 523
 l103
 L56 101
 VUN0AF1KWe]8;^@N2QD2z<0
 !s100 3]Xi`gb[ZGm0fKdR[:59A2
-R17
-33
 R18
-!i10b 1
+33
 R19
-R49
-R50
+!i10b 1
+R20
+R51
+R52
 !i113 0
-R22
 R23
+R24
 Emux_structural
-Z51 w1789952054
-R12
+Z53 w1789952054
 R13
-!i122 357
-R3
-Z52 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd
-Z53 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd
+R14
+!i122 530
+R4
+Z54 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd
+Z55 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd
 l0
-R28
+R29
 VH5OODi`becai[T3HbL>1a1
 !s100 j7^oBDHO_Bkm@7eWmBMU22
-R17
+R18
 33
-Z54 !s110 1789965933
+Z56 !s110 1789973471
 !i10b 1
-R19
-Z55 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd|
-Z56 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd|
+Z57 !s108 1789973471.000000
+Z58 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd|
+Z59 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd|
 !i113 0
-R22
 R23
+R24
 Astructure
-R12
 R13
+R14
 DEx4 work 14 mux_structural 0 22 H5OODi`becai[T3HbL>1a1
-!i122 357
+!i122 530
 l60
 L28 59
 ViD_gh<Q5KFM;f6YbDSaM:3
 !s100 <Mc^jQLAD[d1_3f4oL7Ll1
-R17
+R18
 33
-R54
-!i10b 1
-R19
-R55
 R56
+!i10b 1
+R57
+R58
+R59
 !i113 0
-R22
 R23
+R24
 Eorg2
-Z57 w1789952137
-R12
+Z60 w1789952137
 R13
-!i122 356
-R3
-Z58 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd
-Z59 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd
+R14
+!i122 529
+R4
+Z61 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd
+Z62 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd
 l0
-R16
+R17
 V0FzB9ATDX9TV=M:n@=VB83
 !s100 bGQ1F9eW^Q17OoL9h4g7z2
-R17
-33
 R18
+33
+R56
 !i10b 1
-R19
-Z60 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd|
-Z61 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd|
+R57
+Z63 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd|
+Z64 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd|
 !i113 0
-R22
 R23
-Adataflow
-R12
-R13
-DEx4 work 4 org2 0 22 0FzB9ATDX9TV=M:n@=VB83
-!i122 356
-l32
 R24
+Adataflow
+R13
+R14
+DEx4 work 4 org2 0 22 0FzB9ATDX9TV=M:n@=VB83
+!i122 529
+l32
+R25
 V0JC>N7cRXc=9bni@>dg7o3
 !s100 h5_AzR3TdRA0a_K=dQ>mI2
-R17
-33
 R18
+33
+R56
 !i10b 1
-R19
-R60
-R61
+R57
+R63
+R64
 !i113 0
-R22
 R23
+R24
 Ereg
-Z62 w1789962022
-R12
+Z65 w1789962022
 R13
-!i122 355
-R3
-Z63 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd
-Z64 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd
+R14
+!i122 528
+R4
+Z66 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd
+Z67 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd
 l0
-R28
+R29
 V^g8S3S=J_fcTeS=[[Kbhj2
 !s100 N_dC^0zGW`5PjGXX[=1D_2
-R17
-33
 R18
+33
+R56
 !i10b 1
-R19
-Z65 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd|
-Z66 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd|
+R57
+Z68 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd|
+Z69 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd|
 !i113 0
-R22
 R23
+R24
 Astructure
-R12
 R13
+R14
 DEx4 work 3 reg 0 22 ^g8S3S=J_fcTeS=[[Kbhj2
-!i122 355
+!i122 528
 l40
 L28 25
 VMFKVkUV2efadodXoH>H;X1
 !s100 >Jk^SRP@g=l:PCi4=Yg_J3
-R17
-33
 R18
+33
+R56
 !i10b 1
-R19
-R65
-R66
+R57
+R68
+R69
 !i113 0
-R22
 R23
-Etb_decoder_5t32
-Z67 w1789965918
-R12
+R24
+Ereg_file
+Z70 w1789972614
 R13
-!i122 354
-R3
-Z68 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd
-Z69 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd
+R14
+!i122 527
+R4
+Z71 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/reg_file.vhd
+Z72 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/reg_file.vhd
 l0
-Z70 L20 1
+R29
+V?1bnmILY`KH3KPjNP>;_^2
+!s100 7Z?[e1ddk4?9]Y;7:o:P70
+R18
+33
+R56
+!i10b 1
+R57
+Z73 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/reg_file.vhd|
+Z74 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg_file.vhd|
+!i113 0
+R23
+R24
+Astructure
+R13
+R14
+DEx4 work 8 reg_file 0 22 ?1bnmILY`KH3KPjNP>;_^2
+!i122 527
+l169
+L32 283
+VVl_BUH2f:P6EBP@5G3W5C2
+!s100 n5Tb708O;X^@^UmLoIRh63
+R18
+33
+R56
+!i10b 1
+R57
+R73
+R74
+!i113 0
+R23
+R24
+Etb_decoder_5t32
+Z75 w1789965918
+R13
+R14
+!i122 526
+R4
+Z76 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd
+Z77 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd
+l0
+Z78 L20 1
 Vi2Z6P:BBnWO:E7XXOE9OR1
 !s100 Xn<786R:oiM7IVdn1Q5aW2
-R17
-33
 R18
+33
+R56
 !i10b 1
-R19
-Z71 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd|
-Z72 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd|
+R57
+Z79 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd|
+Z80 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd|
 !i113 0
-R22
 R23
+R24
 Abehavior
-R12
 R13
+R14
 DEx4 work 15 tb_decoder_5t32 0 22 i2Z6P:BBnWO:E7XXOE9OR1
-!i122 354
+!i122 526
 l39
 L24 158
 V=<_Q@Hz?JiYdK[E]a[V8L2
 !s100 QU27UA8>A4HV9UM2Am_l[0
-R17
-33
 R18
+33
+R56
 !i10b 1
-R19
-R71
-R72
+R57
+R79
+R80
 !i113 0
-R22
 R23
+R24
 Etb_dffg
-Z73 w1788983833
-R12
+Z81 w1788983833
 R13
-!i122 352
-R3
-Z74 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd
-Z75 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd
+R14
+!i122 525
+R4
+Z82 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd
+Z83 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd
 l0
-R16
+R17
 VELHo2ZZOY<UggamJc1ZAY2
 !s100 O_YXH_<oDkG4]6ejo0Kj31
-R17
-33
 R18
+33
+R56
 !i10b 1
-R19
-Z76 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd|
-Z77 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd|
+R57
+Z84 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd|
+Z85 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd|
 !i113 0
-R22
 R23
+R24
 Abehavior
-R12
 R13
+R14
 DEx4 work 7 tb_dffg 0 22 ELHo2ZZOY<UggamJc1ZAY2
-!i122 352
+!i122 525
 l45
 L27 75
 V[nboB06UaVm1a=68Igf;H0
 !s100 RHC58PH892INNMlk3:z[H2
-R17
-33
 R18
+33
+R56
 !i10b 1
-R19
-R76
-R77
+R57
+R84
+R85
 !i113 0
-R22
 R23
+R24
 Etb_mux32t1_32
-Z78 w1789962277
-R12
+Z86 w1789962277
 R13
-!i122 353
-R3
-Z79 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd
-Z80 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd
+R14
+!i122 524
+R4
+Z87 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd
+Z88 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd
 l0
-R70
+R78
 V;YdYC_h2@5HeC8SdY<S[J2
 !s100 9ak0NniHzh`E2FgP`gf0C3
-R17
-33
 R18
+33
+R56
 !i10b 1
-R19
-Z81 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd|
-Z82 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd|
+R57
+Z89 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd|
+Z90 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd|
 !i113 0
-R22
 R23
+R24
 Abehavior
-R12
 R13
+R14
 DEx4 work 13 tb_mux32t1_32 0 22 ;YdYC_h2@5HeC8SdY<S[J2
-!i122 353
+!i122 524
 l103
 L24 288
 Vdbb>WPDAk4=EiOokCR@B30
 !s100 2V93Zfo3NX_ghzmP=Mb8P3
-R17
-33
 R18
+33
+R56
 !i10b 1
-R19
-R81
-R82
+R57
+R89
+R90
 !i113 0
-R22
 R23
+R24
 Etb_reg
-Z83 w1789589509
-Z84 DPx3 std 3 env 0 22 mJj^M]e`oP>;WoZ=b<O3C0
-Z85 DPx4 ieee 16 std_logic_textio 0 22 i<^3g?=>FM?3b:<^1:oD>2
-R12
+Z91 w1789589509
+Z92 DPx3 std 3 env 0 22 mJj^M]e`oP>;WoZ=b<O3C0
+Z93 DPx4 ieee 16 std_logic_textio 0 22 i<^3g?=>FM?3b:<^1:oD>2
 R13
-!i122 358
-R3
-Z86 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd
-Z87 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd
+R14
+!i122 531
+R4
+Z94 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd
+Z95 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd
 l0
-R70
+R78
 VY<HcGH6J_Ni]O4<_8_mVk2
 !s100 GYGimFEjbQSZefI7ndQQS2
-R17
+R18
 33
-R54
+R56
 !i10b 1
-Z88 !s108 1789965933.000000
-Z89 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd|
-Z90 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd|
+R57
+Z96 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd|
+Z97 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd|
 !i113 0
-R22
 R23
+R24
 Amixed
-R84
-R85
-R12
+R92
+R93
 R13
+R14
 DEx4 work 6 tb_reg 0 22 Y<HcGH6J_Ni]O4<_8_mVk2
-!i122 358
+!i122 531
 l53
 L28 89
 V^OIERZ98Hob[XMBV`=c^61
 !s100 kd4GTnM7b6`?;iGIAXa5d1
-R17
+R18
 33
-R54
+R56
 !i10b 1
-R88
-R89
-R90
+R57
+R96
+R97
 !i113 0
-R22
 R23
+R24
+Etb_reg_file
+Z98 w1789973467
+R92
+R93
+R13
+R14
+!i122 532
+R4
+Z99 8/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg_file.vhd
+Z100 F/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg_file.vhd
+l0
+R45
+VNGfTPXClHW:8TfU@EB8<72
+!s100 a`>NBZGG`>XX@e>di3BVP0
+R18
+33
+R56
+!i10b 1
+R57
+Z101 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg_file.vhd|
+Z102 !s107 /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg_file.vhd|
+!i113 0
+R23
+R24
+Astructure
+R92
+R93
+R13
+R14
+DEx4 work 11 tb_reg_file 0 22 NGfTPXClHW:8TfU@EB8<72
+!i122 532
+l61
+L29 100
+VGZC<6R^DB?JZOS:SicOgS0
+!s100 <^[;hG:6inRP]a7hAm7B@1
+R18
+33
+R56
+!i10b 1
+R57
+R101
+R102
+!i113 0
+R23
+R24
