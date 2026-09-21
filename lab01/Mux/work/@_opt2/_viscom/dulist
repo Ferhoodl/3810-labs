@@ -1,0 +1,6 @@
+1 4 org2 8 dataflow 52 /home/iwsteele/Documents/classes/3810/lab01/mux/work 1 65 0 0 7 0
+1 5 andg2 8 dataflow 52 /home/iwsteele/Documents/classes/3810/lab01/mux/work 1 65 0 0 7 0
+1 4 invg 8 dataflow 52 /home/iwsteele/Documents/classes/3810/lab01/mux/work 1 65 0 0 5 0
+1 14 mux_structural 9 structure 52 /home/iwsteele/Documents/classes/3810/lab01/mux/work 1 65 0 0 55 0
+1 8 mux2t1_n 10 structural 52 /home/iwsteele/Documents/classes/3810/lab01/mux/work 1 65 0 0 73 0
+2 14 tb_mux_generic 5 mixed 52 /home/iwsteele/Documents/classes/3810/lab01/mux/work 1 65 0 0 136 0

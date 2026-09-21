@@ -1,0 +1,177 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/iwsteele/Documents/classes/3810/lab01/OnesComp
+T_opt
+!i145 1
+!i144 0
+!s110 1788835699
+Vo;1L>280Dc[k0e3OOHEHl2
+Z2 04 15 5 work tb_complimentor mixed 1
+=1-005056b671d9-6a9f7772-81795-a3d2
+R0
+Z3 !s12f OEM100
+Z4 !s12b OEM100
+Z5 !s124 OEM100
+Z6 !s135 nogc
+!i152 0
+o-quiet -auto_acc_if_foreign -work work
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2026.2;84
+R1
+T_opt1
+!i145 1
+!i144 0
+!s110 1788835724
+V7ddX1CVYaH>;KNmSVUZKB3
+R2
+=1-005056b671d9-6a9f778c-7ea28-a424
+R0
+R3
+R4
+R5
+R6
+!i152 0
+o-quiet -auto_acc_if_foreign -work work +acc
+R7
+n@_opt1
+R8
+Ecomplimentor
+Z9 w1788835360
+Z10 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z11 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 0
+R1
+Z12 8/home/iwsteele/Documents/classes/3810/lab01/OnesComp/complimentor.vhd
+Z13 F/home/iwsteele/Documents/classes/3810/lab01/OnesComp/complimentor.vhd
+l0
+L19 1
+VilT;=_Aof;INI<:E3TCP43
+!s100 jfD1o5>:lSX`MPGF:ZdRi0
+Z14 OL;C;2026.2;84
+33
+Z15 !s110 1788835688
+!i10b 1
+Z16 !s108 1788835687.000000
+Z17 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/OnesComp/complimentor.vhd|
+Z18 !s107 /home/iwsteele/Documents/classes/3810/lab01/OnesComp/complimentor.vhd|
+!i113 0
+Z19 o-work work
+Z20 tExplicit 1 NoCoverage 1 CvgOpt 0
+Astructural
+R10
+R11
+DEx4 work 12 complimentor 0 22 ilT;=_Aof;INI<:E3TCP43
+!i122 0
+l33
+L26 17
+V>1GD6D4icQ?=Jn8zc?_`Z0
+!s100 5X5c6[fPUT9;jHe6WcO_f1
+R14
+33
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R19
+R20
+Einvg
+Z21 w1788835376
+R10
+R11
+!i122 1
+R1
+Z22 8/home/iwsteele/Documents/classes/3810/lab01/OnesComp/invg.vhd
+Z23 F/home/iwsteele/Documents/classes/3810/lab01/OnesComp/invg.vhd
+l0
+L23 1
+VzJhOLc0g_4RfSF]IXa;:73
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R14
+33
+R15
+!i10b 1
+Z24 !s108 1788835688.000000
+Z25 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/OnesComp/invg.vhd|
+Z26 !s107 /home/iwsteele/Documents/classes/3810/lab01/OnesComp/invg.vhd|
+!i113 0
+R19
+R20
+Adataflow
+R10
+R11
+DEx4 work 4 invg 0 22 zJhOLc0g_4RfSF]IXa;:73
+!i122 1
+l31
+L30 6
+VT@AA60h>IXVJ?D^`RRiZk1
+!s100 bk7I76o8e1LURdoZEQb8H0
+R14
+33
+R15
+!i10b 1
+R24
+R25
+R26
+!i113 0
+R19
+R20
+Etb_complimentor
+Z27 w1788835341
+Z28 DPx3 std 3 env 0 22 mJj^M]e`oP>;WoZ=b<O3C0
+Z29 DPx4 ieee 16 std_logic_textio 0 22 i<^3g?=>FM?3b:<^1:oD>2
+R10
+R11
+!i122 2
+R1
+Z30 8/home/iwsteele/Documents/classes/3810/lab01/OnesComp/tb_complimentor.vhd
+Z31 F/home/iwsteele/Documents/classes/3810/lab01/OnesComp/tb_complimentor.vhd
+l0
+L20 1
+VWiOTM_HMHn=8MgG_9Vf3M3
+!s100 jVYl6oj6UMdZN>kTn>PSn2
+R14
+33
+R15
+!i10b 1
+R24
+Z32 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/OnesComp/tb_complimentor.vhd|
+Z33 !s107 /home/iwsteele/Documents/classes/3810/lab01/OnesComp/tb_complimentor.vhd|
+!i113 0
+R19
+R20
+Amixed
+R28
+R29
+R10
+R11
+DEx4 work 15 tb_complimentor 0 22 WiOTM_HMHn=8MgG_9Vf3M3
+!i122 2
+l46
+L28 62
+V<LRUJeHc?d42O[h4IFcl:2
+!s100 4GNP:n6OabMW^:ZSMFF=`0
+R14
+33
+R15
+!i10b 1
+R24
+R32
+R33
+!i113 0
+R19
+R20

@@ -1,0 +1,33 @@
+[N
+4
+3
+8 behavior
+2
+15 tb_decoder_5t32
+1
+56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work
+4
+9 gCLK_HPER
+]
+[G
+1
+2
+3
+1
+4
+0
+0
+0
+0
+8 8
+-128
+-16
+-6
+2
+0
+0
+0
+0
+0
+0
+]

@@ -1,0 +1,280 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/iwsteele/Documents/classes/3810/lab01/Adder
+T_opt
+!i145 1
+!i144 0
+!s110 1788925441
+VTdBNNOPcBQSnogUBc3i_e3
+04 10 5 work tb_adder_n mixed 1
+=1-005056b61332-6aa0d601-7b48b-f006
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+!i152 0
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2026.2;84
+Eadder_n
+Z2 w1788914069
+Z3 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 6
+R1
+Z5 8/home/iwsteele/Documents/classes/3810/lab01/Adder/adder_N.vhd
+Z6 F/home/iwsteele/Documents/classes/3810/lab01/Adder/adder_N.vhd
+l0
+Z7 L21 1
+VQB:9TI3_WGP2eFb]bbXMZ1
+!s100 6g1c>?PB:m2dVNmX<A35N2
+Z8 OL;C;2026.2;84
+33
+Z9 !s110 1788925430
+!i10b 1
+Z10 !s108 1788925430.000000
+Z11 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/Adder/adder_N.vhd|
+Z12 !s107 /home/iwsteele/Documents/classes/3810/lab01/Adder/adder_N.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 NoCoverage 1 CvgOpt 0
+Astructural
+R3
+R4
+DEx4 work 7 adder_n 0 22 QB:9TI3_WGP2eFb]bbXMZ1
+!i122 6
+l44
+L31 30
+VdaREF[OI;O^fB10bC`mWK2
+!s100 zZSIPmDJO1>:3TW_h<I6b0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eandg2
+Z15 w1788835887
+R3
+R4
+!i122 7
+R1
+Z16 8/home/iwsteele/Documents/classes/3810/lab01/Adder/andg2.vhd
+Z17 F/home/iwsteele/Documents/classes/3810/lab01/Adder/andg2.vhd
+l0
+Z18 L23 1
+VzJ2OoPJ=<ja2?Y;OcjQk;3
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R8
+33
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/Adder/andg2.vhd|
+Z20 !s107 /home/iwsteele/Documents/classes/3810/lab01/Adder/andg2.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 5 andg2 0 22 zJ2OoPJ=<ja2?Y;OcjQk;3
+!i122 7
+l32
+Z21 L31 6
+V3oa1[>iDZj;2zVo:oz1>e2
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R8
+33
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 0
+R13
+R14
+Emy_adder
+Z22 w1788841656
+R3
+R4
+!i122 8
+R1
+Z23 8/home/iwsteele/Documents/classes/3810/lab01/Adder/my_adder.vhd
+Z24 F/home/iwsteele/Documents/classes/3810/lab01/Adder/my_adder.vhd
+l0
+L19 1
+VNOd_lGV5;SzVlZYGH1@Jd0
+!s100 @fdMRO]_cBN@O_57`LPbA1
+R8
+33
+R9
+!i10b 1
+R10
+Z25 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/Adder/my_adder.vhd|
+Z26 !s107 /home/iwsteele/Documents/classes/3810/lab01/Adder/my_adder.vhd|
+!i113 0
+R13
+R14
+Astructure
+R3
+R4
+DEx4 work 8 my_adder 0 22 NOd_lGV5;SzVlZYGH1@Jd0
+!i122 8
+l62
+L27 64
+V3^_5k8N@3ni=EVYZPT;G32
+!s100 _8ZDJ2PgM6DSA`b=O@bgJ1
+R8
+33
+R9
+!i10b 1
+R10
+R25
+R26
+!i113 0
+R13
+R14
+Eorg2
+Z27 w1788835906
+R3
+R4
+!i122 9
+R1
+Z28 8/home/iwsteele/Documents/classes/3810/lab01/Adder/org2.vhd
+Z29 F/home/iwsteele/Documents/classes/3810/lab01/Adder/org2.vhd
+l0
+R18
+V0FzB9ATDX9TV=M:n@=VB83
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R8
+33
+R9
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/Adder/org2.vhd|
+Z31 !s107 /home/iwsteele/Documents/classes/3810/lab01/Adder/org2.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 4 org2 0 22 0FzB9ATDX9TV=M:n@=VB83
+!i122 9
+l32
+R21
+V0JC>N7cRXc=9bni@>dg7o3
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R8
+33
+R9
+!i10b 1
+R10
+R30
+R31
+!i113 0
+R13
+R14
+Etb_adder_n
+Z32 w1788913692
+Z33 DPx3 std 3 env 0 22 mJj^M]e`oP>;WoZ=b<O3C0
+Z34 DPx4 ieee 16 std_logic_textio 0 22 i<^3g?=>FM?3b:<^1:oD>2
+R3
+R4
+!i122 10
+R1
+Z35 8/home/iwsteele/Documents/classes/3810/lab01/Adder/tb_adder_n.vhd
+Z36 F/home/iwsteele/Documents/classes/3810/lab01/Adder/tb_adder_n.vhd
+l0
+R7
+VKzWneA<C0TO_;Mo1>dPCh0
+!s100 PLj3ooX>WTU50;Y`LH<fk2
+R8
+33
+R9
+!i10b 1
+R10
+Z37 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/Adder/tb_adder_n.vhd|
+Z38 !s107 /home/iwsteele/Documents/classes/3810/lab01/Adder/tb_adder_n.vhd|
+!i113 0
+R13
+R14
+Amixed
+R33
+R34
+R3
+R4
+DEx4 work 10 tb_adder_n 0 22 KzWneA<C0TO_;Mo1>dPCh0
+!i122 10
+l53
+L29 93
+VZ=A0R_?oee0<Qm0=n;Q7U1
+!s100 G9eT9m31jcHM]Qk;`YWE03
+R8
+33
+R9
+!i10b 1
+R10
+R37
+R38
+!i113 0
+R13
+R14
+Exorg2
+Z39 w1788838681
+R3
+R4
+!i122 11
+R1
+Z40 8/home/iwsteele/Documents/classes/3810/lab01/Adder/xorg2.vhd
+Z41 F/home/iwsteele/Documents/classes/3810/lab01/Adder/xorg2.vhd
+l0
+R18
+VV6C:miP5l_oAXXFV_WP4`3
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R8
+33
+Z42 !s110 1788925431
+!i10b 1
+R10
+Z43 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/Adder/xorg2.vhd|
+Z44 !s107 /home/iwsteele/Documents/classes/3810/lab01/Adder/xorg2.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R3
+R4
+DEx4 work 5 xorg2 0 22 V6C:miP5l_oAXXFV_WP4`3
+!i122 11
+l32
+R21
+V0<8Ik`hGa2ooIj9K`Y3Wc0
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R8
+33
+R42
+!i10b 1
+R10
+R43
+R44
+!i113 0
+R13
+R14

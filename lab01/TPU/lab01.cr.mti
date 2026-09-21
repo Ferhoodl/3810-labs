@@ -1,0 +1,95 @@
+/home/iwsteele/Documents/classes/3810/lab01/Lab1/tb_TPU_MV_Element.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none /home/iwsteele/Documents/classes/3810/lab01/Lab1/tb_TPU_MV_Element.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package ENV
+** Warning: /home/iwsteele/Documents/classes/3810/lab01/Lab1/tb_TPU_MV_Element.vhd(18): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+-- Compiling entity tb_TPU_MV_Element
+-- Compiling architecture mixed of tb_TPU_MV_Element
+
+} {} {}} /home/iwsteele/Documents/classes/3810/lab01/Lab1/mux2t1_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/iwsteele/Documents/classes/3810/lab01/Lab1/mux2t1_N.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+
+} {} {}} /home/iwsteele/Documents/classes/3810/lab01/Lab1/org2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/iwsteele/Documents/classes/3810/lab01/Lab1/org2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+
+} {} {}} /home/iwsteele/Documents/classes/3810/lab01/Lab1/Reg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/iwsteele/Documents/classes/3810/lab01/Lab1/Reg.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Reg
+-- Compiling architecture behavior of Reg
+
+} {} {}} /home/iwsteele/Documents/classes/3810/lab01/Lab1/RegLd.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/iwsteele/Documents/classes/3810/lab01/Lab1/RegLd.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity RegLd
+-- Compiling architecture behavior of RegLd
+
+} {} {}} /home/iwsteele/Documents/classes/3810/lab01/Lab1/xorg2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/iwsteele/Documents/classes/3810/lab01/Lab1/xorg2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+
+} {} {}} /home/iwsteele/Documents/classes/3810/lab01/Lab1/Multiplier.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/iwsteele/Documents/classes/3810/lab01/Lab1/Multiplier.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Multiplier
+-- Compiling architecture behavior of Multiplier
+
+} {} {}} /home/iwsteele/Documents/classes/3810/lab01/Lab1/Adder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/iwsteele/Documents/classes/3810/lab01/Lab1/Adder.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Adder
+-- Compiling architecture behavior of Adder
+
+} {} {}} /home/iwsteele/Documents/classes/3810/lab01/Lab1/andg2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/iwsteele/Documents/classes/3810/lab01/Lab1/andg2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+
+} {} {}} /home/iwsteele/Documents/classes/3810/lab01/Lab1/invg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/iwsteele/Documents/classes/3810/lab01/Lab1/invg.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+
+} {} {}} /home/iwsteele/Documents/classes/3810/lab01/Lab1/TPU_MV_Element.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/iwsteele/Documents/classes/3810/lab01/Lab1/TPU_MV_Element.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity TPU_MV_Element
+-- Compiling architecture structure of TPU_MV_Element
+
+} {} {}}

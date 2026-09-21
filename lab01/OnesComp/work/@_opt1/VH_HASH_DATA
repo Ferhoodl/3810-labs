@@ -1,0 +1,67 @@
+[N
+7
+4
+1 N
+6
+5 mixed
+2
+12 complimentor
+1
+57 /home/iwsteele/Documents/classes/3810/lab01/OnesComp/work
+3
+10 structural
+5
+15 tb_complimentor
+7
+9 gCLK_HPER
+]
+[G
+1
+5
+6
+1
+7
+0
+0
+0
+0
+8 8
+-128
+-106
+-104
+0
+0
+0
+0
+0
+0
+0
+]
+[G
+1
+5
+6
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]

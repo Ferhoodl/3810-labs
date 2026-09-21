@@ -1,0 +1,183 @@
+-------------------------------------------------------------------------
+-- Isaiah Steele
+-- Student in CprE 3810
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- tb_decoder_5t32.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a simple VHDL testbench for the a
+-- 5-to-32 bit decoder.
+--
+--
+-- 9/16/2026: created
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity tb_decoder_5t32 is
+  generic(gCLK_HPER   : time := 50 ns);
+end tb_decoder_5t32;
+
+architecture behavior of tb_decoder_5t32 is
+  
+  -- Calculate the clock period as twice the half-period
+  constant cCLK_PER  : time := gCLK_HPER * 2;
+
+
+  component decoder_5t32
+    port(DC_IN     : in std_logic_vector(4 downto 0);
+         DC_OUT    : out std_logic_vector(31 downto 0));
+  end component;
+
+signal tb_DC_IN      : std_logic_vector(4 downto 0);
+signal tb_DC_OUT     : std_logic_vector(31 downto 0);
+
+
+begin
+
+  DUT: decoder_5t32 
+  port map(DC_IN  => tb_DC_IN, 
+           DC_OUT => tb_DC_OUT);
+
+  
+  -- Testbench process  
+  P_TB: process
+  begin
+
+    -- Test case 0:
+    tb_DC_IN <= "00000";
+    wait for cCLK_PER;
+
+    -- Test case 1:
+    tb_DC_IN <= "00001";
+    wait for cCLK_PER;
+
+    -- Test case 2:
+    tb_DC_IN <= "00010";
+    wait for cCLK_PER;
+
+    -- Test case 3:
+    tb_DC_IN <= "00011";
+    wait for cCLK_PER;
+
+    -- Test case 4:
+    tb_DC_IN <= "00100";
+    wait for cCLK_PER;
+
+    -- Test case 5:
+    tb_DC_IN <= "00101";
+    wait for cCLK_PER;
+
+    -- Test case 6:
+    tb_DC_IN <= "00110";
+    wait for cCLK_PER;
+
+    -- Test case 7:
+    tb_DC_IN <= "00111";
+    wait for cCLK_PER;
+
+    -- Test case 8:
+    tb_DC_IN <= "01000";
+    wait for cCLK_PER;
+
+    -- Test case 9:
+    tb_DC_IN <= "01001";
+    wait for cCLK_PER;
+
+    -- Test case 10:
+    tb_DC_IN <= "01010";
+    wait for cCLK_PER;
+
+    -- Test case 11:
+    tb_DC_IN <= "01011";
+    wait for cCLK_PER;
+
+    -- Test case 12:
+    tb_DC_IN <= "01100";
+    wait for cCLK_PER;
+
+    -- Test case 13:
+    tb_DC_IN <= "01101";
+    tb_DC_EN <= '1';
+    wait for cCLK_PER;
+
+    -- Test case 14:
+    tb_DC_IN <= "01110";
+    wait for cCLK_PER;
+
+    -- Test case 15:
+    tb_DC_IN <= "01111";
+    wait for cCLK_PER;
+
+    -- Test case 16:
+    tb_DC_IN <= "10000";
+    wait for cCLK_PER;
+
+    -- Test case 17:
+    tb_DC_IN <= "10001";
+    tb_DC_EN <= '1';
+    wait for cCLK_PER;
+
+    -- Test case 18:
+    tb_DC_IN <= "10010";
+    wait for cCLK_PER;
+
+    -- Test case 19:
+    tb_DC_IN <= "10011";
+    wait for cCLK_PER;
+
+    -- Test case 20:
+    tb_DC_IN <= "10100";
+    wait for cCLK_PER;
+
+    -- Test case 21:
+    tb_DC_IN <= "10101";
+    wait for cCLK_PER;
+
+    -- Test case 22:
+    tb_DC_IN <= "10110";
+    wait for cCLK_PER;
+
+    -- Test case 23:
+    tb_DC_IN <= "10111";
+    wait for cCLK_PER;
+
+    -- Test case 24:
+    tb_DC_IN <= "11000";
+    wait for cCLK_PER;
+
+    -- Test case 25:
+    tb_DC_IN <= "11001";
+    wait for cCLK_PER;
+
+    -- Test case 26:
+    tb_DC_IN <= "11010";
+    wait for cCLK_PER;
+
+    -- Test case 27:
+    tb_DC_IN <= "11011";
+    wait for cCLK_PER;
+
+    -- Test case 28:
+    tb_DC_IN <= "11100";
+    wait for cCLK_PER;
+
+    -- Test case 29:
+    tb_DC_IN <= "11101";
+    wait for cCLK_PER;
+
+    -- Test case 30:
+    tb_DC_IN <= "11110";
+    wait for cCLK_PER;
+
+    -- Test case 31:
+    tb_DC_IN <= "11111";
+    wait for cCLK_PER;
+
+    wait;
+  end process;
+  
+end behavior;

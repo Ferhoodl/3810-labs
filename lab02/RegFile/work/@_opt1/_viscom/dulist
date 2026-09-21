@@ -1,0 +1,7 @@
+1 4 org2 8 dataflow 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 7 0
+1 5 andg2 8 dataflow 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 7 0
+1 4 invg 8 dataflow 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 5 0
+1 14 mux_structural 9 structure 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 55 0
+1 8 mux2t1_n 10 structural 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 89 0
+1 10 mux32t1_32 10 structural 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 964 0
+1 13 tb_mux32t1_32 8 behavior 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 543 0

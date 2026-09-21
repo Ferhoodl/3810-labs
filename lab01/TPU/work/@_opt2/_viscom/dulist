@@ -1,0 +1,6 @@
+1 5 regld 8 behavior 53 /home/iwsteele/Documents/classes/3810/lab01/Lab1/work 1 65 0 0 37 0
+1 3 reg 8 behavior 53 /home/iwsteele/Documents/classes/3810/lab01/Lab1/work 1 65 0 0 22 0
+1 10 multiplier 8 behavior 53 /home/iwsteele/Documents/classes/3810/lab01/Lab1/work 1 65 0 0 43 0
+1 5 adder 8 behavior 53 /home/iwsteele/Documents/classes/3810/lab01/Lab1/work 1 65 0 0 49 0
+1 14 tpu_mv_element 9 structure 53 /home/iwsteele/Documents/classes/3810/lab01/Lab1/work 1 65 0 0 449 0
+1 17 tb_tpu_mv_element 5 mixed 53 /home/iwsteele/Documents/classes/3810/lab01/Lab1/work 1 65 0 0 685 0

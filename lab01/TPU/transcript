@@ -1,0 +1,54 @@
+# //  Questa Sim-64
+# //  Version 2026.2 linux_x86_64 May 18 2026
+# //
+# // Unpublished work. Copyright 2026 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Modified questa.ini
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/OnesComp/complimentor.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:45:59 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/OnesComp/complimentor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity complimentor
+# -- Compiling architecture structural of complimentor
+# vcom: End time: 21:45:59 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/OnesComp/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:45:59 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/OnesComp/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/OnesComp/invg.vhd(23): (vcom-1615) Existing entity 'invg' at /home/iwsteele/Documents/classes/3810/lab01/Lab1/invg.vhd(23) will be overwritten.
+# -- Compiling entity invg
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/OnesComp/invg.vhd(30): (vcom-1615) Existing architecture 'invg(dataflow)' at /home/iwsteele/Documents/classes/3810/lab01/Lab1/invg.vhd(30) will be overwritten.
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 21:45:59 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/OnesComp/tb_complimentor.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:45:59 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/OnesComp/tb_complimentor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_complimentor
+# -- Compiling architecture mixed of tb_complimentor
+# vcom: End time: 21:45:59 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Modified questa.ini
+# Load canceled

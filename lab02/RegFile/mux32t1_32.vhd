@@ -1,0 +1,156 @@
+-------------------------------------------------------------------------
+-- Isaiah Steele
+-- Student in CprE 3810
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- mux32t1_.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains an implementation of a 32-bit wide
+-- 32-to-1 mux.
+--
+-- 09/20/2026: Created
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity mux32t1_32 is
+  port(i_S          : in std_logic_vector(4 downto 0);
+       i_D00         : in std_logic_vector(31 downto 0);
+       i_D01         : in std_logic_vector(31 downto 0);
+       i_D02         : in std_logic_vector(31 downto 0);
+       i_D03         : in std_logic_vector(31 downto 0);
+       i_D04         : in std_logic_vector(31 downto 0);
+       i_D05         : in std_logic_vector(31 downto 0);
+       i_D06         : in std_logic_vector(31 downto 0);
+       i_D07         : in std_logic_vector(31 downto 0);
+       i_D08         : in std_logic_vector(31 downto 0);
+       i_D09         : in std_logic_vector(31 downto 0);
+       i_D10         : in std_logic_vector(31 downto 0);
+       i_D11         : in std_logic_vector(31 downto 0);
+       i_D12         : in std_logic_vector(31 downto 0);
+       i_D13         : in std_logic_vector(31 downto 0);
+       i_D14         : in std_logic_vector(31 downto 0);
+       i_D15         : in std_logic_vector(31 downto 0);
+       i_D16         : in std_logic_vector(31 downto 0);
+       i_D17         : in std_logic_vector(31 downto 0);
+       i_D18         : in std_logic_vector(31 downto 0);
+       i_D19         : in std_logic_vector(31 downto 0);
+       i_D20         : in std_logic_vector(31 downto 0);
+       i_D21         : in std_logic_vector(31 downto 0);
+       i_D22         : in std_logic_vector(31 downto 0);
+       i_D23         : in std_logic_vector(31 downto 0);
+       i_D24         : in std_logic_vector(31 downto 0);
+       i_D25         : in std_logic_vector(31 downto 0);
+       i_D26         : in std_logic_vector(31 downto 0);
+       i_D27         : in std_logic_vector(31 downto 0);
+       i_D28         : in std_logic_vector(31 downto 0);
+       i_D29         : in std_logic_vector(31 downto 0);
+       i_D30         : in std_logic_vector(31 downto 0);
+       i_D31         : in std_logic_vector(31 downto 0);
+       o_O          : out std_logic_vector(31 downto 0));
+end mux32t1_32;
+
+architecture structural of mux32t1_32 is
+
+  component mux2t1_N is
+    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+    port(i_S          : in std_logic;
+         i_D0         : in std_logic_vector(N-1 downto 0);
+         i_D1         : in std_logic_vector(N-1 downto 0);
+         o_O          : out std_logic_vector(N-1 downto 0));
+  end component;
+
+  signal MID_00THRU01         : std_logic_vector(31 downto 0);
+  signal MID_02THRU03         : std_logic_vector(31 downto 0);
+  signal MID_04THRU05         : std_logic_vector(31 downto 0);
+  signal MID_06THRU07         : std_logic_vector(31 downto 0);
+  signal MID_08THRU09         : std_logic_vector(31 downto 0);
+  signal MID_10THRU11         : std_logic_vector(31 downto 0);
+  signal MID_12THRU13         : std_logic_vector(31 downto 0);
+  signal MID_14THRU15         : std_logic_vector(31 downto 0);
+  signal MID_16THRU17         : std_logic_vector(31 downto 0);
+  signal MID_18THRU19         : std_logic_vector(31 downto 0);
+  signal MID_20THRU21         : std_logic_vector(31 downto 0);
+  signal MID_22THRU23         : std_logic_vector(31 downto 0);
+  signal MID_24THRU25         : std_logic_vector(31 downto 0);
+  signal MID_26THRU27         : std_logic_vector(31 downto 0);
+  signal MID_28THRU29         : std_logic_vector(31 downto 0);
+  signal MID_30THRU31         : std_logic_vector(31 downto 0);
+
+  signal MID_00THRU03         : std_logic_vector(31 downto 0);
+  signal MID_04THRU07         : std_logic_vector(31 downto 0);
+  signal MID_08THRU11         : std_logic_vector(31 downto 0);
+  signal MID_12THRU15         : std_logic_vector(31 downto 0);
+  signal MID_16THRU19         : std_logic_vector(31 downto 0);
+  signal MID_20THRU23         : std_logic_vector(31 downto 0);
+  signal MID_24THRU27         : std_logic_vector(31 downto 0);
+  signal MID_28THRU31         : std_logic_vector(31 downto 0);
+
+  signal MID_00THRU07         : std_logic_vector(31 downto 0);
+  signal MID_08THRU15         : std_logic_vector(31 downto 0);
+  signal MID_16THRU23         : std_logic_vector(31 downto 0);
+  signal MID_24THRU31         : std_logic_vector(31 downto 0);
+
+  signal MID_00THRU15         : std_logic_vector(31 downto 0);
+  signal MID_16THRU31         : std_logic_vector(31 downto 0);
+
+  signal MID_00THRU31         : std_logic_vector(31 downto 0);
+
+
+begin
+
+  -- LAYER 1: Select bit i_S(4)
+
+  mux_00thru01 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D00, i_D1 => i_D01, o_O => MID_00THRU01);
+  mux_02thru03 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D02, i_D1 => i_D03, o_O => MID_02THRU03);
+  mux_04thru05 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D04, i_D1 => i_D05, o_O => MID_04THRU05);
+  mux_06thru07 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D06, i_D1 => i_D07, o_O => MID_06THRU07);
+  mux_08thru09 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D08, i_D1 => i_D09, o_O => MID_08THRU09);
+  mux_10thru11 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D10, i_D1 => i_D11, o_O => MID_10THRU11);
+  mux_12thru13 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D12, i_D1 => i_D13, o_O => MID_12THRU13);
+  mux_14thru15 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D14, i_D1 => i_D15, o_O => MID_14THRU15);
+  mux_16thru17 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D16, i_D1 => i_D17, o_O => MID_16THRU17);
+  mux_18thru19 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D18, i_D1 => i_D19, o_O => MID_18THRU19);
+  mux_20thru21 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D20, i_D1 => i_D21, o_O => MID_20THRU21);
+  mux_22thru23 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D22, i_D1 => i_D23, o_O => MID_22THRU23);
+  mux_24thru25 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D24, i_D1 => i_D25, o_O => MID_24THRU25);
+  mux_26thru27 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D26, i_D1 => i_D27, o_O => MID_26THRU27);
+  mux_28thru29 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D28, i_D1 => i_D29, o_O => MID_28THRU29);
+  mux_30thru31 : mux2t1_N generic map(N => 32) port map(i_S => i_S(0), i_D0 => i_D30, i_D1 => i_D31, o_O => MID_30THRU31);
+
+
+  -- LAYER 2: Select bit i_S(3) 
+
+  mux_00thru03 : mux2t1_N generic map(N => 32) port map(i_S => i_S(1), i_D0 => MID_00THRU01, i_D1 => MID_02THRU03, o_O => MID_00THRU03);
+  mux_04thru07 : mux2t1_N generic map(N => 32) port map(i_S => i_S(1), i_D0 => MID_04THRU05, i_D1 => MID_06THRU07, o_O => MID_04THRU07);
+  mux_08thru11 : mux2t1_N generic map(N => 32) port map(i_S => i_S(1), i_D0 => MID_08THRU09, i_D1 => MID_10THRU11, o_O => MID_08THRU11);
+  mux_12thru15 : mux2t1_N generic map(N => 32) port map(i_S => i_S(1), i_D0 => MID_12THRU13, i_D1 => MID_14THRU15, o_O => MID_12THRU15);
+  mux_16thru19 : mux2t1_N generic map(N => 32) port map(i_S => i_S(1), i_D0 => MID_16THRU17, i_D1 => MID_18THRU19, o_O => MID_16THRU19);
+  mux_20thru23 : mux2t1_N generic map(N => 32) port map(i_S => i_S(1), i_D0 => MID_20THRU21, i_D1 => MID_22THRU23, o_O => MID_20THRU23);
+  mux_24thru27 : mux2t1_N generic map(N => 32) port map(i_S => i_S(1), i_D0 => MID_24THRU25, i_D1 => MID_26THRU27, o_O => MID_24THRU27);
+  mux_28thru31 : mux2t1_N generic map(N => 32) port map(i_S => i_S(1), i_D0 => MID_28THRU29, i_D1 => MID_30THRU31, o_O => MID_28THRU31);
+
+
+  -- LAYER 3: Select bit i_S(2)
+
+  mux_00thru07 : mux2t1_N generic map(N => 32) port map(i_S => i_S(2), i_D0 => MID_00THRU03, i_D1 => MID_04THRU07, o_O => MID_00THRU07);
+  mux_08thru15 : mux2t1_N generic map(N => 32) port map(i_S => i_S(2), i_D0 => MID_08THRU11, i_D1 => MID_12THRU15, o_O => MID_08THRU15);
+  mux_16thru23 : mux2t1_N generic map(N => 32) port map(i_S => i_S(2), i_D0 => MID_16THRU19, i_D1 => MID_20THRU23, o_O => MID_16THRU23);
+  mux_24thru31 : mux2t1_N generic map(N => 32) port map(i_S => i_S(2), i_D0 => MID_24THRU27, i_D1 => MID_28THRU31, o_O => MID_24THRU31);
+
+
+  -- LAYER 4: Select bit i_S(1)
+
+  mux_00thru15 : mux2t1_N generic map(N => 32) port map(i_S => i_S(3), i_D0 => MID_00THRU07, i_D1 => MID_08THRU15, o_O => MID_00THRU15);
+  mux_16thru31 : mux2t1_N generic map(N => 32) port map(i_S => i_S(3), i_D0 => MID_16THRU23, i_D1 => MID_24THRU31, o_O => MID_16THRU31);
+
+
+  -- LAYER 5: Select bit i_S(0)
+
+  mux_00thru31 : mux2t1_N generic map(N => 32) port map(i_S => i_S(4), i_D0 => MID_00THRU15, i_D1 => MID_16THRU31, o_O => o_O);
+
+  
+end structural;

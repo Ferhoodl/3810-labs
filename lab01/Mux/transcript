@@ -1,0 +1,2482 @@
+# //  Questa Sim-64
+# //  Version 2026.2 linux_x86_64 May 18 2026
+# //
+# // Unpublished work. Copyright 2026 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:32:06 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 20:32:06 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:32:06 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 20:32:06 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:32:06 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd(67): (vcom-1136) Unknown identifier "not_s_i".
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd(82): (vcom-1484) Unknown formal identifier "i_B".
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd(87): VHDL Compiler exiting
+# vcom: End time: 20:32:06 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:32:06 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 20:32:06 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:32:06 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd(18): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_TPU_MV_Element
+# -- Compiling architecture mixed of tb_TPU_MV_Element
+# vcom: End time: 20:32:06 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:32:06 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 20:32:06 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Modified questa.ini
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:32:50 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 20:32:50 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:32:50 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 20:32:50 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:32:50 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd(67): (vcom-1136) Unknown identifier "not_s_i".
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd(82): (vcom-1484) Unknown formal identifier "i_B".
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd(87): VHDL Compiler exiting
+# vcom: End time: 20:32:50 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:32:50 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 20:32:50 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:32:50 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 20:32:50 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:34:42 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 20:34:42 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:34:42 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 20:34:42 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:34:42 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 20:34:42 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:34:42 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd(83): Signal [mode OUT port] "o_O" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd(87): VHDL Compiler exiting
+# vcom: End time: 20:34:42 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:34:42 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 20:34:42 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:36:02 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 20:36:03 on Sep 06,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:36:03 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 20:36:03 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:36:03 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 20:36:03 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:36:03 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 20:36:03 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:39:06 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 20:39:06 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:39:06 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 20:39:06 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:39:06 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 20:39:06 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:39:06 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 20:39:06 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:40:10 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 21:40:10 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:40:10 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 21:40:10 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:40:10 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 21:40:10 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:40:10 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 21:40:10 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:40:10 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling architecture mixed of tb_TPU_MV_Element
+# -- Loading entity tb_TPU_MV_Element
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd(52): near "o_O": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd(57): Statement cannot be labeled.
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd(120): VHDL Compiler exiting
+# vcom: End time: 21:40:10 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:40:34 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling architecture mixed of tb_TPU_MV_Element
+# -- Loading entity tb_TPU_MV_Element
+# vcom: End time: 21:40:34 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:41:29 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 21:41:29 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:41:29 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 21:41:29 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:41:29 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 21:41:29 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:41:29 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 21:41:29 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:41:29 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling architecture mixed of tb_TPU_MV_Element
+# -- Loading entity tb_TPU_MV_Element
+# vcom: End time: 21:41:29 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:42:25 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 21:42:25 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:42:25 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 21:42:25 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:42:25 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 21:42:25 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:42:25 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 21:42:25 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:42:25 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling architecture mixed of tb_mux_structural
+# ** Error: (vcom-11) Could not find work.tb_mux_structural. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd(21): VHDL Compiler exiting
+# vcom: End time: 21:42:25 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:43:02 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 21:43:02 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:43:02 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 21:43:03 on Sep 06,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:43:03 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 21:43:03 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:43:03 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 21:43:03 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:43:03 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling architecture mixed of tb_mux_structural
+# ** Error: (vcom-11) Could not find work.tb_mux_structural. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd(21): VHDL Compiler exiting
+# vcom: End time: 21:43:03 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:47:22 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 21:47:22 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:47:22 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 21:47:22 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:47:22 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 21:47:22 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:47:22 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 21:47:22 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:47:22 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 21:47:22 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+clear
+# [H[2J[3J
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:47:55 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 21:47:55 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+clear
+# [H[2J[3J
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:48:09 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 21:48:09 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:48:09 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 21:48:09 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:48:09 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 21:48:09 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:48:09 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 21:48:09 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:48:09 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 21:48:09 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vsim work.tb_mux_structural -voptargs=+acc
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim work.tb_mux_structural -voptargs="+acc" 
+# Start time: 21:49:22 on Sep 06,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_mux_structural(mixed)#1
+# Loading work.mux_structural(structure)#1
+# Loading work.invg(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+add wave -position insertpoint  \
+sim:/tb_mux_structural/DUT0/i_S \
+sim:/tb_mux_structural/DUT0/i_D0 \
+sim:/tb_mux_structural/DUT0/i_D1 \
+sim:/tb_mux_structural/DUT0/o_O
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+quit -sim
+# vsim: End time: 22:01:55 on Sep 06,2026, Elapsed time: 0:12:33
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:00 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 22:09:00 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:01 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 22:09:01 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:01 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture structure of mux_behavioral
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd(28): Cannot drive signal 'o_O' of mode IN.
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd(29): near ")": (vcom-1576) expecting ';'.
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd(31): VHDL Compiler exiting
+# vcom: End time: 22:09:01 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:01 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 22:09:01 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:01 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 22:09:01 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:01 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 22:09:01 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:12 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 22:09:12 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:12 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 22:09:12 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:12 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture structure of mux_behavioral
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd(28): Cannot drive signal 'o_O' of mode IN.
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd(29): near ")": (vcom-1576) expecting ';'.
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd(31): VHDL Compiler exiting
+# vcom: End time: 22:09:12 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:12 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 22:09:12 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:12 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 22:09:12 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:09:12 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 22:09:12 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:10:14 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 22:10:14 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:10:14 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 22:10:14 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:10:14 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture structure of mux_behavioral
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd(31): near ")": (vcom-1576) expecting ';'.
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd(33): VHDL Compiler exiting
+# vcom: End time: 22:10:14 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:10:14 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 22:10:14 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:10:14 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 22:10:14 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:10:14 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 22:10:14 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:11:12 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 22:11:12 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:11:12 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 22:11:12 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:11:12 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture structure of mux_behavioral
+# vcom: End time: 22:11:12 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:11:12 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 22:11:12 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:11:12 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 22:11:13 on Sep 06,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:11:13 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 22:11:13 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:30:31 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 22:30:31 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:30:31 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 22:30:31 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:30:31 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture behavioral of mux_behavioral
+# vcom: End time: 22:30:31 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:30:31 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 22:30:31 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:30:31 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 22:30:31 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:30:31 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_behavioral
+# -- Compiling architecture mixed of tb_mux_behavioral
+# vcom: End time: 22:30:31 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 22:30:31 on Sep 06,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 22:30:31 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_mux_behavioral
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_mux_behavioral 
+# Start time: 22:31:22 on Sep 06,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_mux_behavioral(mixed)#1
+# Loading work.mux_behavioral(behavioral)#1
+add wave -position insertpoint  \
+sim:/tb_mux_behavioral/s_i_S \
+sim:/tb_mux_behavioral/s_i_D0 \
+sim:/tb_mux_behavioral/s_i_D1 \
+sim:/tb_mux_behavioral/s_o_O
+run 100
+run 100
+run 100
+run 100
+run 100
+quit -sim
+# vsim: End time: 23:54:35 on Sep 06,2026, Elapsed time: 1:23:13
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 00:58:46 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 00:58:46 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 00:58:46 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 00:58:47 on Sep 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 00:58:47 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 00:58:47 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 00:58:47 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture behavioral of mux_behavioral
+# vcom: End time: 00:58:47 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 00:58:47 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 00:58:47 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 00:58:47 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 00:58:47 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 00:58:47 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_behavioral
+# -- Compiling architecture mixed of tb_mux_behavioral
+# vcom: End time: 00:58:47 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 00:58:47 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_generic
+# -- Compiling architecture mixed of tb_mux_generic
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd(45): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd(46): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd(47): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd(100): VHDL Compiler exiting
+# vcom: End time: 00:58:47 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 00:58:47 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 00:58:47 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:07 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 01:07:07 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:07 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 01:07:07 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:07 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 01:07:07 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:07 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture behavioral of mux_behavioral
+# vcom: End time: 01:07:07 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:07 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 01:07:07 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:07 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 01:07:07 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:07 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 01:07:07 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:07 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_generic
+# -- Compiling architecture mixed of tb_mux_generic
+# vcom: End time: 01:07:07 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:07 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_behavioral
+# -- Compiling architecture mixed of tb_mux_behavioral
+# vcom: End time: 01:07:07 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_behavioral
+# -- Compiling architecture mixed of tb_mux_behavioral
+# vcom: End time: 01:07:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:38 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 01:07:38 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:38 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 01:07:38 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:38 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 01:07:39 on Sep 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:39 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture behavioral of mux_behavioral
+# vcom: End time: 01:07:39 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:39 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 01:07:39 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:39 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 01:07:39 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:39 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 01:07:39 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:39 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_generic
+# -- Compiling architecture mixed of tb_mux_generic
+# vcom: End time: 01:07:39 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:07:39 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_behavioral
+# -- Compiling architecture mixed of tb_mux_behavioral
+# vcom: End time: 01:07:39 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_mux_generic
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_mux_generic 
+# Start time: 01:08:00 on Sep 07,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(0)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(1)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(2)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(3)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(4)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(5)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(6)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(7)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(8)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(9)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(10)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(11)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(12)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(13)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(14)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(15)
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=17.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_mux_generic(mixed)#1
+# Loading work.mux2t1_n(structural)#1
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(0) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(1) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(2) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(3) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(4) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(5) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(6) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(7) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(8) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(9) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(10) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(11) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(12) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(13) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(14) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(15) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_mux_generic/DUT0/o_O(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_mux_generic/s_o_O(15 downto 0).
+add wave -position insertpoint  \
+sim:/tb_mux_generic/s_i_S \
+sim:/tb_mux_generic/s_i_D0 \
+sim:/tb_mux_generic/s_i_D1 \
+sim:/tb_mux_generic/s_o_O
+run 100
+run 100
+run 100
+run 100
+run 100
+quit -sim
+# vsim: End time: 01:11:13 on Sep 07,2026, Elapsed time: 0:03:13
+# Errors: 0, Warnings: 34
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:11:54 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 01:11:54 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:11:54 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 01:11:54 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:11:54 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# ** Error (suppressible): /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vcom-1141) Identifier "mux2t1" does not identify a component declaration.
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(50): VHDL Compiler exiting
+# vcom: End time: 01:11:54 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:11:54 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture behavioral of mux_behavioral
+# vcom: End time: 01:11:54 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:11:54 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 01:11:54 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:11:54 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 01:11:54 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:11:54 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 01:11:54 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:11:54 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_generic
+# -- Compiling architecture mixed of tb_mux_generic
+# vcom: End time: 01:11:54 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:11:54 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_behavioral
+# -- Compiling architecture mixed of tb_mux_behavioral
+# vcom: End time: 01:11:55 on Sep 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_mux_generic
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_mux_generic 
+# Start time: 01:12:16 on Sep 07,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_mux_generic(mixed)#1
+# Loading work.mux2t1_n(structural)#1
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(0) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(1) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(2) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(3) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(4) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(5) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(6) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(7) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(8) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(9) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(10) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(11) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(12) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(13) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(14) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(15) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_mux_generic/DUT0/o_O(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_mux_generic/s_o_O(15 downto 0).
+add wave -position insertpoint  \
+sim:/tb_mux_generic/s_i_S \
+sim:/tb_mux_generic/s_i_D0 \
+sim:/tb_mux_generic/s_i_D1 \
+sim:/tb_mux_generic/s_o_O
+run 300
+quit -sim
+# vsim: End time: 01:14:40 on Sep 07,2026, Elapsed time: 0:02:24
+# Errors: 0, Warnings: 17
+vsim -voptargs=+acc work.tb_mux_generic
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_mux_generic 
+# Start time: 01:15:09 on Sep 07,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_mux_generic(mixed)#1
+# Loading work.mux2t1_n(structural)#1
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(0) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(1) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(2) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(3) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(4) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(5) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(6) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(7) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(8) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(9) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(10) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(11) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(12) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(13) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(14) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(15) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_mux_generic/DUT0/o_O(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_mux_generic/s_o_O(15 downto 0).
+quit -sim
+# vsim: End time: 01:15:23 on Sep 07,2026, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 17
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:15:40 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 01:15:40 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:15:40 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 01:15:40 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:15:40 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# ** Error (suppressible): /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vcom-1141) Identifier "mux2t1" does not identify a component declaration.
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(50): VHDL Compiler exiting
+# vcom: End time: 01:15:40 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:15:40 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture behavioral of mux_behavioral
+# vcom: End time: 01:15:40 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:15:40 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 01:15:40 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:15:40 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 01:15:40 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:15:40 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 01:15:40 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:15:40 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_generic
+# -- Compiling architecture mixed of tb_mux_generic
+# vcom: End time: 01:15:40 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:15:40 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_behavioral
+# -- Compiling architecture mixed of tb_mux_behavioral
+# vcom: End time: 01:15:40 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_mux_generic
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_mux_generic 
+# Start time: 01:15:53 on Sep 07,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(0)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(1)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(2)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(3)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(4)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(5)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(6)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(7)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(8)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(9)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(10)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(11)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(12)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(13)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(14)
+# ** Warning: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd(43): (vopt-3473) Component instance "MUXI : mux2t1" is not bound.
+#         Region: /tb_mux_generic/DUT0/G_NBit_MUX(15)
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=17.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_mux_generic(mixed)#1
+# Loading work.mux2t1_n(structural)#1
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(0) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(1) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(2) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(3) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(4) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(5) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(6) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(7) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(8) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(9) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(10) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(11) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(12) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(13) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(14) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-3473) Component instance "MUXI : mux2t1" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_mux_generic/DUT0/G_NBit_MUX(15) File: /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_mux_generic/DUT0/o_O(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_mux_generic/s_o_O(15 downto 0).
+add wave -position insertpoint  \
+sim:/tb_mux_generic/s_i_S \
+sim:/tb_mux_generic/s_i_D0 \
+sim:/tb_mux_generic/s_i_D1 \
+sim:/tb_mux_generic/s_o_O
+run 100
+quit -sim
+# vsim: End time: 01:16:27 on Sep 07,2026, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 34
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:19:44 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 01:19:44 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:19:44 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 01:19:44 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:19:44 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 01:19:44 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:19:44 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture behavioral of mux_behavioral
+# vcom: End time: 01:19:44 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:19:44 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 01:19:44 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:19:44 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 01:19:44 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:19:44 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 01:19:44 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:19:44 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_generic
+# -- Compiling architecture mixed of tb_mux_generic
+# vcom: End time: 01:19:44 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:19:44 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_behavioral
+# -- Compiling architecture mixed of tb_mux_behavioral
+# vcom: End time: 01:19:44 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_mux_generic
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_mux_generic 
+# Start time: 01:19:57 on Sep 07,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_mux_generic(mixed)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux_structural(structure)#1
+# Loading work.invg(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+add wave -position insertpoint  \
+sim:/tb_mux_generic/s_i_S \
+sim:/tb_mux_generic/s_i_D0 \
+sim:/tb_mux_generic/s_i_D1 \
+sim:/tb_mux_generic/s_o_O
+run 100
+run 100
+run 100
+quit -sim
+# vsim: End time: 01:32:06 on Sep 07,2026, Elapsed time: 0:12:09
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:47:37 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 01:47:37 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/complimentor.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:47:37 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/complimentor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity complimentor
+# -- Compiling architecture structural of complimentor
+# vcom: End time: 01:47:37 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:47:37 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 01:47:37 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:47:37 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 01:47:37 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:47:37 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture behavioral of mux_behavioral
+# vcom: End time: 01:47:37 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:47:37 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 01:47:37 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:47:37 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 01:47:37 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:47:37 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_behavioral
+# -- Compiling architecture mixed of tb_mux_behavioral
+# vcom: End time: 01:47:37 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:47:37 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_generic
+# -- Compiling architecture mixed of tb_mux_generic
+# vcom: End time: 01:47:37 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:47:37 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 01:47:37 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:56:27 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 02:56:27 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/complimentor.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:56:27 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/complimentor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity complimentor
+# -- Compiling architecture structural of complimentor
+# vcom: End time: 02:56:27 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:56:27 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 02:56:28 on Sep 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:56:28 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 02:56:28 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:56:28 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture behavioral of mux_behavioral
+# vcom: End time: 02:56:28 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:56:28 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 02:56:28 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:56:28 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 02:56:28 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:56:28 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_complimentor
+# -- Compiling architecture mixed of tb_complimentor
+# vcom: End time: 02:56:28 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:56:28 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_behavioral
+# -- Compiling architecture mixed of tb_mux_behavioral
+# vcom: End time: 02:56:28 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:56:28 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_generic
+# -- Compiling architecture mixed of tb_mux_generic
+# vcom: End time: 02:56:28 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:56:28 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 02:56:28 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_complimentor
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_complimentor 
+# Start time: 02:56:51 on Sep 07,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): /home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd(66): (vopt-1272) Length of expected is 16; length of actual is 32.
+# ** Error (suppressible): /home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd(71): (vopt-1272) Length of expected is 16; length of actual is 32.
+# ** Error (suppressible): /home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd(76): (vopt-1272) Length of expected is 16; length of actual is 32.
+# ** Error (suppressible): /home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd(81): (vopt-1272) Length of expected is 16; length of actual is 32.
+# ** Note: /home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd(89): Vopt Compiler exiting
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 2.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=5, Warnings=1.
+# Error loading design
+# vsim: End time: 02:56:51 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 1
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:57:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 02:57:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/complimentor.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:57:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/complimentor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity complimentor
+# -- Compiling architecture structural of complimentor
+# vcom: End time: 02:57:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:57:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 02:57:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:57:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 02:57:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:57:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_behavioral
+# -- Compiling architecture behavioral of mux_behavioral
+# vcom: End time: 02:57:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:57:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 02:57:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:57:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 02:57:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:57:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_complimentor
+# -- Compiling architecture mixed of tb_complimentor
+# vcom: End time: 02:57:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:57:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_behavioral
+# -- Compiling architecture mixed of tb_mux_behavioral
+# vcom: End time: 02:57:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:57:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_generic
+# -- Compiling architecture mixed of tb_mux_generic
+# vcom: End time: 02:57:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 02:57:26 on Sep 07,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_mux_structural
+# -- Compiling architecture mixed of tb_mux_structural
+# vcom: End time: 02:57:26 on Sep 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_complimentor
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_complimentor 
+# Start time: 02:57:38 on Sep 07,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_complimentor(mixed)#1
+# Loading work.complimentor(structural)#1
+# Loading work.invg(dataflow)#1
+add wave -position insertpoint  \
+sim:/tb_complimentor/s_i_S \
+sim:/tb_complimentor/s_o_O
+run 100
+run 100
+run 100
+run 100
+quit -sim
+# vsim: End time: 03:06:39 on Sep 07,2026, Elapsed time: 0:09:01
+# Errors: 0, Warnings: 1
+# Quit canceled
+# Quit canceled

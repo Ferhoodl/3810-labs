@@ -1,0 +1,652 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+Z2 !s12c _opt2
+R1
+R2
+R1
+R2
+R1
+!s12c _opt1
+R1
+R0
+R1
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 d/home/iwsteele/Documents/classes/3810/lab01/mux
+T_opt
+!i145 1
+!i144 0
+!s110 1788767859
+VYMDJ5iN5=Q1H=>eM7S5cP1
+04 15 5 work tb_complimentor mixed 1
+=1-005056b649c7-6a9e6e72-e69cb-18df4
+R1
+Z4 !s12f OEM100
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+Z7 !s135 nogc
+!i152 0
+Z8 o-quiet -auto_acc_if_foreign -work work +acc
+Z9 tCvgOpt 0
+n@_opt
+Z10 OL;O;2026.2;84
+T_opt1
+!i145 1
+!i144 0
+!s110 1788751882
+VMQMb71H:Jk6>R25JhQJBF3
+04 17 5 work tb_mux_behavioral mixed 1
+=1-005056b649c7-6a9e300a-19ee6-e8a1
+R1
+R4
+R5
+R6
+R7
+!i152 0
+R8
+R9
+n@_opt1
+R10
+R3
+T_opt2
+!i145 1
+!i144 0
+!s110 1788761997
+VJfGm2PSW@@OG8PO9WTgTB1
+04 14 5 work tb_mux_generic mixed 1
+=1-005056b649c7-6a9e578d-48536-15281
+R1
+R4
+R5
+R6
+R7
+!i152 0
+R8
+R9
+n@_opt2
+R10
+R3
+Eandg2
+Z11 w1788741194
+Z12 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z13 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 158
+R3
+Z14 8/home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+Z15 F/home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd
+l0
+Z16 L23 1
+VzJ2OoPJ=<ja2?Y;OcjQk;3
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+Z17 OL;C;2026.2;84
+33
+Z18 !s110 1788767846
+!i10b 1
+Z19 !s108 1788767846.000000
+Z20 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd|
+Z21 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/andg2.vhd|
+!i113 0
+Z22 o-work work
+Z23 tExplicit 1 NoCoverage 1 CvgOpt 0
+Adataflow
+R12
+R13
+DEx4 work 5 andg2 0 22 zJ2OoPJ=<ja2?Y;OcjQk;3
+!i122 158
+l32
+Z24 L31 6
+V3oa1[>iDZj;2zVo:oz1>e2
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Ecomplimentor
+Z25 w1788767597
+R12
+R13
+!i122 159
+R3
+Z26 8/home/iwsteele/Documents/classes/3810/lab01/mux/complimentor.vhd
+Z27 F/home/iwsteele/Documents/classes/3810/lab01/mux/complimentor.vhd
+l0
+Z28 L19 1
+VilT;=_Aof;INI<:E3TCP43
+!s100 jfD1o5>:lSX`MPGF:ZdRi0
+R17
+33
+R18
+!i10b 1
+R19
+Z29 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/complimentor.vhd|
+Z30 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/complimentor.vhd|
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 12 complimentor 0 22 ilT;=_Aof;INI<:E3TCP43
+!i122 159
+l33
+L26 17
+V>1GD6D4icQ?=Jn8zc?_`Z0
+!s100 5X5c6[fPUT9;jHe6WcO_f1
+R17
+33
+R18
+!i10b 1
+R19
+R29
+R30
+!i113 0
+R22
+R23
+Einvg
+Z31 w1788741185
+R12
+R13
+!i122 160
+R3
+Z32 8/home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+Z33 F/home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd
+l0
+R16
+VzJhOLc0g_4RfSF]IXa;:73
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R17
+33
+R18
+!i10b 1
+R19
+Z34 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd|
+Z35 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/invg.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 4 invg 0 22 zJhOLc0g_4RfSF]IXa;:73
+!i122 160
+l31
+L30 6
+VT@AA60h>IXVJ?D^`RRiZk1
+!s100 bk7I76o8e1LURdoZEQb8H0
+R17
+33
+R18
+!i10b 1
+R19
+R34
+R35
+!i113 0
+R22
+R23
+Emux2t1_n
+Z36 w1788761929
+R12
+R13
+!i122 161
+R3
+Z37 8/home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+Z38 F/home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd
+l0
+L21 1
+VY_oH7ZNAhfdL8dgX=LeaI0
+!s100 6WH1kRd<eiGeF78;iL:LL0
+R17
+33
+R18
+!i10b 1
+R19
+Z39 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd|
+Z40 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/mux2t1_N.vhd|
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 8 mux2t1_n 0 22 Y_oH7ZNAhfdL8dgX=LeaI0
+!i122 161
+l39
+L30 21
+VJ<GzzcQ4z;^eo];FEGKf80
+!s100 <NTFm3F`f<U0fOA9EZ^zD0
+R17
+33
+R18
+!i10b 1
+R19
+R39
+R40
+!i113 0
+R22
+R23
+Emux_behavioral
+Z41 w1788750849
+R12
+R13
+!i122 162
+R3
+Z42 8/home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+Z43 F/home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd
+l0
+R28
+VMa[CCJh5RdB;_jRz^;bc70
+!s100 hD9eSmWn`Hb]PSAb1DKWo0
+R17
+33
+R18
+!i10b 1
+R19
+Z44 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd|
+Z45 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/mux_dataflow.vhd|
+!i113 0
+R22
+R23
+Abehavioral
+R12
+R13
+DEx4 work 14 mux_behavioral 0 22 Ma[CCJh5RdB;_jRz^;bc70
+!i122 162
+l28
+Z46 L27 7
+V:YZ1AHJjFm^A;[T52z?[g0
+!s100 EN2AAZ<]2^lK0B[>ABXL20
+R17
+33
+R18
+!i10b 1
+R19
+R44
+R45
+!i113 0
+R22
+R23
+Astructure
+R12
+R13
+DEx4 work 14 mux_behavioral 0 22 B_]1E]T80n^B]cXjZRHPI2
+!i122 71
+l28
+R46
+Vl]BJ6VR@Yb]on^8XHlZJB0
+!s100 aMYgo`ac5oaTUed^KEhba0
+R17
+33
+!s110 1788750672
+!i10b 1
+!s108 1788750672.000000
+R44
+R45
+!i113 0
+R22
+R23
+w1788750652
+Emux_structural
+Z47 w1788745509
+R12
+R13
+!i122 163
+R3
+Z48 8/home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+Z49 F/home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd
+l0
+R28
+VH5OODi`becai[T3HbL>1a1
+!s100 j7^oBDHO_Bkm@7eWmBMU22
+R17
+33
+R18
+!i10b 1
+R19
+Z50 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd|
+Z51 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/mux_structural.vhd|
+!i113 0
+R22
+R23
+Astructure
+R12
+R13
+DEx4 work 14 mux_structural 0 22 H5OODi`becai[T3HbL>1a1
+!i122 163
+l60
+L28 59
+ViD_gh<Q5KFM;f6YbDSaM:3
+!s100 <Mc^jQLAD[d1_3f4oL7Ll1
+R17
+33
+R18
+!i10b 1
+R19
+R50
+R51
+!i113 0
+R22
+R23
+Eorg2
+Z52 w1788741205
+R12
+R13
+!i122 164
+R3
+Z53 8/home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+Z54 F/home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd
+l0
+R16
+V0FzB9ATDX9TV=M:n@=VB83
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R17
+33
+R18
+!i10b 1
+R19
+Z55 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd|
+Z56 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/org2.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 4 org2 0 22 0FzB9ATDX9TV=M:n@=VB83
+!i122 164
+l32
+R24
+V0JC>N7cRXc=9bni@>dg7o3
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R17
+33
+R18
+!i10b 1
+R19
+R55
+R56
+!i113 0
+R22
+R23
+Etb_complimentor
+Z57 w1788767837
+Z58 DPx3 std 3 env 0 22 mJj^M]e`oP>;WoZ=b<O3C0
+Z59 DPx4 ieee 16 std_logic_textio 0 22 i<^3g?=>FM?3b:<^1:oD>2
+R12
+R13
+!i122 165
+R3
+Z60 8/home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd
+Z61 F/home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd
+l0
+Z62 L20 1
+VWiOTM_HMHn=8MgG_9Vf3M3
+!s100 jVYl6oj6UMdZN>kTn>PSn2
+R17
+33
+R18
+!i10b 1
+R19
+Z63 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd|
+Z64 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/tb_complimentor.vhd|
+!i113 0
+R22
+R23
+Amixed
+R58
+R59
+R12
+R13
+DEx4 work 15 tb_complimentor 0 22 WiOTM_HMHn=8MgG_9Vf3M3
+!i122 165
+l46
+L28 62
+V<LRUJeHc?d42O[h4IFcl:2
+!s100 4GNP:n6OabMW^:ZSMFF=`0
+R17
+33
+R18
+!i10b 1
+R19
+R63
+R64
+!i113 0
+R22
+R23
+Etb_mux_behavioral
+Z65 w1788751723
+R58
+R59
+R12
+R13
+!i122 166
+R3
+Z66 8/home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+Z67 F/home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd
+l0
+R62
+V<h@Z24[5B?cc[PCRA<RDS3
+!s100 dWZ<N2IHmK<zY02lL3n_42
+R17
+33
+R18
+!i10b 1
+R19
+Z68 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd|
+Z69 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_behavioral.vhd|
+!i113 0
+R22
+R23
+Amixed
+R58
+R59
+R12
+R13
+DEx4 work 17 tb_mux_behavioral 0 22 <h@Z24[5B?cc[PCRA<RDS3
+!i122 166
+l47
+Z70 L26 100
+VV]gdmO:l35X9Z5FkjmcgR0
+!s100 kcdKi=@AQlgW<Vld6:IEY0
+R17
+33
+R18
+!i10b 1
+R19
+R68
+R69
+!i113 0
+R22
+R23
+Etb_mux_generic
+Z71 w1788761695
+R58
+R59
+R12
+R13
+!i122 167
+R3
+Z72 8/home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd
+Z73 F/home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd
+l0
+R62
+V=?;SJRPgE4XJ3=464S_381
+!s100 iRPmifEac9ZzJNY_Oj4G10
+R17
+33
+R18
+!i10b 1
+R19
+Z74 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd|
+Z75 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_generic.vhd|
+!i113 0
+R22
+R23
+Amixed
+R58
+R59
+R12
+R13
+DEx4 work 14 tb_mux_generic 0 22 =?;SJRPgE4XJ3=464S_381
+!i122 167
+l50
+L28 75
+VfCe>6I8kFG]gZjNCPGMnc1
+!s100 G^ZW9BbegzTkJ8zfOKf?C3
+R17
+33
+R18
+!i10b 1
+R19
+R74
+R75
+!i113 0
+R22
+R23
+Etb_mux_structural
+Z76 w1788749202
+R58
+R59
+R12
+R13
+!i122 168
+R3
+Z77 8/home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+Z78 F/home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd
+l0
+R62
+VgIY7kc7TR=e5FWCb??H5E1
+!s100 iRYeg^O?iZ:Bn`0Q[:goN0
+R17
+33
+R18
+!i10b 1
+R19
+Z79 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd|
+Z80 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/tb_mux_structural.vhd|
+!i113 0
+R22
+R23
+Amixed
+R58
+R59
+R12
+R13
+DEx4 work 17 tb_mux_structural 0 22 gIY7kc7TR=e5FWCb??H5E1
+!i122 168
+l47
+R70
+VGAPHBz4OQ;EOjK`U=4_@b1
+!s100 7]T=CCgin5V:7?KW6Y8g`3
+R17
+33
+R18
+!i10b 1
+R19
+R79
+R80
+!i113 0
+R22
+R23
+Etb_tpu_mv_element
+w1788741274
+R58
+R59
+R12
+R13
+!i122 4
+R3
+R77
+R78
+l0
+R16
+V8Q5F]13KkIoJlj9`?DdD`3
+!s100 AL3R;k;7afIGOSN081W[z0
+R17
+32
+!s110 1788744726
+!i10b 1
+!s108 1788744726.000000
+R79
+R80
+!i113 0
+R22
+tExplicit 1 CvgOpt 0
+Amixed
+w1788748824
+DEx4 work 17 tb_tpu_mv_element 0 22 8Q5F]13KkIoJlj9`?DdD`3
+R58
+R59
+R12
+R13
+!i122 32
+l42
+L21 100
+VkJeXUcB=B7EO666[c4NON0
+!s100 FOfOdRAkZW98Cc@>CdE>Q3
+R17
+33
+!s110 1788748889
+!i10b 1
+!s108 1788748889.000000
+R79
+R80
+!i113 0
+R22
+R23
+Exorg2
+Z81 w1788741227
+R12
+R13
+!i122 15
+R3
+Z82 8/home/iwsteele/Documents/classes/3810/lab01/mux/xorg2.vhd
+Z83 F/home/iwsteele/Documents/classes/3810/lab01/mux/xorg2.vhd
+l0
+R16
+VV6C:miP5l_oAXXFV_WP4`3
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R17
+33
+Z84 !s110 1788744882
+!i10b 1
+Z85 !s108 1788744882.000000
+Z86 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab01/mux/xorg2.vhd|
+Z87 !s107 /home/iwsteele/Documents/classes/3810/lab01/mux/xorg2.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 5 xorg2 0 22 V6C:miP5l_oAXXFV_WP4`3
+!i122 15
+l32
+R24
+V0<8Ik`hGa2ooIj9K`Y3Wc0
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R17
+33
+R84
+!i10b 1
+R85
+R86
+R87
+!i113 0
+R22
+R23

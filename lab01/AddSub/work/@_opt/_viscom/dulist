@@ -1,0 +1,11 @@
+1 4 org2 8 dataflow 55 /home/iwsteele/Documents/classes/3810/lab01/AddSub/work 1 65 0 0 7 0
+1 5 andg2 8 dataflow 55 /home/iwsteele/Documents/classes/3810/lab01/AddSub/work 1 65 0 0 7 0
+1 5 xorg2 8 dataflow 55 /home/iwsteele/Documents/classes/3810/lab01/AddSub/work 1 65 0 0 7 0
+1 8 my_adder 9 structure 55 /home/iwsteele/Documents/classes/3810/lab01/AddSub/work 1 65 0 0 90 0
+1 7 adder_n 10 structural 55 /home/iwsteele/Documents/classes/3810/lab01/AddSub/work 1 65 0 0 114 0
+1 4 invg 8 dataflow 55 /home/iwsteele/Documents/classes/3810/lab01/AddSub/work 1 65 0 0 5 0
+1 14 mux_structural 9 structure 55 /home/iwsteele/Documents/classes/3810/lab01/AddSub/work 1 65 0 0 55 0
+1 8 mux2t1_n 10 structural 55 /home/iwsteele/Documents/classes/3810/lab01/AddSub/work 1 65 0 0 89 0
+1 12 complimentor 10 structural 55 /home/iwsteele/Documents/classes/3810/lab01/AddSub/work 1 65 0 0 64 0
+1 7 add_sub 9 structure 55 /home/iwsteele/Documents/classes/3810/lab01/AddSub/work 1 65 0 0 155 0
+1 10 tb_add_sub 5 mixed 55 /home/iwsteele/Documents/classes/3810/lab01/AddSub/work 1 65 0 0 286 0
