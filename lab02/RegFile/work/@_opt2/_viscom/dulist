@@ -7,5 +7,5 @@
 2 8 mux2t1_n 10 structural 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 89 0
 2 12 decoder_5t32 4 flow 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 76 0
 2 10 mux32t1_32 10 structural 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 964 0
-2 8 reg_file 9 structure 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 2048 0 2110 0
-1 11 tb_reg_file 9 structure 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 150 0
+1 8 reg_file 9 structure 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 2048 0 2110 0
+2 11 tb_reg_file 9 structure 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work 1 65 0 0 155 0

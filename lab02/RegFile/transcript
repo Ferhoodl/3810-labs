@@ -2377,3 +2377,621 @@ run 400
 quit -sim
 # vsim: End time: 01:51:56 on Sep 21,2026, Elapsed time: 0:00:36
 # Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:02 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 01:53:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:02 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_5t32
+# -- Compiling architecture flow of decoder_5t32
+# vcom: End time: 01:53:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:02 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# vcom: End time: 01:53:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:02 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 01:53:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:02 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 01:53:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:02 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux32t1_32
+# -- Compiling architecture structural of mux32t1_32
+# vcom: End time: 01:53:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:02 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_mux32t1_32
+# -- Compiling architecture behavior of tb_mux32t1_32
+# vcom: End time: 01:53:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:02 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# vcom: End time: 01:53:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:02 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_decoder_5t32
+# -- Compiling architecture behavior of tb_decoder_5t32
+# vcom: End time: 01:53:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:02 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_file
+# -- Compiling architecture structure of reg_file
+# vcom: End time: 01:53:03 on Sep 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:03 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture structure of reg
+# vcom: End time: 01:53:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:03 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 01:53:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:03 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 01:53:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:03 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_reg
+# -- Compiling architecture mixed of tb_reg
+# vcom: End time: 01:53:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:03 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_reg_file
+# -- Compiling architecture structure of tb_reg_file
+# vcom: End time: 01:53:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_reg_file
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_reg_file 
+# Start time: 01:53:11 on Sep 21,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_reg_file(structure)#1
+# Loading work.reg_file(structure)#1
+# Loading work.decoder_5t32(flow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux_structural(structure)#1
+# Loading work.invg(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.reg(structure)#1
+# Loading work.dffg(mixed)#1
+# Loading work.mux32t1_32(structural)#1
+add wave -position insertpoint  \
+sim:/tb_reg_file/s_i_CLK \
+sim:/tb_reg_file/tb_i_RST \
+sim:/tb_reg_file/tb_i_W_VAL \
+sim:/tb_reg_file/tb_i_W_ADDR \
+sim:/tb_reg_file/tb_i_W_EN \
+sim:/tb_reg_file/tb_i_R_ADDR_A \
+sim:/tb_reg_file/tb_i_R_ADDR_B \
+sim:/tb_reg_file/tb_o_R_VAL_A \
+sim:/tb_reg_file/tb_o_R_VAL_B
+run 400
+quit -sim
+# vsim: End time: 01:53:30 on Sep 21,2026, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:45 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 01:53:45 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:45 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_5t32
+# -- Compiling architecture flow of decoder_5t32
+# vcom: End time: 01:53:45 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:45 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# vcom: End time: 01:53:45 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:45 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 01:53:45 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:45 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 01:53:45 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:45 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux32t1_32
+# -- Compiling architecture structural of mux32t1_32
+# vcom: End time: 01:53:45 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:45 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_mux32t1_32
+# -- Compiling architecture behavior of tb_mux32t1_32
+# vcom: End time: 01:53:45 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:45 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# vcom: End time: 01:53:45 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:45 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_decoder_5t32
+# -- Compiling architecture behavior of tb_decoder_5t32
+# vcom: End time: 01:53:46 on Sep 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:46 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_file
+# -- Compiling architecture structure of reg_file
+# vcom: End time: 01:53:46 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:46 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture structure of reg
+# vcom: End time: 01:53:46 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:46 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 01:53:46 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:46 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 01:53:46 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:46 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_reg
+# -- Compiling architecture mixed of tb_reg
+# vcom: End time: 01:53:46 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:53:46 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_reg_file
+# -- Compiling architecture structure of tb_reg_file
+# vcom: End time: 01:53:46 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_reg_file
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_reg_file 
+# Start time: 01:53:55 on Sep 21,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_reg_file(structure)#1
+# Loading work.reg_file(structure)#1
+# Loading work.decoder_5t32(flow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux_structural(structure)#1
+# Loading work.invg(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.reg(structure)#1
+# Loading work.dffg(mixed)#1
+# Loading work.mux32t1_32(structural)#1
+add wave -position insertpoint  \
+sim:/tb_reg_file/s_i_CLK \
+sim:/tb_reg_file/tb_i_RST \
+sim:/tb_reg_file/tb_i_W_VAL \
+sim:/tb_reg_file/tb_i_W_ADDR \
+sim:/tb_reg_file/tb_i_W_EN \
+sim:/tb_reg_file/tb_i_R_ADDR_A \
+sim:/tb_reg_file/tb_i_R_ADDR_B \
+sim:/tb_reg_file/tb_o_R_VAL_A \
+sim:/tb_reg_file/tb_o_R_VAL_B
+run 400
+quit -sim
+# vsim: End time: 01:55:21 on Sep 21,2026, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:51 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 01:55:51 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:51 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_5t32
+# -- Compiling architecture flow of decoder_5t32
+# vcom: End time: 01:55:51 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:51 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# vcom: End time: 01:55:51 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:51 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 01:55:51 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:51 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 01:55:51 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:51 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux32t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux32t1_32
+# -- Compiling architecture structural of mux32t1_32
+# vcom: End time: 01:55:52 on Sep 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:52 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_mux32t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_mux32t1_32
+# -- Compiling architecture behavior of tb_mux32t1_32
+# vcom: End time: 01:55:52 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:52 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# vcom: End time: 01:55:52 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:52 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_decoder_5t32
+# -- Compiling architecture behavior of tb_decoder_5t32
+# vcom: End time: 01:55:52 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:52 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_file
+# -- Compiling architecture structure of reg_file
+# vcom: End time: 01:55:52 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:52 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture structure of reg
+# vcom: End time: 01:55:52 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:52 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 01:55:52 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:52 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 01:55:52 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:52 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_reg
+# -- Compiling architecture mixed of tb_reg
+# vcom: End time: 01:55:52 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 01:55:52 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/RegFile/tb_reg_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_reg_file
+# -- Compiling architecture structure of tb_reg_file
+# vcom: End time: 01:55:52 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_reg_file
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_reg_file 
+# Start time: 01:56:02 on Sep 21,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_reg_file(structure)#1
+# Loading work.reg_file(structure)#1
+# Loading work.decoder_5t32(flow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux_structural(structure)#1
+# Loading work.invg(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.reg(structure)#1
+# Loading work.dffg(mixed)#1
+# Loading work.mux32t1_32(structural)#1
+add wave -position insertpoint  \
+sim:/tb_reg_file/s_i_CLK \
+sim:/tb_reg_file/tb_i_RST \
+sim:/tb_reg_file/tb_i_W_VAL \
+sim:/tb_reg_file/tb_i_W_ADDR \
+sim:/tb_reg_file/tb_i_W_EN \
+sim:/tb_reg_file/tb_i_R_ADDR_A \
+sim:/tb_reg_file/tb_i_R_ADDR_B \
+sim:/tb_reg_file/tb_o_R_VAL_A \
+sim:/tb_reg_file/tb_o_R_VAL_B
+run 400
+quit -sim
+# vsim: End time: 01:56:28 on Sep 21,2026, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 1

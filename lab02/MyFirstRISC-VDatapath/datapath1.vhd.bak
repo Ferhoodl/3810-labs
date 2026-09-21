@@ -1,0 +1,130 @@
+-------------------------------------------------------------------------
+-- Isaiah Steele
+-- Student in CpRE 3810
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- datapath1.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a structural implementation for a
+-- datapath.
+--
+-- 09/21/2026: created
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity datapath1 is
+  generic(N : integer := 32);
+  port(i_CLK       : in std_logic;                            -- Clock input
+       i_RST       : in std_logic;
+       i_rd          : in std_logic_vector(4 downto 0);         -- 5-bit write address
+       i_regWrite    : in std_logic;                            -- line for write enable
+       i_rs1         : in std_logic_vector(4 downto 0);         -- 5-bit read address A
+       i_rs2         : in std_logic_vector(4 downto 0);         -- 5-bit read address B
+       i_imm         : in std_logic_vector(31 downto 0);
+       i_AddSub      : in std_logic;
+       i_ALUSrc      : in std_logic);
+end datapath1;
+
+architecture structure of datapath1 is
+  
+  -- Describe the component entities as defined in their
+  -- respective .vhd files.
+
+
+  component reg_file
+    generic(N : integer := 32);
+    port(i_CLK       : in std_logic;                            -- Clock input
+         i_RST       : in std_logic;
+         i_W_VAL     : in std_logic_vector(31 downto 0);        -- 32-bit write value
+         i_W_ADDR    : in std_logic_vector(4 downto 0);         -- 5-bit write address
+         i_W_EN      : in std_logic;                            -- line for write enable
+         i_R_ADDR_A  : in std_logic_vector(4 downto 0);         -- 5-bit read address A
+         i_R_ADDR_B  : in std_logic_vector(4 downto 0);         -- 5-bit read address B
+         o_R_VAL_A   : out std_logic_vector(31 downto 0);       -- 32-bit read value A
+         o_R_VAL_B   : out std_logic_vector(31 downto 0));       -- 32-bit read value B
+  end component;
+
+  component add_sub is
+    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+    port(i_A         : in std_logic_vector(N-1 downto 0);
+         i_B         : in std_logic_vector(N-1 downto 0);
+         i_C         : in std_logic;
+         o_S         : out std_logic_vector(N-1 downto 0);
+         o_C         : out std_logic);
+  end component;
+
+  component mux2t1_N
+    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32
+    port(i_S          : in std_logic;
+         i_D0         : in std_logic_vector(N-1 downto 0);
+         i_D1         : in std_logic_vector(N-1 downto 0);
+         o_O          : out std_logic_vector(N-1 downto 0));
+  end component;
+
+  component andg2
+    port(i_A          : in std_logic;
+         i_B          : in std_logic;
+         o_F          : out std_logic);
+  end component;
+
+
+  -- line to carry output of decoder
+  signal MID_ADDSUB_OUT   : std_logic_vector(31 downto 0);
+  signal MID_TOPMUX_OUT   : std_logic_vector(31 downto 0);
+  signal MID_BOTMUX_OUT   : std_logic_vector(31 downto 0);
+  signal MID_AND_OUT      : std_logic;
+  signal MID_B_OUT        : std_logic_vector(31 downto 0);
+  signal MID_A_OUT        : std_logic_vector(31 downto 0);
+  signal MID_REG_A_OUT    : std_logic_vector(31 downto 0);
+  signal MID_REG_B_OUT    : std_logic_vector(31 downto 0);
+
+
+
+begin
+
+  reggie: reg_file
+    generic MAP(N => N)
+    port MAP(i_CLK       => i_CLK,
+             i_RST       => i_RST,
+             i_W_VAL     => MID_BOTMUX_OUT,
+             i_W_ADDR    => i_rd,
+             i_W_EN      => i_regWrite,
+             i_R_ADDR_A  => i_rs1,
+             i_R_ADDR_B  => i_rs2,
+             o_R_VAL_A   => MID_REG_A_OUT,
+             o_R_VAL_B   => MID_REG_B_OUT);
+
+  aluminum: add_sub
+    generic MAP(N => N)
+    port MAP(i_A  => MID_REG_A_OUT,
+             i_B  => MID_TOPMUX_OUT,
+             i_C  => i_AddSub,
+             o_S  => MID_ADDSUB_OUT,
+             o_C  => open);
+
+  topmux: mux2t1_N
+    generic MAP(N => N) 
+    port MAP(i_S  => i_ALUSrc,
+         i_D0 => MID_REG_B_OUT,
+         i_D1 => i_imm,
+         o_O  => MID_TOPMUX_OUT);
+
+  botmux: mux2t1_N
+    generic MAP(N  => N)
+    port MAP(i_S   => MID_AND_OUT, 
+         i_D0      => MID_ADDSUB_OUT,
+         i_D1      => i_imm,
+         o_O       => MID_BOTMUX_OUT);
+
+
+  andy: andg2
+    port MAP(i_A  => i_ALUSrc,
+             i_B  => i_AddSub,
+             o_F  =>  MID_AND_OUT);
+
+
+  end structure;
