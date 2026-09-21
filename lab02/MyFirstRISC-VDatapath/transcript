@@ -12,359 +12,176 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
+# Load canceled
 vlib work
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:41 on Sep 21,2026
+# Start time: 04:58:06 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity add_sub
 # -- Compiling architecture structure of add_sub
-# vcom: End time: 02:24:41 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:06 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:41 on Sep 21,2026
+# Start time: 04:58:06 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity adder_N
 # -- Compiling architecture structural of adder_N
-# vcom: End time: 02:24:41 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:06 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:41 on Sep 21,2026
+# Start time: 04:58:06 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity andg2
 # -- Compiling architecture dataflow of andg2
-# vcom: End time: 02:24:41 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:06 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/complimentor.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 04:58:06 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/complimentor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity complimentor
+# -- Compiling architecture structural of complimentor
+# vcom: End time: 04:58:06 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:41 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg_file
-# -- Compiling architecture structure of reg_file
-# vcom: End time: 02:24:41 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:41 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity decoder_5t32
-# -- Compiling architecture flow of decoder_5t32
-# vcom: End time: 02:24:41 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:41 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity dffg
-# -- Compiling architecture mixed of dffg
-# vcom: End time: 02:24:41 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:41 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# vcom: End time: 02:24:41 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:41 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_decoder_5t32
-# -- Compiling architecture behavior of tb_decoder_5t32
-# vcom: End time: 02:24:42 on Sep 21,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:42 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# ** Warning: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd(19): (vcom-1615) Existing entity 'reg_file' at /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(19) will be overwritten.
-# -- Compiling entity reg_file
-# ** Warning: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd(32): (vcom-1615) Existing architecture 'reg_file(structure)' at /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(32) will be overwritten.
-# -- Compiling architecture structure of reg_file
-# vcom: End time: 02:24:42 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:42 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg
-# -- Compiling architecture structure of reg
-# vcom: End time: 02:24:42 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:42 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# vcom: End time: 02:24:42 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:42 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux_structural
-# -- Compiling architecture structure of mux_structural
-# vcom: End time: 02:24:42 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:42 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux32t1_32
-# -- Compiling architecture structural of mux32t1_32
-# vcom: End time: 02:24:42 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:42 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux2t1_N
-# -- Compiling architecture structural of mux2t1_N
-# vcom: End time: 02:24:42 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:42 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_dffg
-# -- Compiling architecture behavior of tb_dffg
-# vcom: End time: 02:24:42 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:42 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_mux32t1_32
-# -- Compiling architecture behavior of tb_mux32t1_32
-# vcom: End time: 02:24:42 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:42 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# -- Compiling entity tb_reg
-# -- Compiling architecture mixed of tb_reg
-# vcom: End time: 02:24:42 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 02:24:42 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# -- Compiling entity tb_reg_file
-# -- Compiling architecture structure of tb_reg_file
-# vcom: End time: 02:24:42 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:36 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity add_sub
-# -- Compiling architecture structure of add_sub
-# vcom: End time: 03:56:36 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:36 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity adder_N
-# -- Compiling architecture structural of adder_N
-# vcom: End time: 03:56:36 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:36 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity andg2
-# -- Compiling architecture dataflow of andg2
-# vcom: End time: 03:56:36 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
+# Start time: 04:58:06 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity datapath1
 # -- Compiling architecture structure of datapath1
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(51): near "entity": (vcom-1576) expecting BEGIN.
-# ** Note: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(51): VHDL Compiler exiting
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
+# vcom: End time: 04:58:06 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
+# Start time: 04:58:06 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decoder_5t32
 # -- Compiling architecture flow of decoder_5t32
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
+# Start time: 04:58:07 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity dffg
 # -- Compiling architecture mixed of dffg
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 04:58:07 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture structure of reg
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 04:58:07 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/my_adder.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 04:58:07 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/my_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity my_adder
+# -- Compiling architecture structure of my_adder
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 04:58:07 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 04:58:07 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux32t1_32
+# -- Compiling architecture structural of mux32t1_32
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 04:58:07 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 04:58:07 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
+# Start time: 04:58:07 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity reg_file
 # -- Compiling architecture structure of reg_file
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg
-# -- Compiling architecture structure of reg
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux_structural
-# -- Compiling architecture structure of mux_structural
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux32t1_32
-# -- Compiling architecture structural of mux32t1_32
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux2t1_N
-# -- Compiling architecture structural of mux2t1_N
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
+# Start time: 04:58:07 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -373,44 +190,70 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_add_sub
 # -- Compiling architecture mixed of tb_add_sub
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 04:58:07 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_datapath1
+# -- Compiling architecture structure of tb_datapath1
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 04:58:07 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_datapath1
+# -- Compiling architecture structure of tb_datapath1
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
+# Start time: 04:58:07 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_decoder_5t32
 # -- Compiling architecture behavior of tb_decoder_5t32
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
+# Start time: 04:58:07 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_dffg
 # -- Compiling architecture behavior of tb_dffg
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
+# Start time: 04:58:07 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_mux32t1_32
 # -- Compiling architecture behavior of tb_mux32t1_32
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
+# Start time: 04:58:07 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -419,11 +262,22 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_reg
 # -- Compiling architecture mixed of tb_reg
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 04:58:07 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 04:58:07 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 03:56:37 on Sep 21,2026
+# Start time: 04:58:07 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -432,179 +286,273 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_reg_file
 # -- Compiling architecture structure of tb_reg_file
-# vcom: End time: 03:56:37 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 04:58:08 on Sep 21,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
+vsim work.tb_datapath1 -voptargs=+acc
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim work.tb_datapath1 -voptargs="+acc" 
+# Start time: 04:58:18 on Sep 21,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_datapath1(structure)#1
+# Loading work.datapath1(structure)#1
+# Loading work.reg_file(structure)#1
+# Loading work.decoder_5t32(flow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux_structural(structure)#1
+# Loading work.invg(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.reg(structure)#1
+# Loading work.dffg(mixed)#1
+# Loading work.mux32t1_32(structural)#1
+# Loading work.add_sub(structure)#1
+# Loading work.complimentor(structural)#1
+# Loading work.adder_n(structural)#1
+# Loading work.my_adder(structure)#1
+# Loading work.xorg2(dataflow)#1
+add wave -position insertpoint  \
+sim:/tb_datapath1/tb_i_CLK \
+sim:/tb_datapath1/tb_i_RST \
+sim:/tb_datapath1/tb_i_rd \
+sim:/tb_datapath1/tb_i_regWrite \
+sim:/tb_datapath1/tb_i_rs1 \
+sim:/tb_datapath1/tb_i_rs2 \
+sim:/tb_datapath1/tb_i_imm \
+sim:/tb_datapath1/tb_i_AddSub \
+sim:/tb_datapath1/tb_i_ALUSrc
+run 1000
+# Causality operation skipped due to absence of debug database file
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_00/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_01/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_02/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_03/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_04/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_05/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_06/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_07/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_08/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_09/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_10/o_Q
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+run 1000
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_11/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_12/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_13/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_14/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_15/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_16/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_17/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_18/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_19/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_20/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_21/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_22/o_Q
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+run 2000
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:52 on Sep 21,2026
+# Start time: 05:08:56 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity add_sub
 # -- Compiling architecture structure of add_sub
-# vcom: End time: 04:00:52 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:52 on Sep 21,2026
+# Start time: 05:08:57 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity adder_N
 # -- Compiling architecture structural of adder_N
-# vcom: End time: 04:00:52 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:52 on Sep 21,2026
+# Start time: 05:08:57 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity andg2
 # -- Compiling architecture dataflow of andg2
-# vcom: End time: 04:00:52 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/complimentor.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:08:57 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/complimentor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity complimentor
+# -- Compiling architecture structural of complimentor
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:52 on Sep 21,2026
+# Start time: 05:08:57 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity datapath1
 # -- Compiling architecture structure of datapath1
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(72): (vcom-1576) Expecting token 'COMPONENT' after 'END'. Syntax is valid with -2019 switch.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(91): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(103): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(111): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(118): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(125): (vcom-1484) Unknown formal identifier "i_A".
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(126): (vcom-1484) Unknown formal identifier "i_B".
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(127): (vcom-1484) Unknown formal identifier "o_F".
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_CLK" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_RST" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_W_VAL" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_W_ADDR" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_W_EN" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_R_ADDR_A" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_R_ADDR_B" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(102): (vcom-1035) Formal port "i_A" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(102): (vcom-1035) Formal port "i_B" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(102): (vcom-1035) Formal port "i_C" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(110): (vcom-1035) Formal port "i_S" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(110): (vcom-1035) Formal port "i_D0" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(110): (vcom-1035) Formal port "i_D1" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(117): (vcom-1035) Formal port "i_S" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(117): (vcom-1035) Formal port "i_D0" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(117): (vcom-1035) Formal port "i_D1" has OPEN or no actual associated with it.
-# ** Note: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(130): VHDL Compiler exiting
-# vcom: End time: 04:00:52 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 24, Warnings: 0
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:52 on Sep 21,2026
+# Start time: 05:08:57 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decoder_5t32
 # -- Compiling architecture flow of decoder_5t32
-# vcom: End time: 04:00:52 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:52 on Sep 21,2026
+# Start time: 05:08:57 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity dffg
 # -- Compiling architecture mixed of dffg
-# vcom: End time: 04:00:52 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:08:57 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture structure of reg
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:08:57 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/my_adder.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:08:57 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/my_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity my_adder
+# -- Compiling architecture structure of my_adder
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:08:57 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:08:57 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux32t1_32
+# -- Compiling architecture structural of mux32t1_32
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:08:57 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:08:57 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:52 on Sep 21,2026
+# Start time: 05:08:57 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity reg_file
 # -- Compiling architecture structure of reg_file
-# vcom: End time: 04:00:52 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:52 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg
-# -- Compiling architecture structure of reg
-# vcom: End time: 04:00:52 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:52 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux_structural
-# -- Compiling architecture structure of mux_structural
-# vcom: End time: 04:00:52 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:52 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux32t1_32
-# -- Compiling architecture structural of mux32t1_32
-# vcom: End time: 04:00:52 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:52 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux2t1_N
-# -- Compiling architecture structural of mux2t1_N
-# vcom: End time: 04:00:53 on Sep 21,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:53 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# vcom: End time: 04:00:53 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:53 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# vcom: End time: 04:00:53 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:53 on Sep 21,2026
+# Start time: 05:08:57 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -613,44 +561,70 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_add_sub
 # -- Compiling architecture mixed of tb_add_sub
-# vcom: End time: 04:00:53 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:57 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:08:58 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_datapath1
+# -- Compiling architecture structure of tb_datapath1
+# vcom: End time: 05:08:58 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:08:58 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_datapath1
+# -- Compiling architecture structure of tb_datapath1
+# vcom: End time: 05:08:58 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:53 on Sep 21,2026
+# Start time: 05:08:58 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_decoder_5t32
 # -- Compiling architecture behavior of tb_decoder_5t32
-# vcom: End time: 04:00:53 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:58 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:53 on Sep 21,2026
+# Start time: 05:08:58 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_dffg
 # -- Compiling architecture behavior of tb_dffg
-# vcom: End time: 04:00:53 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:58 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:53 on Sep 21,2026
+# Start time: 05:08:58 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_mux32t1_32
 # -- Compiling architecture behavior of tb_mux32t1_32
-# vcom: End time: 04:00:53 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:58 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:53 on Sep 21,2026
+# Start time: 05:08:58 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -659,11 +633,22 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_reg
 # -- Compiling architecture mixed of tb_reg
-# vcom: End time: 04:00:53 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:58 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:08:58 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 05:08:58 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:00:53 on Sep 21,2026
+# Start time: 05:08:58 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -672,179 +657,204 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_reg_file
 # -- Compiling architecture structure of tb_reg_file
-# vcom: End time: 04:00:53 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:08:58 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_datapath1(structure)#1
+# Loading work.datapath1(structure)#1
+# Loading work.reg_file(structure)#1
+# Loading work.decoder_5t32(flow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux_structural(structure)#1
+# Loading work.invg(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.reg(structure)#1
+# Loading work.dffg(mixed)#1
+# Loading work.mux32t1_32(structural)#1
+# Loading work.add_sub(structure)#1
+# Loading work.complimentor(structural)#1
+# Loading work.adder_n(structural)#1
+# Loading work.my_adder(structure)#1
+# Loading work.xorg2(dataflow)#1
+run 2000
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:05 on Sep 21,2026
+# Start time: 05:10:02 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity add_sub
 # -- Compiling architecture structure of add_sub
-# vcom: End time: 04:01:05 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:02 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:05 on Sep 21,2026
+# Start time: 05:10:02 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity adder_N
 # -- Compiling architecture structural of adder_N
-# vcom: End time: 04:01:05 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:02 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:05 on Sep 21,2026
+# Start time: 05:10:02 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity andg2
 # -- Compiling architecture dataflow of andg2
-# vcom: End time: 04:01:05 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/complimentor.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:10:02 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/complimentor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity complimentor
+# -- Compiling architecture structural of complimentor
+# vcom: End time: 05:10:02 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:05 on Sep 21,2026
+# Start time: 05:10:02 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity datapath1
 # -- Compiling architecture structure of datapath1
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(72): (vcom-1576) Expecting token 'COMPONENT' after 'END'. Syntax is valid with -2019 switch.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(91): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(103): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(111): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(118): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(125): (vcom-1484) Unknown formal identifier "i_A".
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(126): (vcom-1484) Unknown formal identifier "i_B".
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(127): (vcom-1484) Unknown formal identifier "o_F".
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_CLK" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_RST" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_W_VAL" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_W_ADDR" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_W_EN" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_R_ADDR_A" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_R_ADDR_B" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(102): (vcom-1035) Formal port "i_A" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(102): (vcom-1035) Formal port "i_B" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(102): (vcom-1035) Formal port "i_C" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(110): (vcom-1035) Formal port "i_S" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(110): (vcom-1035) Formal port "i_D0" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(110): (vcom-1035) Formal port "i_D1" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(117): (vcom-1035) Formal port "i_S" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(117): (vcom-1035) Formal port "i_D0" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(117): (vcom-1035) Formal port "i_D1" has OPEN or no actual associated with it.
-# ** Note: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(130): VHDL Compiler exiting
-# vcom: End time: 04:01:05 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 24, Warnings: 0
+# vcom: End time: 05:10:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:05 on Sep 21,2026
+# Start time: 05:10:02 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decoder_5t32
 # -- Compiling architecture flow of decoder_5t32
-# vcom: End time: 04:01:05 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:02 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:05 on Sep 21,2026
+# Start time: 05:10:02 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity dffg
 # -- Compiling architecture mixed of dffg
-# vcom: End time: 04:01:05 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:02 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:10:02 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture structure of reg
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:10:03 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/my_adder.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:10:03 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/my_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity my_adder
+# -- Compiling architecture structure of my_adder
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:10:03 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:10:03 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux32t1_32
+# -- Compiling architecture structural of mux32t1_32
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:10:03 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:10:03 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:05 on Sep 21,2026
+# Start time: 05:10:03 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity reg_file
 # -- Compiling architecture structure of reg_file
-# vcom: End time: 04:01:05 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:05 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg
-# -- Compiling architecture structure of reg
-# vcom: End time: 04:01:05 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:05 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux_structural
-# -- Compiling architecture structure of mux_structural
-# vcom: End time: 04:01:05 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:05 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux32t1_32
-# -- Compiling architecture structural of mux32t1_32
-# vcom: End time: 04:01:06 on Sep 21,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:06 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux2t1_N
-# -- Compiling architecture structural of mux2t1_N
-# vcom: End time: 04:01:06 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:06 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# vcom: End time: 04:01:06 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:06 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# vcom: End time: 04:01:06 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:06 on Sep 21,2026
+# Start time: 05:10:03 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -853,44 +863,70 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_add_sub
 # -- Compiling architecture mixed of tb_add_sub
-# vcom: End time: 04:01:06 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:10:03 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_datapath1
+# -- Compiling architecture structure of tb_datapath1
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:10:03 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_datapath1
+# -- Compiling architecture structure of tb_datapath1
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:06 on Sep 21,2026
+# Start time: 05:10:03 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_decoder_5t32
 # -- Compiling architecture behavior of tb_decoder_5t32
-# vcom: End time: 04:01:06 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:06 on Sep 21,2026
+# Start time: 05:10:03 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_dffg
 # -- Compiling architecture behavior of tb_dffg
-# vcom: End time: 04:01:06 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:06 on Sep 21,2026
+# Start time: 05:10:03 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_mux32t1_32
 # -- Compiling architecture behavior of tb_mux32t1_32
-# vcom: End time: 04:01:06 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:06 on Sep 21,2026
+# Start time: 05:10:03 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -899,11 +935,22 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_reg
 # -- Compiling architecture mixed of tb_reg
-# vcom: End time: 04:01:06 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:03 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:10:03 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 05:10:04 on Sep 21,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:06 on Sep 21,2026
+# Start time: 05:10:04 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -912,175 +959,182 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_reg_file
 # -- Compiling architecture structure of tb_reg_file
-# vcom: End time: 04:01:06 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:10:04 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+run 2000
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
+# Start time: 05:11:25 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity add_sub
 # -- Compiling architecture structure of add_sub
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:11:25 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
+# Start time: 05:11:25 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity adder_N
 # -- Compiling architecture structural of adder_N
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:11:25 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
+# Start time: 05:11:25 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity andg2
 # -- Compiling architecture dataflow of andg2
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:11:25 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/complimentor.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:11:25 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/complimentor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity complimentor
+# -- Compiling architecture structural of complimentor
+# vcom: End time: 05:11:25 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
+# Start time: 05:11:25 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity datapath1
 # -- Compiling architecture structure of datapath1
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(91): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(103): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(111): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(118): near "port": syntax error
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_CLK" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_RST" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_W_VAL" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_W_ADDR" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_W_EN" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_R_ADDR_A" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(90): (vcom-1035) Formal port "i_R_ADDR_B" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(102): (vcom-1035) Formal port "i_A" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(102): (vcom-1035) Formal port "i_B" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(102): (vcom-1035) Formal port "i_C" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(110): (vcom-1035) Formal port "i_S" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(110): (vcom-1035) Formal port "i_D0" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(110): (vcom-1035) Formal port "i_D1" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(117): (vcom-1035) Formal port "i_S" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(117): (vcom-1035) Formal port "i_D0" has OPEN or no actual associated with it.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(117): (vcom-1035) Formal port "i_D1" has OPEN or no actual associated with it.
-# ** Note: /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd(130): VHDL Compiler exiting
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 20, Warnings: 0
+# vcom: End time: 05:11:25 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
+# Start time: 05:11:25 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decoder_5t32
 # -- Compiling architecture flow of decoder_5t32
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:11:25 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
+# Start time: 05:11:25 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity dffg
 # -- Compiling architecture mixed of dffg
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:11:25 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:11:25 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture structure of reg
+# vcom: End time: 05:11:25 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:11:25 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/my_adder.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:11:26 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/my_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity my_adder
+# -- Compiling architecture structure of my_adder
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:11:26 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_structural
+# -- Compiling architecture structure of mux_structural
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:11:26 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux32t1_32
+# -- Compiling architecture structural of mux32t1_32
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:11:26 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:11:26 on Sep 21,2026
+# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
+# Start time: 05:11:26 on Sep 21,2026
 # vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity reg_file
 # -- Compiling architecture structure of reg_file
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg
-# -- Compiling architecture structure of reg
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux_structural
-# -- Compiling architecture structure of mux_structural
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux32t1_32
-# -- Compiling architecture structural of mux32t1_32
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux2t1_N
-# -- Compiling architecture structural of mux2t1_N
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
+# Start time: 05:11:26 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1089,44 +1143,70 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_add_sub
 # -- Compiling architecture mixed of tb_add_sub
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:11:26 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_datapath1
+# -- Compiling architecture structure of tb_datapath1
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:11:26 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_datapath1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_datapath1
+# -- Compiling architecture structure of tb_datapath1
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
+# Start time: 05:11:26 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_decoder_5t32
 # -- Compiling architecture behavior of tb_decoder_5t32
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
+# Start time: 05:11:26 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_dffg
 # -- Compiling architecture behavior of tb_dffg
-# vcom: End time: 04:01:44 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:44 on Sep 21,2026
+# Start time: 05:11:26 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_mux32t1_32
 # -- Compiling architecture behavior of tb_mux32t1_32
-# vcom: End time: 04:01:45 on Sep 21,2026, Elapsed time: 0:00:01
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:45 on Sep 21,2026
+# Start time: 05:11:26 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1135,11 +1215,22 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_reg
 # -- Compiling architecture mixed of tb_reg
-# vcom: End time: 04:01:45 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 05:11:26 on Sep 21,2026
+# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd
 # QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:01:45 on Sep 21,2026
+# Start time: 05:11:26 on Sep 21,2026
 # vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1148,435 +1239,36 @@ vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/M
 # -- Loading package ENV
 # -- Compiling entity tb_reg_file
 # -- Compiling architecture structure of tb_reg_file
-# vcom: End time: 04:01:45 on Sep 21,2026, Elapsed time: 0:00:00
+# vcom: End time: 05:11:26 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity add_sub
-# -- Compiling architecture structure of add_sub
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity adder_N
-# -- Compiling architecture structural of adder_N
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity andg2
-# -- Compiling architecture dataflow of andg2
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity datapath1
-# -- Compiling architecture structure of datapath1
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity decoder_5t32
-# -- Compiling architecture flow of decoder_5t32
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity dffg
-# -- Compiling architecture mixed of dffg
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg_file
-# -- Compiling architecture structure of reg_file
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg
-# -- Compiling architecture structure of reg
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux_structural
-# -- Compiling architecture structure of mux_structural
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux32t1_32
-# -- Compiling architecture structural of mux32t1_32
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux2t1_N
-# -- Compiling architecture structural of mux2t1_N
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# vcom: End time: 04:03:10 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:10 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# vcom: End time: 04:03:11 on Sep 21,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:11 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# -- Compiling entity tb_add_sub
-# -- Compiling architecture mixed of tb_add_sub
-# vcom: End time: 04:03:11 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:11 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_decoder_5t32
-# -- Compiling architecture behavior of tb_decoder_5t32
-# vcom: End time: 04:03:11 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:11 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_dffg
-# -- Compiling architecture behavior of tb_dffg
-# vcom: End time: 04:03:11 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:11 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_mux32t1_32
-# -- Compiling architecture behavior of tb_mux32t1_32
-# vcom: End time: 04:03:11 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:11 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# -- Compiling entity tb_reg
-# -- Compiling architecture mixed of tb_reg
-# vcom: End time: 04:03:11 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:11 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# -- Compiling entity tb_reg_file
-# -- Compiling architecture structure of tb_reg_file
-# vcom: End time: 04:03:11 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/add_sub.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity add_sub
-# -- Compiling architecture structure of add_sub
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/adder_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity adder_N
-# -- Compiling architecture structural of adder_N
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/andg2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity andg2
-# -- Compiling architecture dataflow of andg2
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/datapath1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity datapath1
-# -- Compiling architecture structure of datapath1
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/decoder_5t32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity decoder_5t32
-# -- Compiling architecture flow of decoder_5t32
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/dffg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity dffg
-# -- Compiling architecture mixed of dffg
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg_file
-# -- Compiling architecture structure of reg_file
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg
-# -- Compiling architecture structure of reg
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux_structural.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux_structural
-# -- Compiling architecture structure of mux_structural
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux32t1_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux32t1_32
-# -- Compiling architecture structural of mux32t1_32
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/mux2t1_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux2t1_N
-# -- Compiling architecture structural of mux2t1_N
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:18 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# vcom: End time: 04:03:18 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:19 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_add_sub.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# -- Compiling entity tb_add_sub
-# -- Compiling architecture mixed of tb_add_sub
-# vcom: End time: 04:03:19 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:19 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_decoder_5t32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_decoder_5t32
-# -- Compiling architecture behavior of tb_decoder_5t32
-# vcom: End time: 04:03:19 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:19 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_dffg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_dffg
-# -- Compiling architecture behavior of tb_dffg
-# vcom: End time: 04:03:19 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:19 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_mux32t1_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_mux32t1_32
-# -- Compiling architecture behavior of tb_mux32t1_32
-# vcom: End time: 04:03:19 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:19 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# -- Compiling entity tb_reg
-# -- Compiling architecture mixed of tb_reg
-# vcom: End time: 04:03:19 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 04:03:19 on Sep 21,2026
-# vcom -reportprogress 30 -work work /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/tb_reg_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# -- Compiling entity tb_reg_file
-# -- Compiling architecture structure of tb_reg_file
-# vcom: End time: 04:03:19 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_datapath1(structure)#1
+# Loading work.datapath1(structure)#1
+# Loading work.reg_file(structure)#1
+# Loading work.decoder_5t32(flow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux_structural(structure)#1
+# Loading work.invg(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.reg(structure)#1
+# Loading work.dffg(mixed)#1
+# Loading work.mux32t1_32(structural)#1
+# Loading work.add_sub(structure)#1
+# Loading work.complimentor(structural)#1
+# Loading work.adder_n(structural)#1
+# Loading work.my_adder(structure)#1
+# Loading work.xorg2(dataflow)#1
+run 2000
+quit -sim
+# vsim: End time: 05:11:57 on Sep 21,2026, Elapsed time: 0:13:39
+# Errors: 0, Warnings: 1

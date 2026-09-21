@@ -1,0 +1,17 @@
+2 5 andg2 8 dataflow 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 7 0
+2 4 org2 8 dataflow 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 7 0
+2 4 invg 8 dataflow 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 5 0
+2 14 mux_structural 9 structure 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 55 0
+2 8 mux2t1_n 10 structural 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 89 0
+2 5 xorg2 8 dataflow 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 7 0
+2 8 my_adder 9 structure 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 90 0
+2 7 adder_n 10 structural 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 114 0
+2 12 complimentor 10 structural 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 64 0
+2 7 add_sub 9 structure 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 155 0
+2 4 dffg 5 mixed 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 27 0
+2 3 reg 9 structure 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 89 0
+2 12 decoder_5t32 4 flow 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 76 0
+2 10 mux32t1_32 10 structural 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 964 0
+2 8 reg_file 9 structure 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 2048 0 2110 0
+2 9 datapath1 9 structure 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 235 0
+1 12 tb_datapath1 9 structure 70 /home/iwsteele/Documents/classes/3810/lab02/MyFirstRISC-VDatapath/work 1 65 0 0 294 0
