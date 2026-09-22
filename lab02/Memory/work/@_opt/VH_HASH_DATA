@@ -1,0 +1,81 @@
+[N
+7
+1
+55 /home/iwsteele/Documents/classes/3810/lab02/Memory/work
+7
+13 TB_BYTE_WIDTH
+2
+6 tb_mem
+3
+9 structure
+5
+13 TB_DATA_WIDTH
+4
+9 gCLK_HPER
+6
+13 TB_ADDR_WIDTH
+]
+[G
+1
+2
+3
+1
+4
+0
+0
+0
+0
+8 8
+-128
+-106
+-104
+0
+0
+0
+0
+0
+0
+0
+]
+[G
+1
+2
+3
+1
+6
+1
+0
+10
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+7
+0
+0
+8
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+5
+1
+0
+32
+0
+0 0
+0
+0
+]

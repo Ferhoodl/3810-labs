@@ -1,0 +1,188 @@
+-------------------------------------------------------------------------
+-- Isaiah Steele
+-- Student in CprE 3810
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- tb_mem.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a testbench for a memory module.
+--              
+-- 09/21/2026: created
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_textio.all;  -- For logic types I/O
+library std;
+use std.env.all;                -- For hierarchical/external signals
+use std.textio.all;             -- For basic I/O
+
+entity tb_mem is
+  generic(
+  gCLK_HPER   : time := 10 ns;   -- Generic for half of the clock cycle period
+  TB_DATA_WIDTH : natural := 32;
+  TB_ADDR_WIDTH : natural := 10;
+  TB_BYTE_WIDTH : natural := 8);
+end tb_mem;
+
+
+
+architecture structure of tb_mem is
+
+-- Define the total clock period time
+constant cCLK_PER  : time := gCLK_HPER * 2;
+
+component mem is
+    generic 
+    (
+        DATA_WIDTH : natural := 32;
+        ADDR_WIDTH : natural := 10;
+        BYTE_WIDTH : natural := 8
+    );
+
+    port 
+    (
+        clk        : in std_logic;
+        addr            : in std_logic_vector((ADDR_WIDTH-1) downto 0);   -- data address to write. 8 bits? Doesn't 5 work?
+        data            : in std_logic_vector((DATA_WIDTH-1) downto 0);   -- data value to write. 32 bit values in this case.
+        be              : in std_logic_vector (3 downto 0);               -- ?maybe byte enable? For individual bytes in a word?                 (original comment: 4 bytes per word)
+        we        : in std_logic := '1';                                  -- write enable
+        q        : out std_logic_vector((DATA_WIDTH -1) downto 0)         -- q is data out
+    );
+end component;
+
+signal tb_CLK       : std_logic;                            -- Clock input
+signal tb_addr      : std_logic_vector(9 downto 0);         -- data address to write.
+signal tb_data      : std_logic_vector(31 downto 0);        -- data value to write.
+signal tb_be        : std_logic_vector(3 downto 0);         -- ?maybe byte enable?
+signal tb_we        : std_logic;                            -- write enable
+signal tb_q         : std_logic_vector(31 downto 0);        -- q is data out
+
+
+begin
+
+  -- TODO: Actually instantiate the component to test and wire all signals to the corresponding
+  -- input or output. Note that DUT0 is just the name of the instance that can be seen 
+  -- during simulation. What follows DUT0 is the entity name that will be used to find
+  -- the appropriate library component during simulation loading.
+  DUT0: mem
+  generic map(DATA_WIDTH => TB_DATA_WIDTH, ADDR_WIDTH => TB_ADDR_WIDTH, BYTE_WIDTH => TB_BYTE_WIDTH)
+  port map( 
+       clk          => tb_clk,
+       addr         => tb_addr,
+       data         => tb_data,
+       be           => tb_be,
+       we           => tb_we,
+       q            => tb_q);
+
+--This first process is to setup the clock for the test bench
+  P_CLK: process
+  begin
+    tb_CLK <= '1';         -- clock starts at 1
+    wait for gCLK_HPER; -- after half a cycle
+    tb_CLK <= '0';         -- clock becomes a 0 (negative edge)
+    wait for gCLK_HPER; -- after half a cycle, process begins evaluation again
+  end process;
+
+
+  -- Assign inputs for each test case.
+  -- TODO: add test cases as needed.
+  P_TEST_CASES: process
+  begin
+    wait for gCLK_HPER/2; -- helps to remove ambiguous edges
+
+    -- setup
+       tb_we         <= '0';
+       tb_be         <= "1111";
+       wait for cCLK_PER*2;
+    
+    wait for cCLK_PER;
+
+
+-- read values of first 10 words
+    tb_addr <= "0000000000";
+    wait for cCLK_PER;
+    tb_addr <= "0000000001";
+    wait for cCLK_PER;
+    tb_addr <= "0000000010";
+    wait for cCLK_PER;
+    tb_addr <= "0000000011";
+    wait for cCLK_PER;
+    tb_addr <= "0000000100";
+    wait for cCLK_PER;
+    tb_addr <= "0000000101";
+    wait for cCLK_PER;
+    tb_addr <= "0000000110";
+    wait for cCLK_PER;
+    tb_addr <= "0000000111";
+    wait for cCLK_PER;
+    tb_addr <= "0000001000";
+    wait for cCLK_PER;
+    tb_addr <= "0000001001";
+    wait for cCLK_PER;
+
+-- write those values to later in memory
+    tb_we         <= '1';
+    tb_addr <= "0001100100";
+    tb_data <= "FFFFFFFF" -- -1
+    wait for cCLK_PER;
+    tb_addr <= "0001100101";
+    tb_data <= x"FFFFFFFE" -- -2
+    wait for cCLK_PER;
+    tb_addr <= "0001100110";
+    tb_data <= x"FFFFFFFD" -- -3
+    wait for cCLK_PER;
+    tb_addr <= "0001100111";
+    tb_data <= x"FFFFFFFC" -- -4
+    wait for cCLK_PER;
+    tb_addr <= "0001101000";
+    tb_data <= x"FFFFFFFB" -- -5
+    wait for cCLK_PER;
+    tb_addr <= "0001101001";
+    tb_data <= x"FFFFFFFA" -- -6
+    wait for cCLK_PER;
+    tb_addr <= "0001101010";
+    tb_data <= x"FFFFFFF9" -- -7
+    wait for cCLK_PER;
+    tb_addr <= "0001101100";
+    tb_data <= x"FFFFFFF8" -- 8
+    wait for cCLK_PER;
+    tb_addr <= "0001101101";
+    tb_data <= x"FFFFFFF7" -- -9
+    wait for cCLK_PER;
+    tb_addr <= "0001101110";
+    tb_data <= x"FFFFFFF6" -- -10
+    wait for cCLK_PER;
+
+-- read those later values
+    tb_we         <= '0';
+    tb_addr <= "0001100100";
+    wait for cCLK_PER;
+    tb_addr <= "0001100101";
+    wait for cCLK_PER;
+    tb_addr <= "0001100110";
+    wait for cCLK_PER;
+    tb_addr <= "0001100111";
+    wait for cCLK_PER;
+    tb_addr <= "0001101000";
+    wait for cCLK_PER;
+    tb_addr <= "0001101001";
+    wait for cCLK_PER;
+    tb_addr <= "0001101010";
+    wait for cCLK_PER;
+    tb_addr <= "0001101100";
+    wait for cCLK_PER;
+    tb_addr <= "0001101101";
+    wait for cCLK_PER;
+    tb_addr <= "0001101110";
+    wait for cCLK_PER;
+
+    tb_we <= '0';
+    wait for cCLK_PER;
+
+    wait;
+  end process;
+
+end structure;
