@@ -1,19 +1,33 @@
 [N
 7
-2
-8 mux2t1_n
 4
 1 N
-5
-13 tb_mux32t1_32
 6
-8 behavior
+5 mixed
+5
+6 tb_reg
 3
-10 structural
+9 structure
+2
+3 reg
 1
 56 /home/iwsteele/Documents/classes/3810/lab02/RegFile/work
 7
 9 gCLK_HPER
+]
+[G
+1
+2
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
 ]
 [G
 1
@@ -27,9 +41,9 @@
 0
 8 8
 -128
--16
--6
-2
+-106
+-104
+0
 0
 0
 0
@@ -39,8 +53,8 @@
 ]
 [G
 1
-2
-3
+5
+6
 1
 4
 1

@@ -13,14 +13,14 @@
 // words in the file or if an address is outside the bounds of the array.
 // 
 FFFFFFFF // Loads at address 0
-FFFFFFFE
+00000002
 FFFFFFFD
-FFFFFFFC
-FFFFFFFB
-FFFFFFFA
+00000004
+00000005
+00000006
 FFFFFFF9
 FFFFFFF8
-FFFFFFF7
+00000009
 FFFFFFF6 // Loads at address 9
 
 //@15      // Specifies the following values will be loaded starting at address 0x15 (remember, this is a .hex file so the values are in hex) or 21 in decimal

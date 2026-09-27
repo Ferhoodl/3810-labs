@@ -126,34 +126,34 @@ begin
 -- write those values to later in memory
     tb_we         <= '1';
     tb_addr <= "0001100100";
-    tb_data <= "FFFFFFFF" -- -1
+    tb_data <= x"FFFFFFFF"; -- -1
     wait for cCLK_PER;
     tb_addr <= "0001100101";
-    tb_data <= x"FFFFFFFE" -- -2
+    tb_data <= x"00000002"; -- 2
     wait for cCLK_PER;
     tb_addr <= "0001100110";
-    tb_data <= x"FFFFFFFD" -- -3
+    tb_data <= x"FFFFFFFD"; -- -3
     wait for cCLK_PER;
     tb_addr <= "0001100111";
-    tb_data <= x"FFFFFFFC" -- -4
+    tb_data <= x"00000004"; -- 4
     wait for cCLK_PER;
     tb_addr <= "0001101000";
-    tb_data <= x"FFFFFFFB" -- -5
+    tb_data <= x"00000005"; -- 5
     wait for cCLK_PER;
     tb_addr <= "0001101001";
-    tb_data <= x"FFFFFFFA" -- -6
+    tb_data <= x"00000006"; -- 6
     wait for cCLK_PER;
     tb_addr <= "0001101010";
-    tb_data <= x"FFFFFFF9" -- -7
+    tb_data <= x"FFFFFFF9"; -- -7
     wait for cCLK_PER;
     tb_addr <= "0001101100";
-    tb_data <= x"FFFFFFF8" -- 8
+    tb_data <= x"FFFFFFF8"; -- -8
     wait for cCLK_PER;
     tb_addr <= "0001101101";
-    tb_data <= x"FFFFFFF7" -- -9
+    tb_data <= x"FFFFFFF7"; -- 9
     wait for cCLK_PER;
     tb_addr <= "0001101110";
-    tb_data <= x"FFFFFFF6" -- -10
+    tb_data <= x"FFFFFFF6"; -- -10
     wait for cCLK_PER;
 
 -- read those later values

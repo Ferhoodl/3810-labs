@@ -1,1 +1,1 @@
-/usr/local/mentor/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 7225776 work.tb_mux32t1_32 -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt1 -id 1-005056b6a6a3-6ab0a8c5-2954a-14443 +__betafsm 
+/usr/local/mentor/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 9978288 work.tb_reg -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt1 -id 1-005056b60fc9-6ab97720-e3fe3-2a7f +__betafsm 

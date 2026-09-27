@@ -12,3 +12,47 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
+vsim work.tb_datapath1 -voptargs=+acc
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim work.tb_datapath1 -voptargs="+acc" 
+# Start time: 15:38:05 on Sep 27,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_datapath1(structure)#1
+# Loading work.datapath1(structure)#1
+# Loading work.reg_file(structure)#1
+# Loading work.decoder_5t32(flow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux_structural(structure)#1
+# Loading work.invg(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.reg(structure)#1
+# Loading work.dffg(mixed)#1
+# Loading work.mux32t1_32(structural)#1
+# Loading work.add_sub(structure)#1
+# Loading work.complimentor(structural)#1
+# Loading work.adder_n(structural)#1
+# Loading work.my_adder(structure)#1
+# Loading work.xorg2(dataflow)#1
+add wave -position insertpoint  \
+sim:/tb_datapath1/tb_i_CLK \
+sim:/tb_datapath1/tb_i_RST \
+sim:/tb_datapath1/tb_i_rd \
+sim:/tb_datapath1/tb_i_regWrite \
+sim:/tb_datapath1/tb_i_rs1 \
+sim:/tb_datapath1/tb_i_rs2 \
+sim:/tb_datapath1/tb_i_imm \
+sim:/tb_datapath1/tb_i_AddSub \
+sim:/tb_datapath1/tb_i_ALUSrc
+run 100
+run 100
+run 800
+# Causality operation skipped due to absence of debug database file
+quit -sim
+# vsim: End time: 15:43:03 on Sep 27,2026, Elapsed time: 0:04:58
+# Errors: 0, Warnings: 0

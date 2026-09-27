@@ -9,6 +9,10 @@ R0
 R1
 R0
 R1
+R0
+R1
+R0
+R1
 !s11e vcom 2026.2 2026.05, May 18 2026
 13
 !s112 1.1
@@ -20,10 +24,10 @@ Z2 d/home/iwsteele/Documents/classes/3810/lab02/Memory
 T_opt
 !i145 1
 !i144 0
-!s110 1790045333
-VbF`EmPY>V4C[C1m6:3Y]F3
+!s110 1790543237
+Vi0;<HHiBGT9z?G05bWHMV1
 04 6 9 work tb_mem structure 1
-=4-005056b675a2-6ab1ec94-d7e51-566e
+=4-005056b60fc9-6ab98584-c97ac-4a39
 R1
 !s12f OEM100
 !s12b OEM100
@@ -34,25 +38,24 @@ o-quiet -auto_acc_if_foreign -work work +acc
 tCvgOpt 0
 n@_opt
 OL;O;2026.2;84
-R2
 Emem
-Z3 w1790044855
+Z3 w1790216007
 Z4 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
 Z5 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
 Z6 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
-!i122 20
+!i122 25
 R2
 Z7 8/home/iwsteele/Documents/classes/3810/lab02/Memory/mem.vhd
 Z8 F/home/iwsteele/Documents/classes/3810/lab02/Memory/mem.vhd
 l0
 L8 1
-VUl<HXeSdZS6WNn6_WV5F>1
-!s100 <FE^5`c6G[DN?g3EGE^:f0
+V0@kTl<>@6lobeT0[49DO00
+!s100 N>N;jBQBcM`dO;5bVZ57A1
 Z9 OL;C;2026.2;84
 33
-Z10 !s110 1790045312
+Z10 !s110 1790543228
 !i10b 1
-Z11 !s108 1790045312.000000
+Z11 !s108 1790543228.000000
 Z12 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/Memory/mem.vhd|
 Z13 !s107 /home/iwsteele/Documents/classes/3810/lab02/Memory/mem.vhd|
 !i113 0
@@ -62,8 +65,8 @@ Artl
 R4
 R5
 R6
-DEx4 work 3 mem 0 22 Ul<HXeSdZS6WNn6_WV5F>1
-!i122 20
+DEx4 work 3 mem 0 22 0@kTl<>@6lobeT0[49DO00
+!i122 25
 l40
 L29 39
 VQ[o:Gg6D6VZBC6[moK?AK2
@@ -79,12 +82,12 @@ R13
 R14
 R15
 Etb_mem
-Z16 w1790045308
+Z16 w1790543222
 Z17 DPx3 std 3 env 0 22 mJj^M]e`oP>;WoZ=b<O3C0
 Z18 DPx4 ieee 16 std_logic_textio 0 22 i<^3g?=>FM?3b:<^1:oD>2
 R5
 R6
-!i122 22
+!i122 26
 R2
 Z19 8/home/iwsteele/Documents/classes/3810/lab02/Memory/tb_mem.vhd
 Z20 F/home/iwsteele/Documents/classes/3810/lab02/Memory/tb_mem.vhd
@@ -94,11 +97,11 @@ VW[Z]4RdR:EQL3cME`Q24E0
 !s100 <l<3jJA41<hN0emhz^Zoo1
 R9
 33
-Z21 !s110 1790045411
+R10
 !i10b 1
-Z22 !s108 1790045411.000000
-Z23 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/Memory/tb_mem.vhd|
-Z24 !s107 /home/iwsteele/Documents/classes/3810/lab02/Memory/tb_mem.vhd|
+R11
+Z21 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/Memory/tb_mem.vhd|
+Z22 !s107 /home/iwsteele/Documents/classes/3810/lab02/Memory/tb_mem.vhd|
 !i113 0
 R14
 R15
@@ -107,19 +110,19 @@ R17
 R18
 R5
 R6
-Z25 DEx4 work 6 tb_mem 0 22 W[Z]4RdR:EQL3cME`Q24E0
-!i122 22
+DEx4 work 6 tb_mem 0 22 W[Z]4RdR:EQL3cME`Q24E0
+!i122 26
 l64
-Z26 L32 157
-Z27 VGBo6:3Yg[cYjY4W@nZX=a1
-Z28 !s100 XY;Wz>mYHQ>fHIi]bcSlz0
+L32 157
+VA4Z7R4hXaQVzJ?S2KLG4;1
+!s100 dn4<1N]F=kR5InSN1YoL]3
 R9
 33
-R21
+R10
 !i10b 1
+R11
+R21
 R22
-R23
-R24
 !i113 0
 R14
 R15

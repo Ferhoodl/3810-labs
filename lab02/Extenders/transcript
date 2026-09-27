@@ -12,262 +12,44 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/sign_extender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:01:26 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/sign_extender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sign_extender
-# -- Compiling architecture flow of sign_extender
-# vcom: End time: 23:01:26 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:01:26 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_sign_extender
-# -- Compiling architecture behavior of tb_sign_extender
-# ** Error (suppressible): /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(40): (vcom-1141) Identifier "zero_appender" does not identify a component declaration.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(50): Illegal target for signal assignment.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(50): (vcom-1136) Unknown identifier "TB_Z_APP_IN".
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(54): Illegal target for signal assignment.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(54): (vcom-1136) Unknown identifier "TB_Z_APP_IN".
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(58): Illegal target for signal assignment.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(58): (vcom-1136) Unknown identifier "TB_Z_APP_IN".
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(62): Illegal target for signal assignment.
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(62): (vcom-1136) Unknown identifier "TB_Z_APP_IN".
-# ** Note: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(68): VHDL Compiler exiting
-# vcom: End time: 23:01:26 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 9, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_zero_appender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:01:26 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_zero_appender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_zero_appender
-# -- Compiling architecture behavior of tb_zero_appender
-# vcom: End time: 23:01:26 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/zero_appender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:01:26 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/zero_appender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity zero_appender
-# -- Compiling architecture flow of zero_appender
-# vcom: End time: 23:01:26 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/sign_extender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:02:56 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/sign_extender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sign_extender
-# -- Compiling architecture flow of sign_extender
-# vcom: End time: 23:02:56 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:02:56 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_sign_extender
-# -- Compiling architecture behavior of tb_sign_extender
-# ** Error (suppressible): /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(40): (vcom-1141) Identifier "zero_appender" does not identify a component declaration.
-# ** Note: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(68): VHDL Compiler exiting
-# vcom: End time: 23:02:56 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_zero_appender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:02:56 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_zero_appender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_zero_appender
-# -- Compiling architecture behavior of tb_zero_appender
-# vcom: End time: 23:02:56 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/zero_appender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:02:56 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/zero_appender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity zero_appender
-# -- Compiling architecture flow of zero_appender
-# vcom: End time: 23:02:56 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/sign_extender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:03:07 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/sign_extender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sign_extender
-# -- Compiling architecture flow of sign_extender
-# vcom: End time: 23:03:07 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:03:07 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_sign_extender
-# -- Compiling architecture behavior of tb_sign_extender
-# ** Error (suppressible): /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(40): (vcom-1141) Identifier "zero_appender" does not identify a component declaration.
-# ** Note: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(68): VHDL Compiler exiting
-# vcom: End time: 23:03:07 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_zero_appender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:03:07 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_zero_appender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_zero_appender
-# -- Compiling architecture behavior of tb_zero_appender
-# vcom: End time: 23:03:07 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/zero_appender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:03:07 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/zero_appender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity zero_appender
-# -- Compiling architecture flow of zero_appender
-# vcom: End time: 23:03:07 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/sign_extender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:03:48 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/sign_extender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sign_extender
-# -- Compiling architecture flow of sign_extender
-# vcom: End time: 23:03:48 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:03:48 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_sign_extender
-# -- Compiling architecture behavior of tb_sign_extender
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(41): (vcom-1136) Unknown identifier "TB_Z_APP_IN".
-# ** Error: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(42): (vcom-1136) Unknown identifier "TB_Z_APP_OUT".
-# ** Note: /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd(68): VHDL Compiler exiting
-# vcom: End time: 23:03:48 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_zero_appender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:03:48 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_zero_appender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_zero_appender
-# -- Compiling architecture behavior of tb_zero_appender
-# vcom: End time: 23:03:48 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/zero_appender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:03:48 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/zero_appender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity zero_appender
-# -- Compiling architecture flow of zero_appender
-# vcom: End time: 23:03:48 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/sign_extender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:04:16 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/sign_extender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sign_extender
-# -- Compiling architecture flow of sign_extender
-# vcom: End time: 23:04:16 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:04:16 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_sign_extender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_sign_extender
-# -- Compiling architecture behavior of tb_sign_extender
-# vcom: End time: 23:04:16 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_zero_appender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:04:16 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/tb_zero_appender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_zero_appender
-# -- Compiling architecture behavior of tb_zero_appender
-# vcom: End time: 23:04:16 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/zero_appender.vhd
-# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-# Start time: 23:04:16 on Sep 25,2026
-# vcom -reportprogress 300 -work work /home/iwsteele/Documents/classes/3810/lab02/Extenders/zero_appender.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity zero_appender
-# -- Compiling architecture flow of zero_appender
-# vcom: End time: 23:04:16 on Sep 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.tb_sign_extender
+vsim work.tb_zero_appender
 # ** Note: (vsim-220) 'questa.ini' is used as the ini file.
-# vsim work.tb_sign_extender 
-# Start time: 23:04:38 on Sep 25,2026
+# vsim work.tb_zero_appender 
+# Start time: 16:35:22 on Sep 27,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_sign_extender(behavior)#1
+# Loading work.tb_zero_appender(behavior)#1
 quit -sim
-# vsim: End time: 23:05:04 on Sep 25,2026, Elapsed time: 0:00:26
+# vsim: End time: 16:35:32 on Sep 27,2026, Elapsed time: 0:00:10
 # Errors: 0, Warnings: 0
-vsim work.tb_sign_extender -voptargs=+acc
+vsim work.tb_zero_appender -voptargs=+acc
 # ** Note: (vsim-220) 'questa.ini' is used as the ini file.
-# vsim work.tb_sign_extender -voptargs="+acc" 
-# Start time: 23:05:19 on Sep 25,2026
+# vsim work.tb_zero_appender -voptargs="+acc" 
+# Start time: 16:35:54 on Sep 27,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_zero_appender(behavior)#1
+# Loading work.zero_appender(flow)#1
+add wave -position insertpoint  \
+sim:/tb_zero_appender/TB_Z_APP_IN \
+sim:/tb_zero_appender/TB_Z_APP_OUT
+run 100
+run 300
+run 100
+quit -sim
+# vsim: End time: 16:37:02 on Sep 27,2026, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_sign_extender
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_sign_extender 
+# Start time: 16:37:10 on Sep 27,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -276,6 +58,6 @@ vsim work.tb_sign_extender -voptargs=+acc
 add wave -position insertpoint  \
 sim:/tb_sign_extender/TB_S_EXT_IN \
 sim:/tb_sign_extender/TB_S_EXT_OUT
-run 400
-# vsim: End time: 23:05:36 on Sep 25,2026, Elapsed time: 0:00:17
-# Errors: 0, Warnings: 1
+run 500
+# vsim: End time: 16:43:38 on Sep 27,2026, Elapsed time: 0:06:28
+# Errors: 0, Warnings: 0
