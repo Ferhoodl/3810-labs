@@ -132,7 +132,7 @@ begin
     generic MAP(N => N)
     port MAP(i_CLK       => i_CLK,
              i_RST       => i_RST,
-             i_W_VAL     => MID_BOTMUX_OUT,
+             i_W_VAL     => MID_REGMUX_OUT,
              i_W_ADDR    => i_rd,
              i_W_EN      => i_regWrite,
              i_R_ADDR_A  => i_rs1,
@@ -146,7 +146,7 @@ begin
             ADDR_WIDTH     => 10,
             BYTE_WIDTH     => 8)
     port MAP(clk => i_CLK,
-         addr  =>    MID_ADDSUB_OUT,     -- data address to read/write. 8 bits? Doesn't 5 work?
+         addr  =>    MID_ADDSUB_OUT(9 downto 0), -- data address to read/write. 8 bits? Doesn't 5 work?
          data  =>    MID_REG_B_OUT,     -- data value to write. 32 bit values in this case.
          be    =>    "1111",                 -- ?maybe byte enable? For individual bytes in a word?                 (original comment: 4 bytes per word)
          we    =>    i_memWrite,                              -- write enable
@@ -187,7 +187,7 @@ begin
     port MAP(i_S  => i_memToReg,
          i_D0 => MID_BOTMUX_OUT,
          i_D1 => MID_MEM_OUT,
-         o_O  => MID_TOPMUX_OUT);
+         o_O  => MID_REGMUX_OUT);
 
 
   andy: andg2

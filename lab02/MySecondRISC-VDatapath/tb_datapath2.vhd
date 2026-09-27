@@ -108,6 +108,7 @@ begin
     tb_i_RST        <= '1';
     tb_i_regWrite   <= '0';
     tb_i_memWrite   <= '0';
+    tb_i_rs2        <= "00000"; 
     wait for cCLK_PER*2;
     
     tb_i_RST        <= '0';
@@ -116,6 +117,7 @@ begin
     -- lui x25, 0x10010  (# Initialize x25 to 0x10010000)
     tb_i_rd         <= "11001";              -- x25
     tb_i_rs1        <= "00000";              -- zero
+    tb_i_rs2        <= "00000";             
     tb_i_20_imm     <= x"10010";             -- 20-bit immediate
     tb_i_imm_sel    <= '0';                  -- 0-append for upper immediate
     tb_i_ALUSrc     <= '1';                  -- Use immediate
