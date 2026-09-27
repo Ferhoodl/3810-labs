@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------
+-- Isaiah Steele
+-- Student in CprE 3810
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- tb_zero_appender.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a simple VHDL testbench for a bit
+-- appender.
+--
+--
+-- 9/23/2026: created
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity tb_zero_appender is
+  generic(gCLK_HPER   : time := 50 ns);
+end tb_zero_appender;
+
+architecture behavior of tb_zero_appender is
+  
+  -- Calculate the clock period as twice the half-period
+  constant cCLK_PER  : time := gCLK_HPER * 2;
+
+  component zero_appender
+    port(Z_APP_IN   : in std_logic_vector(19 downto 0);
+         Z_APP_OUT    : out std_logic_vector(31 downto 0));
+  end component;
+
+signal TB_Z_APP_IN     : std_logic_vector(19 downto 0);
+signal TB_Z_APP_OUT      : std_logic_vector(31 downto 0);
+
+
+begin
+
+  DUT: zero_appender 
+  port map(Z_APP_IN   => TB_Z_APP_IN,
+           Z_APP_OUT  => TB_Z_APP_OUT);
+
+  
+  -- Testbench process  
+  P_TB: process
+  begin
+
+    -- Test case 0:
+    TB_Z_APP_IN    <= "11111111111111111111";
+    wait for cCLK_PER;
+
+    -- Test case 1:
+    TB_Z_APP_IN    <= "12345678901234567890";
+    wait for cCLK_PER;
+
+    -- Test case 3:
+    TB_Z_APP_IN    <= "10101010101010101010";
+    wait for cCLK_PER;
+
+    -- Test case 3:
+    TB_Z_APP_IN    <= "00000000000000001111";
+    wait for cCLK_PER;
+
+    wait;
+  end process;
+  
+end behavior;

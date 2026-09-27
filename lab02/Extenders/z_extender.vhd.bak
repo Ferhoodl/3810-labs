@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------
+-- Isaiah Steele
+-- Student in CpRE 3810
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- zero_appender.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a dataflow implementation for a bit
+-- zero extender.
+--
+-- 09/23/2026: created
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity extender is
+    port(EXT_IN_A   : in std_logic_vector(19 downto 0);
+	 EXT_IN_S   : in std_logic_vector(11 downto 0);
+         EXT_TYPE   : in std_logic;
+         EXT_OUT    : out std_logic_vector(31 downto 0));
+end extender;
+
+architecture flow of extender is
+
+begin
+  EXT_OUT <= 
+    (31 downto 12 => EXT_IN_S(11)) & EXT_IN_S when (EXT_TYPE = '1') else     -- sign extend on 12-bit value
+    EXT_IN_A & "00000000000000000000" when (EXT_TYPE = '0') else  -- append zeros to 20-bit value
+    (others => '0');
+end flow;

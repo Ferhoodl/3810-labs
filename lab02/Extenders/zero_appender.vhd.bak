@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------
+-- Isaiah Steele
+-- Student in CpRE 3810
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- zero_appender.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a dataflow implementation for a bit
+-- zero appender.
+--
+-- 09/23/2026: created
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity zero_appender is
+    port(Z_APP_IN   : in std_logic_vector(19 downto 0);
+         Z_APP_OUT    : out std_logic_vector(31 downto 0));
+end zero_extender;
+
+architecture flow of zero_appender is
+
+begin
+  Z_APP_OUT <= Z_APP_IN & "000000000000";  -- append 12 zeros to 20-bit value
+end flow;

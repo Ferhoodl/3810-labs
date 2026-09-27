@@ -1,0 +1,199 @@
+-------------------------------------------------------------------------
+-- Isaiah Steele
+-- Student in CpRE 3810
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- datapath2.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a structural implementation for a
+-- datapath.
+--
+-- 09/21/2026: created
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity datapath2 is
+  generic(N : integer := 32);
+  port(i_CLK         : in std_logic;                            -- Clock input              X
+       i_RST         : in std_logic;                            --                          X
+       i_rd          : in std_logic_vector(4 downto 0);         -- 5-bit write address      X
+       i_regWrite    : in std_logic;                            -- line for write enable    X
+       i_memWrite    : in std_logic;                            -- memory write enble       X
+       i_rs1         : in std_logic_vector(4 downto 0);         -- 5-bit read address A     X
+       i_rs2         : in std_logic_vector(4 downto 0);         -- 5-bit read address B     X
+       i_20_imm      : in std_logic_vector(19 downto 0);        --                          X
+       i_12_imm      : in std_logic_vector(11 downto 0);        --                          X
+       i_AddSub      : in std_logic;                            --                          X
+       i_ALUSrc      : in std_logic;                            --                          X
+       i_imm_sel     : in std_logic;                            --                          X
+       i_memToReg    : in std_logic);
+end datapath2;
+
+architecture structure of datapath2 is
+  
+  -- Describe the component entities as defined in their
+  -- respective .vhd files.
+
+  component add_sub is
+    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+    port(i_A         : in std_logic_vector(N-1 downto 0);
+         i_B         : in std_logic_vector(N-1 downto 0);
+         i_C         : in std_logic;
+         o_S         : out std_logic_vector(N-1 downto 0);
+         o_C         : out std_logic);
+  end component;
+
+
+  component reg_file
+    generic(N : integer := 32);
+    port(i_CLK       : in std_logic;                            -- Clock input
+         i_RST       : in std_logic;
+         i_W_VAL     : in std_logic_vector(31 downto 0);        -- 32-bit write value
+         i_W_ADDR    : in std_logic_vector(4 downto 0);         -- 5-bit write address
+         i_W_EN      : in std_logic;                            -- line for write enable
+         i_R_ADDR_A  : in std_logic_vector(4 downto 0);         -- 5-bit read address A
+         i_R_ADDR_B  : in std_logic_vector(4 downto 0);         -- 5-bit read address B
+         o_R_VAL_A   : out std_logic_vector(31 downto 0);       -- 32-bit read value A
+         o_R_VAL_B   : out std_logic_vector(31 downto 0));      -- 32-bit read value B
+  end component;
+
+  component mem
+    generic(DATA_WIDTH : natural := 32;
+            ADDR_WIDTH : natural := 10;
+            BYTE_WIDTH : natural := 8);
+    port(clk       : in std_logic;
+         addr      : in std_logic_vector((ADDR_WIDTH-1) downto 0);     -- data address to read/write. 8 bits? Doesn't 5 work?
+         data      : in std_logic_vector((DATA_WIDTH-1) downto 0);     -- data value to write. 32 bit values in this case.
+         be        : in std_logic_vector (3 downto 0);                 -- ?maybe byte enable? For individual bytes in a word?                 (original comment: 4 bytes per word)
+         we        : in std_logic := '1';                              -- write enable
+         q         : out std_logic_vector((DATA_WIDTH -1) downto 0));  -- q is data out
+  end component;
+
+  component mux2t1_N
+    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32
+    port(i_S          : in std_logic;
+         i_D0         : in std_logic_vector(N-1 downto 0);
+         i_D1         : in std_logic_vector(N-1 downto 0);
+         o_O          : out std_logic_vector(N-1 downto 0));
+  end component;
+
+  component zero_appender
+      port(Z_APP_IN     : in std_logic_vector(19 downto 0);
+           Z_APP_OUT    : out std_logic_vector(31 downto 0));
+  end component;
+
+  component sign_extender
+      port(S_EXT_IN     : in std_logic_vector(11 downto 0);
+           S_EXT_OUT    : out std_logic_vector(31 downto 0));
+  end component;
+
+
+  component andg2
+    port(i_A          : in std_logic;
+         i_B          : in std_logic;
+         o_F          : out std_logic);
+  end component;
+
+
+  -- line to carry output of decoder
+  signal MID_ADDSUB_OUT   : std_logic_vector(31 downto 0);
+  signal MID_TOPMUX_OUT   : std_logic_vector(31 downto 0);
+  signal MID_BOTMUX_OUT   : std_logic_vector(31 downto 0);
+  signal MID_AND_OUT      : std_logic;
+  signal MID_B_OUT        : std_logic_vector(31 downto 0);
+  signal MID_A_OUT        : std_logic_vector(31 downto 0);
+  signal MID_REG_A_OUT    : std_logic_vector(31 downto 0);
+  signal MID_REG_B_OUT    : std_logic_vector(31 downto 0);
+  signal MID_Z_APP_OUT    : std_logic_vector(31 downto 0);
+  signal MID_S_EXT_OUT    : std_logic_vector(31 downto 0);
+  signal MID_IMMMUX_OUT   : std_logic_vector(31 downto 0);
+  signal MID_REGMUX_OUT   : std_logic_vector(31 downto 0);
+  signal MID_MEM_OUT      : std_logic_vector(31 downto 0);
+  signal MID_APP_OUT      : std_logic_vector(31 downto 0);
+  signal MID_EXT_OUT      : std_logic_vector(31 downto 0);
+
+
+
+begin
+
+  aluminum: add_sub
+    generic MAP(N => N)
+    port MAP(i_A  => MID_REG_A_OUT,
+             i_B  => MID_TOPMUX_OUT,
+             i_C  => i_AddSub,
+             o_S  => MID_ADDSUB_OUT,
+             o_C  => open);
+
+  reggie: reg_file
+    generic MAP(N => N)
+    port MAP(i_CLK       => i_CLK,
+             i_RST       => i_RST,
+             i_W_VAL     => MID_BOTMUX_OUT,
+             i_W_ADDR    => i_rd,
+             i_W_EN      => i_regWrite,
+             i_R_ADDR_A  => i_rs1,
+             i_R_ADDR_B  => i_rs2,
+             o_R_VAL_A   => MID_REG_A_OUT,
+             o_R_VAL_B   => MID_REG_B_OUT);
+
+
+   ramsay: mem
+    generic MAP(DATA_WIDTH => 32,
+            ADDR_WIDTH     => 10,
+            BYTE_WIDTH     => 8)
+    port MAP(clk => i_CLK,
+         addr  =>    MID_ADDSUB_OUT,     -- data address to read/write. 8 bits? Doesn't 5 work?
+         data  =>    MID_REG_B_OUT,     -- data value to write. 32 bit values in this case.
+         be    =>    "1111",                 -- ?maybe byte enable? For individual bytes in a word?                 (original comment: 4 bytes per word)
+         we    =>    i_memWrite,                              -- write enable
+         q     =>    MID_MEM_OUT);  -- q is data out
+
+    z_app: zero_appender
+      port MAP(Z_APP_IN => i_20_imm,
+               Z_APP_OUT => MID_APP_OUT);
+
+    s_ext: sign_extender
+      port MAP(S_EXT_IN => i_12_imm,
+                  S_EXT_OUT => MID_EXT_OUT);
+
+
+  immmux: mux2t1_N
+    generic MAP(N => N) 
+    port MAP(i_S  => i_imm_sel,
+             i_D0 => MID_APP_OUT,
+             i_D1 => MID_EXT_OUT,
+             o_O  => MID_IMMMUX_OUT);
+
+  topmux: mux2t1_N
+    generic MAP(N => N) 
+    port MAP(i_S  => i_ALUSrc,
+         i_D0 => MID_REG_B_OUT,
+         i_D1 => MID_IMMMUX_OUT,
+         o_O  => MID_TOPMUX_OUT);
+
+  botmux: mux2t1_N
+    generic MAP(N  => N)
+    port MAP(i_S   => MID_AND_OUT,
+         i_D0      => MID_ADDSUB_OUT,
+         i_D1      => MID_IMMMUX_OUT,
+         o_O       => MID_BOTMUX_OUT);
+
+  regmux: mux2t1_N
+    generic MAP(N => N) 
+    port MAP(i_S  => i_memToReg,
+         i_D0 => MID_BOTMUX_OUT,
+         i_D1 => MID_MEM_OUT,
+         o_O  => MID_TOPMUX_OUT);
+
+
+  andy: andg2
+    port MAP(i_A  => i_ALUSrc,
+             i_B  => i_AddSub,
+             o_F  =>  MID_AND_OUT);
+
+
+  end structure;

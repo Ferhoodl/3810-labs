@@ -17,8 +17,8 @@ entity mem is
     port 
     (
         clk        : in std_logic;
-        addr            : in std_logic_vector((ADDR_WIDTH-1) downto 0);   -- data address to write. 8 bits? Doesn't 5 work?
-        data            : in std_logic_vector((DATA_WIDTH-1) downto 0);   -- data value to read/write. 32 bit values in this case.
+        addr            : in std_logic_vector((ADDR_WIDTH-1) downto 0);   -- data address to read/write. 8 bits? Doesn't 5 work?
+        data            : in std_logic_vector((DATA_WIDTH-1) downto 0);   -- data value to write. 32 bit values in this case.
         be              : in std_logic_vector (3 downto 0);               -- ?maybe byte enable? For individual bytes in a word?                 (original comment: 4 bytes per word)
         we        : in std_logic := '1';                                  -- write enable
         q        : out std_logic_vector((DATA_WIDTH -1) downto 0)         -- q is data out
