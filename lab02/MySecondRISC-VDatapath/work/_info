@@ -7,6 +7,10 @@ R0
 R1
 R0
 R1
+R0
+R1
+R0
+R1
 !s11e vcom 2026.2 2026.05, May 18 2026
 13
 !s112 1.1
@@ -18,10 +22,10 @@ Z2 d/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath
 T_opt
 !i145 1
 !i144 0
-!s110 1790481521
-VO1RBlzCBj126[b7lMg=GA1
+!s110 1790528309
+V^DB6Un]Cm?VFhV4V3oHDV1
 04 12 9 work tb_datapath2 structure 1
-=11-005056b6a676-6ab89471-a9ee8-12985
+=6-005056b6a566-6ab94b34-b486c-1fda
 R1
 !s12f OEM100
 !s12b OEM100
@@ -36,7 +40,7 @@ Eadd_sub
 Z3 w1790395715
 Z4 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
 Z5 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
-!i122 120
+!i122 210
 R2
 Z6 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/add_sub.vhd
 Z7 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/add_sub.vhd
@@ -46,9 +50,9 @@ V]>SgJ76jO5^0oa53QGE@_0
 !s100 >PgjRJjJM9]8aOAze<<9@3
 Z9 OL;C;2026.2;84
 33
-Z10 !s110 1790481515
+Z10 !s110 1790528300
 !i10b 1
-Z11 !s108 1790481515.000000
+Z11 !s108 1790528300.000000
 Z12 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/add_sub.vhd|
 Z13 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/add_sub.vhd|
 !i113 0
@@ -58,7 +62,7 @@ Astructure
 R4
 R5
 DEx4 work 7 add_sub 0 22 ]>SgJ76jO5^0oa53QGE@_0
-!i122 120
+!i122 210
 l65
 L29 65
 Vc0`3W7LCDk;=ACgZZb<6[2
@@ -77,7 +81,7 @@ Eadder_n
 R3
 R4
 R5
-!i122 121
+!i122 211
 R2
 Z16 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/adder_N.vhd
 Z17 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/adder_N.vhd
@@ -99,7 +103,7 @@ Astructural
 R4
 R5
 DEx4 work 7 adder_n 0 22 QB:9TI3_WGP2eFb]bbXMZ1
-!i122 121
+!i122 211
 l44
 L31 30
 VdaREF[OI;O^fB10bC`mWK2
@@ -118,7 +122,7 @@ Eandg2
 R3
 R4
 R5
-!i122 122
+!i122 212
 R2
 Z21 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/andg2.vhd
 Z22 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/andg2.vhd
@@ -128,11 +132,11 @@ VzJ2OoPJ=<ja2?Y;OcjQk;3
 !s100 YT?bGzEmcFo:DlnoC^B4_0
 R9
 33
-R10
+Z24 !s110 1790528301
 !i10b 1
-R11
-Z24 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/andg2.vhd|
-Z25 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/andg2.vhd|
+Z25 !s108 1790528301.000000
+Z26 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/andg2.vhd|
+Z27 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/andg2.vhd|
 !i113 0
 R14
 R15
@@ -140,18 +144,18 @@ Adataflow
 R4
 R5
 DEx4 work 5 andg2 0 22 zJ2OoPJ=<ja2?Y;OcjQk;3
-!i122 122
+!i122 212
 l32
-Z26 L31 6
+Z28 L31 6
 V3oa1[>iDZj;2zVo:oz1>e2
 !s100 I`@Z@UBObS]<7m8bPgKUS1
 R9
 33
-R10
-!i10b 1
-R11
 R24
+!i10b 1
 R25
+R26
+R27
 !i113 0
 R14
 R15
@@ -159,21 +163,21 @@ Ecomplimentor
 R3
 R4
 R5
-!i122 123
+!i122 213
 R2
-Z27 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/complimentor.vhd
-Z28 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/complimentor.vhd
+Z29 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/complimentor.vhd
+Z30 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/complimentor.vhd
 l0
 R8
 VilT;=_Aof;INI<:E3TCP43
 !s100 jfD1o5>:lSX`MPGF:ZdRi0
 R9
 33
-R10
+R24
 !i10b 1
-R11
-Z29 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/complimentor.vhd|
-Z30 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/complimentor.vhd|
+R25
+Z31 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/complimentor.vhd|
+Z32 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/complimentor.vhd|
 !i113 0
 R14
 R15
@@ -181,40 +185,40 @@ Astructural
 R4
 R5
 DEx4 work 12 complimentor 0 22 ilT;=_Aof;INI<:E3TCP43
-!i122 123
+!i122 213
 l33
 L26 17
 V>1GD6D4icQ?=Jn8zc?_`Z0
 !s100 5X5c6[fPUT9;jHe6WcO_f1
 R9
 33
-R10
+R24
 !i10b 1
-R11
-R29
-R30
+R25
+R31
+R32
 !i113 0
 R14
 R15
 Edatapath2
-Z31 w1790481301
+Z33 w1790528284
 R4
 R5
-!i122 124
+!i122 214
 R2
-Z32 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/datapath2.vhd
-Z33 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/datapath2.vhd
+Z34 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/datapath2.vhd
+Z35 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/datapath2.vhd
 l0
 R8
 VcWPD_67ZQljO@nUdOg:JJ0
 !s100 @doKa:1^QGVoPK7QlIaGc0
 R9
 33
-R10
+R24
 !i10b 1
-R11
-Z34 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/datapath2.vhd|
-Z35 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/datapath2.vhd|
+R25
+Z36 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/datapath2.vhd|
+Z37 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/datapath2.vhd|
 !i113 0
 R14
 R15
@@ -222,18 +226,18 @@ Astructure
 R4
 R5
 DEx4 work 9 datapath2 0 22 cWPD_67ZQljO@nUdOg:JJ0
-!i122 124
+!i122 214
 l121
 L36 164
-Ve1VMb`o0I0N@0^2k6jROI0
-!s100 FVT]EPeCOFj<mVTo2T;So1
+Vg8P_b;ARBk@9]S8:1zH]N2
+!s100 oAmemAn3j:R^3E8lQZ0TZ2
 R9
 33
-R10
+R24
 !i10b 1
-R11
-R34
-R35
+R25
+R36
+R37
 !i113 0
 R14
 R15
@@ -241,21 +245,21 @@ Edecoder_5t32
 R3
 R4
 R5
-!i122 125
+!i122 215
 R2
-Z36 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/decoder_5t32.vhd
-Z37 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/decoder_5t32.vhd
+Z38 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/decoder_5t32.vhd
+Z39 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/decoder_5t32.vhd
 l0
 R8
 VJj`0lz;NI3KQ4dWY2h>452
 !s100 BV38_Q]EGQD7D_P:cl1Io2
 R9
 33
-R10
+R24
 !i10b 1
-R11
-Z38 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/decoder_5t32.vhd|
-Z39 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/decoder_5t32.vhd|
+R25
+Z40 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/decoder_5t32.vhd|
+Z41 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/decoder_5t32.vhd|
 !i113 0
 R14
 R15
@@ -263,18 +267,18 @@ Aflow
 R4
 R5
 DEx4 work 12 decoder_5t32 0 22 Jj`0lz;NI3KQ4dWY2h>452
-!i122 125
+!i122 215
 l26
 L24 38
 VQACg_ig0oAOL^B``Y[BcW3
 !s100 dM3hU3ZV8mVRe=LehYKzB2
 R9
 33
-R10
+R24
 !i10b 1
-R11
-R38
-R39
+R25
+R40
+R41
 !i113 0
 R14
 R15
@@ -282,21 +286,21 @@ Edffg
 R3
 R4
 R5
-!i122 132
+!i122 234
 R2
-Z40 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/dffg.vhd
-Z41 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/dffg.vhd
+Z42 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/dffg.vhd
+Z43 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/dffg.vhd
 l0
 R23
 V@W@EXa]H1EoQ`cKSFEEc@0
 !s100 35EQIZbl^2>iZK7?LKjQV3
 R9
 33
-Z42 !s110 1790481516
+Z44 !s110 1790528302
 !i10b 1
-Z43 !s108 1790481516.000000
-Z44 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/dffg.vhd|
-Z45 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/dffg.vhd|
+Z45 !s108 1790528302.000000
+Z46 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/dffg.vhd|
+Z47 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/dffg.vhd|
 !i113 0
 R14
 R15
@@ -304,18 +308,18 @@ Amixed
 R4
 R5
 DEx4 work 4 dffg 0 22 @W@EXa]H1EoQ`cKSFEEc@0
-!i122 132
+!i122 234
 l35
 L31 29
 VN=XUlN^2LBK7<Nnbi[C9;3
 !s100 _fgZ]iW0X:CNWYnZV0Ich1
 R9
 33
-R42
-!i10b 1
-R43
 R44
+!i10b 1
 R45
+R46
+R47
 !i113 0
 R14
 R15
@@ -323,21 +327,21 @@ Einvg
 R3
 R4
 R5
-!i122 131
+!i122 216
 R2
-Z46 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/invg.vhd
-Z47 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/invg.vhd
+Z48 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/invg.vhd
+Z49 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/invg.vhd
 l0
 R23
 VzJhOLc0g_4RfSF]IXa;:73
 !s100 _XK?_^5z0Rm1<k12?;5R?2
 R9
 33
-R42
+R24
 !i10b 1
-R43
-Z48 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/invg.vhd|
-Z49 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/invg.vhd|
+R25
+Z50 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/invg.vhd|
+Z51 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/invg.vhd|
 !i113 0
 R14
 R15
@@ -345,61 +349,61 @@ Adataflow
 R4
 R5
 DEx4 work 4 invg 0 22 zJhOLc0g_4RfSF]IXa;:73
-!i122 131
+!i122 216
 l31
 L30 6
 VT@AA60h>IXVJ?D^`RRiZk1
 !s100 bk7I76o8e1LURdoZEQb8H0
 R9
 33
-R42
+R24
 !i10b 1
-R43
-R48
-R49
+R25
+R50
+R51
 !i113 0
 R14
 R15
 Emem
-Z50 w1790395736
-Z51 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
+Z52 w1790395736
+Z53 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
 R4
 R5
-!i122 130
+!i122 217
 R2
-Z52 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mem.vhd
-Z53 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mem.vhd
+Z54 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mem.vhd
+Z55 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mem.vhd
 l0
 L8 1
 V0@kTl<>@6lobeT0[49DO00
 !s100 N>N;jBQBcM`dO;5bVZ57A1
 R9
 33
-R42
+R24
 !i10b 1
-R43
-Z54 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mem.vhd|
-Z55 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mem.vhd|
+R25
+Z56 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mem.vhd|
+Z57 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mem.vhd|
 !i113 0
 R14
 R15
 Artl
-R51
+R53
 R4
 R5
 DEx4 work 3 mem 0 22 0@kTl<>@6lobeT0[49DO00
-!i122 130
+!i122 217
 l40
 L29 39
 VQ[o:Gg6D6VZBC6[moK?AK2
 !s100 M8@fCBfhYoIU@PkXS=DFb3
 R9
 33
-R42
+R24
 !i10b 1
-R43
-R54
-R55
+R25
+R56
+R57
 !i113 0
 R14
 R15
@@ -407,21 +411,21 @@ Emux2t1_n
 R3
 R4
 R5
-!i122 129
+!i122 218
 R2
-Z56 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux2t1_N.vhd
-Z57 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux2t1_N.vhd
+Z58 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux2t1_N.vhd
+Z59 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux2t1_N.vhd
 l0
 R18
 V56Id<?0DMV[UO_a4WW05Z1
 !s100 1AMd`RJD`hIf>jB@a2Od41
 R9
 33
-R10
+R24
 !i10b 1
-R11
-Z58 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux2t1_N.vhd|
-Z59 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux2t1_N.vhd|
+R25
+Z60 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux2t1_N.vhd|
+Z61 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux2t1_N.vhd|
 !i113 0
 R14
 R15
@@ -429,18 +433,18 @@ Astructural
 R4
 R5
 DEx4 work 8 mux2t1_n 0 22 56Id<?0DMV[UO_a4WW05Z1
-!i122 129
+!i122 218
 l38
 L29 21
 VQV]8l2bNQ?0iRLPdj8?j02
 !s100 RQi]B]g]XaXI9MH]ODWg61
 R9
 33
-R10
+R24
 !i10b 1
-R11
-R58
-R59
+R25
+R60
+R61
 !i113 0
 R14
 R15
@@ -448,21 +452,21 @@ Emux32t1_32
 R3
 R4
 R5
-!i122 128
+!i122 219
 R2
-Z60 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux32t1_32.vhd
-Z61 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux32t1_32.vhd
+Z62 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux32t1_32.vhd
+Z63 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux32t1_32.vhd
 l0
 R8
 V8Z=S>1k[>9;`M7Pmk0m[f3
 !s100 V<9hQU<o3J_z3b`zR42i`3
 R9
 33
-R10
+R24
 !i10b 1
-R11
-Z62 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux32t1_32.vhd|
-Z63 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux32t1_32.vhd|
+R25
+Z64 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux32t1_32.vhd|
+Z65 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux32t1_32.vhd|
 !i113 0
 R14
 R15
@@ -470,18 +474,18 @@ Astructural
 R4
 R5
 DEx4 work 10 mux32t1_32 0 22 8Z=S>1k[>9;`M7Pmk0m[f3
-!i122 128
+!i122 219
 l103
 L56 101
 VUN0AF1KWe]8;^@N2QD2z<0
 !s100 3]Xi`gb[ZGm0fKdR[:59A2
 R9
 33
-R10
+R24
 !i10b 1
-R11
-R62
-R63
+R25
+R64
+R65
 !i113 0
 R14
 R15
@@ -489,21 +493,21 @@ Emux_structural
 R3
 R4
 R5
-!i122 127
+!i122 220
 R2
-Z64 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux_structural.vhd
-Z65 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux_structural.vhd
+Z66 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux_structural.vhd
+Z67 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux_structural.vhd
 l0
 R8
 VH5OODi`becai[T3HbL>1a1
 !s100 j7^oBDHO_Bkm@7eWmBMU22
 R9
 33
-R10
+R24
 !i10b 1
-R11
-Z66 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux_structural.vhd|
-Z67 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux_structural.vhd|
+R25
+Z68 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux_structural.vhd|
+Z69 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/mux_structural.vhd|
 !i113 0
 R14
 R15
@@ -511,18 +515,18 @@ Astructure
 R4
 R5
 DEx4 work 14 mux_structural 0 22 H5OODi`becai[T3HbL>1a1
-!i122 127
+!i122 220
 l60
 L28 59
 ViD_gh<Q5KFM;f6YbDSaM:3
 !s100 <Mc^jQLAD[d1_3f4oL7Ll1
 R9
 33
-R10
+R24
 !i10b 1
-R11
-R66
-R67
+R25
+R68
+R69
 !i113 0
 R14
 R15
@@ -530,21 +534,21 @@ Emy_adder
 R3
 R4
 R5
-!i122 126
+!i122 221
 R2
-Z68 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/my_adder.vhd
-Z69 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/my_adder.vhd
+Z70 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/my_adder.vhd
+Z71 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/my_adder.vhd
 l0
 R8
 VNOd_lGV5;SzVlZYGH1@Jd0
 !s100 @fdMRO]_cBN@O_57`LPbA1
 R9
 33
-R10
+R24
 !i10b 1
-R11
-Z70 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/my_adder.vhd|
-Z71 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/my_adder.vhd|
+R25
+Z72 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/my_adder.vhd|
+Z73 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/my_adder.vhd|
 !i113 0
 R14
 R15
@@ -552,18 +556,18 @@ Astructure
 R4
 R5
 DEx4 work 8 my_adder 0 22 NOd_lGV5;SzVlZYGH1@Jd0
-!i122 126
+!i122 221
 l62
 L27 64
 V3^_5k8N@3ni=EVYZPT;G32
 !s100 _8ZDJ2PgM6DSA`b=O@bgJ1
 R9
 33
-R10
+R24
 !i10b 1
-R11
-R70
-R71
+R25
+R72
+R73
 !i113 0
 R14
 R15
@@ -571,21 +575,21 @@ Eorg2
 R3
 R4
 R5
-!i122 133
+!i122 235
 R2
-Z72 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/org2.vhd
-Z73 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/org2.vhd
+Z74 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/org2.vhd
+Z75 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/org2.vhd
 l0
 R23
 V0FzB9ATDX9TV=M:n@=VB83
 !s100 bGQ1F9eW^Q17OoL9h4g7z2
 R9
 33
-R42
+R44
 !i10b 1
-R43
-Z74 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/org2.vhd|
-Z75 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/org2.vhd|
+R45
+Z76 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/org2.vhd|
+Z77 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/org2.vhd|
 !i113 0
 R14
 R15
@@ -593,18 +597,18 @@ Adataflow
 R4
 R5
 DEx4 work 4 org2 0 22 0FzB9ATDX9TV=M:n@=VB83
-!i122 133
+!i122 235
 l32
-R26
+R28
 V0JC>N7cRXc=9bni@>dg7o3
 !s100 h5_AzR3TdRA0a_K=dQ>mI2
 R9
 33
-R42
+R44
 !i10b 1
-R43
-R74
-R75
+R45
+R76
+R77
 !i113 0
 R14
 R15
@@ -612,21 +616,21 @@ Ereg
 R3
 R4
 R5
-!i122 134
+!i122 222
 R2
-Z76 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg.vhd
-Z77 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg.vhd
+Z78 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg.vhd
+Z79 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg.vhd
 l0
 R8
 V^g8S3S=J_fcTeS=[[Kbhj2
 !s100 N_dC^0zGW`5PjGXX[=1D_2
 R9
 33
-R42
+R24
 !i10b 1
-R43
-Z78 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg.vhd|
-Z79 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg.vhd|
+R25
+Z80 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg.vhd|
+Z81 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg.vhd|
 !i113 0
 R14
 R15
@@ -634,18 +638,18 @@ Astructure
 R4
 R5
 DEx4 work 3 reg 0 22 ^g8S3S=J_fcTeS=[[Kbhj2
-!i122 134
+!i122 222
 l40
 L28 25
 VMFKVkUV2efadodXoH>H;X1
 !s100 >Jk^SRP@g=l:PCi4=Yg_J3
 R9
 33
-R42
+R24
 !i10b 1
-R43
-R78
-R79
+R25
+R80
+R81
 !i113 0
 R14
 R15
@@ -653,21 +657,21 @@ Ereg_file
 R3
 R4
 R5
-!i122 135
+!i122 223
 R2
-Z80 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg_file.vhd
-Z81 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg_file.vhd
+Z82 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg_file.vhd
+Z83 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg_file.vhd
 l0
 R8
 V?1bnmILY`KH3KPjNP>;_^2
 !s100 7Z?[e1ddk4?9]Y;7:o:P70
 R9
 33
-R42
+R24
 !i10b 1
-R43
-Z82 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg_file.vhd|
-Z83 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg_file.vhd|
+R25
+Z84 !s90 -reportprogress|300|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg_file.vhd|
+Z85 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/reg_file.vhd|
 !i113 0
 R14
 R15
@@ -675,40 +679,40 @@ Astructure
 R4
 R5
 DEx4 work 8 reg_file 0 22 ?1bnmILY`KH3KPjNP>;_^2
-!i122 135
+!i122 223
 l169
 L32 283
 VO>5<YO;0O=eoHK?OAPYi00
 !s100 P57I][a@iFhEWejCDUJQN3
 R9
 33
-R42
+R24
 !i10b 1
-R43
-R82
-R83
+R25
+R84
+R85
 !i113 0
 R14
 R15
 Esign_extender
-Z84 w1790395762
+Z86 w1790395762
 R4
 R5
-!i122 136
+!i122 224
 R2
-Z85 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/sign_extender.vhd
-Z86 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/sign_extender.vhd
+Z87 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/sign_extender.vhd
+Z88 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/sign_extender.vhd
 l0
 R8
 VDd60nnDPD`Z5nCOF=ODiC3
 !s100 A`T8nhz7<5M[Lf:B114i22
 R9
 33
-R42
+R24
 !i10b 1
-R43
-Z87 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/sign_extender.vhd|
-Z88 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/sign_extender.vhd|
+R25
+Z89 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/sign_extender.vhd|
+Z90 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/sign_extender.vhd|
 !i113 0
 R14
 R15
@@ -716,153 +720,153 @@ Aflow
 R4
 R5
 DEx4 work 13 sign_extender 0 22 Dd60nnDPD`Z5nCOF=ODiC3
-!i122 136
+!i122 224
 l26
-Z89 L24 5
+Z91 L24 5
 VkT1g0VTPHGm1=VDe5@1GP3
 !s100 jbHkG9O<U>XoeXi=A<AbA3
 R9
 33
-R42
+R24
 !i10b 1
-R43
-R87
-R88
+R25
+R89
+R90
 !i113 0
 R14
 R15
 Etb_add_sub
 R3
-Z90 DPx3 std 3 env 0 22 mJj^M]e`oP>;WoZ=b<O3C0
-Z91 DPx4 ieee 16 std_logic_textio 0 22 i<^3g?=>FM?3b:<^1:oD>2
+Z92 DPx3 std 3 env 0 22 mJj^M]e`oP>;WoZ=b<O3C0
+Z93 DPx4 ieee 16 std_logic_textio 0 22 i<^3g?=>FM?3b:<^1:oD>2
 R4
 R5
-!i122 137
+!i122 225
 R2
-Z92 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_add_sub.vhd
-Z93 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_add_sub.vhd
+Z94 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_add_sub.vhd
+Z95 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_add_sub.vhd
 l0
 R18
 V]kCDOY19Sdl6mH<nN88ff2
 !s100 2W83k65iD4DA78izHmUf[3
 R9
 33
-R42
+R24
 !i10b 1
-R43
-Z94 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_add_sub.vhd|
-Z95 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_add_sub.vhd|
+R25
+Z96 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_add_sub.vhd|
+Z97 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_add_sub.vhd|
 !i113 0
 R14
 R15
 Amixed
-R90
-R91
+R92
+R93
 R4
 R5
 DEx4 work 10 tb_add_sub 0 22 ]kCDOY19Sdl6mH<nN88ff2
-!i122 137
+!i122 225
 l53
 L29 143
 V7oe`2e6XZgAG_64`2eCkR3
 !s100 POEMkXXSN`@nhA_<zDn9_3
 R9
 33
-R42
+R24
 !i10b 1
-R43
-R94
-R95
+R25
+R96
+R97
 !i113 0
 R14
 R15
 Etb_datapath1
 R3
-R90
-R91
+R92
+R93
 R4
 R5
-!i122 138
+!i122 226
 R2
-Z96 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath1.vhd
-Z97 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath1.vhd
+Z98 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath1.vhd
+Z99 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath1.vhd
 l0
-Z98 L22 1
+Z100 L22 1
 V9NCbf>dLofc_E2IlC0gD63
 !s100 CS=3Sa?RSafNQ7S2e^LbI2
 R9
 33
-R42
+R44
 !i10b 1
-R43
-Z99 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath1.vhd|
-Z100 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath1.vhd|
+R25
+Z101 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath1.vhd|
+Z102 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath1.vhd|
 !i113 0
 R14
 R15
 Astructure
-R90
-R91
+R92
+R93
 R4
 R5
 DEx4 work 12 tb_datapath1 0 22 9NCbf>dLofc_E2IlC0gD63
-!i122 138
+!i122 226
 l59
 L30 231
 V0J412FYkkJW`Q[VCc0D^60
 !s100 BZbhJZiGmzEZ38U:QHSTC3
 R9
 33
-R42
+R44
 !i10b 1
-R43
-R99
-R100
+R25
+R101
+R102
 !i113 0
 R14
 R15
 Etb_datapath2
-Z101 w1790481510
-R90
-R91
+Z103 w1790528017
+R92
+R93
 R4
 R5
-!i122 139
+!i122 227
 R2
-Z102 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath2.vhd
-Z103 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath2.vhd
+Z104 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath2.vhd
+Z105 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath2.vhd
 l0
-R98
+R100
 V0?:45z@BB<6oO7BdmRiN73
 !s100 GbT2gcCKGPF?e8<:BEoUZ0
 R9
 33
-R42
+R44
 !i10b 1
-R43
-Z104 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath2.vhd|
-Z105 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath2.vhd|
+R45
+Z106 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath2.vhd|
+Z107 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_datapath2.vhd|
 !i113 0
 R14
 R15
 Astructure
-R90
-R91
+R92
+R93
 R4
 R5
 DEx4 work 12 tb_datapath2 0 22 0?:45z@BB<6oO7BdmRiN73
-!i122 139
+!i122 227
 l67
-L30 326
-VNHQ4iF9YUahgLIB52;Y=13
-!s100 `=6n>m70X6OYGTUQ^3Uh83
+L30 331
+VCIl=]zEJcD5omDn<^06fG2
+!s100 BLX;oR:JS4a95j0K;Z3]H3
 R9
 33
-R42
+R44
 !i10b 1
-R43
-R104
-R105
+R45
+R106
+R107
 !i113 0
 R14
 R15
@@ -870,19 +874,19 @@ Etb_decoder_5t32
 R3
 R4
 R5
-!i122 145
+!i122 236
 R2
-Z106 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_decoder_5t32.vhd
-Z107 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_decoder_5t32.vhd
+Z108 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_decoder_5t32.vhd
+Z109 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_decoder_5t32.vhd
 l0
-Z108 L20 1
+Z110 L20 1
 Vi2Z6P:BBnWO:E7XXOE9OR1
 !s100 Xn<786R:oiM7IVdn1Q5aW2
 R9
 33
-Z109 !s110 1790481517
+R44
 !i10b 1
-Z110 !s108 1790481517.000000
+R45
 Z111 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_decoder_5t32.vhd|
 Z112 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_decoder_5t32.vhd|
 !i113 0
@@ -892,16 +896,16 @@ Abehavior
 R4
 R5
 DEx4 work 15 tb_decoder_5t32 0 22 i2Z6P:BBnWO:E7XXOE9OR1
-!i122 145
+!i122 236
 l39
 L24 158
 V=<_Q@Hz?JiYdK[E]a[V8L2
 !s100 QU27UA8>A4HV9UM2Am_l[0
 R9
 33
-R109
+R44
 !i10b 1
-R110
+R45
 R111
 R112
 !i113 0
@@ -911,7 +915,7 @@ Etb_dffg
 R3
 R4
 R5
-!i122 146
+!i122 228
 R2
 Z113 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_dffg.vhd
 Z114 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_dffg.vhd
@@ -921,9 +925,9 @@ VELHo2ZZOY<UggamJc1ZAY2
 !s100 O_YXH_<oDkG4]6ejo0Kj31
 R9
 33
-R109
+R44
 !i10b 1
-R110
+R45
 Z115 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_dffg.vhd|
 Z116 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_dffg.vhd|
 !i113 0
@@ -933,61 +937,61 @@ Abehavior
 R4
 R5
 DEx4 work 7 tb_dffg 0 22 ELHo2ZZOY<UggamJc1ZAY2
-!i122 146
+!i122 228
 l45
 L27 75
 V[nboB06UaVm1a=68Igf;H0
 !s100 RHC58PH892INNMlk3:z[H2
 R9
 33
-R109
+R44
 !i10b 1
-R110
+R45
 R115
 R116
 !i113 0
 R14
 R15
 Etb_mem
-R50
-R90
-R91
+R52
+R92
+R93
 R4
 R5
-!i122 144
+!i122 229
 R2
 Z117 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_mem.vhd
 Z118 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_mem.vhd
 l0
-R98
+R100
 VW[Z]4RdR:EQL3cME`Q24E0
 !s100 <l<3jJA41<hN0emhz^Zoo1
 R9
 33
-R109
+R44
 !i10b 1
-R43
+R45
 Z119 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_mem.vhd|
 Z120 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_mem.vhd|
 !i113 0
 R14
 R15
 Astructure
-R90
-R91
+R92
+R93
 R4
 R5
 DEx4 work 6 tb_mem 0 22 W[Z]4RdR:EQL3cME`Q24E0
-!i122 144
+!i122 229
 l64
 L32 157
 VGBo6:3Yg[cYjY4W@nZX=a1
 !s100 XY;Wz>mYHQ>fHIi]bcSlz0
 R9
 33
-R109
+R44
 !i10b 1
-R43
+R45
 R119
 R120
 !i113 0
@@ -997,19 +1001,19 @@ Etb_mux32t1_32
 R3
 R4
 R5
-!i122 143
+!i122 230
 R2
 Z121 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_mux32t1_32.vhd
 Z122 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_mux32t1_32.vhd
 l0
-R108
+R110
 V;YdYC_h2@5HeC8SdY<S[J2
 !s100 9ak0NniHzh`E2FgP`gf0C3
 R9
 33
-R42
+R44
 !i10b 1
-R43
+R45
 Z123 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_mux32t1_32.vhd|
 Z124 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_mux32t1_32.vhd|
 !i113 0
@@ -1019,16 +1023,16 @@ Abehavior
 R4
 R5
 DEx4 work 13 tb_mux32t1_32 0 22 ;YdYC_h2@5HeC8SdY<S[J2
-!i122 143
+!i122 230
 l103
 L24 288
 Vdbb>WPDAk4=EiOokCR@B30
 !s100 2V93Zfo3NX_ghzmP=Mb8P3
 R9
 33
-R42
+R44
 !i10b 1
-R43
+R45
 R123
 R124
 !i113 0
@@ -1036,44 +1040,44 @@ R14
 R15
 Etb_reg
 R3
-R90
-R91
+R92
+R93
 R4
 R5
-!i122 142
+!i122 231
 R2
 Z125 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_reg.vhd
 Z126 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_reg.vhd
 l0
-R108
+R110
 VY<HcGH6J_Ni]O4<_8_mVk2
 !s100 GYGimFEjbQSZefI7ndQQS2
 R9
 33
-R42
+R44
 !i10b 1
-R43
+R45
 Z127 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_reg.vhd|
 Z128 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_reg.vhd|
 !i113 0
 R14
 R15
 Amixed
-R90
-R91
+R92
+R93
 R4
 R5
 DEx4 work 6 tb_reg 0 22 Y<HcGH6J_Ni]O4<_8_mVk2
-!i122 142
+!i122 231
 l53
 L28 89
 V^OIERZ98Hob[XMBV`=c^61
 !s100 kd4GTnM7b6`?;iGIAXa5d1
 R9
 33
-R42
+R44
 !i10b 1
-R43
+R45
 R127
 R128
 !i113 0
@@ -1081,11 +1085,11 @@ R14
 R15
 Etb_reg_file
 R3
-R90
-R91
+R92
+R93
 R4
 R5
-!i122 141
+!i122 232
 R2
 Z129 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_reg_file.vhd
 Z130 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_reg_file.vhd
@@ -1095,52 +1099,52 @@ VNGfTPXClHW:8TfU@EB8<72
 !s100 a`>NBZGG`>XX@e>di3BVP0
 R9
 33
-R42
+R44
 !i10b 1
-R43
+R45
 Z131 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_reg_file.vhd|
 Z132 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_reg_file.vhd|
 !i113 0
 R14
 R15
 Astructure
-R90
-R91
+R92
+R93
 R4
 R5
 DEx4 work 11 tb_reg_file 0 22 NGfTPXClHW:8TfU@EB8<72
-!i122 141
+!i122 232
 l61
 L29 102
 Vg3@P3MbW2lcnEfOC<LGk^1
 !s100 eBLNN7AUDb=M3[BSB7@;73
 R9
 33
-R42
+R44
 !i10b 1
-R43
+R45
 R131
 R132
 !i113 0
 R14
 R15
 Etb_sign_extender
-R84
+R86
 R4
 R5
-!i122 140
+!i122 233
 R2
 Z133 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_sign_extender.vhd
 Z134 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_sign_extender.vhd
 l0
-R108
+R110
 VW=nQ0RAE7ee@_fIZ3UIK90
 !s100 C^m38leOo2Ojbek?I?4862
 R9
 33
-R42
+R44
 !i10b 1
-R43
+R45
 Z135 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_sign_extender.vhd|
 Z136 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_sign_extender.vhd|
 !i113 0
@@ -1150,38 +1154,38 @@ Abehavior
 R4
 R5
 DEx4 work 16 tb_sign_extender 0 22 W=nQ0RAE7ee@_fIZ3UIK90
-!i122 140
+!i122 233
 l38
 Z137 L24 45
 V1:almd5mo^fH2758Jb?]V0
 !s100 gdT_dL=lXgSSnIQ7CQ8DY1
 R9
 33
-R42
+R44
 !i10b 1
-R43
+R45
 R135
 R136
 !i113 0
 R14
 R15
 Etb_zero_appender
-R84
+R86
 R4
 R5
-!i122 147
+!i122 237
 R2
 Z138 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_zero_appender.vhd
 Z139 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_zero_appender.vhd
 l0
-R108
+R110
 Vm5ggQddiUZlGUR@MKk7<Y1
 !s100 ;Ih4<We5`icEQO<G0g>012
 R9
 33
-R109
+R44
 !i10b 1
-R110
+R45
 Z140 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_zero_appender.vhd|
 Z141 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/tb_zero_appender.vhd|
 !i113 0
@@ -1191,16 +1195,16 @@ Abehavior
 R4
 R5
 DEx4 work 16 tb_zero_appender 0 22 m5ggQddiUZlGUR@MKk7<Y1
-!i122 147
+!i122 237
 l38
 R137
 V6>3SLK[kZaRD;0QB0BOg]3
 !s100 YRNCi:`P2:e8leT3UPJe<2
 R9
 33
-R109
+R44
 !i10b 1
-R110
+R45
 R140
 R141
 !i113 0
@@ -1210,7 +1214,7 @@ Exorg2
 R3
 R4
 R5
-!i122 148
+!i122 238
 R2
 Z142 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/xorg2.vhd
 Z143 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/xorg2.vhd
@@ -1220,9 +1224,9 @@ VV6C:miP5l_oAXXFV_WP4`3
 !s100 [hI[mXFH4_j16U;>U1Lfn2
 R9
 33
-R109
+R44
 !i10b 1
-R110
+R45
 Z144 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/xorg2.vhd|
 Z145 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/xorg2.vhd|
 !i113 0
@@ -1232,26 +1236,26 @@ Adataflow
 R4
 R5
 DEx4 work 5 xorg2 0 22 V6C:miP5l_oAXXFV_WP4`3
-!i122 148
+!i122 238
 l32
-R26
+R28
 V0<8Ik`hGa2ooIj9K`Y3Wc0
 !s100 Z6[FAPS4fBLB`F?OO<AY72
 R9
 33
-R109
+R44
 !i10b 1
-R110
+R45
 R144
 R145
 !i113 0
 R14
 R15
 Ezero_appender
-R84
+R86
 R4
 R5
-!i122 149
+!i122 239
 R2
 Z146 8/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/zero_appender.vhd
 Z147 F/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/zero_appender.vhd
@@ -1261,9 +1265,9 @@ VEG82CcMJ4_55?9EB>A09^2
 !s100 6hZ^cYJcT6LT5bzFj9@;m2
 R9
 33
-R109
+R44
 !i10b 1
-R110
+R45
 Z148 !s90 -reportprogress|30|-work|work|/home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/zero_appender.vhd|
 Z149 !s107 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/zero_appender.vhd|
 !i113 0
@@ -1273,16 +1277,16 @@ Aflow
 R4
 R5
 DEx4 work 13 zero_appender 0 22 EG82CcMJ4_55?9EB>A09^2
-!i122 149
+!i122 239
 l26
-R89
+R91
 VLT?fNKCZ`NU03HUf>=2Zz3
 !s100 lmYmo>8h_gI6bn0TzIS8^0
 R9
 33
-R109
+R44
 !i10b 1
-R110
+R45
 R148
 R149
 !i113 0

@@ -146,7 +146,7 @@ begin
             ADDR_WIDTH     => 10,
             BYTE_WIDTH     => 8)
     port MAP(clk => i_CLK,
-         addr  =>    MID_ADDSUB_OUT(9 downto 0), -- data address to read/write. 8 bits? Doesn't 5 work?
+         addr  =>    MID_ADDSUB_OUT(11 downto 2), -- data address to read/write. 8 bits? Doesn't 5 work?
          data  =>    MID_REG_B_OUT,     -- data value to write. 32 bit values in this case.
          be    =>    "1111",                 -- ?maybe byte enable? For individual bytes in a word?                 (original comment: 4 bytes per word)
          we    =>    i_memWrite,                              -- write enable

@@ -187,7 +187,7 @@ begin
     port MAP(i_S  => i_memToReg,
          i_D0 => MID_BOTMUX_OUT,
          i_D1 => MID_MEM_OUT,
-         o_O  => MID_TOPMUX_OUT);
+         o_O  => MID_REGMUX_OUT);
 
 
   andy: andg2

@@ -162,8 +162,13 @@ begin
     -- lw x2, 4(x25)
     tb_i_rd         <= "00010";              -- x2
     tb_i_rs1        <= "11001";              -- x25
-    tb_i_12_imm     <= x"004";
-    tb_i_memToReg   <= '1';
+    tb_i_12_imm     <= x"004";               -- Offset 4 for A[1]
+    tb_i_imm_sel    <= '1';                  -- Sign extend
+    tb_i_ALUSrc     <= '1';                  -- Use immediate
+    tb_i_AddSub     <= '0';                  -- Add
+    tb_i_regWrite   <= '1';                  -- Enable reg write
+    tb_i_memWrite   <= '0';                  -- Disable mem write
+    tb_i_memToReg   <= '1';                  -- Load from memory
     wait for cCLK_PER;
 
     -- add x1, x1, x2

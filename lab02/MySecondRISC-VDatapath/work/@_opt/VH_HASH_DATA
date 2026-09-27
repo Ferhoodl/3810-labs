@@ -1,15 +1,13 @@
 [N
-5
-5
+4
+2
+9 datapath2
+4
 1 N
 3
 9 structure
-2
-12 tb_datapath2
 1
 71 /home/iwsteele/Documents/classes/3810/lab02/MySecondRISC-VDatapath/work
-4
-9 gCLK_HPER
 ]
 [G
 1
@@ -17,28 +15,6 @@
 3
 1
 4
-0
-0
-0
-0
-8 8
--128
--106
--104
-0
-0
-0
-0
-0
-0
-0
-]
-[G
-1
-2
-3
-1
-5
 1
 0
 32
