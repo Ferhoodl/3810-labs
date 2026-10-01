@@ -15,7 +15,7 @@
 vsim work.tb_datapath1 -voptargs=+acc
 # ** Note: (vsim-220) 'questa.ini' is used as the ini file.
 # vsim work.tb_datapath1 -voptargs="+acc" 
-# Start time: 15:38:05 on Sep 27,2026
+# Start time: 18:02:27 on Sep 27,2026
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading std.standard
 # Loading std.textio(body)
@@ -49,10 +49,53 @@ sim:/tb_datapath1/tb_i_rs2 \
 sim:/tb_datapath1/tb_i_imm \
 sim:/tb_datapath1/tb_i_AddSub \
 sim:/tb_datapath1/tb_i_ALUSrc
-run 100
-run 100
-run 800
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_01/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_02/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_03/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_04/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_05/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_06/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_07/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_08/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_09/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_10/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_11/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_12/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_13/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_14/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_15/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_16/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_17/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_18/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_19/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_20/o_Q
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_21/o_Q
+run 1000
 # Causality operation skipped due to absence of debug database file
-quit -sim
-# vsim: End time: 15:43:03 on Sep 27,2026, Elapsed time: 0:04:58
-# Errors: 0, Warnings: 0
+add wave -position insertpoint sim:/tb_datapath1/DUT0/reggie/register_22/*
+add wave -position insertpoint  \
+sim:/tb_datapath1/DUT0/reggie/register_22/o_Q
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+run 1000

@@ -345,10 +345,45 @@ begin
     tb_i_memToReg   <= '1';
     wait for cCLK_PER;
 
+
     -- End of simulation
     tb_i_regWrite   <= '0';
     tb_i_memWrite   <= '0';
     wait for cCLK_PER * 2;
+
+
+    -- load decimal value of -15 into register 17 from byte address hex ee8
+
+
+    -- addi x1, zero, 256 (# Load &B into x26, 256 = 0x100)
+    tb_i_rd         <= "00001";              -- x1
+    tb_i_rs1        <= "00000";              -- zero
+    tb_i_12_imm     <= x"FF1";             
+    tb_i_imm_sel    <= '1';
+    tb_i_ALUSrc     <= '1';
+    tb_i_AddSub     <= '0';
+    tb_i_regWrite   <= '1';
+    tb_i_memToReg   <= '0';
+    wait for cCLK_PER;
+
+    -- sw x1, 0(x26)
+    tb_i_rs1        <= "11001";              -- x26 (base)
+    tb_i_rs2        <= "00001";              -- x1 (data to store)
+    tb_i_12_imm     <= x"ee8";
+    tb_i_ALUSrc     <= '1';                  -- Use immediate for address
+    tb_i_regWrite   <= '0';                  -- No reg write on store
+    tb_i_memWrite   <= '1';                  -- Enable memory write
+    wait for cCLK_PER;
+
+    -- lw x2, 8(x25)
+    tb_i_rd         <= "10001";
+    tb_i_rs1        <= "11001";
+    tb_i_12_imm     <= x"ee8";
+    tb_i_regWrite   <= '1';
+    tb_i_memWrite   <= '0';
+    tb_i_memToReg   <= '1';
+    wait for cCLK_PER;
+
 
     tb_i_regWrite <= '0';
     wait for cCLK_PER;

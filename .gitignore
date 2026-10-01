@@ -1,0 +1,24 @@
+# Compiled libraries & work directories
+**/work/
+work/
+
+# Backup and temp files
+*.vhd.bak
+*.bak
+*~
+*.~
+
+# Simulation waveforms, logs, and compiler outputs
+*.wlf
+*.opt
+*.ini
+*.log
+transcript
+
+# ModelSim / QuestaSim / EDA artifacts
+vsim.wlf
+covhtmlreport/
+*.ucdb
+
+# Others I found
+.~lock.*#

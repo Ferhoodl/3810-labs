@@ -1,3 +1,5 @@
 run 1
 mem load -infile dmem.hex -format hex /tb_mem/DUT0/ram
 run 99
+
+-- testing
