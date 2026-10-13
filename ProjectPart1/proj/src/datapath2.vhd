@@ -105,7 +105,7 @@ architecture structure of datapath2 is
        i_C             : in std_logic;
        o_S             : out std_logic_vector(N-1 downto 0);
        o_C             : out std_logic);
-  end component
+  end component;
 
 
   component andg2
