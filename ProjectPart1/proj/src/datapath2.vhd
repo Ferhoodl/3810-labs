@@ -166,9 +166,17 @@ begin
      port MAP(i_CLK => i_CLK,
               i_RST => 0,
               i_WE => 1,
-              i_D => , -- IDK WHAT START ADDR THE PROGRAM USES
+              i_D => "00000000000000000000000000000000", -- IDK WHAT START ADDR THE PROGRAM USES
               o_Q => MID_PC_OUT);
-     
+    
+    pc_plus_four: add_sub
+    	generic MAP(N => N)
+    	port MAP(i_A  => MID_PC_OUT,
+             	i_B  => 4,
+            	i_C  => 0,
+             	o_S  => , -- HOW DO I LOOP THIS BACK INTO THE PC?
+             	o_C  => open);
+    
 
    ramsay: mem
     generic MAP(DATA_WIDTH => 32,
