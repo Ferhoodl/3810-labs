@@ -115,7 +115,6 @@ architecture structure of datapath2 is
   end component;
 
 
-  -- line to carry output of decoder
   signal MID_PC_OUT       : std_logic_vector(31 downto 0);
   signal MID_ADDSUB_OUT   : std_logic_vector(31 downto 0);
   signal MID_TOPMUX_OUT   : std_logic_vector(31 downto 0);

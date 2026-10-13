@@ -58,6 +58,31 @@ architecture structure of RISCV_Processor is
   -- Required overflow signal -- for overflow exception detection
   signal s_Ovfl         : std_logic;  -- this signal indicates an overflow exception would have been initiated
 
+
+  component add_sub is
+    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+    port(i_A         : in std_logic_vector(N-1 downto 0);
+         i_B         : in std_logic_vector(N-1 downto 0);
+         i_C         : in std_logic;
+         o_S         : out std_logic_vector(N-1 downto 0);
+         o_C         : out std_logic);
+  end component;
+
+
+  component reg_file
+    generic(N : integer := 32);
+    port(i_CLK       : in std_logic;                            -- Clock input
+         i_RST       : in std_logic;
+         i_W_VAL     : in std_logic_vector(31 downto 0);        -- 32-bit write value
+         i_W_ADDR    : in std_logic_vector(4 downto 0);         -- 5-bit write address
+         i_W_EN      : in std_logic;                            -- line for write enable
+         i_R_ADDR_A  : in std_logic_vector(4 downto 0);         -- 5-bit read address A
+         i_R_ADDR_B  : in std_logic_vector(4 downto 0);         -- 5-bit read address B
+         o_R_VAL_A   : out std_logic_vector(31 downto 0);       -- 32-bit read value A
+         o_R_VAL_B   : out std_logic_vector(31 downto 0));      -- 32-bit read value B
+  end component;
+
+
   component mem is
     generic(ADDR_WIDTH : integer;
             DATA_WIDTH : integer);
@@ -68,6 +93,31 @@ architecture structure of RISCV_Processor is
           we           : in std_logic := '1';
           q            : out std_logic_vector((DATA_WIDTH -1) downto 0));
     end component;
+    
+  component mux2t1_N
+    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32
+    port(i_S          : in std_logic;
+         i_D0         : in std_logic_vector(N-1 downto 0);
+         i_D1         : in std_logic_vector(N-1 downto 0);
+         o_O          : out std_logic_vector(N-1 downto 0));
+  end component;
+
+  component zero_appender
+      port(Z_APP_IN     : in std_logic_vector(19 downto 0);
+           Z_APP_OUT    : out std_logic_vector(31 downto 0));
+  end component;
+
+  component sign_extender
+      port(S_EXT_IN     : in std_logic_vector(11 downto 0);
+           S_EXT_OUT    : out std_logic_vector(31 downto 0));
+  end component;
+
+
+  component andg2
+    port(i_A          : in std_logic;
+         i_B          : in std_logic;
+         o_F          : out std_logic);
+  end component;
 
   -- TODO: You may add any additional signals or components your implementation 
   --       requires below this comment
