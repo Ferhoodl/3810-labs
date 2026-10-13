@@ -68,6 +68,14 @@ architecture structure of RISCV_Processor is
          o_C         : out std_logic);
   end component;
 
+    component pc is
+    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+    port(i_CLK        : in std_logic;     -- Clock input
+         i_RST        : in std_logic;     -- Reset input
+         i_WE         : in std_logic;     -- Write enable input
+         i_D          : in std_logic_vector(N-1 downto 0);     -- Data value input
+         o_Q          : out std_logic_vector(N-1 downto 0));   -- Data value output
+  end component;
 
   component reg_file
     generic(N : integer := 32);
@@ -112,6 +120,13 @@ architecture structure of RISCV_Processor is
            S_EXT_OUT    : out std_logic_vector(31 downto 0));
   end component;
 
+  component adder_N
+      port(i_A         : in std_logic_vector(N-1 downto 0);
+       i_B             : in std_logic_vector(N-1 downto 0);
+       i_C             : in std_logic;
+       o_S             : out std_logic_vector(N-1 downto 0);
+       o_C             : out std_logic);
+  end component;
 
   component andg2
     port(i_A          : in std_logic;
@@ -147,6 +162,83 @@ begin
              data => s_DMemData,
              we   => s_DMemWr,
              q    => s_DMemOut);
+
+  ALU: add_sub
+    generic MAP(N => N)
+    port MAP(i_A  => MID_REG_A_OUT,
+             i_B  => MID_TOPMUX_OUT,
+             i_C  => i_AddSub,
+             o_S  => MID_ADDSUB_OUT,
+             o_C  => open);
+
+  REG_FILE: reg_file
+    generic MAP(N => N)
+    port MAP(i_CLK       => i_CLK,
+             i_RST       => i_RST,
+             i_W_VAL     => MID_REGMUX_OUT,
+             i_W_ADDR    => i_rd,
+             i_W_EN      => i_regWrite,
+             i_R_ADDR_A  => i_rs1,
+             i_R_ADDR_B  => i_rs2,
+             o_R_VAL_A   => MID_REG_A_OUT,
+             o_R_VAL_B   => MID_REG_B_OUT);
+             
+   add_one: adder_N
+     generic MAP(N => N)
+     port MAP(
+     );
+             
+   pgrm_cntr: pc
+     generic MAP(N => N)
+     port MAP(i_CLK => i_CLK,
+              i_RST => 0,
+              i_WE => 1,
+              i_D => , -- IDK WHAT START ADDR THE PROGRAM USES
+              o_Q => MID_PC_OUT);
+     
+
+    z_app: zero_appender
+      port MAP(Z_APP_IN => i_20_imm,
+               Z_APP_OUT => MID_APP_OUT);
+
+    s_ext: sign_extender
+      port MAP(S_EXT_IN => i_12_imm,
+                  S_EXT_OUT => MID_EXT_OUT);
+
+
+  immmux: mux2t1_N
+    generic MAP(N => N) 
+    port MAP(i_S  => i_imm_sel,
+             i_D0 => MID_APP_OUT,
+             i_D1 => MID_EXT_OUT,
+             o_O  => MID_IMMMUX_OUT);
+
+  topmux: mux2t1_N
+    generic MAP(N => N) 
+    port MAP(i_S  => i_ALUSrc,
+         i_D0 => MID_REG_B_OUT,
+         i_D1 => MID_IMMMUX_OUT,
+         o_O  => MID_TOPMUX_OUT);
+
+  botmux: mux2t1_N
+    generic MAP(N  => N)
+    port MAP(i_S   => MID_AND_OUT,
+         i_D0      => MID_ADDSUB_OUT,
+         i_D1      => MID_IMMMUX_OUT,
+         o_O       => MID_BOTMUX_OUT);
+
+  regmux: mux2t1_N
+    generic MAP(N => N) 
+    port MAP(i_S  => i_memToReg,
+         i_D0 => MID_BOTMUX_OUT,
+         i_D1 => MID_MEM_OUT,
+         o_O  => MID_REGMUX_OUT);
+
+
+  andy: andg2
+    port MAP(i_A  => i_ALUSrc,
+             i_B  => i_AddSub,
+             o_F  =>  MID_AND_OUT);
 
   -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
 
