@@ -137,6 +137,24 @@ architecture structure of RISCV_Processor is
   -- TODO: You may add any additional signals or components your implementation 
   --       requires below this comment
 
+  signal MID_PC_OUT       : std_logic_vector(31 downto 0);
+  signal MID_ADDSUB_OUT   : std_logic_vector(31 downto 0);
+  signal MID_ALUMUX_OUT   : std_logic_vector(31 downto 0);
+  signal MID_BOTMUX_OUT   : std_logic_vector(31 downto 0);
+  signal MID_AND_OUT      : std_logic;
+  signal MID_B_OUT        : std_logic_vector(31 downto 0);
+  signal MID_A_OUT        : std_logic_vector(31 downto 0);
+  signal MID_REG_A_OUT    : std_logic_vector(31 downto 0);
+  signal MID_REG_B_OUT    : std_logic_vector(31 downto 0);
+  signal MID_Z_APP_OUT    : std_logic_vector(31 downto 0);
+  signal MID_S_EXT_OUT    : std_logic_vector(31 downto 0);
+  signal MID_IMMMUX_OUT   : std_logic_vector(31 downto 0);
+  signal MID_REGMUX_OUT   : std_logic_vector(31 downto 0);
+  signal MID_MEM_OUT      : std_logic_vector(31 downto 0);
+  signal MID_APP_OUT      : std_logic_vector(31 downto 0);
+  signal MID_EXT_OUT      : std_logic_vector(31 downto 0);
+
+
 begin
   s_Ovfl <= '0'; -- RISC-V does not have hardware overflow detection.
   -- TODO: This is required to be your final input to your instruction memory. This provides a feasible method to externally load the memory module which means that the synthesis tool must assume it knows nothing about the values stored in the instruction memory. If this is not included, much, if not all of the design is optimized out because the synthesis tool will believe the memory to be all zeros.
@@ -153,57 +171,40 @@ begin
              data => iInstExt,
              we   => iInstLd,
              q    => s_Inst);
-  
-  DMem: mem
-    generic map(ADDR_WIDTH => ADDR_WIDTH,
-                DATA_WIDTH => N)
-    port map(clk  => iCLK,
-             addr => s_DMemAddr(11 downto 2),
-             data => s_DMemData,
-             we   => s_DMemWr,
-             q    => s_DMemOut);
 
-  ALU: add_sub
+
+--   add_one: adder_N
+--     generic MAP(N => N)
+--     port MAP(
+--     );
+             
+  PC: pc
     generic MAP(N => N)
-    port MAP(i_A  => MID_REG_A_OUT,
-             i_B  => MID_TOPMUX_OUT,
-             i_C  => i_AddSub,
-             o_S  => MID_ADDSUB_OUT,
-             o_C  => open);
+    port MAP(i_CLK => iCLK,
+             i_RST => iRST,
+             i_WE  => '1',
+             i_D   => MID_PC_NEXT,
+             o_Q   => s_PC);
 
   REG_FILE: reg_file
-    generic MAP(N => N)
-    port MAP(i_CLK       => i_CLK,
-             i_RST       => i_RST,
-             i_W_VAL     => MID_REGMUX_OUT,
-             i_W_ADDR    => i_rd,
-             i_W_EN      => i_regWrite,
-             i_R_ADDR_A  => i_rs1,
-             i_R_ADDR_B  => i_rs2,
+generic MAP(N => N)
+    port MAP(i_CLK       => iCLK,
+             i_RST       => iRST,
+             i_W_VAL     => s_RegWrData,
+             i_W_ADDR    => s_RegWrAddr,
+             i_W_EN      => s_RegWr,
+             i_R_ADDR_A  => s_Inst(19 downto 15), -- Extract rs1 from instruction
+             i_R_ADDR_B  => s_Inst(24 downto 20), -- Extract rs2 from instruction
              o_R_VAL_A   => MID_REG_A_OUT,
              o_R_VAL_B   => MID_REG_B_OUT);
-             
-   add_one: adder_N
-     generic MAP(N => N)
-     port MAP(
-     );
-             
-   pgrm_cntr: pc
-     generic MAP(N => N)
-     port MAP(i_CLK => i_CLK,
-              i_RST => 0,
-              i_WE => 1,
-              i_D => , -- IDK WHAT START ADDR THE PROGRAM USES
-              o_Q => MID_PC_OUT);
-     
 
-    z_app: zero_appender
-      port MAP(Z_APP_IN => i_20_imm,
-               Z_APP_OUT => MID_APP_OUT);
+  z_app: zero_appender
+    port MAP(Z_APP_IN => i_20_imm,
+           Z_APP_OUT => MID_APP_OUT);
 
-    s_ext: sign_extender
-      port MAP(S_EXT_IN => i_12_imm,
-                  S_EXT_OUT => MID_EXT_OUT);
+  s_ext: sign_extender
+    port MAP(S_EXT_IN => i_12_imm,
+             S_EXT_OUT => MID_EXT_OUT);
 
 
   immmux: mux2t1_N
@@ -213,12 +214,29 @@ begin
              i_D1 => MID_EXT_OUT,
              o_O  => MID_IMMMUX_OUT);
 
-  topmux: mux2t1_N
+  ALU: add_sub
+    generic MAP(N => N)
+    port MAP(i_A  => MID_REG_A_OUT,
+             i_B  => MID_ALUMUX_OUT,
+             i_C  => i_AddSub,
+             o_S  => MID_ADDSUB_OUT,
+             o_C  => open);
+
+  DMem: mem
+    generic map(ADDR_WIDTH => ADDR_WIDTH,
+                DATA_WIDTH => N)
+    port map(clk  => iCLK,
+             addr => s_DMemAddr(11 downto 2),
+             data => s_DMemData,
+             we   => s_DMemWr,
+             q    => s_DMemOut);
+
+  alumux: mux2t1_N
     generic MAP(N => N) 
     port MAP(i_S  => i_ALUSrc,
          i_D0 => MID_REG_B_OUT,
          i_D1 => MID_IMMMUX_OUT,
-         o_O  => MID_TOPMUX_OUT);
+         o_O  => MID_ALUMUX_OUT);
 
   botmux: mux2t1_N
     generic MAP(N  => N)
@@ -228,17 +246,23 @@ begin
          o_O       => MID_BOTMUX_OUT);
 
   regmux: mux2t1_N
-    generic MAP(N => N) 
-    port MAP(i_S  => i_memToReg,
-         i_D0 => MID_BOTMUX_OUT,
-         i_D1 => MID_MEM_OUT,
-         o_O  => MID_REGMUX_OUT);
+  generic MAP(N => N) 
+    port MAP(i_S  => i_memToReg, -- (Note: i_memToReg needs a driver, see Error 4)
+             i_D0 => MID_BOTMUX_OUT,
+             i_D1 => s_DMemOut,
+             o_O  => MID_REGMUX_OUT);
 
 
   andy: andg2
     port MAP(i_A  => i_ALUSrc,
              i_B  => i_AddSub,
              o_F  =>  MID_AND_OUT);
+
+  s_RegWrAddr <= s_Inst(11 downto 7);
+  s_RegWrData <= MID_REGMUX_OUT;
+  s_DMemAddr <= MID_ADDSUB_OUT;
+  s_DMemData <= MID_REG_B_OUT;
+
 
   -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
 

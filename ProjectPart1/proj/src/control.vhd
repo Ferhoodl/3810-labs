@@ -27,22 +27,22 @@ entity control is
        o_IMMSel     : out std_logic;
        o_MemToReg   : out std_logic);
 
-  /*
-       i_func3      : in std_logic_vector(2 downto 0);
-
-        o_ALUControl : out std_logic_vector(3 downto 0);
-        o_ImmType    : out std_logic_vector(2 downto 0);
-
-
-
-       o_Branch     : out std_logic;
-       o_Jump       : out std_logic;
-       o_MemToReg   : out std_logic;
-       o_MemWrite   : out std_logic;
-       o_AndLink    : out std_logic;
-       o_ALUSrc     : out std_logic;
-       o_RegWrite   : out std_logic);
-       */
+  
+--       i_func3      : in std_logic_vector(2 downto 0);
+--
+--        o_ALUControl : out std_logic_vector(3 downto 0);
+--        o_ImmType    : out std_logic_vector(2 downto 0);
+--
+--
+--
+--       o_Branch     : out std_logic;
+--       o_Jump       : out std_logic;
+--       o_MemToReg   : out std_logic;
+--       o_MemWrite   : out std_logic;
+--       o_AndLink    : out std_logic;
+--       o_ALUSrc     : out std_logic;
+--       o_RegWrite   : out std_logic);
+       
 
 end control;
 
@@ -71,19 +71,19 @@ with i_opcode select
 	    '1' when i_opcode = "0110111" else                       -- this is a U-type LUI instruction case
 	    '0';
 
-/*
-  ALUControl <=
- 	-- R-type:
-	"????" when (opcode = "0110011" and )
+-- this stuff will be used in the future, full datapath:
+--  ALUControl <=
+-- 	-- R-type:
+--	"????" when (opcode = "0110011" and )
+--
+--	-- I-type:
+--	"????" when (opcode = "0010011")
 
-	-- I-type:
-	"????" when (opcode = "0010011")
+--	-- lw things:
+--	"0000" when (opcode = "")
 
-	-- lw things:
-	"0000" when (opcode = "")
-
-	-- sw things:
-	"0000" when (opcode = "");
+--	-- sw things:
+--	"0000" when (opcode = "");
 --
 --	-- branch things:
 --	"????" when (opcode = "")
@@ -93,7 +93,6 @@ with i_opcode select
 --
 --	-- jalr:
 --	"????" when (opcode = "")
-*/	
 
 
 end dataflow;
