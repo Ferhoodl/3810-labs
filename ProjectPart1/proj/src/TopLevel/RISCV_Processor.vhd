@@ -77,6 +77,17 @@ architecture structure of RISCV_Processor is
          o_Q          : out std_logic_vector(N-1 downto 0));   -- Data value output
   end component;
 
+  component control is
+    port(i_opcode     : in std_logic_vector(6 downto 0);
+         i_func7      : in std_logic_vector(6 downto 0);
+         o_RegWrite   : out std_logic;
+         o_MemWrite   : out std_logic;
+         o_AddSub     : out std_logic;
+         o_ALUSrc     : out std_logic;
+         o_IMMSel     : out std_logic;
+         o_MemToReg   : out std_logic);
+  end component;
+
   component reg_file
     generic(N : integer := 32);
     port(i_CLK       : in std_logic;                            -- Clock input
@@ -92,8 +103,8 @@ architecture structure of RISCV_Processor is
 
 
   component mem is
-    generic(ADDR_WIDTH : integer;
-            DATA_WIDTH : integer);
+    generic(DATA_WIDTH : natural := 32;
+            ADDR_WIDTH : natural := 10);
     port(
           clk          : in std_logic;
           addr         : in std_logic_vector((ADDR_WIDTH-1) downto 0);
@@ -153,6 +164,14 @@ architecture structure of RISCV_Processor is
   signal MID_MEM_OUT      : std_logic_vector(31 downto 0);
   signal MID_APP_OUT      : std_logic_vector(31 downto 0);
   signal MID_EXT_OUT      : std_logic_vector(31 downto 0);
+  signal MID_PC_NEXT      : std_logic_vector(31 downto 0);
+  signal MID_IMMEDIATE    : std_logic_vector(11 downto 0);
+  signal MID_ADDSUB       : std_logic;
+  signal MID_ALUSRC       : std_logic;
+  signal MID_IMM_SEL      : std_logic;
+  signal MID_MEMTOREG     : std_logic;
+  signal MID_MEMWRITE     : std_logic;
+
 
 
 begin
@@ -162,54 +181,77 @@ begin
     s_IMemAddr <= s_PC when '0',
       iInstAddr when others;
 
+  -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100) STUDENT COMMENT: I think opcode 01 0100 is from mips and not riscv
+
+  -- halt when wfi instruction is seen
+  s_Halt <= '1' when s_Inst = x"10500073" else '0';
+
+  -- TODO: Implement the rest of your processor below this comment! 
+
 
   IMem: mem
-    generic map(ADDR_WIDTH => ADDR_WIDTH,
-                DATA_WIDTH => N)
+    generic map(DATA_WIDTH => 32,
+                ADDR_WIDTH => 10)
     port map(clk  => iCLK,
              addr => s_IMemAddr(11 downto 2),
              data => iInstExt,
              we   => iInstLd,
              q    => s_Inst);
 
-
---   add_one: adder_N
---     generic MAP(N => N)
---     port MAP(
---     );
-             
-  PC: pc
+  pc_add_four: add_sub
     generic MAP(N => N)
+    port MAP(i_A  => s_PC,
+             i_B  => x"00000004",
+             i_C  => '0',
+             o_S  => MID_PC_NEXT,
+             o_C  => open);
+             
+  PC_REG: pc
+  generic MAP(N => N)
     port MAP(i_CLK => iCLK,
              i_RST => iRST,
              i_WE  => '1',
              i_D   => MID_PC_NEXT,
              o_Q   => s_PC);
 
-  REG_FILE: reg_file
+  CONTROL_UNIT: control
+    port MAP(i_opcode   => s_Inst(6 downto 0),
+             i_func7    => s_Inst(31 downto 25),
+             o_RegWrite => s_RegWr,
+             o_MemWrite => s_DMemWr,
+             o_AddSub   => MID_ADDSUB,
+             o_ALUSrc   => MID_ALUSRC,
+             o_IMMSel   => MID_IMM_SEL,
+             o_MemToReg => MID_MEMTOREG);
+
+  REGISTER_FILE: reg_file
 generic MAP(N => N)
     port MAP(i_CLK       => iCLK,
              i_RST       => iRST,
              i_W_VAL     => s_RegWrData,
              i_W_ADDR    => s_RegWrAddr,
              i_W_EN      => s_RegWr,
-             i_R_ADDR_A  => s_Inst(19 downto 15), -- Extract rs1 from instruction
-             i_R_ADDR_B  => s_Inst(24 downto 20), -- Extract rs2 from instruction
+             i_R_ADDR_A  => s_Inst(19 downto 15), -- clip the rs1 from instruction
+             i_R_ADDR_B  => s_Inst(24 downto 20), -- clip the rs2 from instruction
              o_R_VAL_A   => MID_REG_A_OUT,
              o_R_VAL_B   => MID_REG_B_OUT);
 
+  -- Poor man's immgen for now: send the S-Type immediate for 'sw' when appropriate, otherwise send I-Type immediate
+  MID_IMMEDIATE <= s_Inst(31 downto 25) & s_Inst(11 downto 7) when s_Inst(6 downto 0) = "0100011" else 
+              s_Inst(31 downto 20);
+
   z_app: zero_appender
-    port MAP(Z_APP_IN => i_20_imm,
-           Z_APP_OUT => MID_APP_OUT);
+    port MAP(Z_APP_IN  => s_Inst(31 downto 12),
+             Z_APP_OUT => MID_APP_OUT);
 
   s_ext: sign_extender
-    port MAP(S_EXT_IN => i_12_imm,
+    port MAP(S_EXT_IN => MID_IMMEDIATE,
              S_EXT_OUT => MID_EXT_OUT);
 
 
   immmux: mux2t1_N
     generic MAP(N => N) 
-    port MAP(i_S  => i_imm_sel,
+    port MAP(i_S  => MID_IMM_SEL,
              i_D0 => MID_APP_OUT,
              i_D1 => MID_EXT_OUT,
              o_O  => MID_IMMMUX_OUT);
@@ -218,13 +260,13 @@ generic MAP(N => N)
     generic MAP(N => N)
     port MAP(i_A  => MID_REG_A_OUT,
              i_B  => MID_ALUMUX_OUT,
-             i_C  => i_AddSub,
+             i_C  => MID_ADDSUB,
              o_S  => MID_ADDSUB_OUT,
              o_C  => open);
 
   DMem: mem
-    generic map(ADDR_WIDTH => ADDR_WIDTH,
-                DATA_WIDTH => N)
+    generic map(DATA_WIDTH => 32,
+                ADDR_WIDTH => 10)
     port map(clk  => iCLK,
              addr => s_DMemAddr(11 downto 2),
              data => s_DMemData,
@@ -233,7 +275,7 @@ generic MAP(N => N)
 
   alumux: mux2t1_N
     generic MAP(N => N) 
-    port MAP(i_S  => i_ALUSrc,
+    port MAP(i_S  => MID_ALUSRC,
          i_D0 => MID_REG_B_OUT,
          i_D1 => MID_IMMMUX_OUT,
          o_O  => MID_ALUMUX_OUT);
@@ -247,26 +289,21 @@ generic MAP(N => N)
 
   regmux: mux2t1_N
   generic MAP(N => N) 
-    port MAP(i_S  => i_memToReg, -- (Note: i_memToReg needs a driver, see Error 4)
+    port MAP(i_S  => MID_MEMTOREG,
              i_D0 => MID_BOTMUX_OUT,
              i_D1 => s_DMemOut,
              o_O  => MID_REGMUX_OUT);
 
 
   andy: andg2
-    port MAP(i_A  => i_ALUSrc,
-             i_B  => i_AddSub,
+    port MAP(i_A  => MID_ALUSRC,
+             i_B  => MID_ADDSUB,
              o_F  =>  MID_AND_OUT);
 
   s_RegWrAddr <= s_Inst(11 downto 7);
   s_RegWrData <= MID_REGMUX_OUT;
   s_DMemAddr <= MID_ADDSUB_OUT;
   s_DMemData <= MID_REG_B_OUT;
-
-
-  -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
-
-  -- TODO: Implement the rest of your processor below this comment! 
-
+  oALUOut <= MID_ADDSUB_OUT;
 end structure;
 
