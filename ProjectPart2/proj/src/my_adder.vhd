@@ -1,0 +1,90 @@
+-------------------------------------------------------------------------
+-- Isaiah Steele
+-- Student in CpRE 3810
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- my_adder.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a structural implementation for a
+-- full adder.
+--
+-- 09/07/2026: created
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity my_adder is
+  port(i_A 		            : in std_logic;
+       i_B 		            : in std_logic;
+       i_C 		            : in std_logic;
+       o_S 		            : out std_logic;
+       o_C 		            : out std_logic);
+end my_adder;
+
+architecture structure of my_adder is
+  
+  -- Describe the component entities as defined in their
+  -- respective .vhd files.
+  component andg2
+    port(i_A          : in std_logic;
+         i_B          : in std_logic;
+         o_F          : out std_logic);
+  end component;
+
+  component org2
+    port(i_A          : in std_logic;
+         i_B          : in std_logic;
+         o_F          : out std_logic);
+  end component;
+
+  component xorg2 is
+    port(i_A          : in std_logic;
+         i_B          : in std_logic;
+         o_F          : out std_logic);
+  end component;
+
+
+
+  -- line to carry xor 0 out
+  signal xor_out_0       : std_logic;
+
+  -- line to carry and 0
+  signal and_out_0       : std_logic;
+
+  -- line to carry and 1
+  signal and_out_1       : std_logic;
+
+
+
+begin
+
+
+  xor_0: xorg2
+    port MAP(i_A  =>  i_A,
+             i_B  =>  i_B,
+             o_F  =>  xor_out_0);
+
+  xor_1: xorg2
+    port MAP(i_A  =>  xor_out_0,
+             i_B  =>  i_C,
+             o_F  =>  o_S);
+
+  and_0: andg2
+    port MAP(i_A  =>  xor_out_0,
+             i_B  =>  i_C,
+             o_F  =>  and_out_0);
+
+  and_1: andg2
+    port MAP(i_A  =>  i_A,
+             i_B  =>  i_B,
+             o_F  =>  and_out_1);
+
+  or_0: org2
+    port MAP(i_A  =>  and_out_0,
+             i_B  =>  and_out_1,
+             o_F  =>  o_C);
+
+end structure;

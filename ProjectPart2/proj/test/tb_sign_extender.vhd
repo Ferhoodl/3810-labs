@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------
+-- Isaiah Steele
+-- Student in CprE 3810
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- tb_sign_extender.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a simple VHDL testbench for a sign
+-- extender.
+--
+--
+-- 9/25/2026: created
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity tb_sign_extender is
+  generic(gCLK_HPER   : time := 50 ns);
+end tb_sign_extender;
+
+architecture behavior of tb_sign_extender is
+  
+  -- Calculate the clock period as twice the half-period
+  constant cCLK_PER  : time := gCLK_HPER * 2;
+
+  component sign_extender
+    port(S_EXT_IN   : in std_logic_vector(11 downto 0);
+         S_EXT_OUT    : out std_logic_vector(31 downto 0));
+  end component;
+
+signal TB_S_EXT_IN     : std_logic_vector(11 downto 0);
+signal TB_S_EXT_OUT      : std_logic_vector(31 downto 0);
+
+
+begin
+
+  DUT: sign_extender 
+  port map(S_EXT_IN   => TB_S_EXT_IN,
+           S_EXT_OUT  => TB_S_EXT_OUT);
+
+  
+  -- Testbench process  
+  P_TB: process
+  begin
+
+    -- Test case 0:
+    TB_S_EXT_IN    <= "111111111111";
+    wait for cCLK_PER;
+
+    -- Test case 1:
+    TB_S_EXT_IN    <= "001100110011";
+    wait for cCLK_PER;
+
+    -- Test case 3:
+    TB_S_EXT_IN    <= "101010101010";
+    wait for cCLK_PER;
+
+    -- Test case 3:
+    TB_S_EXT_IN    <= "000000001111";
+    wait for cCLK_PER;
+
+    wait;
+  end process;
+  
+end behavior;

@@ -1,0 +1,130 @@
+-------------------------------------------------------------------------
+-- Isaiah Steele
+-- Student in CprE 3810
+-- Iowa State University
+-------------------------------------------------------------------------
+-- tb_reg_file.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a testbench for a 32-bit 32 register
+-- file.
+--              
+-- 09/21/2026: created
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_textio.all;  -- For logic types I/O
+library std;
+use std.env.all;                -- For hierarchical/external signals
+use std.textio.all;             -- For basic I/O
+
+entity tb_reg_file is
+  generic(
+  gCLK_HPER   : time := 10 ns;   -- Generic for half of the clock cycle period
+  N           : integer := 32);
+end tb_reg_file;
+
+
+
+architecture structure of tb_reg_file is
+
+-- Define the total clock period time
+constant cCLK_PER  : time := gCLK_HPER * 2;
+
+-- We will be instantiating our design under test (DUT), so we need to specify its
+-- component interface.
+-- TODO: change component declaration as needed.
+component reg_file is
+  generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+  port(i_CLK       : in std_logic;                            -- Clock input
+       i_RST       : in std_logic;
+       i_W_VAL     : in std_logic_vector(31 downto 0);        -- 32-bit write value
+       i_W_ADDR    : in std_logic_vector(4 downto 0);         -- 5-bit write address
+       i_W_EN      : in std_logic;                            -- line for write enable
+       i_R_ADDR_A  : in std_logic_vector(4 downto 0);         -- 5-bit read address A
+       i_R_ADDR_B  : in std_logic_vector(4 downto 0);         -- 5-bit read address B
+       o_R_VAL_A   : out std_logic_vector(31 downto 0);       -- 32-bit read value A
+       o_R_VAL_B   : out std_logic_vector(31 downto 0));       -- 32-bit read value B
+end component;
+
+signal s_i_CLK          : std_logic;                            -- Clock input
+signal tb_i_RST       : std_logic;                            -- line for reset
+signal tb_i_W_VAL     : std_logic_vector(31 downto 0);        -- 32-bit write value
+signal tb_i_W_ADDR    : std_logic_vector(4 downto 0);         -- 5-bit write address
+signal tb_i_W_EN      : std_logic;                            -- line for write enable
+signal tb_i_R_ADDR_A  : std_logic_vector(4 downto 0);         -- 5-bit read address A
+signal tb_i_R_ADDR_B  : std_logic_vector(4 downto 0);         -- 5-bit read address B
+signal tb_o_R_VAL_A   : std_logic_vector(31 downto 0);       -- 32-bit read value A
+signal tb_o_R_VAL_B   : std_logic_vector(31 downto 0);       -- 32-bit read value B
+
+
+begin
+
+  -- TODO: Actually instantiate the component to test and wire all signals to the corresponding
+  -- input or output. Note that DUT0 is just the name of the instance that can be seen 
+  -- during simulation. What follows DUT0 is the entity name that will be used to find
+  -- the appropriate library component during simulation loading.
+  DUT0: reg_file
+  generic map(
+    N => N)
+  port map( 
+       i_CLK       => s_i_CLK,
+       i_RST       => tb_i_RST,
+       i_W_VAL     => tb_i_W_VAL,
+       i_W_ADDR    => tb_i_W_ADDR,
+       i_W_EN      => tb_i_W_EN,
+       i_R_ADDR_A  => tb_i_R_ADDR_A,
+       i_R_ADDR_B  => tb_i_R_ADDR_B,
+       o_R_VAL_A   => tb_o_R_VAL_A,
+       o_R_VAL_B   => tb_o_R_VAL_B
+);
+  --You can also do the above port map in one line using the below format: http://www.ics.uci.edu/~jmoorkan/vhdlref/compinst.html
+
+--This first process is to setup the clock for the test bench
+  P_CLK: process
+  begin
+    s_i_CLK <= '1';         -- clock starts at 1
+    wait for gCLK_HPER; -- after half a cycle
+    s_i_CLK <= '0';         -- clock becomes a 0 (negative edge)
+    wait for gCLK_HPER; -- after half a cycle, process begins evaluation again
+  end process;
+
+  -- Assign inputs for each test case.
+  -- TODO: add test cases as needed.
+  P_TEST_CASES: process
+  begin
+    wait for gCLK_HPER*2;
+
+    -- setup
+    tb_i_RST     <= '1';
+    wait for gCLK_HPER*2;
+    tb_i_RST     <= '0';
+    tb_i_W_EN     <= '1';
+
+
+    -- Test case 0:
+    tb_i_W_VAL    <= x"11111111";
+    tb_i_W_ADDR   <= "00001";
+    wait for gCLK_HPER*2;
+    tb_i_R_ADDR_A <= "00001";
+    wait for gCLK_HPER*2;
+    wait for gCLK_HPER*2;
+
+    -- test case 1:
+    tb_i_W_VAL    <= x"22222222";
+    tb_i_W_ADDR   <= "00010";
+    wait for gCLK_HPER*2;
+    tb_i_R_ADDR_B <= "00010";
+    wait for gCLK_HPER*2;
+    wait for gCLK_HPER*2;
+
+    -- test case 3:
+    tb_i_R_ADDR_A <= "00000";
+    wait for gCLK_HPER*2;
+    wait for gCLK_HPER*2;
+
+
+    wait;
+  end process;
+
+end structure;
