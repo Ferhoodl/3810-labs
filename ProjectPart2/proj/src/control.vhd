@@ -17,82 +17,81 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity control is
-  port(i_opcode     : in std_logic_vector(6 downto 0);
-       i_func7      : in std_logic_vector(6 downto 0);
-
-       o_RegWrite   : out std_logic;
-       o_MemWrite   : out std_logic;
-       o_AddSub     : out std_logic;
-       o_ALUSrc     : out std_logic;
-       o_IMMSel     : out std_logic;
-       o_MemToReg   : out std_logic);
-
-  
---       i_func3      : in std_logic_vector(2 downto 0);
---
---        o_ALUControl : out std_logic_vector(3 downto 0);
---        o_ImmType    : out std_logic_vector(2 downto 0);
---
---
---
---       o_Branch     : out std_logic;
---       o_Jump       : out std_logic;
---       o_MemToReg   : out std_logic;
---       o_MemWrite   : out std_logic;
---       o_AndLink    : out std_logic;
---       o_ALUSrc     : out std_logic;
---       o_RegWrite   : out std_logic);
-       
-
+port (
+    i_opcode        : in  std_logic_vector(6 downto 0);
+    i_func3         : in  std_logic_vector(2 downto 0);
+    i_func7         : in  std_logic_vector(6 downto 0);
+    o_RegWrite      : out std_logic;
+    o_MemWrite      : out std_logic;
+    o_ALUSrc        : out std_logic;
+    o_MemToReg      : out std_logic;
+    o_Branch        : out std_logic;
+    o_Jump          : out std_logic;
+    o_AndLink       : out std_logic;
+    o_ImmediateType : out std_logic_vector(2 downto 0);
+    o_ALUControl    : out std_logic_vector(3 downto 0)
+  );   
 end control;
 
 architecture dataflow of control is
 	-- RegWrite, MemWrite, AddSub, ALUSrc, IMMSel, MemToReg
-	signal signal_bus : std_logic_vector(4 downto 0);
-
-	--signal aluop_bus : std_logic_vector(1 downto 0);
+	signal controls : std_logic_vector(6 downto 0);
+	signal alu_op : std_logic_vector(1 downto 0);
 begin
+
 with i_opcode select
-  signal_bus <= "10000" when "0110011", -- R-type (like ADD)
-                "10110" when "0010011", -- I-type (like ADDI)
-                "10111" when "0000011", -- I-type (like LW)
-                "01110" when "0100011", -- S-type (like SW)
-                "10100" when "0110111", -- U-type (like LUI)
-                "00000" when others;
+  controls <= "1000001" when "0110011", -- r-type
+                   "1010001" when "0010011", -- i-type
+                   "1011001" when "0000011", -- lw stuff (lw, lb, lh, etc. . .)
+                   "0110001" when "0100011", -- sw stuff (sw, sb, sh)
+                   "0000101" when "1100011", -- branches
+                   "1010001" when "0110111", -- lui
+                   "1010001" when "0010111", -- auipc
+                   "1000010" when "1101111", -- jal
+                   "1010010" when "1100111", -- jalr
+                   "0000001" when others;
 
-  o_RegWrite   <= signal_bus(4);
-  o_MemWrite   <= signal_bus(3);
-  o_ALUSrc     <= signal_bus(2);
-  o_IMMSel     <= signal_bus(1);
-  o_MemToReg   <= signal_bus(0);
+  o_RegWrite <= controls(6);
+  o_MemWrite <= controls(5);
+  o_ALUSrc   <= controls(4);
+  o_MemToReg <= controls(3);
+  o_Branch   <= controls(2);
+  o_Jump     <= controls(1);
+  o_AndLink  <= controls(0);
  
+-- immediate things
+with i_opcode select
+o_ImmediateType <= "001" when "0100011",                -- S-Type (Store)
+                   "010" when "1100011",                -- B-Type (Branch)
+                   "011" when "0110111" | "0010111",    -- U-Type (LUI, AUIPC)
+                   "100" when "1101111",                -- J-Type (JAL)
+                   "000" when others;                   -- I-Type (ALU, Load, JALR)
 
-  o_AddSub <= '1' when (i_opcode = "0110011" and i_func7(5) =  '1') else -- this is an R-type SUB instruction case
-	    '1' when i_opcode = "0110111" else                       -- this is a U-type LUI instruction case
-	    '0';
+-- aluop determination
+with i_opcode select
+    alu_op <= "10" when "0110011", -- R-Type
+              "11" when "0010011", -- I-Type ALU
+              "01" when "1100011", -- Branch (Compare via Sub)
+              "00" when others;    -- Address addition / Pass-through
 
--- this stuff will be used in the future, full datapath:
---  ALUControl <=
--- 	-- R-type:
---	"????" when (opcode = "0110011" and )
---
---	-- I-type:
---	"????" when (opcode = "0010011")
-
---	-- lw things:
---	"0000" when (opcode = "")
-
---	-- sw things:
---	"0000" when (opcode = "");
---
---	-- branch things:
---	"????" when (opcode = "")
---
---	-- jal:
---	"????" when (opcode = "")
---
---	-- jalr:
---	"????" when (opcode = "")
-
+-- doing aluop decode inside of control instead of making a separate module
+o_ALUControl <=
+    "1000" when (alu_op = "10" and i_func3 = "000" and i_func7(5) = '1')  else -- sub      <--- r type instructions
+    "0000" when (alu_op = "10" and i_func3 = "000")                       else -- add
+    "0001" when (alu_op = "10" and i_func3 = "001")                       else -- sll
+    "0100" when (alu_op = "10" and i_func3 = "100")                       else -- xor
+    "0101" when (alu_op = "10" and i_func3 = "101" and i_func7(5) = '0')  else -- srl
+    "1101" when (alu_op = "10" and i_func3 = "101" and i_func7(5) = '1')  else -- sra
+    "0011" when (alu_op = "10" and i_func3 = "110")                       else -- or
+    "0010" when (alu_op = "10" and i_func3 = "111")                       else -- and
+    "0000" when (alu_op = "11" and i_func3 = "000")                       else -- addi     <--- i type instructions
+    "0001" when (alu_op = "11" and i_func3 = "001")                       else -- slli
+    "0100" when (alu_op = "11" and i_func3 = "100")                       else -- xori
+    "0101" when (alu_op = "11" and i_func3 = "101" and i_func7(5) = '0')  else -- srli
+    "1101" when (alu_op = "11" and i_func3 = "101" and i_func7(5) = '1')  else -- srai
+    "0011" when (alu_op = "11" and i_func3 = "110")                       else -- ori
+    "0010" when (alu_op = "11" and i_func3 = "111")                       else -- andi
+    "1000" when (alu_op = "01")                                           else -- <-- branch compare
+    "0000";                                                                    -- <-- default (address additions like loads, stores, auic, jalr)
 
 end dataflow;

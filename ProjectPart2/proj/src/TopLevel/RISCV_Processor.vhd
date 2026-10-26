@@ -77,15 +77,29 @@ architecture structure of RISCV_Processor is
          o_Q          : out std_logic_vector(N-1 downto 0));   -- Data value output
   end component;
 
-  component control is
-    port(i_opcode     : in std_logic_vector(6 downto 0);
-         i_func7      : in std_logic_vector(6 downto 0);
-         o_RegWrite   : out std_logic;
-         o_MemWrite   : out std_logic;
-         o_AddSub     : out std_logic;
-         o_ALUSrc     : out std_logic;
-         o_IMMSel     : out std_logic;
-         o_MemToReg   : out std_logic);
+component control is
+    port(i_opcode        : in  std_logic_vector(6 downto 0);
+         i_func3         : in  std_logic_vector(2 downto 0);
+         i_func7         : in  std_logic_vector(6 downto 0);
+         o_RegWrite      : out std_logic;
+         o_MemWrite      : out std_logic;
+         o_ALUSrc        : out std_logic;
+         o_MemToReg      : out std_logic;
+         o_Branch        : out std_logic;
+         o_Jump          : out std_logic;
+         o_AndLink       : out std_logic;
+         o_ImmediateType : out std_logic_vector(2 downto 0);
+         o_ALUControl    : out std_logic_vector(3 downto 0));
+  end component;
+
+  component alu is
+    generic(N : integer := 32);
+    port(i_A          : in  std_logic_vector(N-1 downto 0);
+         i_B          : in  std_logic_vector(N-1 downto 0);
+         i_ALUControl : in  std_logic_vector(3 downto 0);
+         o_Result     : out std_logic_vector(N-1 downto 0);
+         o_Zero       : out std_logic;
+         o_CarryOut   : out std_logic);
   end component;
 
   component reg_file
@@ -163,34 +177,30 @@ end component;
   -- TODO: You may add any additional signals or components your implementation 
   --       requires below this comment
 
-  signal MID_PC_OUT       : std_logic_vector(31 downto 0);
-  signal MID_ADDSUB_OUT   : std_logic_vector(31 downto 0);
-  signal MID_ALUMUX_OUT   : std_logic_vector(31 downto 0);
-  signal MID_BOTMUX_OUT   : std_logic_vector(31 downto 0);
-  signal MID_AND_OUT      : std_logic;
-  signal MID_B_OUT        : std_logic_vector(31 downto 0);
-  signal MID_A_OUT        : std_logic_vector(31 downto 0);
-  signal MID_REG_A_OUT    : std_logic_vector(31 downto 0);
-  signal MID_REG_B_OUT    : std_logic_vector(31 downto 0);
-  signal MID_Z_APP_OUT    : std_logic_vector(31 downto 0);
-  signal MID_S_EXT_OUT    : std_logic_vector(31 downto 0);
-  signal MID_IMMMUX_OUT   : std_logic_vector(31 downto 0);
-  signal MID_REGMUX_OUT   : std_logic_vector(31 downto 0);
-  signal MID_MEM_OUT      : std_logic_vector(31 downto 0);
-  signal MID_APP_OUT      : std_logic_vector(31 downto 0);
-  signal MID_EXT_OUT      : std_logic_vector(31 downto 0);
-  signal MID_PC_NEXT      : std_logic_vector(31 downto 0);
-  signal MID_PC_NEXT_4    : std_logic_vector(31 downto 0);
-  signal MID_PC_JUMP_REG  : std_logic_vector(31 downto 0);
-  signal MID_PC_AND       : std_logic_vector(31 downto 0);
-  signal MID_PC_SHIFT     : std_logic_vector(31 downto 0);
-  signal MID_IMMEDIATE    : std_logic_vector(11 downto 0);
-  signal MID_PC_MUX_SEL   : std_logic;
-  signal MID_ADDSUB       : std_logic;
-  signal MID_ALUSRC       : std_logic;
-  signal MID_IMM_SEL      : std_logic;
-  signal MID_MEMTOREG     : std_logic;
-  signal MID_MEMWRITE     : std_logic;
+
+  signal MID_ALUMUX_OUT           : std_logic_vector(31 downto 0);
+  signal MID_ADDSUB_OUT           : std_logic_vector(31 downto 0);
+  signal MID_BOTMUX_OUT           : std_logic_vector(31 downto 0);
+  signal MID_REG_A_OUT            : std_logic_vector(31 downto 0);
+  signal MID_REG_B_OUT            : std_logic_vector(31 downto 0);
+  signal MID_REGMUX_OUT           : std_logic_vector(31 downto 0);
+  signal MID_MEM_OUT              : std_logic_vector(31 downto 0);
+  signal MID_PC_NEXT              : std_logic_vector(31 downto 0);
+  signal MID_PC_NEXT_4            : std_logic_vector(31 downto 0);
+  signal MID_PC_JUMP_REG          : std_logic_vector(31 downto 0);
+  signal MID_PC_AND               : std_logic;
+  signal MID_PC_SHIFT             : std_logic_vector(31 downto 0);
+  signal MID_IMMEDIATE_FULL       : std_logic_vector(31 downto 0);
+  signal MID_PC_MUX_SEL           : std_logic;
+  signal MID_ALUSRC               : std_logic;
+  signal MID_MEMTOREG             : std_logic;
+  signal MID_MEMWRITE             : std_logic;
+  signal MID_CONTROL_BRANCH       : std_logic;
+  signal MID_CONTROL_JUMP         : std_logic;
+  signal MID_CONTROL_ANDLINK      : std_logic;
+  signal MID_CONTROL_IMMTYPE      : std_logic_vector(2 downto 0);
+  signal MID_CONTROL_ALUCONTROL   : std_logic_vector(3 downto 0);
+  signal MID_ALU_ZERO             : std_logic;
 
 
 
@@ -218,20 +228,29 @@ begin
              we   => iInstLd,
              q    => s_Inst);
              
-    -- Poor man's immgen for now: send the S-Type immediate for 'sw' when appropriate, otherwise send I-Type immediate
-  MID_IMMEDIATE <= s_Inst(31 downto 25) & s_Inst(11 downto 7) when s_Inst(6 downto 0) = "0100011" else 
-              s_Inst(31 downto 20);
+-- Poor man's immgen for now: send the S-Type immediate for 'sw' when appropriate, otherwise send I-Type immediate
+  with MID_CONTROL_IMMTYPE select
+    MID_IMMEDIATE_FULL <= 
+      (31 downto 12 => s_Inst(31)) & s_Inst(31 downto 25) & s_Inst(11 downto 7) when "001",                      -- S-type
+      (31 downto 12 => s_Inst(31)) & s_Inst(7) & s_Inst(30 downto 25) & s_Inst(11 downto 8) & '0' when "010",    -- B-type
+      s_Inst(31 downto 12) & x"000" when "011",                                                                  -- U-type
+      (31 downto 20 => s_Inst(31)) & s_Inst(19 downto 12) & s_Inst(20) & s_Inst(30 downto 21) & '0' when "100",  -- J-type
+      (31 downto 11 => s_Inst(31)) & s_Inst(30 downto 20) when others;                                           -- I-type
              
               
-  CONTROL_UNIT: control
-    port MAP(i_opcode   => s_Inst(6 downto 0),
-             i_func7    => s_Inst(31 downto 25),
-             o_RegWrite => s_RegWr,
-             o_MemWrite => s_DMemWr,
-             o_AddSub   => MID_ADDSUB,
-             o_ALUSrc   => MID_ALUSRC,
-             o_IMMSel   => MID_IMM_SEL,
-             o_MemToReg => MID_MEMTOREG);
+CONTROL_UNIT: control
+  port MAP(i_opcode        => s_Inst(6 downto 0),
+           i_func3         => s_Inst(14 downto 12),
+           i_func7         => s_Inst(31 downto 25),
+           o_RegWrite      => s_RegWr,
+           o_MemWrite      => s_DMemWr,
+           o_ALUSrc        => MID_ALUSRC,
+           o_MemToReg      => MID_MEMTOREG,
+           o_Branch        => MID_CONTROL_BRANCH,
+           o_Jump          => MID_CONTROL_JUMP,
+           o_AndLink       => MID_CONTROL_ANDLINK,
+           o_ImmediateType => MID_CONTROL_IMMTYPE,
+           o_ALUControl    => MID_CONTROL_ALUCONTROL);
 
   REGISTER_FILE: reg_file
   generic MAP(N => N)
@@ -244,17 +263,10 @@ begin
              i_R_ADDR_B  => s_Inst(24 downto 20), -- clip the rs2 from instruction
              o_R_VAL_A   => MID_REG_A_OUT,
              o_R_VAL_B   => MID_REG_B_OUT);
-             
-  SHIFT_LEFT: barrelShifter
-  port(i_Data      => MID_IMMEDIATE,
-       i_Shift     => -- IDK
-       i_arith     => -- IDK
-       i_Dir       => -- IDK
-       o_Shifted   => MID_PC_SHIFT
-       );
-  end component;
 
-  pc_add_four: add_sub
+  MID_PC_SHIFT <= MID_IMMEDIATE_FULL(30 downto 0) & '0';
+
+pc_add_four: add_sub
     generic MAP(N => N)
     port MAP(i_A  => s_PC,
              i_B  => x"00000004",
@@ -263,23 +275,23 @@ begin
              o_C  => open);
              
   pc_and: andg2
-    port MAP(i_A  => , -- IDK ON THIS ONE
-             i_B  => 1, -- GET zero FROM ALU TO WORK!
+    port MAP(i_A  => MID_CONTROL_BRANCH, -- IDK ON THIS ONE
+             i_B  => MID_ALU_ZERO, -- GET zero FROM ALU TO WORK!
              o_F  => MID_PC_AND);
              
-  pc_or: or2
-    port MAP(i_A  => , -- IDK ON THIS ONE
+  pc_or: org2
+    port MAP(i_A  => MID_CONTROL_JUMP, -- IDK ON THIS ONE
              i_B  => MID_PC_AND,
              o_F  => MID_PC_MUX_SEL);
              
-  pc_add_jump_reg: add_sub
+pc_add_jump_reg: add_sub
     generic MAP(N => N)
     port MAP(i_A  => s_PC,
              i_B  => MID_PC_SHIFT,
              i_C  => '0',
              o_S  => MID_PC_JUMP_REG,
              o_C  => open);
-             
+
   pc_mux: mux2t1_N
     generic MAP(N  => N)
     port MAP(i_S   => MID_PC_MUX_SEL,
@@ -295,29 +307,14 @@ begin
              i_D   => MID_PC_NEXT,
              o_Q   => s_PC);
 
-  z_app: zero_appender
-    port MAP(Z_APP_IN  => s_Inst(31 dowpcnto 12),
-             Z_APP_OUT => MID_APP_OUT);
-
-  s_ext: sign_extender
-    port MAP(S_EXT_IN => MID_IMMEDIATE,
-             S_EXT_OUT => MID_EXT_OUT);
-
-
-  immmux: mux2t1_N
-    generic MAP(N => N) 
-    port MAP(i_S  => MID_IMM_SEL,
-             i_D0 => MID_APP_OUT,
-             i_D1 => MID_EXT_OUT,
-             o_O  => MID_IMMMUX_OUT);
-
-  ALU: add_sub
+  MY_ALU: alu
     generic MAP(N => N)
-    port MAP(i_A  => MID_REG_A_OUT,
-             i_B  => MID_ALUMUX_OUT,
-             i_C  => MID_ADDSUB,
-             o_S  => MID_ADDSUB_OUT,
-             o_C  => open);
+    port MAP(i_A          => MID_REG_A_OUT,
+             i_B          => MID_ALUMUX_OUT,
+             i_ALUControl => MID_CONTROL_ALUCONTROL,
+             o_Result     => MID_ADDSUB_OUT,
+             o_Zero       => MID_ALU_ZERO,
+             o_CarryOut   => open);
 
   DMem: mem
     generic map(DATA_WIDTH => 32,
@@ -328,32 +325,27 @@ begin
              we   => s_DMemWr,
              q    => s_DMemOut);
 
-  alumux: mux2t1_N
+  ALU_SRC_MUX: mux2t1_N
     generic MAP(N => N) 
     port MAP(i_S  => MID_ALUSRC,
          i_D0 => MID_REG_B_OUT,
-         i_D1 => MID_IMMMUX_OUT,
+         i_D1 => MID_IMMEDIATE_FULL,
          o_O  => MID_ALUMUX_OUT);
 
-  botmux: mux2t1_N
+  AND_LINK_MUX: mux2t1_N
     generic MAP(N  => N)
-    port MAP(i_S   => MID_AND_OUT,
-         i_D0      => MID_ADDSUB_OUT,
-         i_D1      => MID_IMMMUX_OUT,
+    port MAP(i_S   => MID_CONTROL_ANDLINK,
+         i_D0      => MID_PC_NEXT_4,
+         i_D1      => MID_ADDSUB_OUT,
          o_O       => MID_BOTMUX_OUT);
 
-  regmux: mux2t1_N
+  MEM_TO_REG_MUX: mux2t1_N
   generic MAP(N => N) 
     port MAP(i_S  => MID_MEMTOREG,
              i_D0 => MID_BOTMUX_OUT,
              i_D1 => s_DMemOut,
              o_O  => MID_REGMUX_OUT);
 
-
-  andy: andg2
-    port MAP(i_A  => MID_ALUSRC,
-             i_B  => MID_ADDSUB,
-             o_F  =>  MID_AND_OUT);
 
   s_RegWrAddr <= s_Inst(11 downto 7);
   s_RegWrData <= MID_REGMUX_OUT;
