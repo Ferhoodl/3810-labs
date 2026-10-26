@@ -1,14 +1,13 @@
 -------------------------------------------------------------------------
--- Isaiah Steele
+-- Troy Tomson
 -- Student in CprE 3810
 -- Iowa State University
 -------------------------------------------------------------------------
--- tb_adder_n.vhd
+-- tb_add_sub.vhd
 -------------------------------------------------------------------------
--- DESCRIPTION: This file contains a testbench for an n-bit ripple-carry
--- adder.
+-- DESCRIPTION: This file contains a testbench for the ALU
 --              
--- 09/08/2026: created
+-- 10/25/2026: created
 -------------------------------------------------------------------------
 
 library IEEE;
