@@ -113,6 +113,15 @@ architecture structure of RISCV_Processor is
           q            : out std_logic_vector((DATA_WIDTH -1) downto 0));
     end component;
     
+component barrelShifter is
+  port(i_Data         : in std_logic_vector(31 downto 0);
+       i_Shift         : in std_logic_vector(4 downto 0);
+       i_arith         : in std_logic; -- 0 for SRL, 1 for SRA
+       i_Dir         : in std_logic; -- 0 for right, 1 for left
+       o_Shifted        : out std_logic_vector(31 downto 0)
+       );
+end component;
+    
   component mux2t1_N
     generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32
     port(i_S          : in std_logic;
@@ -144,6 +153,12 @@ architecture structure of RISCV_Processor is
          i_B          : in std_logic;
          o_F          : out std_logic);
   end component;
+  
+  component org2
+    port(i_A          : in std_logic;
+         i_B          : in std_logic;
+         o_F          : out std_logic);
+  end component;
 
   -- TODO: You may add any additional signals or components your implementation 
   --       requires below this comment
@@ -165,7 +180,12 @@ architecture structure of RISCV_Processor is
   signal MID_APP_OUT      : std_logic_vector(31 downto 0);
   signal MID_EXT_OUT      : std_logic_vector(31 downto 0);
   signal MID_PC_NEXT      : std_logic_vector(31 downto 0);
+  signal MID_PC_NEXT_4    : std_logic_vector(31 downto 0);
+  signal MID_PC_JUMP_REG  : std_logic_vector(31 downto 0);
+  signal MID_PC_AND       : std_logic_vector(31 downto 0);
+  signal MID_PC_SHIFT     : std_logic_vector(31 downto 0);
   signal MID_IMMEDIATE    : std_logic_vector(11 downto 0);
+  signal MID_PC_MUX_SEL   : std_logic;
   signal MID_ADDSUB       : std_logic;
   signal MID_ALUSRC       : std_logic;
   signal MID_IMM_SEL      : std_logic;
@@ -197,23 +217,12 @@ begin
              data => iInstExt,
              we   => iInstLd,
              q    => s_Inst);
-
-  pc_add_four: add_sub
-    generic MAP(N => N)
-    port MAP(i_A  => s_PC,
-             i_B  => x"00000004",
-             i_C  => '0',
-             o_S  => MID_PC_NEXT,
-             o_C  => open);
              
-  PC_REG: pc
-  generic MAP(N => N)
-    port MAP(i_CLK => iCLK,
-             i_RST => iRST,
-             i_WE  => '1',
-             i_D   => MID_PC_NEXT,
-             o_Q   => s_PC);
-
+    -- Poor man's immgen for now: send the S-Type immediate for 'sw' when appropriate, otherwise send I-Type immediate
+  MID_IMMEDIATE <= s_Inst(31 downto 25) & s_Inst(11 downto 7) when s_Inst(6 downto 0) = "0100011" else 
+              s_Inst(31 downto 20);
+             
+              
   CONTROL_UNIT: control
     port MAP(i_opcode   => s_Inst(6 downto 0),
              i_func7    => s_Inst(31 downto 25),
@@ -225,7 +234,7 @@ begin
              o_MemToReg => MID_MEMTOREG);
 
   REGISTER_FILE: reg_file
-generic MAP(N => N)
+  generic MAP(N => N)
     port MAP(i_CLK       => iCLK,
              i_RST       => iRST,
              i_W_VAL     => s_RegWrData,
@@ -235,13 +244,59 @@ generic MAP(N => N)
              i_R_ADDR_B  => s_Inst(24 downto 20), -- clip the rs2 from instruction
              o_R_VAL_A   => MID_REG_A_OUT,
              o_R_VAL_B   => MID_REG_B_OUT);
+             
+  SHIFT_LEFT: barrelShifter
+  port(i_Data      => MID_IMMEDIATE,
+       i_Shift     => -- IDK
+       i_arith     => -- IDK
+       i_Dir       => -- IDK
+       o_Shifted   => MID_PC_SHIFT
+       );
+  end component;
 
-  -- Poor man's immgen for now: send the S-Type immediate for 'sw' when appropriate, otherwise send I-Type immediate
-  MID_IMMEDIATE <= s_Inst(31 downto 25) & s_Inst(11 downto 7) when s_Inst(6 downto 0) = "0100011" else 
-              s_Inst(31 downto 20);
+  pc_add_four: add_sub
+    generic MAP(N => N)
+    port MAP(i_A  => s_PC,
+             i_B  => x"00000004",
+             i_C  => '0',
+             o_S  => MID_PC_NEXT_4,
+             o_C  => open);
+             
+  pc_and: andg2
+    port MAP(i_A  => , -- IDK ON THIS ONE
+             i_B  => 1, -- GET zero FROM ALU TO WORK!
+             o_F  => MID_PC_AND);
+             
+  pc_or: or2
+    port MAP(i_A  => , -- IDK ON THIS ONE
+             i_B  => MID_PC_AND,
+             o_F  => MID_PC_MUX_SEL);
+             
+  pc_add_jump_reg: add_sub
+    generic MAP(N => N)
+    port MAP(i_A  => s_PC,
+             i_B  => MID_PC_SHIFT,
+             i_C  => '0',
+             o_S  => MID_PC_JUMP_REG,
+             o_C  => open);
+             
+  pc_mux: mux2t1_N
+    generic MAP(N  => N)
+    port MAP(i_S   => MID_PC_MUX_SEL,
+         i_D0      => MID_PC_NEXT_4,
+         i_D1      => MID_PC_JUMP_REG,
+         o_O       => MID_PC_NEXT);
+             
+  PC_REG: pc
+  generic MAP(N => N)
+    port MAP(i_CLK => iCLK,
+             i_RST => iRST,
+             i_WE  => '1',
+             i_D   => MID_PC_NEXT,
+             o_Q   => s_PC);
 
   z_app: zero_appender
-    port MAP(Z_APP_IN  => s_Inst(31 downto 12),
+    port MAP(Z_APP_IN  => s_Inst(31 dowpcnto 12),
              Z_APP_OUT => MID_APP_OUT);
 
   s_ext: sign_extender
