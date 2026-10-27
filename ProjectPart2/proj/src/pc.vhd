@@ -25,27 +25,45 @@ entity pc is
 end pc;
 
 architecture structure of pc is
-  
-  -- Describe the component entities as defined in their
-  -- respective .vhd files.
+
   component dffg
-    port(i_CLK        : in std_logic;     -- Clock input
-         i_RST        : in std_logic;     -- Reset input
-         i_WE         : in std_logic;     -- Write enable input
-         i_D          : in std_logic;     -- Data value input
-         o_Q          : out std_logic);   -- Data value output
+    port(i_CLK        : in std_logic;
+         i_RST        : in std_logic;
+         i_WE         : in std_logic;
+         i_D          : in std_logic;
+         o_Q          : out std_logic);
+  end component;
+
+  component dffg_set
+    port(i_CLK        : in std_logic;
+         i_RST        : in std_logic;
+         i_WE         : in std_logic;
+         i_D          : in std_logic;
+         o_Q          : out std_logic);
   end component;
 
 begin
 
-  -- Instantiate N mux instances.
-  G_NBit_DFFG: for i in 0 to N-1 generate
-    DFFGI: dffg port map(
-              i_CLK     => i_CLK,  
-              i_RST     => i_RST,
-              i_WE      => i_WE,  
-              i_D       => i_D(i),
-	      o_Q	=> o_Q(i)); 
-  end generate G_NBit_DFFG;
+  -- This is an annoying part where we have to treat bit 22 differently so every bit resets to 0 except bit 22 so that the PC resets to 0x00400000
+  -- seems weird to me, but I guess I'm the one who's learning
+  GEN_NBit_DFFG: for i in 0 to N-1 generate
+    GEN_RESET_ZERO: if i /= 22 generate
+      DFFGI: dffg port map(
+                i_CLK     => i_CLK,
+                i_RST     => i_RST,
+                i_WE      => i_WE,
+                i_D       => i_D(i),
+                o_Q       => o_Q(i));
+    end generate GEN_RESET_ZERO;
 
-  end structure;
+    GEN_RESET_ONE: if i = 22 generate
+      DFFGI: dffg_set port map(
+                i_CLK     => i_CLK,
+                i_RST     => i_RST,
+                i_WE      => i_WE,
+                i_D       => i_D(i),
+                o_Q       => o_Q(i));
+    end generate GEN_RESET_ONE;
+  end generate GEN_NBit_DFFG;
+
+end structure;

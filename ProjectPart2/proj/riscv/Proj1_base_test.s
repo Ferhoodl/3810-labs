@@ -118,8 +118,3 @@ sub x23, x22, x21
 
 # wfi test
 wfi
-
-
-
-
-

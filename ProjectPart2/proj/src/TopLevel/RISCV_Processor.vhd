@@ -49,7 +49,7 @@ architecture structure of RISCV_Processor is
 
   -- Required instruction memory signals
   signal s_IMemAddr     : std_logic_vector(N-1 downto 0); -- Do not assign this signal, assign to s_PC instead
-  signal s_PC : std_logic_vector(N-1 downto 0); -- TODO: use this signal as your intended final instruction memory address input.
+  signal s_PC : std_logic_vector(N-1 downto 0) := x"00400000"; -- TODO: use this signal as your intended final instruction memory address input.
   signal s_Inst         : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the instruction signal 
 
   -- Required halt signal -- for simulation
@@ -83,11 +83,13 @@ component control is
          i_func7         : in  std_logic_vector(6 downto 0);
          o_RegWrite      : out std_logic;
          o_MemWrite      : out std_logic;
-         o_ALUSrc        : out std_logic;
+         o_ALUSrcA       : out std_logic_vector(1 downto 0);
+         o_ALUSrcB       : out std_logic;
          o_MemToReg      : out std_logic;
          o_Branch        : out std_logic;
          o_Jump          : out std_logic;
          o_AndLink       : out std_logic;
+         o_AndLinkReg    : out std_logic; -- added
          o_ImmediateType : out std_logic_vector(2 downto 0);
          o_ALUControl    : out std_logic_vector(3 downto 0));
   end component;
@@ -99,7 +101,9 @@ component control is
          i_ALUControl : in  std_logic_vector(3 downto 0);
          o_Result     : out std_logic_vector(N-1 downto 0);
          o_Zero       : out std_logic;
-         o_CarryOut   : out std_logic);
+         o_CarryOut   : out std_logic;
+         o_LT         : out std_logic;
+         o_LTU        : out std_logic);
   end component;
 
   component reg_file
@@ -189,18 +193,26 @@ end component;
   signal MID_PC_NEXT_4            : std_logic_vector(31 downto 0);
   signal MID_PC_JUMP_REG          : std_logic_vector(31 downto 0);
   signal MID_PC_AND               : std_logic;
-  signal MID_PC_SHIFT             : std_logic_vector(31 downto 0);
   signal MID_IMMEDIATE_FULL       : std_logic_vector(31 downto 0);
   signal MID_PC_MUX_SEL           : std_logic;
-  signal MID_ALUSRC               : std_logic;
+  signal MID_ALUSRCA              : std_logic_vector(1 downto 0);
+  signal MID_ALUSRCB              : std_logic;
   signal MID_MEMTOREG             : std_logic;
   signal MID_MEMWRITE             : std_logic;
   signal MID_CONTROL_BRANCH       : std_logic;
   signal MID_CONTROL_JUMP         : std_logic;
   signal MID_CONTROL_ANDLINK      : std_logic;
+  signal MID_CONTROL_ANDLINKREG   : std_logic;
   signal MID_CONTROL_IMMTYPE      : std_logic_vector(2 downto 0);
   signal MID_CONTROL_ALUCONTROL   : std_logic_vector(3 downto 0);
   signal MID_ALU_ZERO             : std_logic;
+  signal MID_ALU_LT               : std_logic;
+  signal MID_ALU_LTU              : std_logic;
+  signal MID_BRANCH_COND          : std_logic;
+  signal MID_BRANCH_TAKEN         : std_logic;
+  signal MID_ALU_A_IN             : std_logic_vector(31 downto 0);
+  signal MID_PC_BASE              : std_logic_vector(31 downto 0);
+  signal MID_JALR_SEL             : std_logic;
 
 
 
@@ -239,18 +251,20 @@ begin
              
               
 CONTROL_UNIT: control
-  port MAP(i_opcode        => s_Inst(6 downto 0),
-           i_func3         => s_Inst(14 downto 12),
-           i_func7         => s_Inst(31 downto 25),
-           o_RegWrite      => s_RegWr,
-           o_MemWrite      => s_DMemWr,
-           o_ALUSrc        => MID_ALUSRC,
-           o_MemToReg      => MID_MEMTOREG,
-           o_Branch        => MID_CONTROL_BRANCH,
-           o_Jump          => MID_CONTROL_JUMP,
-           o_AndLink       => MID_CONTROL_ANDLINK,
-           o_ImmediateType => MID_CONTROL_IMMTYPE,
-           o_ALUControl    => MID_CONTROL_ALUCONTROL);
+port MAP(i_opcode        => s_Inst(6 downto 0),
+         i_func3         => s_Inst(14 downto 12),
+         i_func7         => s_Inst(31 downto 25),
+         o_RegWrite      => s_RegWr,
+         o_MemWrite      => s_DMemWr,
+         o_ALUSrcA       => MID_ALUSRCA,
+         o_ALUSrcB       => MID_ALUSRCB,
+         o_MemToReg      => MID_MEMTOREG,
+         o_Branch        => MID_CONTROL_BRANCH,
+         o_Jump          => MID_CONTROL_JUMP,
+         o_AndLink       => MID_CONTROL_ANDLINK,
+         o_AndLinkReg    => MID_CONTROL_ANDLINKREG,
+         o_ImmediateType => MID_CONTROL_IMMTYPE,
+         o_ALUControl    => MID_CONTROL_ALUCONTROL);
 
   REGISTER_FILE: reg_file
   generic MAP(N => N)
@@ -264,7 +278,6 @@ CONTROL_UNIT: control
              o_R_VAL_A   => MID_REG_A_OUT,
              o_R_VAL_B   => MID_REG_B_OUT);
 
-  MID_PC_SHIFT <= MID_IMMEDIATE_FULL(30 downto 0) & '0';
 
 pc_add_four: add_sub
     generic MAP(N => N)
@@ -274,20 +287,37 @@ pc_add_four: add_sub
              o_S  => MID_PC_NEXT_4,
              o_C  => open);
              
+  -- func3(2:1) picks the condition (beq/bne: zero, blt/bge: signed lt, bltu/bgeu: unsigned lt)
+  -- and func3(0) inverts it (bne, bge, bgeu)
+  with s_Inst(14 downto 13) select
+    MID_BRANCH_COND <= MID_ALU_ZERO when "00",
+                       MID_ALU_LT   when "10",
+                       MID_ALU_LTU  when "11",
+                       '0'          when others;
+
+  MID_BRANCH_TAKEN <= MID_BRANCH_COND xor s_Inst(12);
+
   pc_and: andg2
-    port MAP(i_A  => MID_CONTROL_BRANCH, -- IDK ON THIS ONE
-             i_B  => MID_ALU_ZERO, -- GET zero FROM ALU TO WORK!
+    port MAP(i_A  => MID_CONTROL_BRANCH,
+             i_B  => MID_BRANCH_TAKEN,
              o_F  => MID_PC_AND);
              
   pc_or: org2
     port MAP(i_A  => MID_CONTROL_JUMP, -- IDK ON THIS ONE
              i_B  => MID_PC_AND,
              o_F  => MID_PC_MUX_SEL);
-             
-pc_add_jump_reg: add_sub
+
+  PC_BASE_MUX: mux2t1_N
     generic MAP(N => N)
-    port MAP(i_A  => s_PC,
-             i_B  => MID_PC_SHIFT,
+    port MAP(i_S  => MID_CONTROL_ANDLINKREG,
+             i_D0 => s_PC,
+             i_D1 => MID_REG_A_OUT,
+             o_O  => MID_PC_BASE);
+             
+  pc_add_jump_reg: add_sub
+    generic MAP(N => N)
+    port MAP(i_A  => MID_PC_BASE,
+             i_B  => MID_IMMEDIATE_FULL,
              i_C  => '0',
              o_S  => MID_PC_JUMP_REG,
              o_C  => open);
@@ -309,12 +339,14 @@ pc_add_jump_reg: add_sub
 
   MY_ALU: alu
     generic MAP(N => N)
-    port MAP(i_A          => MID_REG_A_OUT,
+    port MAP(i_A          => MID_ALU_A_IN,
              i_B          => MID_ALUMUX_OUT,
              i_ALUControl => MID_CONTROL_ALUCONTROL,
              o_Result     => MID_ADDSUB_OUT,
              o_Zero       => MID_ALU_ZERO,
-             o_CarryOut   => open);
+             o_CarryOut   => open,
+             o_LT         => MID_ALU_LT,
+             o_LTU        => MID_ALU_LTU);
 
   DMem: mem
     generic map(DATA_WIDTH => 32,
@@ -325,12 +357,18 @@ pc_add_jump_reg: add_sub
              we   => s_DMemWr,
              q    => s_DMemOut);
 
-  ALU_SRC_MUX: mux2t1_N
+
+with MID_ALUSRCA select
+    MID_ALU_A_IN <= s_PC          when "01",
+                    x"00000000"   when "10",
+                    MID_REG_A_OUT when others;
+
+  ALU_SRC_B_MUX: mux2t1_N
     generic MAP(N => N) 
-    port MAP(i_S  => MID_ALUSRC,
-         i_D0 => MID_REG_B_OUT,
-         i_D1 => MID_IMMEDIATE_FULL,
-         o_O  => MID_ALUMUX_OUT);
+    port MAP(i_S  => MID_ALUSRCB,
+             i_D0 => MID_REG_B_OUT,
+             i_D1 => MID_IMMEDIATE_FULL,
+             o_O  => MID_ALUMUX_OUT);
 
   AND_LINK_MUX: mux2t1_N
     generic MAP(N  => N)

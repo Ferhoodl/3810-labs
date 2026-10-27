@@ -23,7 +23,9 @@ generic(N : integer := 32);
     i_ALUControl : in  std_logic_vector(3 downto 0);
     o_Result     : out std_logic_vector(N-1 downto 0);
     o_Zero       : out std_logic;
-    o_CarryOut   : out std_logic
+    o_CarryOut   : out std_logic;
+    o_LT         : out std_logic;
+    o_LTU        : out std_logic
   );
 end alu;
 
@@ -95,6 +97,14 @@ architecture structure of alu is
   signal MID_MUX3_OUT        : std_logic_vector(N-1 downto 0);
   signal MID_MUX4_OUT        : std_logic_vector(N-1 downto 0);
   signal MID_MUX5_OUT        : std_logic_vector(N-1 downto 0);
+  signal MID_MUX6_OUT        : std_logic_vector(N-1 downto 0);
+  signal MID_CARRY           : std_logic;
+  signal MID_SLT_OUT         : std_logic_vector(N-1 downto 0);
+  signal MID_SLT_BIT         : std_logic;
+  signal MID_LT              : std_logic;
+  signal MID_LTU             : std_logic;
+  signal MID_SLT_SEL         : std_logic;
+  signal MID_MUX5_SEL        : std_logic;
 
 begin
 
@@ -137,8 +147,10 @@ begin
       i_B => i_B,
       i_C => MID_ADDSUB_CONTROL,
       o_S => MID_ADDSUB_OUT,
-      o_C => o_CarryOut
+      o_C => MID_CARRY
     );
+
+  o_CarryOut <= MID_CARRY;
 
   SHIFTER: barrelShifter
     port map(
@@ -190,16 +202,42 @@ begin
     );
 
 
+  MID_MUX5_SEL <= i_ALUControl(2) and not i_ALUControl(0); -- xor only; srl/sra (x101) must reach the shifter
+
   MUX5: mux2t1_N
     generic map(N => N)
     port map(
-      i_S  => i_ALUControl(2),
+      i_S  => MID_MUX5_SEL,
       i_D0 => MID_MUX4_OUT,
       i_D1 => MID_MUX2_OUT,
       o_O  => MID_MUX5_OUT
     );
 
-  o_Result <= MID_MUX5_OUT;
-  o_Zero   <= '1' when MID_MUX5_OUT = (MID_MUX5_OUT'range => '0') else '0';
+  -- A - B is computed whenever ALUControl(3) = 1 (branches use 1000, slt/sltu use 101x)
+  -- unsigned: A < B when the subtract borrows (no carry out)
+  -- signed: if the signs differ A is less when A is negative, otherwise use the sign of A - B
+  MID_LTU <= not MID_CARRY;
+  MID_LT  <= i_A(N-1) when i_A(N-1) /= i_B(N-1) else MID_ADDSUB_OUT(N-1);
+
+  o_LT  <= MID_LT;
+  o_LTU <= MID_LTU;
+
+  -- slt (1010) / sltu (1011)
+  MID_SLT_BIT <= MID_LTU when i_ALUControl(0) = '1' else MID_LT;
+
+  MID_SLT_OUT <= (N-1 downto 1 => '0') & MID_SLT_BIT;
+  MID_SLT_SEL <= i_ALUControl(3) and i_ALUControl(1);
+
+  MUX6: mux2t1_N
+    generic map(N => N)
+    port map(
+      i_S  => MID_SLT_SEL,
+      i_D0 => MID_MUX5_OUT,
+      i_D1 => MID_SLT_OUT,
+      o_O  => MID_MUX6_OUT
+    );
+
+  o_Result <= MID_MUX6_OUT;
+  o_Zero   <= '1' when MID_MUX6_OUT = (MID_MUX6_OUT'range => '0') else '0';
 
   end structure;
