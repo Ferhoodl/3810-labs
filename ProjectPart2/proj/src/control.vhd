@@ -31,6 +31,8 @@ port (
     o_AndLink       : out std_logic;
     o_AndLinkReg    : out std_logic;
     o_ImmediateType : out std_logic_vector(2 downto 0);
+    o_MemSize       : out std_logic_vector(1 downto 0);
+    o_LoadUnsigned  : out std_logic;
     o_ALUControl    : out std_logic_vector(3 downto 0)
   );
 end control;
@@ -61,6 +63,10 @@ with i_opcode select
   o_Jump       <= controls(2);
   o_AndLink    <= controls(1);
   o_AndLinkReg <= controls(0);
+
+  -- memory access size things
+  o_MemSize      <= i_func3(1 downto 0);
+  o_LoadUnsigned <= i_func3(2);
 
 
   -- ALUSrcA things

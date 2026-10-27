@@ -12,6 +12,7 @@
 -- 02/26/2018 by H3::Design created.
 -- 08/06/2021 by H3::Removed unused TODOs.
 -- 08/25/2022 by BG::Better python integration
+-- 10/07/2026 by TB::Add Byte Enable for mem
 -------------------------------------------------------------------------
 
 library IEEE;
@@ -103,6 +104,8 @@ begin
     alias memWr is <<signal MyRiscv.s_DMemWr : std_logic>>;
     alias memAddr is <<signal MyRiscv.s_DMemAddr : std_logic_vector(N-1 downto 0)>>;
     alias memData is <<signal MyRiscv.s_DMemData : std_logic_vector(N-1 downto 0)>>;
+    -- Observe the memory input so the trace records the actual write lanes.
+    alias memBE is <<signal MyRiscv.DMem.be : std_logic_vector(3 downto 0)>>;
 
     alias regWr is <<signal MyRiscv.s_RegWr : std_logic>>;
     alias regWrAddr is <<signal MyRiscv.s_RegWrAddr : std_logic_vector(4 downto 0)>>;
@@ -134,6 +137,8 @@ begin
           hwrite(my_line, memAddr);
           write(my_line, string'(" Val: 0x"));
           hwrite(my_line, memData);
+          write(my_line, string'(" BE: "));
+          write(my_line, memBE);
           writeline(my_dump, my_line);
         end if;
         if (ovfl = '1') then

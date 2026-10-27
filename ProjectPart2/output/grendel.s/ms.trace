@@ -13,13 +13,13 @@ Register Write to Reg: 0x00 Val: 0x00400018
 In clock cycle: 6
 Register Write to Reg: 0x02 Val: 0x10010FD8
 In clock cycle: 7
-Memory Write to Addr: 0x10010FFC Val: 0x00400018
+Memory Write to Addr: 0x10010FFC Val: 0x00400018 BE: 1111
 In clock cycle: 8
-Memory Write to Addr: 0x10010FF8 Val: 0x00000000
+Memory Write to Addr: 0x10010FF8 Val: 0x00000000 BE: 1111
 In clock cycle: 9
 Register Write to Reg: 0x08 Val: 0x10010FD8
 In clock cycle: 10
-Memory Write to Addr: 0x10010FF0 Val: 0x00000000
+Memory Write to Addr: 0x10010FF0 Val: 0x00000000 BE: 1111
 In clock cycle: 11
 Register Write to Reg: 0x00 Val: 0x00400038
 In clock cycle: 12
@@ -39,17 +39,17 @@ Register Write to Reg: 0x00 Val: 0x00400048
 In clock cycle: 20
 Register Write to Reg: 0x02 Val: 0x10010FB8
 In clock cycle: 21
-Memory Write to Addr: 0x10010FD4 Val: 0x10010FD8
+Memory Write to Addr: 0x10010FD4 Val: 0x10010FD8 BE: 1111
 In clock cycle: 22
 Register Write to Reg: 0x08 Val: 0x10010FB8
 In clock cycle: 23
-Memory Write to Addr: 0x10010FD8 Val: 0x00000000
+Memory Write to Addr: 0x10010FD8 Val: 0x00000000 BE: 1111
 In clock cycle: 24
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 25
-Memory Write to Addr: 0x10010FC0 Val: 0x00000001
+Memory Write to Addr: 0x10010FC0 Val: 0x00000001 BE: 1111
 In clock cycle: 26
-Memory Write to Addr: 0x10010FC4 Val: 0x00000000
+Memory Write to Addr: 0x10010FC4 Val: 0x00000000 BE: 1111
 In clock cycle: 27
 Register Write to Reg: 0x00 Val: 0x004003F4
 In clock cycle: 28
@@ -65,7 +65,7 @@ Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 34
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 35
-Memory Write to Addr: 0x10010FC8 Val: 0x00000000
+Memory Write to Addr: 0x10010FC8 Val: 0x00000000 BE: 1111
 In clock cycle: 36
 Register Write to Reg: 0x1C Val: 0x00000000
 In clock cycle: 37
@@ -99,13 +99,13 @@ Register Write to Reg: 0x00 Val: 0x00400064
 In clock cycle: 52
 Register Write to Reg: 0x02 Val: 0x10010FA8
 In clock cycle: 53
-Memory Write to Addr: 0x10010FD4 Val: 0x00400064
+Memory Write to Addr: 0x10010FD4 Val: 0x00400064 BE: 1111
 In clock cycle: 54
-Memory Write to Addr: 0x10010FD0 Val: 0x10010FD8
+Memory Write to Addr: 0x10010FD0 Val: 0x10010FD8 BE: 1111
 In clock cycle: 55
 Register Write to Reg: 0x08 Val: 0x10010FA8
 In clock cycle: 56
-Memory Write to Addr: 0x10010FD8 Val: 0x00000000
+Memory Write to Addr: 0x10010FD8 Val: 0x00000000 BE: 1111
 In clock cycle: 57
 Register Write to Reg: 0x1D Val: 0x00000000
 In clock cycle: 58
@@ -117,17 +117,17 @@ Register Write to Reg: 0x00 Val: 0x004001AC
 In clock cycle: 61
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 62
-Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8 BE: 1111
 In clock cycle: 63
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 64
-Memory Write to Addr: 0x10010FA8 Val: 0x00000000
+Memory Write to Addr: 0x10010FA8 Val: 0x00000000 BE: 1111
 In clock cycle: 65
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 66
-Memory Write to Addr: 0x10010F90 Val: 0x00000001
+Memory Write to Addr: 0x10010F90 Val: 0x00000001 BE: 1111
 In clock cycle: 67
-Memory Write to Addr: 0x10010F94 Val: 0x00000000
+Memory Write to Addr: 0x10010F94 Val: 0x00000000 BE: 1111
 In clock cycle: 68
 Register Write to Reg: 0x00 Val: 0x00400374
 In clock cycle: 69
@@ -141,7 +141,7 @@ Register Write to Reg: 0x07 Val: 0x100103A0
 In clock cycle: 74
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 75
-Memory Write to Addr: 0x10010F98 Val: 0x10010024
+Memory Write to Addr: 0x10010F98 Val: 0x10010024 BE: 1111
 In clock cycle: 76
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 77
@@ -153,7 +153,7 @@ Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 80
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 81
-Memory Write to Addr: 0x10010024 Val: 0x00000001
+Memory Write to Addr: 0x10010024 Val: 0x00000001 BE: 1111
 In clock cycle: 82
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 83
@@ -177,21 +177,21 @@ Register Write to Reg: 0x00 Val: 0x004001C4
 In clock cycle: 92
 Register Write to Reg: 0x02 Val: 0x10010F90
 In clock cycle: 93
-Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8 BE: 1111
 In clock cycle: 94
 Register Write to Reg: 0x08 Val: 0x10010F90
 In clock cycle: 95
 Register Write to Reg: 0x1F Val: 0x00000000
 In clock cycle: 96
-Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4
+Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4 BE: 1111
 In clock cycle: 97
-Memory Write to Addr: 0x10010FAC Val: 0x00000000
+Memory Write to Addr: 0x10010FAC Val: 0x00000000 BE: 1111
 In clock cycle: 98
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 99
-Memory Write to Addr: 0x10010F98 Val: 0x00000000
+Memory Write to Addr: 0x10010F98 Val: 0x00000000 BE: 1111
 In clock cycle: 100
-Memory Write to Addr: 0x10010F9C Val: 0x00000000
+Memory Write to Addr: 0x10010F9C Val: 0x00000000 BE: 1111
 In clock cycle: 101
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 102
@@ -199,9 +199,9 @@ Register Write to Reg: 0x1D Val: 0x00000000
 In clock cycle: 103
 Register Write to Reg: 0x1C Val: 0x00000000
 In clock cycle: 104
-Memory Write to Addr: 0x10010FC4 Val: 0x00000000
+Memory Write to Addr: 0x10010FC4 Val: 0x00000000 BE: 1111
 In clock cycle: 105
-Memory Write to Addr: 0x10010FC8 Val: 0x00000000
+Memory Write to Addr: 0x10010FC8 Val: 0x00000000 BE: 1111
 In clock cycle: 106
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 107
@@ -225,13 +225,13 @@ Register Write to Reg: 0x00 Val: 0x004001D8
 In clock cycle: 116
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 117
-Memory Write to Addr: 0x10010FA4 Val: 0x004001D8
+Memory Write to Addr: 0x10010FA4 Val: 0x004001D8 BE: 1111
 In clock cycle: 118
-Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8 BE: 1111
 In clock cycle: 119
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 120
-Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4
+Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4 BE: 1111
 In clock cycle: 121
 Register Write to Reg: 0x00 Val: 0x00400244
 In clock cycle: 122
@@ -263,13 +263,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 136
 Register Write to Reg: 0x02 Val: 0x10010F68
 In clock cycle: 137
-Memory Write to Addr: 0x10010F84 Val: 0x10010F88
+Memory Write to Addr: 0x10010F84 Val: 0x10010F88 BE: 1111
 In clock cycle: 138
 Register Write to Reg: 0x08 Val: 0x10010F68
 In clock cycle: 139
-Memory Write to Addr: 0x10010F88 Val: 0x00000000
+Memory Write to Addr: 0x10010F88 Val: 0x00000000 BE: 1111
 In clock cycle: 140
-Memory Write to Addr: 0x10010F8C Val: 0x00000000
+Memory Write to Addr: 0x10010F8C Val: 0x00000000 BE: 1111
 In clock cycle: 141
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 142
@@ -283,13 +283,13 @@ Register Write to Reg: 0x07 Val: 0x10010014
 In clock cycle: 146
 Register Write to Reg: 0x07 Val: 0x00000006
 In clock cycle: 147
-Memory Write to Addr: 0x10010F78 Val: 0x00000006
+Memory Write to Addr: 0x10010F78 Val: 0x00000006 BE: 1111
 In clock cycle: 148
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 149
-Memory Write to Addr: 0x10010F70 Val: 0x00000001
+Memory Write to Addr: 0x10010F70 Val: 0x00000001 BE: 1111
 In clock cycle: 150
-Memory Write to Addr: 0x10010F74 Val: 0x00000000
+Memory Write to Addr: 0x10010F74 Val: 0x00000000 BE: 1111
 In clock cycle: 151
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 152
@@ -325,7 +325,7 @@ Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 169
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 170
-Memory Write to Addr: 0x10010FC8 Val: 0x00000001
+Memory Write to Addr: 0x10010FC8 Val: 0x00000001 BE: 1111
 In clock cycle: 171
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 172
@@ -355,13 +355,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 185
 Register Write to Reg: 0x02 Val: 0x10010F68
 In clock cycle: 186
-Memory Write to Addr: 0x10010F84 Val: 0x10010F88
+Memory Write to Addr: 0x10010F84 Val: 0x10010F88 BE: 1111
 In clock cycle: 187
 Register Write to Reg: 0x08 Val: 0x10010F68
 In clock cycle: 188
-Memory Write to Addr: 0x10010F88 Val: 0x00000000
+Memory Write to Addr: 0x10010F88 Val: 0x00000000 BE: 1111
 In clock cycle: 189
-Memory Write to Addr: 0x10010F8C Val: 0x00000001
+Memory Write to Addr: 0x10010F8C Val: 0x00000001 BE: 1111
 In clock cycle: 190
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 191
@@ -375,13 +375,13 @@ Register Write to Reg: 0x07 Val: 0x10010014
 In clock cycle: 195
 Register Write to Reg: 0x07 Val: 0x00000006
 In clock cycle: 196
-Memory Write to Addr: 0x10010F78 Val: 0x00000006
+Memory Write to Addr: 0x10010F78 Val: 0x00000006 BE: 1111
 In clock cycle: 197
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 198
-Memory Write to Addr: 0x10010F70 Val: 0x00000001
+Memory Write to Addr: 0x10010F70 Val: 0x00000001 BE: 1111
 In clock cycle: 199
-Memory Write to Addr: 0x10010F74 Val: 0x00000000
+Memory Write to Addr: 0x10010F74 Val: 0x00000000 BE: 1111
 In clock cycle: 200
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 201
@@ -397,13 +397,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 207
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 208
-Memory Write to Addr: 0x10010F70 Val: 0x00000002
+Memory Write to Addr: 0x10010F70 Val: 0x00000002 BE: 1111
 In clock cycle: 209
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 210
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 211
-Memory Write to Addr: 0x10010F74 Val: 0x00000001
+Memory Write to Addr: 0x10010F74 Val: 0x00000001 BE: 1111
 In clock cycle: 212
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 213
@@ -437,7 +437,7 @@ Register Write to Reg: 0x1D Val: 0x00000002
 In clock cycle: 229
 Register Write to Reg: 0x1C Val: 0x10010FC4
 In clock cycle: 230
-Memory Write to Addr: 0x10010FC8 Val: 0x00000002
+Memory Write to Addr: 0x10010FC8 Val: 0x00000002 BE: 1111
 In clock cycle: 231
 Register Write to Reg: 0x00 Val: 0x00400284
 In clock cycle: 232
@@ -451,7 +451,7 @@ Register Write to Reg: 0x02 Val: 0x10010FA8
 In clock cycle: 236
 Register Write to Reg: 0x00 Val: 0x004002C4
 In clock cycle: 237
-Memory Write to Addr: 0x10010FC0 Val: 0x00000001
+Memory Write to Addr: 0x10010FC0 Val: 0x00000001 BE: 1111
 In clock cycle: 238
 Register Write to Reg: 0x00 Val: 0x004001E0
 In clock cycle: 239
@@ -471,17 +471,17 @@ Register Write to Reg: 0x00 Val: 0x004000CC
 In clock cycle: 247
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 248
-Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8 BE: 1111
 In clock cycle: 249
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 250
-Memory Write to Addr: 0x10010FA8 Val: 0x00000001
+Memory Write to Addr: 0x10010FA8 Val: 0x00000001 BE: 1111
 In clock cycle: 251
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 252
-Memory Write to Addr: 0x10010F90 Val: 0x00000001
+Memory Write to Addr: 0x10010F90 Val: 0x00000001 BE: 1111
 In clock cycle: 253
-Memory Write to Addr: 0x10010F94 Val: 0x00000000
+Memory Write to Addr: 0x10010F94 Val: 0x00000000 BE: 1111
 In clock cycle: 254
 Register Write to Reg: 0x00 Val: 0x004003F4
 In clock cycle: 255
@@ -497,13 +497,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 261
 Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 262
-Memory Write to Addr: 0x10010F90 Val: 0x00000100
+Memory Write to Addr: 0x10010F90 Val: 0x00000100 BE: 1111
 In clock cycle: 263
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 264
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 265
-Memory Write to Addr: 0x10010F94 Val: 0x00000001
+Memory Write to Addr: 0x10010F94 Val: 0x00000001 BE: 1111
 In clock cycle: 266
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 267
@@ -517,7 +517,7 @@ Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 272
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 273
-Memory Write to Addr: 0x10010F98 Val: 0x00000001
+Memory Write to Addr: 0x10010F98 Val: 0x00000001 BE: 1111
 In clock cycle: 274
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 275
@@ -551,13 +551,13 @@ Register Write to Reg: 0x00 Val: 0x004000E8
 In clock cycle: 290
 Register Write to Reg: 0x02 Val: 0x10010F78
 In clock cycle: 291
-Memory Write to Addr: 0x10010FA4 Val: 0x004000E8
+Memory Write to Addr: 0x10010FA4 Val: 0x004000E8 BE: 1111
 In clock cycle: 292
-Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8 BE: 1111
 In clock cycle: 293
 Register Write to Reg: 0x08 Val: 0x10010F78
 In clock cycle: 294
-Memory Write to Addr: 0x10010FA8 Val: 0x00000001
+Memory Write to Addr: 0x10010FA8 Val: 0x00000001 BE: 1111
 In clock cycle: 295
 Register Write to Reg: 0x1D Val: 0x00000001
 In clock cycle: 296
@@ -569,17 +569,17 @@ Register Write to Reg: 0x00 Val: 0x004001AC
 In clock cycle: 299
 Register Write to Reg: 0x02 Val: 0x10010F58
 In clock cycle: 300
-Memory Write to Addr: 0x10010F74 Val: 0x10010F78
+Memory Write to Addr: 0x10010F74 Val: 0x10010F78 BE: 1111
 In clock cycle: 301
 Register Write to Reg: 0x08 Val: 0x10010F58
 In clock cycle: 302
-Memory Write to Addr: 0x10010F78 Val: 0x00000001
+Memory Write to Addr: 0x10010F78 Val: 0x00000001 BE: 1111
 In clock cycle: 303
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 304
-Memory Write to Addr: 0x10010F60 Val: 0x00000001
+Memory Write to Addr: 0x10010F60 Val: 0x00000001 BE: 1111
 In clock cycle: 305
-Memory Write to Addr: 0x10010F64 Val: 0x00000000
+Memory Write to Addr: 0x10010F64 Val: 0x00000000 BE: 1111
 In clock cycle: 306
 Register Write to Reg: 0x00 Val: 0x00400374
 In clock cycle: 307
@@ -595,13 +595,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 313
 Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 314
-Memory Write to Addr: 0x10010F60 Val: 0x00000100
+Memory Write to Addr: 0x10010F60 Val: 0x00000100 BE: 1111
 In clock cycle: 315
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 316
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 317
-Memory Write to Addr: 0x10010F64 Val: 0x00000001
+Memory Write to Addr: 0x10010F64 Val: 0x00000001 BE: 1111
 In clock cycle: 318
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 319
@@ -613,7 +613,7 @@ Register Write to Reg: 0x07 Val: 0x100103A0
 In clock cycle: 323
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 324
-Memory Write to Addr: 0x10010F68 Val: 0x10010024
+Memory Write to Addr: 0x10010F68 Val: 0x10010024 BE: 1111
 In clock cycle: 325
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 326
@@ -625,7 +625,7 @@ Register Write to Reg: 0x1C Val: 0x00000101
 In clock cycle: 329
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 330
-Memory Write to Addr: 0x10010024 Val: 0x00000101
+Memory Write to Addr: 0x10010024 Val: 0x00000101 BE: 1111
 In clock cycle: 331
 Register Write to Reg: 0x02 Val: 0x10010F58
 In clock cycle: 332
@@ -649,21 +649,21 @@ Register Write to Reg: 0x00 Val: 0x004001C4
 In clock cycle: 341
 Register Write to Reg: 0x02 Val: 0x10010F60
 In clock cycle: 342
-Memory Write to Addr: 0x10010F74 Val: 0x10010F78
+Memory Write to Addr: 0x10010F74 Val: 0x10010F78 BE: 1111
 In clock cycle: 343
 Register Write to Reg: 0x08 Val: 0x10010F60
 In clock cycle: 344
 Register Write to Reg: 0x1F Val: 0x00000000
 In clock cycle: 345
-Memory Write to Addr: 0x10010F78 Val: 0x10010F94
+Memory Write to Addr: 0x10010F78 Val: 0x10010F94 BE: 1111
 In clock cycle: 346
-Memory Write to Addr: 0x10010F7C Val: 0x00000001
+Memory Write to Addr: 0x10010F7C Val: 0x00000001 BE: 1111
 In clock cycle: 347
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 348
-Memory Write to Addr: 0x10010F68 Val: 0x00000001
+Memory Write to Addr: 0x10010F68 Val: 0x00000001 BE: 1111
 In clock cycle: 349
-Memory Write to Addr: 0x10010F6C Val: 0x00000000
+Memory Write to Addr: 0x10010F6C Val: 0x00000000 BE: 1111
 In clock cycle: 350
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 351
@@ -671,9 +671,9 @@ Register Write to Reg: 0x1D Val: 0x00000001
 In clock cycle: 352
 Register Write to Reg: 0x1C Val: 0x00000000
 In clock cycle: 353
-Memory Write to Addr: 0x10010F94 Val: 0x00000001
+Memory Write to Addr: 0x10010F94 Val: 0x00000001 BE: 1111
 In clock cycle: 354
-Memory Write to Addr: 0x10010F98 Val: 0x00000000
+Memory Write to Addr: 0x10010F98 Val: 0x00000000 BE: 1111
 In clock cycle: 355
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 356
@@ -697,13 +697,13 @@ Register Write to Reg: 0x00 Val: 0x004001D8
 In clock cycle: 365
 Register Write to Reg: 0x02 Val: 0x10010F58
 In clock cycle: 366
-Memory Write to Addr: 0x10010F74 Val: 0x004001D8
+Memory Write to Addr: 0x10010F74 Val: 0x004001D8 BE: 1111
 In clock cycle: 367
-Memory Write to Addr: 0x10010F70 Val: 0x10010F78
+Memory Write to Addr: 0x10010F70 Val: 0x10010F78 BE: 1111
 In clock cycle: 368
 Register Write to Reg: 0x08 Val: 0x10010F58
 In clock cycle: 369
-Memory Write to Addr: 0x10010F78 Val: 0x10010F94
+Memory Write to Addr: 0x10010F78 Val: 0x10010F94 BE: 1111
 In clock cycle: 370
 Register Write to Reg: 0x00 Val: 0x00400244
 In clock cycle: 371
@@ -735,13 +735,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 385
 Register Write to Reg: 0x02 Val: 0x10010F38
 In clock cycle: 386
-Memory Write to Addr: 0x10010F54 Val: 0x10010F58
+Memory Write to Addr: 0x10010F54 Val: 0x10010F58 BE: 1111
 In clock cycle: 387
 Register Write to Reg: 0x08 Val: 0x10010F38
 In clock cycle: 388
-Memory Write to Addr: 0x10010F58 Val: 0x00000001
+Memory Write to Addr: 0x10010F58 Val: 0x00000001 BE: 1111
 In clock cycle: 389
-Memory Write to Addr: 0x10010F5C Val: 0x00000000
+Memory Write to Addr: 0x10010F5C Val: 0x00000000 BE: 1111
 In clock cycle: 390
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 391
@@ -755,13 +755,13 @@ Register Write to Reg: 0x07 Val: 0x10010018
 In clock cycle: 395
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 396
-Memory Write to Addr: 0x10010F48 Val: 0x00000000
+Memory Write to Addr: 0x10010F48 Val: 0x00000000 BE: 1111
 In clock cycle: 397
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 398
-Memory Write to Addr: 0x10010F40 Val: 0x00000001
+Memory Write to Addr: 0x10010F40 Val: 0x00000001 BE: 1111
 In clock cycle: 399
-Memory Write to Addr: 0x10010F44 Val: 0x00000000
+Memory Write to Addr: 0x10010F44 Val: 0x00000000 BE: 1111
 In clock cycle: 400
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 401
@@ -797,7 +797,7 @@ Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 418
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 419
-Memory Write to Addr: 0x10010F98 Val: 0x00000001
+Memory Write to Addr: 0x10010F98 Val: 0x00000001 BE: 1111
 In clock cycle: 420
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 421
@@ -827,13 +827,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 434
 Register Write to Reg: 0x02 Val: 0x10010F38
 In clock cycle: 435
-Memory Write to Addr: 0x10010F54 Val: 0x10010F58
+Memory Write to Addr: 0x10010F54 Val: 0x10010F58 BE: 1111
 In clock cycle: 436
 Register Write to Reg: 0x08 Val: 0x10010F38
 In clock cycle: 437
-Memory Write to Addr: 0x10010F58 Val: 0x00000001
+Memory Write to Addr: 0x10010F58 Val: 0x00000001 BE: 1111
 In clock cycle: 438
-Memory Write to Addr: 0x10010F5C Val: 0x00000001
+Memory Write to Addr: 0x10010F5C Val: 0x00000001 BE: 1111
 In clock cycle: 439
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 440
@@ -847,13 +847,13 @@ Register Write to Reg: 0x07 Val: 0x10010018
 In clock cycle: 444
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 445
-Memory Write to Addr: 0x10010F48 Val: 0x00000000
+Memory Write to Addr: 0x10010F48 Val: 0x00000000 BE: 1111
 In clock cycle: 446
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 447
-Memory Write to Addr: 0x10010F40 Val: 0x00000001
+Memory Write to Addr: 0x10010F40 Val: 0x00000001 BE: 1111
 In clock cycle: 448
-Memory Write to Addr: 0x10010F44 Val: 0x00000000
+Memory Write to Addr: 0x10010F44 Val: 0x00000000 BE: 1111
 In clock cycle: 449
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 450
@@ -869,13 +869,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 456
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 457
-Memory Write to Addr: 0x10010F40 Val: 0x00000002
+Memory Write to Addr: 0x10010F40 Val: 0x00000002 BE: 1111
 In clock cycle: 458
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 459
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 460
-Memory Write to Addr: 0x10010F44 Val: 0x00000001
+Memory Write to Addr: 0x10010F44 Val: 0x00000001 BE: 1111
 In clock cycle: 461
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 462
@@ -909,7 +909,7 @@ Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 478
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 479
-Memory Write to Addr: 0x10010F98 Val: 0x00000002
+Memory Write to Addr: 0x10010F98 Val: 0x00000002 BE: 1111
 In clock cycle: 480
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 481
@@ -939,13 +939,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 494
 Register Write to Reg: 0x02 Val: 0x10010F38
 In clock cycle: 495
-Memory Write to Addr: 0x10010F54 Val: 0x10010F58
+Memory Write to Addr: 0x10010F54 Val: 0x10010F58 BE: 1111
 In clock cycle: 496
 Register Write to Reg: 0x08 Val: 0x10010F38
 In clock cycle: 497
-Memory Write to Addr: 0x10010F58 Val: 0x00000001
+Memory Write to Addr: 0x10010F58 Val: 0x00000001 BE: 1111
 In clock cycle: 498
-Memory Write to Addr: 0x10010F5C Val: 0x00000002
+Memory Write to Addr: 0x10010F5C Val: 0x00000002 BE: 1111
 In clock cycle: 499
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 500
@@ -959,13 +959,13 @@ Register Write to Reg: 0x07 Val: 0x10010018
 In clock cycle: 504
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 505
-Memory Write to Addr: 0x10010F48 Val: 0x00000000
+Memory Write to Addr: 0x10010F48 Val: 0x00000000 BE: 1111
 In clock cycle: 506
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 507
-Memory Write to Addr: 0x10010F40 Val: 0x00000001
+Memory Write to Addr: 0x10010F40 Val: 0x00000001 BE: 1111
 In clock cycle: 508
-Memory Write to Addr: 0x10010F44 Val: 0x00000000
+Memory Write to Addr: 0x10010F44 Val: 0x00000000 BE: 1111
 In clock cycle: 509
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 510
@@ -981,13 +981,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 516
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 517
-Memory Write to Addr: 0x10010F40 Val: 0x00000002
+Memory Write to Addr: 0x10010F40 Val: 0x00000002 BE: 1111
 In clock cycle: 518
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 519
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 520
-Memory Write to Addr: 0x10010F44 Val: 0x00000001
+Memory Write to Addr: 0x10010F44 Val: 0x00000001 BE: 1111
 In clock cycle: 521
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 522
@@ -1001,13 +1001,13 @@ Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 527
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 528
-Memory Write to Addr: 0x10010F40 Val: 0x00000004
+Memory Write to Addr: 0x10010F40 Val: 0x00000004 BE: 1111
 In clock cycle: 529
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 530
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 531
-Memory Write to Addr: 0x10010F44 Val: 0x00000002
+Memory Write to Addr: 0x10010F44 Val: 0x00000002 BE: 1111
 In clock cycle: 532
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 533
@@ -1041,7 +1041,7 @@ Register Write to Reg: 0x1C Val: 0x00000003
 In clock cycle: 549
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 550
-Memory Write to Addr: 0x10010F98 Val: 0x00000003
+Memory Write to Addr: 0x10010F98 Val: 0x00000003 BE: 1111
 In clock cycle: 551
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 552
@@ -1071,13 +1071,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 565
 Register Write to Reg: 0x02 Val: 0x10010F38
 In clock cycle: 566
-Memory Write to Addr: 0x10010F54 Val: 0x10010F58
+Memory Write to Addr: 0x10010F54 Val: 0x10010F58 BE: 1111
 In clock cycle: 567
 Register Write to Reg: 0x08 Val: 0x10010F38
 In clock cycle: 568
-Memory Write to Addr: 0x10010F58 Val: 0x00000001
+Memory Write to Addr: 0x10010F58 Val: 0x00000001 BE: 1111
 In clock cycle: 569
-Memory Write to Addr: 0x10010F5C Val: 0x00000003
+Memory Write to Addr: 0x10010F5C Val: 0x00000003 BE: 1111
 In clock cycle: 570
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 571
@@ -1091,13 +1091,13 @@ Register Write to Reg: 0x07 Val: 0x10010018
 In clock cycle: 575
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 576
-Memory Write to Addr: 0x10010F48 Val: 0x00000000
+Memory Write to Addr: 0x10010F48 Val: 0x00000000 BE: 1111
 In clock cycle: 577
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 578
-Memory Write to Addr: 0x10010F40 Val: 0x00000001
+Memory Write to Addr: 0x10010F40 Val: 0x00000001 BE: 1111
 In clock cycle: 579
-Memory Write to Addr: 0x10010F44 Val: 0x00000000
+Memory Write to Addr: 0x10010F44 Val: 0x00000000 BE: 1111
 In clock cycle: 580
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 581
@@ -1113,13 +1113,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 587
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 588
-Memory Write to Addr: 0x10010F40 Val: 0x00000002
+Memory Write to Addr: 0x10010F40 Val: 0x00000002 BE: 1111
 In clock cycle: 589
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 590
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 591
-Memory Write to Addr: 0x10010F44 Val: 0x00000001
+Memory Write to Addr: 0x10010F44 Val: 0x00000001 BE: 1111
 In clock cycle: 592
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 593
@@ -1133,13 +1133,13 @@ Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 598
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 599
-Memory Write to Addr: 0x10010F40 Val: 0x00000004
+Memory Write to Addr: 0x10010F40 Val: 0x00000004 BE: 1111
 In clock cycle: 600
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 601
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 602
-Memory Write to Addr: 0x10010F44 Val: 0x00000002
+Memory Write to Addr: 0x10010F44 Val: 0x00000002 BE: 1111
 In clock cycle: 603
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 604
@@ -1153,13 +1153,13 @@ Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 609
 Register Write to Reg: 0x07 Val: 0x00000008
 In clock cycle: 610
-Memory Write to Addr: 0x10010F40 Val: 0x00000008
+Memory Write to Addr: 0x10010F40 Val: 0x00000008 BE: 1111
 In clock cycle: 611
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 612
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 613
-Memory Write to Addr: 0x10010F44 Val: 0x00000003
+Memory Write to Addr: 0x10010F44 Val: 0x00000003 BE: 1111
 In clock cycle: 614
 Register Write to Reg: 0x1C Val: 0x00000003
 In clock cycle: 615
@@ -1193,7 +1193,7 @@ Register Write to Reg: 0x1C Val: 0x00000004
 In clock cycle: 631
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 632
-Memory Write to Addr: 0x10010F98 Val: 0x00000004
+Memory Write to Addr: 0x10010F98 Val: 0x00000004 BE: 1111
 In clock cycle: 633
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 634
@@ -1213,7 +1213,7 @@ Register Write to Reg: 0x02 Val: 0x10010F78
 In clock cycle: 642
 Register Write to Reg: 0x00 Val: 0x004002C4
 In clock cycle: 643
-Memory Write to Addr: 0x10010F90 Val: 0xFFFFFFFF
+Memory Write to Addr: 0x10010F90 Val: 0xFFFFFFFF BE: 1111
 In clock cycle: 644
 Register Write to Reg: 0x00 Val: 0x004001E0
 In clock cycle: 645
@@ -1233,7 +1233,7 @@ Register Write to Reg: 0x1C Val: 0x10010120
 In clock cycle: 653
 Register Write to Reg: 0x1C Val: 0x10010028
 In clock cycle: 654
-Memory Write to Addr: 0x10010028 Val: 0x00000002
+Memory Write to Addr: 0x10010028 Val: 0x00000002 BE: 1111
 In clock cycle: 655
 Register Write to Reg: 0x1D Val: 0x1001012C
 In clock cycle: 656
@@ -1269,7 +1269,7 @@ Register Write to Reg: 0x07 Val: 0x1001000C
 In clock cycle: 671
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 672
-Memory Write to Addr: 0x1001000C Val: 0x00000001
+Memory Write to Addr: 0x1001000C Val: 0x00000001 BE: 1111
 In clock cycle: 673
 Register Write to Reg: 0x02 Val: 0x10010F78
 In clock cycle: 674
@@ -1293,13 +1293,13 @@ Register Write to Reg: 0x00 Val: 0x004000FC
 In clock cycle: 683
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 684
-Memory Write to Addr: 0x10010FA4 Val: 0x004000FC
+Memory Write to Addr: 0x10010FA4 Val: 0x004000FC BE: 1111
 In clock cycle: 685
-Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8 BE: 1111
 In clock cycle: 686
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 687
-Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4
+Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4 BE: 1111
 In clock cycle: 688
 Register Write to Reg: 0x00 Val: 0x00400244
 In clock cycle: 689
@@ -1331,13 +1331,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 703
 Register Write to Reg: 0x02 Val: 0x10010F68
 In clock cycle: 704
-Memory Write to Addr: 0x10010F84 Val: 0x10010F88
+Memory Write to Addr: 0x10010F84 Val: 0x10010F88 BE: 1111
 In clock cycle: 705
 Register Write to Reg: 0x08 Val: 0x10010F68
 In clock cycle: 706
-Memory Write to Addr: 0x10010F88 Val: 0x00000000
+Memory Write to Addr: 0x10010F88 Val: 0x00000000 BE: 1111
 In clock cycle: 707
-Memory Write to Addr: 0x10010F8C Val: 0x00000002
+Memory Write to Addr: 0x10010F8C Val: 0x00000002 BE: 1111
 In clock cycle: 708
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 709
@@ -1351,13 +1351,13 @@ Register Write to Reg: 0x07 Val: 0x10010014
 In clock cycle: 713
 Register Write to Reg: 0x07 Val: 0x00000006
 In clock cycle: 714
-Memory Write to Addr: 0x10010F78 Val: 0x00000006
+Memory Write to Addr: 0x10010F78 Val: 0x00000006 BE: 1111
 In clock cycle: 715
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 716
-Memory Write to Addr: 0x10010F70 Val: 0x00000001
+Memory Write to Addr: 0x10010F70 Val: 0x00000001 BE: 1111
 In clock cycle: 717
-Memory Write to Addr: 0x10010F74 Val: 0x00000000
+Memory Write to Addr: 0x10010F74 Val: 0x00000000 BE: 1111
 In clock cycle: 718
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 719
@@ -1373,13 +1373,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 725
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 726
-Memory Write to Addr: 0x10010F70 Val: 0x00000002
+Memory Write to Addr: 0x10010F70 Val: 0x00000002 BE: 1111
 In clock cycle: 727
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 728
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 729
-Memory Write to Addr: 0x10010F74 Val: 0x00000001
+Memory Write to Addr: 0x10010F74 Val: 0x00000001 BE: 1111
 In clock cycle: 730
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 731
@@ -1393,13 +1393,13 @@ Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 736
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 737
-Memory Write to Addr: 0x10010F70 Val: 0x00000004
+Memory Write to Addr: 0x10010F70 Val: 0x00000004 BE: 1111
 In clock cycle: 738
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 739
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 740
-Memory Write to Addr: 0x10010F74 Val: 0x00000002
+Memory Write to Addr: 0x10010F74 Val: 0x00000002 BE: 1111
 In clock cycle: 741
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 742
@@ -1433,7 +1433,7 @@ Register Write to Reg: 0x1D Val: 0x00000003
 In clock cycle: 758
 Register Write to Reg: 0x1C Val: 0x10010FC4
 In clock cycle: 759
-Memory Write to Addr: 0x10010FC8 Val: 0x00000003
+Memory Write to Addr: 0x10010FC8 Val: 0x00000003 BE: 1111
 In clock cycle: 760
 Register Write to Reg: 0x00 Val: 0x00400284
 In clock cycle: 761
@@ -1447,7 +1447,7 @@ Register Write to Reg: 0x02 Val: 0x10010FA8
 In clock cycle: 765
 Register Write to Reg: 0x00 Val: 0x004002C4
 In clock cycle: 766
-Memory Write to Addr: 0x10010FC0 Val: 0x00000002
+Memory Write to Addr: 0x10010FC0 Val: 0x00000002 BE: 1111
 In clock cycle: 767
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 768
@@ -1465,17 +1465,17 @@ Register Write to Reg: 0x00 Val: 0x004000CC
 In clock cycle: 775
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 776
-Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8 BE: 1111
 In clock cycle: 777
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 778
-Memory Write to Addr: 0x10010FA8 Val: 0x00000002
+Memory Write to Addr: 0x10010FA8 Val: 0x00000002 BE: 1111
 In clock cycle: 779
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 780
-Memory Write to Addr: 0x10010F90 Val: 0x00000001
+Memory Write to Addr: 0x10010F90 Val: 0x00000001 BE: 1111
 In clock cycle: 781
-Memory Write to Addr: 0x10010F94 Val: 0x00000000
+Memory Write to Addr: 0x10010F94 Val: 0x00000000 BE: 1111
 In clock cycle: 782
 Register Write to Reg: 0x00 Val: 0x004003F4
 In clock cycle: 783
@@ -1491,13 +1491,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 789
 Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 790
-Memory Write to Addr: 0x10010F90 Val: 0x00000100
+Memory Write to Addr: 0x10010F90 Val: 0x00000100 BE: 1111
 In clock cycle: 791
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 792
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 793
-Memory Write to Addr: 0x10010F94 Val: 0x00000001
+Memory Write to Addr: 0x10010F94 Val: 0x00000001 BE: 1111
 In clock cycle: 794
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 795
@@ -1511,13 +1511,13 @@ Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 800
 Register Write to Reg: 0x07 Val: 0x00010000
 In clock cycle: 801
-Memory Write to Addr: 0x10010F90 Val: 0x00010000
+Memory Write to Addr: 0x10010F90 Val: 0x00010000 BE: 1111
 In clock cycle: 802
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 803
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 804
-Memory Write to Addr: 0x10010F94 Val: 0x00000002
+Memory Write to Addr: 0x10010F94 Val: 0x00000002 BE: 1111
 In clock cycle: 805
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 806
@@ -1531,7 +1531,7 @@ Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 811
 Register Write to Reg: 0x07 Val: 0x00000101
 In clock cycle: 812
-Memory Write to Addr: 0x10010F98 Val: 0x00000101
+Memory Write to Addr: 0x10010F98 Val: 0x00000101 BE: 1111
 In clock cycle: 813
 Register Write to Reg: 0x1C Val: 0x00000101
 In clock cycle: 814
@@ -1565,13 +1565,13 @@ Register Write to Reg: 0x00 Val: 0x004000E8
 In clock cycle: 829
 Register Write to Reg: 0x02 Val: 0x10010F78
 In clock cycle: 830
-Memory Write to Addr: 0x10010FA4 Val: 0x004000E8
+Memory Write to Addr: 0x10010FA4 Val: 0x004000E8 BE: 1111
 In clock cycle: 831
-Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8 BE: 1111
 In clock cycle: 832
 Register Write to Reg: 0x08 Val: 0x10010F78
 In clock cycle: 833
-Memory Write to Addr: 0x10010FA8 Val: 0x00000002
+Memory Write to Addr: 0x10010FA8 Val: 0x00000002 BE: 1111
 In clock cycle: 834
 Register Write to Reg: 0x1D Val: 0x00000002
 In clock cycle: 835
@@ -1583,17 +1583,17 @@ Register Write to Reg: 0x00 Val: 0x004001AC
 In clock cycle: 838
 Register Write to Reg: 0x02 Val: 0x10010F58
 In clock cycle: 839
-Memory Write to Addr: 0x10010F74 Val: 0x10010F78
+Memory Write to Addr: 0x10010F74 Val: 0x10010F78 BE: 1111
 In clock cycle: 840
 Register Write to Reg: 0x08 Val: 0x10010F58
 In clock cycle: 841
-Memory Write to Addr: 0x10010F78 Val: 0x00000002
+Memory Write to Addr: 0x10010F78 Val: 0x00000002 BE: 1111
 In clock cycle: 842
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 843
-Memory Write to Addr: 0x10010F60 Val: 0x00000001
+Memory Write to Addr: 0x10010F60 Val: 0x00000001 BE: 1111
 In clock cycle: 844
-Memory Write to Addr: 0x10010F64 Val: 0x00000000
+Memory Write to Addr: 0x10010F64 Val: 0x00000000 BE: 1111
 In clock cycle: 845
 Register Write to Reg: 0x00 Val: 0x00400374
 In clock cycle: 846
@@ -1609,13 +1609,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 852
 Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 853
-Memory Write to Addr: 0x10010F60 Val: 0x00000100
+Memory Write to Addr: 0x10010F60 Val: 0x00000100 BE: 1111
 In clock cycle: 854
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 855
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 856
-Memory Write to Addr: 0x10010F64 Val: 0x00000001
+Memory Write to Addr: 0x10010F64 Val: 0x00000001 BE: 1111
 In clock cycle: 857
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 858
@@ -1629,13 +1629,13 @@ Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 863
 Register Write to Reg: 0x07 Val: 0x00010000
 In clock cycle: 864
-Memory Write to Addr: 0x10010F60 Val: 0x00010000
+Memory Write to Addr: 0x10010F60 Val: 0x00010000 BE: 1111
 In clock cycle: 865
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 866
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 867
-Memory Write to Addr: 0x10010F64 Val: 0x00000002
+Memory Write to Addr: 0x10010F64 Val: 0x00000002 BE: 1111
 In clock cycle: 868
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 869
@@ -1647,7 +1647,7 @@ Register Write to Reg: 0x07 Val: 0x100103A0
 In clock cycle: 873
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 874
-Memory Write to Addr: 0x10010F68 Val: 0x10010024
+Memory Write to Addr: 0x10010F68 Val: 0x10010024 BE: 1111
 In clock cycle: 875
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 876
@@ -1659,7 +1659,7 @@ Register Write to Reg: 0x1C Val: 0x00010101
 In clock cycle: 879
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 880
-Memory Write to Addr: 0x10010024 Val: 0x00010101
+Memory Write to Addr: 0x10010024 Val: 0x00010101 BE: 1111
 In clock cycle: 881
 Register Write to Reg: 0x02 Val: 0x10010F58
 In clock cycle: 882
@@ -1683,21 +1683,21 @@ Register Write to Reg: 0x00 Val: 0x004001C4
 In clock cycle: 891
 Register Write to Reg: 0x02 Val: 0x10010F60
 In clock cycle: 892
-Memory Write to Addr: 0x10010F74 Val: 0x10010F78
+Memory Write to Addr: 0x10010F74 Val: 0x10010F78 BE: 1111
 In clock cycle: 893
 Register Write to Reg: 0x08 Val: 0x10010F60
 In clock cycle: 894
 Register Write to Reg: 0x1F Val: 0x00000000
 In clock cycle: 895
-Memory Write to Addr: 0x10010F78 Val: 0x10010F94
+Memory Write to Addr: 0x10010F78 Val: 0x10010F94 BE: 1111
 In clock cycle: 896
-Memory Write to Addr: 0x10010F7C Val: 0x00000002
+Memory Write to Addr: 0x10010F7C Val: 0x00000002 BE: 1111
 In clock cycle: 897
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 898
-Memory Write to Addr: 0x10010F68 Val: 0x00000002
+Memory Write to Addr: 0x10010F68 Val: 0x00000002 BE: 1111
 In clock cycle: 899
-Memory Write to Addr: 0x10010F6C Val: 0x00000000
+Memory Write to Addr: 0x10010F6C Val: 0x00000000 BE: 1111
 In clock cycle: 900
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 901
@@ -1705,9 +1705,9 @@ Register Write to Reg: 0x1D Val: 0x00000002
 In clock cycle: 902
 Register Write to Reg: 0x1C Val: 0x00000000
 In clock cycle: 903
-Memory Write to Addr: 0x10010F94 Val: 0x00000002
+Memory Write to Addr: 0x10010F94 Val: 0x00000002 BE: 1111
 In clock cycle: 904
-Memory Write to Addr: 0x10010F98 Val: 0x00000000
+Memory Write to Addr: 0x10010F98 Val: 0x00000000 BE: 1111
 In clock cycle: 905
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 906
@@ -1731,13 +1731,13 @@ Register Write to Reg: 0x00 Val: 0x004001D8
 In clock cycle: 915
 Register Write to Reg: 0x02 Val: 0x10010F58
 In clock cycle: 916
-Memory Write to Addr: 0x10010F74 Val: 0x004001D8
+Memory Write to Addr: 0x10010F74 Val: 0x004001D8 BE: 1111
 In clock cycle: 917
-Memory Write to Addr: 0x10010F70 Val: 0x10010F78
+Memory Write to Addr: 0x10010F70 Val: 0x10010F78 BE: 1111
 In clock cycle: 918
 Register Write to Reg: 0x08 Val: 0x10010F58
 In clock cycle: 919
-Memory Write to Addr: 0x10010F78 Val: 0x10010F94
+Memory Write to Addr: 0x10010F78 Val: 0x10010F94 BE: 1111
 In clock cycle: 920
 Register Write to Reg: 0x00 Val: 0x00400244
 In clock cycle: 921
@@ -1769,13 +1769,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 935
 Register Write to Reg: 0x02 Val: 0x10010F38
 In clock cycle: 936
-Memory Write to Addr: 0x10010F54 Val: 0x10010F58
+Memory Write to Addr: 0x10010F54 Val: 0x10010F58 BE: 1111
 In clock cycle: 937
 Register Write to Reg: 0x08 Val: 0x10010F38
 In clock cycle: 938
-Memory Write to Addr: 0x10010F58 Val: 0x00000002
+Memory Write to Addr: 0x10010F58 Val: 0x00000002 BE: 1111
 In clock cycle: 939
-Memory Write to Addr: 0x10010F5C Val: 0x00000000
+Memory Write to Addr: 0x10010F5C Val: 0x00000000 BE: 1111
 In clock cycle: 940
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 941
@@ -1789,13 +1789,13 @@ Register Write to Reg: 0x07 Val: 0x1001001C
 In clock cycle: 945
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 946
-Memory Write to Addr: 0x10010F48 Val: 0x00000000
+Memory Write to Addr: 0x10010F48 Val: 0x00000000 BE: 1111
 In clock cycle: 947
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 948
-Memory Write to Addr: 0x10010F40 Val: 0x00000001
+Memory Write to Addr: 0x10010F40 Val: 0x00000001 BE: 1111
 In clock cycle: 949
-Memory Write to Addr: 0x10010F44 Val: 0x00000000
+Memory Write to Addr: 0x10010F44 Val: 0x00000000 BE: 1111
 In clock cycle: 950
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 951
@@ -1831,7 +1831,7 @@ Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 968
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 969
-Memory Write to Addr: 0x10010F98 Val: 0x00000001
+Memory Write to Addr: 0x10010F98 Val: 0x00000001 BE: 1111
 In clock cycle: 970
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 971
@@ -1861,13 +1861,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 984
 Register Write to Reg: 0x02 Val: 0x10010F38
 In clock cycle: 985
-Memory Write to Addr: 0x10010F54 Val: 0x10010F58
+Memory Write to Addr: 0x10010F54 Val: 0x10010F58 BE: 1111
 In clock cycle: 986
 Register Write to Reg: 0x08 Val: 0x10010F38
 In clock cycle: 987
-Memory Write to Addr: 0x10010F58 Val: 0x00000002
+Memory Write to Addr: 0x10010F58 Val: 0x00000002 BE: 1111
 In clock cycle: 988
-Memory Write to Addr: 0x10010F5C Val: 0x00000001
+Memory Write to Addr: 0x10010F5C Val: 0x00000001 BE: 1111
 In clock cycle: 989
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 990
@@ -1881,13 +1881,13 @@ Register Write to Reg: 0x07 Val: 0x1001001C
 In clock cycle: 994
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 995
-Memory Write to Addr: 0x10010F48 Val: 0x00000000
+Memory Write to Addr: 0x10010F48 Val: 0x00000000 BE: 1111
 In clock cycle: 996
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 997
-Memory Write to Addr: 0x10010F40 Val: 0x00000001
+Memory Write to Addr: 0x10010F40 Val: 0x00000001 BE: 1111
 In clock cycle: 998
-Memory Write to Addr: 0x10010F44 Val: 0x00000000
+Memory Write to Addr: 0x10010F44 Val: 0x00000000 BE: 1111
 In clock cycle: 999
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 1000
@@ -1903,13 +1903,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1006
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1007
-Memory Write to Addr: 0x10010F40 Val: 0x00000002
+Memory Write to Addr: 0x10010F40 Val: 0x00000002 BE: 1111
 In clock cycle: 1008
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1009
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1010
-Memory Write to Addr: 0x10010F44 Val: 0x00000001
+Memory Write to Addr: 0x10010F44 Val: 0x00000001 BE: 1111
 In clock cycle: 1011
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1012
@@ -1943,7 +1943,7 @@ Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 1028
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 1029
-Memory Write to Addr: 0x10010F98 Val: 0x00000002
+Memory Write to Addr: 0x10010F98 Val: 0x00000002 BE: 1111
 In clock cycle: 1030
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 1031
@@ -1973,13 +1973,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 1044
 Register Write to Reg: 0x02 Val: 0x10010F38
 In clock cycle: 1045
-Memory Write to Addr: 0x10010F54 Val: 0x10010F58
+Memory Write to Addr: 0x10010F54 Val: 0x10010F58 BE: 1111
 In clock cycle: 1046
 Register Write to Reg: 0x08 Val: 0x10010F38
 In clock cycle: 1047
-Memory Write to Addr: 0x10010F58 Val: 0x00000002
+Memory Write to Addr: 0x10010F58 Val: 0x00000002 BE: 1111
 In clock cycle: 1048
-Memory Write to Addr: 0x10010F5C Val: 0x00000002
+Memory Write to Addr: 0x10010F5C Val: 0x00000002 BE: 1111
 In clock cycle: 1049
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 1050
@@ -1993,13 +1993,13 @@ Register Write to Reg: 0x07 Val: 0x1001001C
 In clock cycle: 1054
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1055
-Memory Write to Addr: 0x10010F48 Val: 0x00000000
+Memory Write to Addr: 0x10010F48 Val: 0x00000000 BE: 1111
 In clock cycle: 1056
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1057
-Memory Write to Addr: 0x10010F40 Val: 0x00000001
+Memory Write to Addr: 0x10010F40 Val: 0x00000001 BE: 1111
 In clock cycle: 1058
-Memory Write to Addr: 0x10010F44 Val: 0x00000000
+Memory Write to Addr: 0x10010F44 Val: 0x00000000 BE: 1111
 In clock cycle: 1059
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 1060
@@ -2015,13 +2015,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1066
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1067
-Memory Write to Addr: 0x10010F40 Val: 0x00000002
+Memory Write to Addr: 0x10010F40 Val: 0x00000002 BE: 1111
 In clock cycle: 1068
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1069
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1070
-Memory Write to Addr: 0x10010F44 Val: 0x00000001
+Memory Write to Addr: 0x10010F44 Val: 0x00000001 BE: 1111
 In clock cycle: 1071
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1072
@@ -2035,13 +2035,13 @@ Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1077
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 1078
-Memory Write to Addr: 0x10010F40 Val: 0x00000004
+Memory Write to Addr: 0x10010F40 Val: 0x00000004 BE: 1111
 In clock cycle: 1079
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1080
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1081
-Memory Write to Addr: 0x10010F44 Val: 0x00000002
+Memory Write to Addr: 0x10010F44 Val: 0x00000002 BE: 1111
 In clock cycle: 1082
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 1083
@@ -2075,7 +2075,7 @@ Register Write to Reg: 0x1C Val: 0x00000003
 In clock cycle: 1099
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 1100
-Memory Write to Addr: 0x10010F98 Val: 0x00000003
+Memory Write to Addr: 0x10010F98 Val: 0x00000003 BE: 1111
 In clock cycle: 1101
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 1102
@@ -2105,13 +2105,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 1115
 Register Write to Reg: 0x02 Val: 0x10010F38
 In clock cycle: 1116
-Memory Write to Addr: 0x10010F54 Val: 0x10010F58
+Memory Write to Addr: 0x10010F54 Val: 0x10010F58 BE: 1111
 In clock cycle: 1117
 Register Write to Reg: 0x08 Val: 0x10010F38
 In clock cycle: 1118
-Memory Write to Addr: 0x10010F58 Val: 0x00000002
+Memory Write to Addr: 0x10010F58 Val: 0x00000002 BE: 1111
 In clock cycle: 1119
-Memory Write to Addr: 0x10010F5C Val: 0x00000003
+Memory Write to Addr: 0x10010F5C Val: 0x00000003 BE: 1111
 In clock cycle: 1120
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 1121
@@ -2125,13 +2125,13 @@ Register Write to Reg: 0x07 Val: 0x1001001C
 In clock cycle: 1125
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1126
-Memory Write to Addr: 0x10010F48 Val: 0x00000000
+Memory Write to Addr: 0x10010F48 Val: 0x00000000 BE: 1111
 In clock cycle: 1127
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1128
-Memory Write to Addr: 0x10010F40 Val: 0x00000001
+Memory Write to Addr: 0x10010F40 Val: 0x00000001 BE: 1111
 In clock cycle: 1129
-Memory Write to Addr: 0x10010F44 Val: 0x00000000
+Memory Write to Addr: 0x10010F44 Val: 0x00000000 BE: 1111
 In clock cycle: 1130
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 1131
@@ -2147,13 +2147,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1137
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1138
-Memory Write to Addr: 0x10010F40 Val: 0x00000002
+Memory Write to Addr: 0x10010F40 Val: 0x00000002 BE: 1111
 In clock cycle: 1139
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1140
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1141
-Memory Write to Addr: 0x10010F44 Val: 0x00000001
+Memory Write to Addr: 0x10010F44 Val: 0x00000001 BE: 1111
 In clock cycle: 1142
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1143
@@ -2167,13 +2167,13 @@ Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1148
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 1149
-Memory Write to Addr: 0x10010F40 Val: 0x00000004
+Memory Write to Addr: 0x10010F40 Val: 0x00000004 BE: 1111
 In clock cycle: 1150
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1151
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1152
-Memory Write to Addr: 0x10010F44 Val: 0x00000002
+Memory Write to Addr: 0x10010F44 Val: 0x00000002 BE: 1111
 In clock cycle: 1153
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 1154
@@ -2187,13 +2187,13 @@ Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 1159
 Register Write to Reg: 0x07 Val: 0x00000008
 In clock cycle: 1160
-Memory Write to Addr: 0x10010F40 Val: 0x00000008
+Memory Write to Addr: 0x10010F40 Val: 0x00000008 BE: 1111
 In clock cycle: 1161
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1162
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 1163
-Memory Write to Addr: 0x10010F44 Val: 0x00000003
+Memory Write to Addr: 0x10010F44 Val: 0x00000003 BE: 1111
 In clock cycle: 1164
 Register Write to Reg: 0x1C Val: 0x00000003
 In clock cycle: 1165
@@ -2227,7 +2227,7 @@ Register Write to Reg: 0x1C Val: 0x00000004
 In clock cycle: 1181
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 1182
-Memory Write to Addr: 0x10010F98 Val: 0x00000004
+Memory Write to Addr: 0x10010F98 Val: 0x00000004 BE: 1111
 In clock cycle: 1183
 Register Write to Reg: 0x07 Val: 0x10010F94
 In clock cycle: 1184
@@ -2247,7 +2247,7 @@ Register Write to Reg: 0x02 Val: 0x10010F78
 In clock cycle: 1192
 Register Write to Reg: 0x00 Val: 0x004002C4
 In clock cycle: 1193
-Memory Write to Addr: 0x10010F90 Val: 0xFFFFFFFF
+Memory Write to Addr: 0x10010F90 Val: 0xFFFFFFFF BE: 1111
 In clock cycle: 1194
 Register Write to Reg: 0x00 Val: 0x004001E0
 In clock cycle: 1195
@@ -2267,7 +2267,7 @@ Register Write to Reg: 0x1C Val: 0x10010120
 In clock cycle: 1203
 Register Write to Reg: 0x1C Val: 0x10010028
 In clock cycle: 1204
-Memory Write to Addr: 0x10010028 Val: 0x00000001
+Memory Write to Addr: 0x10010028 Val: 0x00000001 BE: 1111
 In clock cycle: 1205
 Register Write to Reg: 0x1D Val: 0x1001012C
 In clock cycle: 1206
@@ -2303,7 +2303,7 @@ Register Write to Reg: 0x07 Val: 0x10010008
 In clock cycle: 1221
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 1222
-Memory Write to Addr: 0x10010008 Val: 0x00000002
+Memory Write to Addr: 0x10010008 Val: 0x00000002 BE: 1111
 In clock cycle: 1223
 Register Write to Reg: 0x02 Val: 0x10010F78
 In clock cycle: 1224
@@ -2327,13 +2327,13 @@ Register Write to Reg: 0x00 Val: 0x004000FC
 In clock cycle: 1233
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 1234
-Memory Write to Addr: 0x10010FA4 Val: 0x004000FC
+Memory Write to Addr: 0x10010FA4 Val: 0x004000FC BE: 1111
 In clock cycle: 1235
-Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8 BE: 1111
 In clock cycle: 1236
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 1237
-Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4
+Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4 BE: 1111
 In clock cycle: 1238
 Register Write to Reg: 0x00 Val: 0x00400244
 In clock cycle: 1239
@@ -2365,13 +2365,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 1253
 Register Write to Reg: 0x02 Val: 0x10010F68
 In clock cycle: 1254
-Memory Write to Addr: 0x10010F84 Val: 0x10010F88
+Memory Write to Addr: 0x10010F84 Val: 0x10010F88 BE: 1111
 In clock cycle: 1255
 Register Write to Reg: 0x08 Val: 0x10010F68
 In clock cycle: 1256
-Memory Write to Addr: 0x10010F88 Val: 0x00000000
+Memory Write to Addr: 0x10010F88 Val: 0x00000000 BE: 1111
 In clock cycle: 1257
-Memory Write to Addr: 0x10010F8C Val: 0x00000003
+Memory Write to Addr: 0x10010F8C Val: 0x00000003 BE: 1111
 In clock cycle: 1258
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 1259
@@ -2385,13 +2385,13 @@ Register Write to Reg: 0x07 Val: 0x10010014
 In clock cycle: 1263
 Register Write to Reg: 0x07 Val: 0x00000006
 In clock cycle: 1264
-Memory Write to Addr: 0x10010F78 Val: 0x00000006
+Memory Write to Addr: 0x10010F78 Val: 0x00000006 BE: 1111
 In clock cycle: 1265
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1266
-Memory Write to Addr: 0x10010F70 Val: 0x00000001
+Memory Write to Addr: 0x10010F70 Val: 0x00000001 BE: 1111
 In clock cycle: 1267
-Memory Write to Addr: 0x10010F74 Val: 0x00000000
+Memory Write to Addr: 0x10010F74 Val: 0x00000000 BE: 1111
 In clock cycle: 1268
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 1269
@@ -2407,13 +2407,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1275
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1276
-Memory Write to Addr: 0x10010F70 Val: 0x00000002
+Memory Write to Addr: 0x10010F70 Val: 0x00000002 BE: 1111
 In clock cycle: 1277
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1278
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1279
-Memory Write to Addr: 0x10010F74 Val: 0x00000001
+Memory Write to Addr: 0x10010F74 Val: 0x00000001 BE: 1111
 In clock cycle: 1280
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1281
@@ -2427,13 +2427,13 @@ Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1286
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 1287
-Memory Write to Addr: 0x10010F70 Val: 0x00000004
+Memory Write to Addr: 0x10010F70 Val: 0x00000004 BE: 1111
 In clock cycle: 1288
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1289
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1290
-Memory Write to Addr: 0x10010F74 Val: 0x00000002
+Memory Write to Addr: 0x10010F74 Val: 0x00000002 BE: 1111
 In clock cycle: 1291
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 1292
@@ -2447,13 +2447,13 @@ Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 1297
 Register Write to Reg: 0x07 Val: 0x00000008
 In clock cycle: 1298
-Memory Write to Addr: 0x10010F70 Val: 0x00000008
+Memory Write to Addr: 0x10010F70 Val: 0x00000008 BE: 1111
 In clock cycle: 1299
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1300
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 1301
-Memory Write to Addr: 0x10010F74 Val: 0x00000003
+Memory Write to Addr: 0x10010F74 Val: 0x00000003 BE: 1111
 In clock cycle: 1302
 Register Write to Reg: 0x1C Val: 0x00000003
 In clock cycle: 1303
@@ -2487,7 +2487,7 @@ Register Write to Reg: 0x1C Val: 0x00000004
 In clock cycle: 1319
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 1320
-Memory Write to Addr: 0x10010FC8 Val: 0x00000004
+Memory Write to Addr: 0x10010FC8 Val: 0x00000004 BE: 1111
 In clock cycle: 1321
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 1322
@@ -2507,7 +2507,7 @@ Register Write to Reg: 0x02 Val: 0x10010FA8
 In clock cycle: 1330
 Register Write to Reg: 0x00 Val: 0x004002C4
 In clock cycle: 1331
-Memory Write to Addr: 0x10010FC0 Val: 0xFFFFFFFF
+Memory Write to Addr: 0x10010FC0 Val: 0xFFFFFFFF BE: 1111
 In clock cycle: 1332
 Register Write to Reg: 0x1C Val: 0xFFFFFFFF
 In clock cycle: 1333
@@ -2525,7 +2525,7 @@ Register Write to Reg: 0x1C Val: 0x10010120
 In clock cycle: 1340
 Register Write to Reg: 0x1C Val: 0x10010028
 In clock cycle: 1341
-Memory Write to Addr: 0x10010028 Val: 0x00000000
+Memory Write to Addr: 0x10010028 Val: 0x00000000 BE: 1111
 In clock cycle: 1342
 Register Write to Reg: 0x1D Val: 0x1001012C
 In clock cycle: 1343
@@ -2561,7 +2561,7 @@ Register Write to Reg: 0x07 Val: 0x10010004
 In clock cycle: 1358
 Register Write to Reg: 0x1C Val: 0x00000000
 In clock cycle: 1359
-Memory Write to Addr: 0x10010004 Val: 0x00000000
+Memory Write to Addr: 0x10010004 Val: 0x00000000 BE: 1111
 In clock cycle: 1360
 Register Write to Reg: 0x02 Val: 0x10010FA8
 In clock cycle: 1361
@@ -2577,7 +2577,7 @@ Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1366
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1367
-Memory Write to Addr: 0x10010FF0 Val: 0x00000001
+Memory Write to Addr: 0x10010FF0 Val: 0x00000001 BE: 1111
 In clock cycle: 1368
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1369
@@ -2595,17 +2595,17 @@ Register Write to Reg: 0x00 Val: 0x00400048
 In clock cycle: 1376
 Register Write to Reg: 0x02 Val: 0x10010FB8
 In clock cycle: 1377
-Memory Write to Addr: 0x10010FD4 Val: 0x10010FD8
+Memory Write to Addr: 0x10010FD4 Val: 0x10010FD8 BE: 1111
 In clock cycle: 1378
 Register Write to Reg: 0x08 Val: 0x10010FB8
 In clock cycle: 1379
-Memory Write to Addr: 0x10010FD8 Val: 0x00000001
+Memory Write to Addr: 0x10010FD8 Val: 0x00000001 BE: 1111
 In clock cycle: 1380
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1381
-Memory Write to Addr: 0x10010FC0 Val: 0x00000001
+Memory Write to Addr: 0x10010FC0 Val: 0x00000001 BE: 1111
 In clock cycle: 1382
-Memory Write to Addr: 0x10010FC4 Val: 0x00000000
+Memory Write to Addr: 0x10010FC4 Val: 0x00000000 BE: 1111
 In clock cycle: 1383
 Register Write to Reg: 0x00 Val: 0x004003F4
 In clock cycle: 1384
@@ -2621,13 +2621,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1390
 Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 1391
-Memory Write to Addr: 0x10010FC0 Val: 0x00000100
+Memory Write to Addr: 0x10010FC0 Val: 0x00000100 BE: 1111
 In clock cycle: 1392
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1393
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1394
-Memory Write to Addr: 0x10010FC4 Val: 0x00000001
+Memory Write to Addr: 0x10010FC4 Val: 0x00000001 BE: 1111
 In clock cycle: 1395
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1396
@@ -2641,7 +2641,7 @@ Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 1401
 Register Write to Reg: 0x07 Val: 0x00010101
 In clock cycle: 1402
-Memory Write to Addr: 0x10010FC8 Val: 0x00010101
+Memory Write to Addr: 0x10010FC8 Val: 0x00010101 BE: 1111
 In clock cycle: 1403
 Register Write to Reg: 0x1C Val: 0x00010101
 In clock cycle: 1404
@@ -2669,7 +2669,7 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1416
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1417
-Memory Write to Addr: 0x10010FF0 Val: 0x00000002
+Memory Write to Addr: 0x10010FF0 Val: 0x00000002 BE: 1111
 In clock cycle: 1418
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1419
@@ -2687,17 +2687,17 @@ Register Write to Reg: 0x00 Val: 0x00400048
 In clock cycle: 1426
 Register Write to Reg: 0x02 Val: 0x10010FB8
 In clock cycle: 1427
-Memory Write to Addr: 0x10010FD4 Val: 0x10010FD8
+Memory Write to Addr: 0x10010FD4 Val: 0x10010FD8 BE: 1111
 In clock cycle: 1428
 Register Write to Reg: 0x08 Val: 0x10010FB8
 In clock cycle: 1429
-Memory Write to Addr: 0x10010FD8 Val: 0x00000002
+Memory Write to Addr: 0x10010FD8 Val: 0x00000002 BE: 1111
 In clock cycle: 1430
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1431
-Memory Write to Addr: 0x10010FC0 Val: 0x00000001
+Memory Write to Addr: 0x10010FC0 Val: 0x00000001 BE: 1111
 In clock cycle: 1432
-Memory Write to Addr: 0x10010FC4 Val: 0x00000000
+Memory Write to Addr: 0x10010FC4 Val: 0x00000000 BE: 1111
 In clock cycle: 1433
 Register Write to Reg: 0x00 Val: 0x004003F4
 In clock cycle: 1434
@@ -2713,13 +2713,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1440
 Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 1441
-Memory Write to Addr: 0x10010FC0 Val: 0x00000100
+Memory Write to Addr: 0x10010FC0 Val: 0x00000100 BE: 1111
 In clock cycle: 1442
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1443
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1444
-Memory Write to Addr: 0x10010FC4 Val: 0x00000001
+Memory Write to Addr: 0x10010FC4 Val: 0x00000001 BE: 1111
 In clock cycle: 1445
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1446
@@ -2733,13 +2733,13 @@ Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 1451
 Register Write to Reg: 0x07 Val: 0x00010000
 In clock cycle: 1452
-Memory Write to Addr: 0x10010FC0 Val: 0x00010000
+Memory Write to Addr: 0x10010FC0 Val: 0x00010000 BE: 1111
 In clock cycle: 1453
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1454
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1455
-Memory Write to Addr: 0x10010FC4 Val: 0x00000002
+Memory Write to Addr: 0x10010FC4 Val: 0x00000002 BE: 1111
 In clock cycle: 1456
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 1457
@@ -2753,7 +2753,7 @@ Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 1462
 Register Write to Reg: 0x07 Val: 0x00010101
 In clock cycle: 1463
-Memory Write to Addr: 0x10010FC8 Val: 0x00010101
+Memory Write to Addr: 0x10010FC8 Val: 0x00010101 BE: 1111
 In clock cycle: 1464
 Register Write to Reg: 0x1C Val: 0x00010101
 In clock cycle: 1465
@@ -2781,7 +2781,7 @@ Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1477
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 1478
-Memory Write to Addr: 0x10010FF0 Val: 0x00000003
+Memory Write to Addr: 0x10010FF0 Val: 0x00000003 BE: 1111
 In clock cycle: 1479
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 1480
@@ -2799,17 +2799,17 @@ Register Write to Reg: 0x00 Val: 0x00400048
 In clock cycle: 1487
 Register Write to Reg: 0x02 Val: 0x10010FB8
 In clock cycle: 1488
-Memory Write to Addr: 0x10010FD4 Val: 0x10010FD8
+Memory Write to Addr: 0x10010FD4 Val: 0x10010FD8 BE: 1111
 In clock cycle: 1489
 Register Write to Reg: 0x08 Val: 0x10010FB8
 In clock cycle: 1490
-Memory Write to Addr: 0x10010FD8 Val: 0x00000003
+Memory Write to Addr: 0x10010FD8 Val: 0x00000003 BE: 1111
 In clock cycle: 1491
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1492
-Memory Write to Addr: 0x10010FC0 Val: 0x00000001
+Memory Write to Addr: 0x10010FC0 Val: 0x00000001 BE: 1111
 In clock cycle: 1493
-Memory Write to Addr: 0x10010FC4 Val: 0x00000000
+Memory Write to Addr: 0x10010FC4 Val: 0x00000000 BE: 1111
 In clock cycle: 1494
 Register Write to Reg: 0x00 Val: 0x004003F4
 In clock cycle: 1495
@@ -2825,13 +2825,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1501
 Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 1502
-Memory Write to Addr: 0x10010FC0 Val: 0x00000100
+Memory Write to Addr: 0x10010FC0 Val: 0x00000100 BE: 1111
 In clock cycle: 1503
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1504
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1505
-Memory Write to Addr: 0x10010FC4 Val: 0x00000001
+Memory Write to Addr: 0x10010FC4 Val: 0x00000001 BE: 1111
 In clock cycle: 1506
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1507
@@ -2845,13 +2845,13 @@ Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 1512
 Register Write to Reg: 0x07 Val: 0x00010000
 In clock cycle: 1513
-Memory Write to Addr: 0x10010FC0 Val: 0x00010000
+Memory Write to Addr: 0x10010FC0 Val: 0x00010000 BE: 1111
 In clock cycle: 1514
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1515
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1516
-Memory Write to Addr: 0x10010FC4 Val: 0x00000002
+Memory Write to Addr: 0x10010FC4 Val: 0x00000002 BE: 1111
 In clock cycle: 1517
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 1518
@@ -2865,13 +2865,13 @@ Register Write to Reg: 0x07 Val: 0x00010000
 In clock cycle: 1523
 Register Write to Reg: 0x07 Val: 0x01000000
 In clock cycle: 1524
-Memory Write to Addr: 0x10010FC0 Val: 0x01000000
+Memory Write to Addr: 0x10010FC0 Val: 0x01000000 BE: 1111
 In clock cycle: 1525
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1526
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 1527
-Memory Write to Addr: 0x10010FC4 Val: 0x00000003
+Memory Write to Addr: 0x10010FC4 Val: 0x00000003 BE: 1111
 In clock cycle: 1528
 Register Write to Reg: 0x1C Val: 0x00000003
 In clock cycle: 1529
@@ -2885,7 +2885,7 @@ Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 1534
 Register Write to Reg: 0x07 Val: 0x00010101
 In clock cycle: 1535
-Memory Write to Addr: 0x10010FC8 Val: 0x00010101
+Memory Write to Addr: 0x10010FC8 Val: 0x00010101 BE: 1111
 In clock cycle: 1536
 Register Write to Reg: 0x1C Val: 0x00010101
 In clock cycle: 1537
@@ -2919,13 +2919,13 @@ Register Write to Reg: 0x00 Val: 0x00400064
 In clock cycle: 1552
 Register Write to Reg: 0x02 Val: 0x10010FA8
 In clock cycle: 1553
-Memory Write to Addr: 0x10010FD4 Val: 0x00400064
+Memory Write to Addr: 0x10010FD4 Val: 0x00400064 BE: 1111
 In clock cycle: 1554
-Memory Write to Addr: 0x10010FD0 Val: 0x10010FD8
+Memory Write to Addr: 0x10010FD0 Val: 0x10010FD8 BE: 1111
 In clock cycle: 1555
 Register Write to Reg: 0x08 Val: 0x10010FA8
 In clock cycle: 1556
-Memory Write to Addr: 0x10010FD8 Val: 0x00000003
+Memory Write to Addr: 0x10010FD8 Val: 0x00000003 BE: 1111
 In clock cycle: 1557
 Register Write to Reg: 0x1D Val: 0x00000003
 In clock cycle: 1558
@@ -2937,17 +2937,17 @@ Register Write to Reg: 0x00 Val: 0x004001AC
 In clock cycle: 1561
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 1562
-Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8 BE: 1111
 In clock cycle: 1563
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 1564
-Memory Write to Addr: 0x10010FA8 Val: 0x00000003
+Memory Write to Addr: 0x10010FA8 Val: 0x00000003 BE: 1111
 In clock cycle: 1565
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1566
-Memory Write to Addr: 0x10010F90 Val: 0x00000001
+Memory Write to Addr: 0x10010F90 Val: 0x00000001 BE: 1111
 In clock cycle: 1567
-Memory Write to Addr: 0x10010F94 Val: 0x00000000
+Memory Write to Addr: 0x10010F94 Val: 0x00000000 BE: 1111
 In clock cycle: 1568
 Register Write to Reg: 0x00 Val: 0x00400374
 In clock cycle: 1569
@@ -2963,13 +2963,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1575
 Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 1576
-Memory Write to Addr: 0x10010F90 Val: 0x00000100
+Memory Write to Addr: 0x10010F90 Val: 0x00000100 BE: 1111
 In clock cycle: 1577
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1578
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1579
-Memory Write to Addr: 0x10010F94 Val: 0x00000001
+Memory Write to Addr: 0x10010F94 Val: 0x00000001 BE: 1111
 In clock cycle: 1580
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1581
@@ -2983,13 +2983,13 @@ Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 1586
 Register Write to Reg: 0x07 Val: 0x00010000
 In clock cycle: 1587
-Memory Write to Addr: 0x10010F90 Val: 0x00010000
+Memory Write to Addr: 0x10010F90 Val: 0x00010000 BE: 1111
 In clock cycle: 1588
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1589
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1590
-Memory Write to Addr: 0x10010F94 Val: 0x00000002
+Memory Write to Addr: 0x10010F94 Val: 0x00000002 BE: 1111
 In clock cycle: 1591
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 1592
@@ -3003,13 +3003,13 @@ Register Write to Reg: 0x07 Val: 0x00010000
 In clock cycle: 1597
 Register Write to Reg: 0x07 Val: 0x01000000
 In clock cycle: 1598
-Memory Write to Addr: 0x10010F90 Val: 0x01000000
+Memory Write to Addr: 0x10010F90 Val: 0x01000000 BE: 1111
 In clock cycle: 1599
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1600
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 1601
-Memory Write to Addr: 0x10010F94 Val: 0x00000003
+Memory Write to Addr: 0x10010F94 Val: 0x00000003 BE: 1111
 In clock cycle: 1602
 Register Write to Reg: 0x1C Val: 0x00000003
 In clock cycle: 1603
@@ -3021,7 +3021,7 @@ Register Write to Reg: 0x07 Val: 0x100103A0
 In clock cycle: 1607
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 1608
-Memory Write to Addr: 0x10010F98 Val: 0x10010024
+Memory Write to Addr: 0x10010F98 Val: 0x10010024 BE: 1111
 In clock cycle: 1609
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 1610
@@ -3033,7 +3033,7 @@ Register Write to Reg: 0x1C Val: 0x01010101
 In clock cycle: 1613
 Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 1614
-Memory Write to Addr: 0x10010024 Val: 0x01010101
+Memory Write to Addr: 0x10010024 Val: 0x01010101 BE: 1111
 In clock cycle: 1615
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 1616
@@ -3057,21 +3057,21 @@ Register Write to Reg: 0x00 Val: 0x004001C4
 In clock cycle: 1625
 Register Write to Reg: 0x02 Val: 0x10010F90
 In clock cycle: 1626
-Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8 BE: 1111
 In clock cycle: 1627
 Register Write to Reg: 0x08 Val: 0x10010F90
 In clock cycle: 1628
 Register Write to Reg: 0x1F Val: 0x00000000
 In clock cycle: 1629
-Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4
+Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4 BE: 1111
 In clock cycle: 1630
-Memory Write to Addr: 0x10010FAC Val: 0x00000003
+Memory Write to Addr: 0x10010FAC Val: 0x00000003 BE: 1111
 In clock cycle: 1631
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 1632
-Memory Write to Addr: 0x10010F98 Val: 0x00000003
+Memory Write to Addr: 0x10010F98 Val: 0x00000003 BE: 1111
 In clock cycle: 1633
-Memory Write to Addr: 0x10010F9C Val: 0x00000000
+Memory Write to Addr: 0x10010F9C Val: 0x00000000 BE: 1111
 In clock cycle: 1634
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 1635
@@ -3079,9 +3079,9 @@ Register Write to Reg: 0x1D Val: 0x00000003
 In clock cycle: 1636
 Register Write to Reg: 0x1C Val: 0x00000000
 In clock cycle: 1637
-Memory Write to Addr: 0x10010FC4 Val: 0x00000003
+Memory Write to Addr: 0x10010FC4 Val: 0x00000003 BE: 1111
 In clock cycle: 1638
-Memory Write to Addr: 0x10010FC8 Val: 0x00000000
+Memory Write to Addr: 0x10010FC8 Val: 0x00000000 BE: 1111
 In clock cycle: 1639
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 1640
@@ -3105,13 +3105,13 @@ Register Write to Reg: 0x00 Val: 0x004001D8
 In clock cycle: 1649
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 1650
-Memory Write to Addr: 0x10010FA4 Val: 0x004001D8
+Memory Write to Addr: 0x10010FA4 Val: 0x004001D8 BE: 1111
 In clock cycle: 1651
-Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8 BE: 1111
 In clock cycle: 1652
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 1653
-Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4
+Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4 BE: 1111
 In clock cycle: 1654
 Register Write to Reg: 0x00 Val: 0x00400244
 In clock cycle: 1655
@@ -3143,13 +3143,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 1669
 Register Write to Reg: 0x02 Val: 0x10010F68
 In clock cycle: 1670
-Memory Write to Addr: 0x10010F84 Val: 0x10010F88
+Memory Write to Addr: 0x10010F84 Val: 0x10010F88 BE: 1111
 In clock cycle: 1671
 Register Write to Reg: 0x08 Val: 0x10010F68
 In clock cycle: 1672
-Memory Write to Addr: 0x10010F88 Val: 0x00000003
+Memory Write to Addr: 0x10010F88 Val: 0x00000003 BE: 1111
 In clock cycle: 1673
-Memory Write to Addr: 0x10010F8C Val: 0x00000000
+Memory Write to Addr: 0x10010F8C Val: 0x00000000 BE: 1111
 In clock cycle: 1674
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 1675
@@ -3163,13 +3163,13 @@ Register Write to Reg: 0x07 Val: 0x10010020
 In clock cycle: 1679
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 1680
-Memory Write to Addr: 0x10010F78 Val: 0x00000003
+Memory Write to Addr: 0x10010F78 Val: 0x00000003 BE: 1111
 In clock cycle: 1681
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1682
-Memory Write to Addr: 0x10010F70 Val: 0x00000001
+Memory Write to Addr: 0x10010F70 Val: 0x00000001 BE: 1111
 In clock cycle: 1683
-Memory Write to Addr: 0x10010F74 Val: 0x00000000
+Memory Write to Addr: 0x10010F74 Val: 0x00000000 BE: 1111
 In clock cycle: 1684
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 1685
@@ -3205,7 +3205,7 @@ Register Write to Reg: 0x1D Val: 0x00000001
 In clock cycle: 1702
 Register Write to Reg: 0x1C Val: 0x10010FC4
 In clock cycle: 1703
-Memory Write to Addr: 0x10010FC8 Val: 0x00000001
+Memory Write to Addr: 0x10010FC8 Val: 0x00000001 BE: 1111
 In clock cycle: 1704
 Register Write to Reg: 0x00 Val: 0x00400284
 In clock cycle: 1705
@@ -3219,7 +3219,7 @@ Register Write to Reg: 0x02 Val: 0x10010FA8
 In clock cycle: 1709
 Register Write to Reg: 0x00 Val: 0x004002C4
 In clock cycle: 1710
-Memory Write to Addr: 0x10010FC0 Val: 0x00000000
+Memory Write to Addr: 0x10010FC0 Val: 0x00000000 BE: 1111
 In clock cycle: 1711
 Register Write to Reg: 0x00 Val: 0x004001E0
 In clock cycle: 1712
@@ -3239,17 +3239,17 @@ Register Write to Reg: 0x00 Val: 0x004000CC
 In clock cycle: 1720
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 1721
-Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8 BE: 1111
 In clock cycle: 1722
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 1723
-Memory Write to Addr: 0x10010FA8 Val: 0x00000000
+Memory Write to Addr: 0x10010FA8 Val: 0x00000000 BE: 1111
 In clock cycle: 1724
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1725
-Memory Write to Addr: 0x10010F90 Val: 0x00000001
+Memory Write to Addr: 0x10010F90 Val: 0x00000001 BE: 1111
 In clock cycle: 1726
-Memory Write to Addr: 0x10010F94 Val: 0x00000000
+Memory Write to Addr: 0x10010F94 Val: 0x00000000 BE: 1111
 In clock cycle: 1727
 Register Write to Reg: 0x00 Val: 0x004003F4
 In clock cycle: 1728
@@ -3265,7 +3265,7 @@ Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 1734
 Register Write to Reg: 0x07 Val: 0x01010101
 In clock cycle: 1735
-Memory Write to Addr: 0x10010F98 Val: 0x01010101
+Memory Write to Addr: 0x10010F98 Val: 0x01010101 BE: 1111
 In clock cycle: 1736
 Register Write to Reg: 0x1C Val: 0x01010101
 In clock cycle: 1737
@@ -3301,13 +3301,13 @@ Register Write to Reg: 0x00 Val: 0x004000FC
 In clock cycle: 1753
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 1754
-Memory Write to Addr: 0x10010FA4 Val: 0x004000FC
+Memory Write to Addr: 0x10010FA4 Val: 0x004000FC BE: 1111
 In clock cycle: 1755
-Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8 BE: 1111
 In clock cycle: 1756
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 1757
-Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4
+Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4 BE: 1111
 In clock cycle: 1758
 Register Write to Reg: 0x00 Val: 0x00400244
 In clock cycle: 1759
@@ -3339,13 +3339,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 1773
 Register Write to Reg: 0x02 Val: 0x10010F68
 In clock cycle: 1774
-Memory Write to Addr: 0x10010F84 Val: 0x10010F88
+Memory Write to Addr: 0x10010F84 Val: 0x10010F88 BE: 1111
 In clock cycle: 1775
 Register Write to Reg: 0x08 Val: 0x10010F68
 In clock cycle: 1776
-Memory Write to Addr: 0x10010F88 Val: 0x00000003
+Memory Write to Addr: 0x10010F88 Val: 0x00000003 BE: 1111
 In clock cycle: 1777
-Memory Write to Addr: 0x10010F8C Val: 0x00000001
+Memory Write to Addr: 0x10010F8C Val: 0x00000001 BE: 1111
 In clock cycle: 1778
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 1779
@@ -3359,13 +3359,13 @@ Register Write to Reg: 0x07 Val: 0x10010020
 In clock cycle: 1783
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 1784
-Memory Write to Addr: 0x10010F78 Val: 0x00000003
+Memory Write to Addr: 0x10010F78 Val: 0x00000003 BE: 1111
 In clock cycle: 1785
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1786
-Memory Write to Addr: 0x10010F70 Val: 0x00000001
+Memory Write to Addr: 0x10010F70 Val: 0x00000001 BE: 1111
 In clock cycle: 1787
-Memory Write to Addr: 0x10010F74 Val: 0x00000000
+Memory Write to Addr: 0x10010F74 Val: 0x00000000 BE: 1111
 In clock cycle: 1788
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 1789
@@ -3381,13 +3381,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1795
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1796
-Memory Write to Addr: 0x10010F70 Val: 0x00000002
+Memory Write to Addr: 0x10010F70 Val: 0x00000002 BE: 1111
 In clock cycle: 1797
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1798
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1799
-Memory Write to Addr: 0x10010F74 Val: 0x00000001
+Memory Write to Addr: 0x10010F74 Val: 0x00000001 BE: 1111
 In clock cycle: 1800
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1801
@@ -3421,7 +3421,7 @@ Register Write to Reg: 0x1D Val: 0x00000002
 In clock cycle: 1817
 Register Write to Reg: 0x1C Val: 0x10010FC4
 In clock cycle: 1818
-Memory Write to Addr: 0x10010FC8 Val: 0x00000002
+Memory Write to Addr: 0x10010FC8 Val: 0x00000002 BE: 1111
 In clock cycle: 1819
 Register Write to Reg: 0x00 Val: 0x00400284
 In clock cycle: 1820
@@ -3435,7 +3435,7 @@ Register Write to Reg: 0x02 Val: 0x10010FA8
 In clock cycle: 1824
 Register Write to Reg: 0x00 Val: 0x004002C4
 In clock cycle: 1825
-Memory Write to Addr: 0x10010FC0 Val: 0x00000001
+Memory Write to Addr: 0x10010FC0 Val: 0x00000001 BE: 1111
 In clock cycle: 1826
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1827
@@ -3453,17 +3453,17 @@ Register Write to Reg: 0x00 Val: 0x004000CC
 In clock cycle: 1834
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 1835
-Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA4 Val: 0x10010FA8 BE: 1111
 In clock cycle: 1836
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 1837
-Memory Write to Addr: 0x10010FA8 Val: 0x00000001
+Memory Write to Addr: 0x10010FA8 Val: 0x00000001 BE: 1111
 In clock cycle: 1838
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1839
-Memory Write to Addr: 0x10010F90 Val: 0x00000001
+Memory Write to Addr: 0x10010F90 Val: 0x00000001 BE: 1111
 In clock cycle: 1840
-Memory Write to Addr: 0x10010F94 Val: 0x00000000
+Memory Write to Addr: 0x10010F94 Val: 0x00000000 BE: 1111
 In clock cycle: 1841
 Register Write to Reg: 0x00 Val: 0x004003F4
 In clock cycle: 1842
@@ -3479,13 +3479,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1848
 Register Write to Reg: 0x07 Val: 0x00000100
 In clock cycle: 1849
-Memory Write to Addr: 0x10010F90 Val: 0x00000100
+Memory Write to Addr: 0x10010F90 Val: 0x00000100 BE: 1111
 In clock cycle: 1850
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1851
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1852
-Memory Write to Addr: 0x10010F94 Val: 0x00000001
+Memory Write to Addr: 0x10010F94 Val: 0x00000001 BE: 1111
 In clock cycle: 1853
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1854
@@ -3499,7 +3499,7 @@ Register Write to Reg: 0x07 Val: 0x10010024
 In clock cycle: 1859
 Register Write to Reg: 0x07 Val: 0x01010101
 In clock cycle: 1860
-Memory Write to Addr: 0x10010F98 Val: 0x01010101
+Memory Write to Addr: 0x10010F98 Val: 0x01010101 BE: 1111
 In clock cycle: 1861
 Register Write to Reg: 0x1C Val: 0x01010101
 In clock cycle: 1862
@@ -3535,13 +3535,13 @@ Register Write to Reg: 0x00 Val: 0x004000FC
 In clock cycle: 1878
 Register Write to Reg: 0x02 Val: 0x10010F88
 In clock cycle: 1879
-Memory Write to Addr: 0x10010FA4 Val: 0x004000FC
+Memory Write to Addr: 0x10010FA4 Val: 0x004000FC BE: 1111
 In clock cycle: 1880
-Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8
+Memory Write to Addr: 0x10010FA0 Val: 0x10010FA8 BE: 1111
 In clock cycle: 1881
 Register Write to Reg: 0x08 Val: 0x10010F88
 In clock cycle: 1882
-Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4
+Memory Write to Addr: 0x10010FA8 Val: 0x10010FC4 BE: 1111
 In clock cycle: 1883
 Register Write to Reg: 0x00 Val: 0x00400244
 In clock cycle: 1884
@@ -3573,13 +3573,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 1898
 Register Write to Reg: 0x02 Val: 0x10010F68
 In clock cycle: 1899
-Memory Write to Addr: 0x10010F84 Val: 0x10010F88
+Memory Write to Addr: 0x10010F84 Val: 0x10010F88 BE: 1111
 In clock cycle: 1900
 Register Write to Reg: 0x08 Val: 0x10010F68
 In clock cycle: 1901
-Memory Write to Addr: 0x10010F88 Val: 0x00000003
+Memory Write to Addr: 0x10010F88 Val: 0x00000003 BE: 1111
 In clock cycle: 1902
-Memory Write to Addr: 0x10010F8C Val: 0x00000002
+Memory Write to Addr: 0x10010F8C Val: 0x00000002 BE: 1111
 In clock cycle: 1903
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 1904
@@ -3593,13 +3593,13 @@ Register Write to Reg: 0x07 Val: 0x10010020
 In clock cycle: 1908
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 1909
-Memory Write to Addr: 0x10010F78 Val: 0x00000003
+Memory Write to Addr: 0x10010F78 Val: 0x00000003 BE: 1111
 In clock cycle: 1910
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1911
-Memory Write to Addr: 0x10010F70 Val: 0x00000001
+Memory Write to Addr: 0x10010F70 Val: 0x00000001 BE: 1111
 In clock cycle: 1912
-Memory Write to Addr: 0x10010F74 Val: 0x00000000
+Memory Write to Addr: 0x10010F74 Val: 0x00000000 BE: 1111
 In clock cycle: 1913
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 1914
@@ -3615,13 +3615,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1920
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1921
-Memory Write to Addr: 0x10010F70 Val: 0x00000002
+Memory Write to Addr: 0x10010F70 Val: 0x00000002 BE: 1111
 In clock cycle: 1922
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1923
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1924
-Memory Write to Addr: 0x10010F74 Val: 0x00000001
+Memory Write to Addr: 0x10010F74 Val: 0x00000001 BE: 1111
 In clock cycle: 1925
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1926
@@ -3635,13 +3635,13 @@ Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1931
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 1932
-Memory Write to Addr: 0x10010F70 Val: 0x00000004
+Memory Write to Addr: 0x10010F70 Val: 0x00000004 BE: 1111
 In clock cycle: 1933
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1934
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1935
-Memory Write to Addr: 0x10010F74 Val: 0x00000002
+Memory Write to Addr: 0x10010F74 Val: 0x00000002 BE: 1111
 In clock cycle: 1936
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 1937
@@ -3675,7 +3675,7 @@ Register Write to Reg: 0x1C Val: 0x00000003
 In clock cycle: 1953
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 1954
-Memory Write to Addr: 0x10010FC8 Val: 0x00000003
+Memory Write to Addr: 0x10010FC8 Val: 0x00000003 BE: 1111
 In clock cycle: 1955
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 1956
@@ -3705,13 +3705,13 @@ Register Write to Reg: 0x00 Val: 0x00400268
 In clock cycle: 1969
 Register Write to Reg: 0x02 Val: 0x10010F68
 In clock cycle: 1970
-Memory Write to Addr: 0x10010F84 Val: 0x10010F88
+Memory Write to Addr: 0x10010F84 Val: 0x10010F88 BE: 1111
 In clock cycle: 1971
 Register Write to Reg: 0x08 Val: 0x10010F68
 In clock cycle: 1972
-Memory Write to Addr: 0x10010F88 Val: 0x00000003
+Memory Write to Addr: 0x10010F88 Val: 0x00000003 BE: 1111
 In clock cycle: 1973
-Memory Write to Addr: 0x10010F8C Val: 0x00000003
+Memory Write to Addr: 0x10010F8C Val: 0x00000003 BE: 1111
 In clock cycle: 1974
 Register Write to Reg: 0x07 Val: 0x100102D8
 In clock cycle: 1975
@@ -3725,13 +3725,13 @@ Register Write to Reg: 0x07 Val: 0x10010020
 In clock cycle: 1979
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 1980
-Memory Write to Addr: 0x10010F78 Val: 0x00000003
+Memory Write to Addr: 0x10010F78 Val: 0x00000003 BE: 1111
 In clock cycle: 1981
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1982
-Memory Write to Addr: 0x10010F70 Val: 0x00000001
+Memory Write to Addr: 0x10010F70 Val: 0x00000001 BE: 1111
 In clock cycle: 1983
-Memory Write to Addr: 0x10010F74 Val: 0x00000000
+Memory Write to Addr: 0x10010F74 Val: 0x00000000 BE: 1111
 In clock cycle: 1984
 Register Write to Reg: 0x00 Val: 0x00400304
 In clock cycle: 1985
@@ -3747,13 +3747,13 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1991
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 1992
-Memory Write to Addr: 0x10010F70 Val: 0x00000002
+Memory Write to Addr: 0x10010F70 Val: 0x00000002 BE: 1111
 In clock cycle: 1993
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 1994
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 1995
-Memory Write to Addr: 0x10010F74 Val: 0x00000001
+Memory Write to Addr: 0x10010F74 Val: 0x00000001 BE: 1111
 In clock cycle: 1996
 Register Write to Reg: 0x1C Val: 0x00000001
 In clock cycle: 1997
@@ -3767,13 +3767,13 @@ Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 2002
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 2003
-Memory Write to Addr: 0x10010F70 Val: 0x00000004
+Memory Write to Addr: 0x10010F70 Val: 0x00000004 BE: 1111
 In clock cycle: 2004
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 2005
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 2006
-Memory Write to Addr: 0x10010F74 Val: 0x00000002
+Memory Write to Addr: 0x10010F74 Val: 0x00000002 BE: 1111
 In clock cycle: 2007
 Register Write to Reg: 0x1C Val: 0x00000002
 In clock cycle: 2008
@@ -3787,13 +3787,13 @@ Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 2013
 Register Write to Reg: 0x07 Val: 0x00000008
 In clock cycle: 2014
-Memory Write to Addr: 0x10010F70 Val: 0x00000008
+Memory Write to Addr: 0x10010F70 Val: 0x00000008 BE: 1111
 In clock cycle: 2015
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 2016
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 2017
-Memory Write to Addr: 0x10010F74 Val: 0x00000003
+Memory Write to Addr: 0x10010F74 Val: 0x00000003 BE: 1111
 In clock cycle: 2018
 Register Write to Reg: 0x1C Val: 0x00000003
 In clock cycle: 2019
@@ -3827,7 +3827,7 @@ Register Write to Reg: 0x1C Val: 0x00000004
 In clock cycle: 2035
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 2036
-Memory Write to Addr: 0x10010FC8 Val: 0x00000004
+Memory Write to Addr: 0x10010FC8 Val: 0x00000004 BE: 1111
 In clock cycle: 2037
 Register Write to Reg: 0x07 Val: 0x10010FC4
 In clock cycle: 2038
@@ -3847,7 +3847,7 @@ Register Write to Reg: 0x02 Val: 0x10010FA8
 In clock cycle: 2046
 Register Write to Reg: 0x00 Val: 0x004002C4
 In clock cycle: 2047
-Memory Write to Addr: 0x10010FC0 Val: 0xFFFFFFFF
+Memory Write to Addr: 0x10010FC0 Val: 0xFFFFFFFF BE: 1111
 In clock cycle: 2048
 Register Write to Reg: 0x1C Val: 0xFFFFFFFF
 In clock cycle: 2049
@@ -3865,7 +3865,7 @@ Register Write to Reg: 0x1C Val: 0x10010120
 In clock cycle: 2056
 Register Write to Reg: 0x1C Val: 0x10010028
 In clock cycle: 2057
-Memory Write to Addr: 0x10010028 Val: 0xFFFFFFFF
+Memory Write to Addr: 0x10010028 Val: 0xFFFFFFFF BE: 1111
 In clock cycle: 2058
 Register Write to Reg: 0x1D Val: 0x1001012C
 In clock cycle: 2059
@@ -3901,7 +3901,7 @@ Register Write to Reg: 0x07 Val: 0x10010000
 In clock cycle: 2074
 Register Write to Reg: 0x1C Val: 0x00000003
 In clock cycle: 2075
-Memory Write to Addr: 0x10010000 Val: 0x00000003
+Memory Write to Addr: 0x10010000 Val: 0x00000003 BE: 1111
 In clock cycle: 2076
 Register Write to Reg: 0x02 Val: 0x10010FA8
 In clock cycle: 2077
@@ -3917,13 +3917,13 @@ Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 2082
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 2083
-Memory Write to Addr: 0x10010FF0 Val: 0x00000004
+Memory Write to Addr: 0x10010FF0 Val: 0x00000004 BE: 1111
 In clock cycle: 2084
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 2085
 Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 2087
-Memory Write to Addr: 0x10010FF4 Val: 0x00000000
+Memory Write to Addr: 0x10010FF4 Val: 0x00000000 BE: 1111
 In clock cycle: 2088
 Register Write to Reg: 0x00 Val: 0x00400088
 In clock cycle: 2089
@@ -3937,7 +3937,7 @@ Register Write to Reg: 0x07 Val: 0x00000000
 In clock cycle: 2094
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 2095
-Memory Write to Addr: 0x10010FF4 Val: 0x00000001
+Memory Write to Addr: 0x10010FF4 Val: 0x00000001 BE: 1111
 In clock cycle: 2096
 Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 2097
@@ -3949,7 +3949,7 @@ Register Write to Reg: 0x07 Val: 0x00000001
 In clock cycle: 2101
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 2102
-Memory Write to Addr: 0x10010FF4 Val: 0x00000002
+Memory Write to Addr: 0x10010FF4 Val: 0x00000002 BE: 1111
 In clock cycle: 2103
 Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 2104
@@ -3961,7 +3961,7 @@ Register Write to Reg: 0x07 Val: 0x00000002
 In clock cycle: 2108
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 2109
-Memory Write to Addr: 0x10010FF4 Val: 0x00000003
+Memory Write to Addr: 0x10010FF4 Val: 0x00000003 BE: 1111
 In clock cycle: 2110
 Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 2111
@@ -3973,7 +3973,7 @@ Register Write to Reg: 0x07 Val: 0x00000003
 In clock cycle: 2115
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 2116
-Memory Write to Addr: 0x10010FF4 Val: 0x00000004
+Memory Write to Addr: 0x10010FF4 Val: 0x00000004 BE: 1111
 In clock cycle: 2117
 Register Write to Reg: 0x07 Val: 0x00000004
 In clock cycle: 2118

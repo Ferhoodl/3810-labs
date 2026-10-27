@@ -2,7 +2,10 @@ import subprocess
 import pathlib
 import os
 import datetime as dt
+import sys
 import generate_project as gp
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 import config_parser
 
 r'''

@@ -16,7 +16,10 @@ from modelsim import Modelsim
 import args
 import multiprocessing as mp
 from dump_compare import DumpCompare
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 import config_parser
+
 from pathlib import Path
 from updater import Updater
 from results import Results
@@ -38,7 +41,10 @@ def main():
 
     config, env = config_parser.read_config(options.config)
 
-    #Updater();
+    #if not os.getenv("RARS_P_TOK") == "" and not os.getenv("TF_P_TOK") == "":
+    if os.getenv("RARS_P_TOK") and os.getenv("TF_P_TOK"):
+        print("running updater")
+        Updater()
 
 
     missing_file = check_project_files_exist()

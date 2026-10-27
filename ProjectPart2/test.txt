@@ -1,3 +1,27 @@
-run 1
-mem load -infile dmem.hex -format hex /tb_datapath2/DUT0/ramsay/ram
-run 99
+Using VDI Python Environment
+Testing
+WARNING: Software tree location not set or invalid, using $MGC_HOME=/usr/local/mentor/calibre
+Setting SALT_LICENSE_SERVER to 1717@io.ece.iastate.edu:1717@io.ece.iastate.edu
+Setting ALTERAD_LICENSE_FILE to 27008@io.ece.iastate.edu
+
+** Warning: It looks like src/tb.vhd has been modified. It will be graded using the version from the release **
+
+ ** Expected: {b'U\xdf~3\xf9\xe1\xedb\x1a\xb7MEX\xe0MO'} **
+
+ ** Observed: b'\x01^\xa2R\x1c\xb3L\xc1}X9(P\x84V\x9e' **
+All VHDL src files compiled successfully
+Testing file: proj/riscv/addiseq.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [91mfail[0m
+could not simulate successfully, got exit code 12
+Test Result: [91mfail[0m
+Oh no...
+
+Cycle: na
+RARS instruction number: 1	Instruction: addi x1,x0,1
+Expected:	Register Write to Reg: 0x01 Val: 0x00000001
+Got     :	Execution stopped
+Student execution ended prematurely
+
+Results in: output/addiseq.s
+----------------------------------------------

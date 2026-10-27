@@ -91,7 +91,25 @@ component control is
          o_AndLink       : out std_logic;
          o_AndLinkReg    : out std_logic; -- added
          o_ImmediateType : out std_logic_vector(2 downto 0);
+         o_MemSize       : out std_logic_vector(1 downto 0);
+         o_LoadUnsigned  : out std_logic;
          o_ALUControl    : out std_logic_vector(3 downto 0));
+  end component;
+
+  component store_align is
+    port(i_Data       : in  std_logic_vector(31 downto 0);
+         i_Address    : in  std_logic_vector(1 downto 0);
+         i_Size       : in  std_logic_vector(1 downto 0);
+         o_Data       : out std_logic_vector(31 downto 0);
+         o_ByteEnable : out std_logic_vector(3 downto 0));
+  end component;
+
+  component load_extend is
+    port(i_Data     : in  std_logic_vector(31 downto 0);
+         i_Address  : in  std_logic_vector(1 downto 0);
+         i_Size     : in  std_logic_vector(1 downto 0);
+         i_Unsigned : in  std_logic;
+         o_Data     : out std_logic_vector(31 downto 0));
   end component;
 
   component alu is
@@ -127,6 +145,7 @@ component control is
           clk          : in std_logic;
           addr         : in std_logic_vector((ADDR_WIDTH-1) downto 0);
           data         : in std_logic_vector((DATA_WIDTH-1) downto 0);
+          be           : in std_logic_vector(3 downto 0);
           we           : in std_logic := '1';
           q            : out std_logic_vector((DATA_WIDTH -1) downto 0));
     end component;
@@ -213,6 +232,11 @@ end component;
   signal MID_ALU_A_IN             : std_logic_vector(31 downto 0);
   signal MID_PC_BASE              : std_logic_vector(31 downto 0);
   signal MID_JALR_SEL             : std_logic;
+  signal MID_CONTROL_MEMSIZE      : std_logic_vector(1 downto 0);
+  signal MID_CONTROL_LOADUNSIGNED : std_logic;
+  signal MID_STORE_DATA           : std_logic_vector(31 downto 0);
+  signal MID_STORE_BYTEENABLE     : std_logic_vector(3 downto 0);
+  signal MID_LOAD_DATA            : std_logic_vector(31 downto 0);
 
 
 
@@ -237,6 +261,7 @@ begin
     port map(clk  => iCLK,
              addr => s_IMemAddr(11 downto 2),
              data => iInstExt,
+             be   => "1111",
              we   => iInstLd,
              q    => s_Inst);
              
@@ -264,7 +289,23 @@ port MAP(i_opcode        => s_Inst(6 downto 0),
          o_AndLink       => MID_CONTROL_ANDLINK,
          o_AndLinkReg    => MID_CONTROL_ANDLINKREG,
          o_ImmediateType => MID_CONTROL_IMMTYPE,
+         o_MemSize       => MID_CONTROL_MEMSIZE,
+         o_LoadUnsigned  => MID_CONTROL_LOADUNSIGNED,
          o_ALUControl    => MID_CONTROL_ALUCONTROL);
+
+  STORE_ALIGNER: store_align
+    port MAP(i_Data       => MID_REG_B_OUT,
+             i_Address    => MID_ADDSUB_OUT(1 downto 0),
+             i_Size       => MID_CONTROL_MEMSIZE,
+             o_Data       => MID_STORE_DATA,
+             o_ByteEnable => MID_STORE_BYTEENABLE);
+
+  LOAD_EXTENDER: load_extend
+    port MAP(i_Data     => s_DMemOut,
+             i_Address  => MID_ADDSUB_OUT(1 downto 0),
+             i_Size     => MID_CONTROL_MEMSIZE,
+             i_Unsigned => MID_CONTROL_LOADUNSIGNED,
+             o_Data     => MID_LOAD_DATA);
 
   REGISTER_FILE: reg_file
   generic MAP(N => N)
@@ -326,7 +367,7 @@ pc_add_four: add_sub
     generic MAP(N  => N)
     port MAP(i_S   => MID_PC_MUX_SEL,
          i_D0      => MID_PC_NEXT_4,
-         i_D1      => MID_PC_JUMP_REG,
+         i_D1      => MID_PC_JUMP_REG(31 downto 1) & '0',
          o_O       => MID_PC_NEXT);
              
   PC_REG: pc
@@ -354,6 +395,7 @@ pc_add_four: add_sub
     port map(clk  => iCLK,
              addr => s_DMemAddr(11 downto 2),
              data => s_DMemData,
+             be   => MID_STORE_BYTEENABLE,
              we   => s_DMemWr,
              q    => s_DMemOut);
 
@@ -381,14 +423,14 @@ with MID_ALUSRCA select
   generic MAP(N => N) 
     port MAP(i_S  => MID_MEMTOREG,
              i_D0 => MID_BOTMUX_OUT,
-             i_D1 => s_DMemOut,
+             i_D1 => MID_LOAD_DATA,
              o_O  => MID_REGMUX_OUT);
 
 
   s_RegWrAddr <= s_Inst(11 downto 7);
   s_RegWrData <= MID_REGMUX_OUT;
   s_DMemAddr <= MID_ADDSUB_OUT;
-  s_DMemData <= MID_REG_B_OUT;
+  s_DMemData <= MID_STORE_DATA;
   oALUOut <= MID_ADDSUB_OUT;
 end structure;
 
