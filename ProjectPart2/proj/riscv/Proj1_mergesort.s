@@ -164,6 +164,10 @@ merge_loop:
     la t2, temp
     add t2, t2, t1
     lw t3, 0(t2)
+    
+    # Compare left and right values
+    ble t0, t3, choose_left
+    jal zero, choose_right
 
 # Select the left value as being larger
 choose_left:
