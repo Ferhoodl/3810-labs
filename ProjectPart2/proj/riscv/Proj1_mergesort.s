@@ -1,4 +1,3 @@
-
 # Sorting Algorithm Template in RISC-V Assembly - Troy Tomson
 # MergeSort implementation for RV32I
 #
@@ -35,7 +34,7 @@ main:
     addi sp, sp, 16
 
     # Exit program
-    wfi
+    j end
 
 .globl sort
 
@@ -236,3 +235,5 @@ merge_done:
     addi sp, sp, 32
     jalr zero, 0(ra)
 
+end:
+    wfi

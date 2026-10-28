@@ -1,0 +1,26 @@
+Using LAB Python Environment
+Synth
+Setting SALT_LICENSE_SERVER to 1717@io.ece.iastate.edu:1717@io.ece.iastate.edu
+Setting ALTERAD_LICENSE_FILE to 27008@io.ece.iastate.edu
+
+Starting compilation at 2026-10-27 20:21:33.921157
+
+Error during compilation or mapping
+
+You're synthesis produced no timings. There are a couple reasons this could be, but first
+you should look through the above output for any warnings. These assume your processor is
+mostly working in the test framework
+
+1. The processor doesn't have any outputs and was optimized away. This is most likely because
+    you didn't connect the alu output to the skeleton code.
+
+2. Your processor doesn't have any inputs and was optimized away. Most likely you modified
+    the direct input to your IMEM instead of the provided proxy signal. The proxy signal
+    is required so that we can forcibly load memory.
+
+3. Your processor doesn't depend on the clock input. Perhaps you made your own clock in a
+   process statment.
+
+Check temp/synth_errors.log for more information.
+
+
