@@ -9,7 +9,6 @@ work/
 *.~
 
 # Simulation waveforms, logs, and compiler outputs
-*.wlf
 *.opt
 *.ini
 *.log
