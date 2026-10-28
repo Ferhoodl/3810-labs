@@ -36,7 +36,8 @@ architecture structure of reg_file is
 
 
   component reg
-    generic(N : integer := 32);
+    generic(N : integer := 32;
+            RESET_VALUE : integer := 0);
     port(i_CLK        : in std_logic;     -- Clock input
          i_RST        : in std_logic;     -- Reset input
          i_WE         : in std_logic;     -- Write enable input
@@ -208,8 +209,8 @@ begin
 
   register_00: reg generic MAP(N => N) port MAP(i_CLK => i_CLK, i_RST => '1'  , i_WE => '0',             i_D => x"00000000",          o_Q => MID_REG_00_OUT);
   register_01: reg generic MAP(N => N) port MAP(i_CLK => i_CLK, i_RST => i_RST, i_WE => i_W_EN,         i_D => MID_MUX_2T1_01_OUT,   o_Q => MID_REG_01_OUT);
-  register_02: reg generic MAP(N => N) port MAP(i_CLK => i_CLK, i_RST => i_RST, i_WE => i_W_EN,         i_D => MID_MUX_2T1_02_OUT,   o_Q => MID_REG_02_OUT);
-  register_03: reg generic MAP(N => N) port MAP(i_CLK => i_CLK, i_RST => i_RST, i_WE => i_W_EN,         i_D => MID_MUX_2T1_03_OUT,   o_Q => MID_REG_03_OUT);
+  register_02: reg generic MAP(N => N, RESET_VALUE => 16#7FFFEFFC#) port MAP(i_CLK => i_CLK, i_RST => i_RST, i_WE => i_W_EN,         i_D => MID_MUX_2T1_02_OUT,   o_Q => MID_REG_02_OUT);
+  register_03: reg generic MAP(N => N, RESET_VALUE => 16#10008000#) port MAP(i_CLK => i_CLK, i_RST => i_RST, i_WE => i_W_EN,         i_D => MID_MUX_2T1_03_OUT,   o_Q => MID_REG_03_OUT);
   register_04: reg generic MAP(N => N) port MAP(i_CLK => i_CLK, i_RST => i_RST, i_WE => i_W_EN,         i_D => MID_MUX_2T1_04_OUT,   o_Q => MID_REG_04_OUT);
   register_05: reg generic MAP(N => N) port MAP(i_CLK => i_CLK, i_RST => i_RST, i_WE => i_W_EN,         i_D => MID_MUX_2T1_05_OUT,   o_Q => MID_REG_05_OUT);
   register_06: reg generic MAP(N => N) port MAP(i_CLK => i_CLK, i_RST => i_RST, i_WE => i_W_EN,         i_D => MID_MUX_2T1_06_OUT,   o_Q => MID_REG_06_OUT);

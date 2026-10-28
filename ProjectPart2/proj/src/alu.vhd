@@ -78,7 +78,7 @@ architecture structure of alu is
     port(
       i_Data    : in  std_logic_vector(31 downto 0);
       i_Shift   : in  std_logic_vector(4 downto 0);
-      i_arith   : in  std_logic; -- 0 for SRL, 1 for SRA
+      i_arith   : in  std_logic; -- 0 for srl, 1 for sra
       i_Dir     : in  std_logic; -- 0 for right, 1 for left
       o_Shifted : out std_logic_vector(31 downto 0)
     );
