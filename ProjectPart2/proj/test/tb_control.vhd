@@ -20,9 +20,14 @@ use std.env.all;                -- For hierarchical/external signals
 use std.textio.all;             -- For basic I/O
 
 entity tb_control is
+  generic (
+    gCLK_HPER   : time := 10 ns   -- Generic for half of the clock cycle period
+  );
 end tb_control;
 
 architecture structure of tb_control is
+
+constant cCLK_PER : time := gCLK_HPER * 2;
 
 component control is
   port(i_opcode        : in  std_logic_vector(6 downto 0);
@@ -87,90 +92,257 @@ begin
   P_TEST_CASES: process
   begin
 
-    s_opcode <= "0110011"; -- add, output should be 1,0,00,0,0,0,0,1,0,000,00,0,0000
-    s_func7 <= "0000000";
-    s_func3 <= "000";
-    wait for 10 ns;
+    -- 1 add -- r type
+    s_opcode <= "0110011"; s_func3 <= "000"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0000")
+      report "problem on add" severity error;
 
-    s_opcode <= "0110011"; -- sub, output should be 1,0,00,0,0,0,0,1,0,000,00,0,1000
-    s_func7 <= "0100000";
-    s_func3 <= "000";
-    wait for 10 ns;
+    -- 2 addi -- i type
+    s_opcode <= "0010011"; s_func3 <= "000"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0000")
+      report "problem on addi" severity error;
 
-    s_opcode <= "0110011"; -- sra, output should be 1,0,00,0,0,0,0,1,0,000,01,1,1101
-    s_func7 <= "0100000";
-    s_func3 <= "101";
-    wait for 10 ns;
+    -- 3 and -- r type
+    s_opcode <= "0110011"; s_func3 <= "111"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0010
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0010")
+      report "problem on and" severity error;
 
-    s_opcode <= "0010011"; -- addi, output should be 1,0,00,1,0,0,0,1,0,000,00,0,0000
-    s_func7 <= "0000000";
-    s_func3 <= "000";
-    wait for 10 ns;
+    -- 4 andi -- i type
+    s_opcode <= "0010011"; s_func3 <= "111"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0010
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0010")
+      report "problem on andi" severity error;
 
-    s_opcode <= "0010011"; -- sltiu, output should be 1,0,00,1,0,0,0,1,0,000,11,0,1011
-    s_func7 <= "0000000";
-    s_func3 <= "011";
-    wait for 10 ns;
+    -- 5 lui -- u type
+    s_opcode <= "0110111"; s_func3 <= "000"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=10 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=011 alucontrol=0000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "10" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "011" and s_ALUControl = "0000")
+      report "problem on lui" severity error;
 
-    s_opcode <= "0010011"; -- srai, output should be 1,0,00,1,0,0,0,1,0,000,01,1,1101
-    s_func7 <= "0100000";
-    s_func3 <= "101";
-    wait for 10 ns;
+    -- 6 lw -- i type
+    s_opcode <= "0000011"; s_func3 <= "010"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=1 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 memsize=10 loadunsigned=0 alucontrol=0000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '1' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_MemSize = "10" and s_LoadUnsigned = '0' and s_ALUControl = "0000")
+      report "problem on lw" severity error;
 
-    s_opcode <= "0000011"; -- lw, output should be 1,0,00,1,1,0,0,1,0,000,10,0,0000
-    s_func7 <= "0000000";
-    s_func3 <= "010";
-    wait for 10 ns;
+    -- 7 xor -- r type
+    s_opcode <= "0110011"; s_func3 <= "100"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0100
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0100")
+      report "problem on xor" severity error;
 
-    s_opcode <= "0000011"; -- lb, output should be 1,0,00,1,1,0,0,1,0,000,00,0,0000
-    s_func7 <= "0000000";
-    s_func3 <= "000";
-    wait for 10 ns;
+    -- 8 xori -- i type
+    s_opcode <= "0010011"; s_func3 <= "100"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0100
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0100")
+      report "problem on xori" severity error;
 
-    s_opcode <= "0000011"; -- lhu, output should be 1,0,00,1,1,0,0,1,0,000,01,1,0000
-    s_func7 <= "0000000";
-    s_func3 <= "101";
-    wait for 10 ns;
+    -- 9 or -- r type
+    s_opcode <= "0110011"; s_func3 <= "110"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0011
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0011")
+      report "problem on or" severity error;
 
-    s_opcode <= "0100011"; -- sw, output should be 0,1,00,1,0,0,0,1,0,001,10,0,0000
-    s_func7 <= "0000000";
-    s_func3 <= "010";
-    wait for 10 ns;
+    -- 10 ori -- i type
+    s_opcode <= "0010011"; s_func3 <= "110"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0011
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0011")
+      report "problem on ori" severity error;
 
-    s_opcode <= "0100011"; -- sb, output should be 0,1,00,1,0,0,0,1,0,001,00,0,0000
-    s_func7 <= "0000000";
-    s_func3 <= "000";
-    wait for 10 ns;
+    -- 11 slt -- r type
+    s_opcode <= "0110011"; s_func3 <= "010"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=1010
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "1010")
+      report "problem on slt" severity error;
 
-    s_opcode <= "0100011"; -- sh, output should be 0,1,00,1,0,0,0,1,0,001,01,0,0000
-    s_func7 <= "0000000";
-    s_func3 <= "001";
-    wait for 10 ns;
+    -- 12 slti -- i type
+    s_opcode <= "0010011"; s_func3 <= "010"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=1010
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "1010")
+      report "problem on slti" severity error;
 
-    s_opcode <= "1100011"; -- beq, output should be 0,0,00,0,0,1,0,1,0,010,00,0,1000
-    s_func7 <= "0000000";
-    s_func3 <= "000";
-    wait for 10 ns;
+    -- 13 sltiu -- i type
+    s_opcode <= "0010011"; s_func3 <= "011"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=1011
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "1011")
+      report "problem on sltiu" severity error;
 
-    s_opcode <= "0110111"; -- lui, output should be 1,0,10,1,0,0,0,1,0,011,00,0,0000
-    s_func7 <= "0000000";
-    s_func3 <= "000";
-    wait for 10 ns;
+    -- 14 sll -- r type
+    s_opcode <= "0110011"; s_func3 <= "001"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0001
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0001")
+      report "problem on sll" severity error;
 
-    s_opcode <= "0010111"; -- auipc, output should be 1,0,01,1,0,0,0,1,0,011,00,0,0000
-    s_func7 <= "0000000";
-    s_func3 <= "000";
-    wait for 10 ns;
+    -- 15 srl -- r type
+    s_opcode <= "0110011"; s_func3 <= "101"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0101
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0101")
+      report "problem on srl" severity error;
 
-    s_opcode <= "1101111"; -- jal, output should be 1,0,00,0,0,0,1,0,0,100,00,0,0000
-    s_func7 <= "0000000";
-    s_func3 <= "000";
-    wait for 10 ns;
+    -- 16 sra -- r type
+    s_opcode <= "0110011"; s_func3 <= "101"; s_func7 <= "0100000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=1101
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "1101")
+      report "problem on sra" severity error;
 
-    s_opcode <= "1100111"; -- jalr, output should be 1,0,00,1,0,0,1,0,1,000,00,0,0000
-    s_func7 <= "0000000";
-    s_func3 <= "000";
-    wait for 10 ns;
+    -- 17 sb -- s type
+    s_opcode <= "0100011"; s_func3 <= "000"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=0 memwrite=1 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=001 memsize=00 loadunsigned=0 alucontrol=0000
+    assert (s_RegWrite = '0' and s_MemWrite = '1' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "001" and s_MemSize = "00" and s_LoadUnsigned = '0' and s_ALUControl = "0000")
+      report "problem on sb" severity error;
+
+    -- 18 sh -- s type
+    s_opcode <= "0100011"; s_func3 <= "001"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=0 memwrite=1 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=001 memsize=01 loadunsigned=0 alucontrol=0000
+    assert (s_RegWrite = '0' and s_MemWrite = '1' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "001" and s_MemSize = "01" and s_LoadUnsigned = '0' and s_ALUControl = "0000")
+      report "problem on sh" severity error;
+
+    -- 19 sw -- s type
+    s_opcode <= "0100011"; s_func3 <= "010"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=0 memwrite=1 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=001 memsize=10 loadunsigned=0 alucontrol=0000
+    assert (s_RegWrite = '0' and s_MemWrite = '1' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "001" and s_MemSize = "10" and s_LoadUnsigned = '0' and s_ALUControl = "0000")
+      report "problem on sw" severity error;
+
+    -- 20 sub -- r type
+    s_opcode <= "0110011"; s_func3 <= "000"; s_func7 <= "0100000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=1000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "1000")
+      report "problem on sub" severity error;
+
+    -- 21 beq -- sb type
+    s_opcode <= "1100011"; s_func3 <= "000"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=0 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=1 jump=0 andlink=1 andlinkreg=0 immtype=010 alucontrol=1000
+    assert (s_RegWrite = '0' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '1' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "010" and s_ALUControl = "1000")
+      report "problem on beq" severity error;
+
+    -- 22 bne -- sb type
+    s_opcode <= "1100011"; s_func3 <= "001"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=0 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=1 jump=0 andlink=1 andlinkreg=0 immtype=010 alucontrol=1000
+    assert (s_RegWrite = '0' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '1' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "010" and s_ALUControl = "1000")
+      report "problem on bne" severity error;
+
+    -- 23 blt -- sb type
+    s_opcode <= "1100011"; s_func3 <= "100"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=0 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=1 jump=0 andlink=1 andlinkreg=0 immtype=010 alucontrol=1000
+    assert (s_RegWrite = '0' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '1' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "010" and s_ALUControl = "1000")
+      report "problem on blt" severity error;
+
+    -- 24 bge -- sb type
+    s_opcode <= "1100011"; s_func3 <= "101"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=0 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=1 jump=0 andlink=1 andlinkreg=0 immtype=010 alucontrol=1000
+    assert (s_RegWrite = '0' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '1' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "010" and s_ALUControl = "1000")
+      report "problem on bge" severity error;
+
+    -- 25 bltu -- sb type
+    s_opcode <= "1100011"; s_func3 <= "110"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=0 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=1 jump=0 andlink=1 andlinkreg=0 immtype=010 alucontrol=1000
+    assert (s_RegWrite = '0' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '1' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "010" and s_ALUControl = "1000")
+      report "problem on bltu" severity error;
+
+    -- 26 bgeu -- sb type
+    s_opcode <= "1100011"; s_func3 <= "111"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=0 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=1 jump=0 andlink=1 andlinkreg=0 immtype=010 alucontrol=1000
+    assert (s_RegWrite = '0' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '1' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "010" and s_ALUControl = "1000")
+      report "problem on bgeu" severity error;
+
+    -- 27 jal -- uj type
+    s_opcode <= "1101111"; s_func3 <= "000"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=0 memtoreg=0 branch=0 jump=1 andlink=0 andlinkreg=0 immtype=100 alucontrol=0000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '0' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '1' and s_AndLink = '0' and s_AndLinkReg = '0' and s_ImmediateType = "100" and s_ALUControl = "0000")
+      report "problem on jal" severity error;
+
+    -- 28 jalr -- i type
+    s_opcode <= "1100111"; s_func3 <= "000"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=1 andlink=0 andlinkreg=1 immtype=000 alucontrol=0000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '1' and s_AndLink = '0' and s_AndLinkReg = '1' and s_ImmediateType = "000" and s_ALUControl = "0000")
+      report "problem on jalr" severity error;
+
+    -- 29 lb -- i type
+    s_opcode <= "0000011"; s_func3 <= "000"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=1 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 memsize=00 loadunsigned=0 alucontrol=0000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '1' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_MemSize = "00" and s_LoadUnsigned = '0' and s_ALUControl = "0000")
+      report "problem on lb" severity error;
+
+    -- 30 lh -- i type
+    s_opcode <= "0000011"; s_func3 <= "001"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=1 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 memsize=01 loadunsigned=0 alucontrol=0000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '1' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_MemSize = "01" and s_LoadUnsigned = '0' and s_ALUControl = "0000")
+      report "problem on lh" severity error;
+
+    -- 31 lbu -- i type
+    s_opcode <= "0000011"; s_func3 <= "100"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=1 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 memsize=00 loadunsigned=1 alucontrol=0000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '1' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_MemSize = "00" and s_LoadUnsigned = '1' and s_ALUControl = "0000")
+      report "problem on lbu" severity error;
+
+    -- 32 lhu -- i type
+    s_opcode <= "0000011"; s_func3 <= "101"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=1 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 memsize=01 loadunsigned=1 alucontrol=0000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '1' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_MemSize = "01" and s_LoadUnsigned = '1' and s_ALUControl = "0000")
+      report "problem on lhu" severity error;
+
+    -- 33 slli -- i type
+    s_opcode <= "0010011"; s_func3 <= "001"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0001
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0001")
+      report "problem on slli" severity error;
+
+    -- 34 srli -- i type
+    s_opcode <= "0010011"; s_func3 <= "101"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=0101
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "0101")
+      report "problem on srli" severity error;
+
+    -- 35 srai -- i type
+    s_opcode <= "0010011"; s_func3 <= "101"; s_func7 <= "0100000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=00 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=000 alucontrol=1101
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "00" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "000" and s_ALUControl = "1101")
+      report "problem on srai" severity error;
+
+    -- 36 auipc -- u type
+    s_opcode <= "0010111"; s_func3 <= "000"; s_func7 <= "0000000";
+    wait for cCLK_PER;
+    -- expected: regwrite=1 memwrite=0 alusrca=01 alusrcb=1 memtoreg=0 branch=0 jump=0 andlink=1 andlinkreg=0 immtype=011 alucontrol=0000
+    assert (s_RegWrite = '1' and s_MemWrite = '0' and s_ALUSrcA = "01" and s_ALUSrcB = '1' and s_MemToReg = '0' and s_Branch = '0' and s_Jump = '0' and s_AndLink = '1' and s_AndLinkReg = '0' and s_ImmediateType = "011" and s_ALUControl = "0000")
+      report "problem on auipc" severity error;
 
     wait;
   end process;

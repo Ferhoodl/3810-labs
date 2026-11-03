@@ -92,7 +92,6 @@ begin
             report "FAIL: PC did not load branch/jump target"
             severity error;
 
-        stop;
         wait;
     end process;
 
