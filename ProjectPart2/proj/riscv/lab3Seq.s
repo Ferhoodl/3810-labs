@@ -1,6 +1,6 @@
 #
 # First part of the Lab 3 test program
-#
+# UPDATED FOR SOFTWARE PIPELINE!
 
 # data section
 .data
@@ -19,15 +19,32 @@ addi  x9,  x0,  9    # Place 9  in $9
 addi  x10, x0,  10   # Place 10 in $10
 
 add   x11, x1,  x2   # x11 = x1  + x2
+nop
+nop
 sub   x12, x11, x3   # x12 = x11 - x3
+nop
+nop
 add   x13, x12, x4   # x13 = x12 + x4
+nop
+nop
 sub   x14, x13, x5   # x14 = x13 - x5
+nop
+nop
 add   x15, x14, x6   # x15 = x14 + x6
+nop
+nop
 sub   x16, x15, x7   # x16 = x15 - x7
+nop
+nop
 add   x17, x16, x8   # x17 = x16 + x8
+nop
+nop
 sub   x18, x17, x9   # x18 = x17 - x9
+nop
+nop
 add   x19, x18, x10  # x19 = x18 + x10
 addi  x20, x0,  35   # Place 35 in x20
+nop
 add   x21, x19, x20  # x21 = x19 + x20
 
 wfi

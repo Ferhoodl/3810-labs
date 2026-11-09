@@ -1,5 +1,6 @@
 #
 # First part of the Lab 3 test program
+# UPDATED FOR SOFTWARE PIPELINE!
 #
 
 # data section

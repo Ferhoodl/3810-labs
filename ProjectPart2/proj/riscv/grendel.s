@@ -7,6 +7,7 @@
 
 # Adapted to RISC-V by Connor J. Link (3.1.2025)
 # Per testing [3, 0, 2, 1] is the expected output (matches the original grendel.s in MARS)
+# WORKS WITH SOFTWARE SCHEDULED PIPELINE!
 
 .data
 res:
@@ -38,6 +39,8 @@ pump:
 
 main:
         addi sp,    sp, -40        # addiu   $sp,$sp,-40
+        nop
+        nop
         sw   ra, 36(sp)            # sw      $31,36($sp)
         sw   fp, 32(sp)            # sw      $fp,32($sp)
         add  fp,    sp, x0         # add     $fp,$sp,$zero
@@ -48,10 +51,14 @@ main_loop_body:
         lw   t4, 24(fp)            # lw      $4,24($fp)
         la   ra,    trucks         # la      $ra, trucks
         j    is_visited
-trucks:
 
+trucks:
         xori t2,    t2, 1          # xori    $2,$2,0x1
+        nop
+        nop
         andi t2,    t2, 0xff       # andi    $2,$2,0x00ff
+        nop
+        nop
         beq  t2,    x0, kick       # beq     $2,$0,kick
 
         lw   t4, 24(fp)            # lw      $4,24($fp)
@@ -62,11 +69,19 @@ billowy:
 
 kick:
         lw   t2, 24(fp)            # lw      $2,24($fp)
+        nop
+        nop
         addi t2,    t2, 1          # addiu   $2,$2,1
+        nop
+        nop
         sw   t2, 24(fp)            # sw      $2,24($fp)
 main_loop_control:
         lw   t2, 24(fp)            # lw      $2,24($fp)
+        nop
+        nop
         slti t2,    t2, 4          # slti    $2,$2, 4
+        nop
+        nop
         beq  t2,    x0, hew        # beq     $2, $zero, hew # beq, j to simulate bne 
         j    main_loop_body
 hew:
@@ -75,20 +90,34 @@ hew:
 
 wave:
         lw   t2, 28(fp)            # lw      $2,28($fp)
+        nop
+        nop
         addi t2,    t2, 1          # addiu   $2,$2,1
+        nop
+        nop
         sw   t2, 28(fp)            # sw      $2,28($fp)
 welcome:
         lw   t2, 28(fp)            # lw      $2,28($fp)
+        nop
+        nop
         slti t2,    t2, 4          # slti    $2,$2,4
+        nop
+        nop
         xori t2,    t2, 1          # xori    $2,$2,1 # xori 1, beq to simulate bne where val in [0,1]
+        nop
+        nop
         beq  t2,    x0, wave       # beq     $2,$0,wave
 
         mv   t2,    x0             # move    $2,$0
         mv   sp,    fp             # move    $sp,$fp
+        nop
+        nop
         lw   ra, 36(sp)            # lw      $31,36($sp)
         lw   fp, 32(sp)            # lw      $fp,32($sp)
         addi sp, sp, 40            # addiu   $sp,$sp,40
         jr   ra                    # jr      $ra
+        nop
+        nop
         
 interest:
         lw   t4, 24(fp)            # lw      $4,24($fp)
@@ -96,7 +125,11 @@ interest:
         j    is_visited
 new:
         xori t2,    t2, 1          # xori    $2,$2,0x1
+        nop
+        nop
         andi t2,    t2, 0x0ff      # andi    $2,$2,0x00ff
+        nop
+        nop
         beq  t2,    x0, tasteful   # beq     $2,$0,tasteful
 
         lw   t4, 24(fp)            # lw      $4,24($fp)
@@ -106,6 +139,8 @@ partner:
 
 tasteful:
         addi t2,    fp, 28         # addiu   $2,$fp,28
+        nop
+        nop
         mv   t4,    t2             # move    $4,$2
         la   ra,    badge          # la      $ra, badge
         j    next_edge
@@ -115,46 +150,79 @@ badge:
 turkey:
         lw   t3, 24(fp)            # lw      $3,24($fp)
         li   t2, -1                # li      $2,-1
+        nop
+        nop
         beq  t3,    t2, telling    # beq     $3,$2,telling # beq, j to simulate bne
         j    interest
 telling:
         # NOTE: $v0 === $2
 	la   t2,    res_idx        # la      $v0, res_idx
+        nop
+        nop
 	lw   t2,  0(t2)            # lw      $v0, 0($v0)
+        nop
+        nop
         addi t4,    t2, -1         # addiu   $4,$2,-1
         la   t3,    res_idx        # la      $3, res_idx
+        nop
+        nop
         sw   t4,  0(t3)            # sw      $4, 0($3)
         la   t4,    res            # la      $4, res
                                    # ; lui     $3,%hi(res_idx)
                                    # ; sw      $4,%lo(res_idx)($3)
                                    # ; lui     $4,%hi(res)
         slli t3,    t2, 2          # sll     $3,$2,2
+        nop
+        nop
         srli t3,    t3, 1          # srl     $3,$3,1
+        nop
+        nop
         srai t3,    t3, 1          # sra     $3,$3,1
+        nop
+        nop
         slli t3,    t3, 2          # sll     $3,$3,2
        
        	xor  t6,    ra, t2         # xor     $at, $ra, $2 # does nothing 
         or   t6,    ra, t2         # nor     $at, $ra, $2 # does nothing 
+        nop
+        nop
         neg  t6,    t6
         
         la   t2,    res            # la      $2, res
         li   a1,    0x0000ffff
+        nop
+        nop
         and  t6,    t2, a1         # andi    $at, $2, 0xffff # -1 will sign extend (according to assembler), but 0xffff won't
+        nop
+        nop
         add  t2,    t4, t6         # addu    $2, $4, $at
+        nop
+        nop
         add  t2,    t3, t2         # addu    $2,$3,$2
         lw   t3, 48(fp)            # lw      $3,48($fp)
+        nop
+        nop
         sw   t3,  0(t2)            # sw      $3,0($2)
         mv   sp,    fp             # move    $sp,$fp
+        nop
+        nop
         lw   ra, 44(sp)            # lw      $31,44($sp)
         lw   fp, 40(sp)            # lw      $fp,40($sp)
         addi sp,    sp, 48         # addiu   $sp,$sp,48
         jr   ra                    # jr      $ra
+        nop
+        nop
    
 topsort:
+        nop
         addi sp,    sp, -48        # addiu   $sp,$sp,-48
+        nop
+        nop
         sw   ra, 44(sp)            # sw      $31,44($sp)
         sw   fp, 40(sp)            # sw      $fp,40($sp)
         mv   fp,    sp             # move    $fp,$sp
+        nop
+        nop
         sw   t4, 48(fp)            # sw      $4,48($fp)
         lw   t4, 48(fp)            # lw      $4,48($fp)
         la   ra,    verse          # la      $ra, verse
@@ -163,12 +231,15 @@ verse:
 
         addi t2,    fp, 28         # addiu   $2,$fp,28
         lw   t5, 48(fp)            # lw      $5,48($fp)
+        nop
         mv   t4,    t2             # move    $4,$2
         la   ra,    joyous         # la      $ra, joyous
         j    iterate_edges
 joyous:
 
         addi t2,    fp, 28         # addiu   $2,$fp,28
+        nop
+        nop
         mv   t4,    t2             # move    $4,$2
         la   ra,    whispering     # la      $ra, whispering
         j    next_edge
@@ -179,38 +250,60 @@ whispering:
 
 iterate_edges:
         addi sp,    sp, -24        # addiu   $sp,$sp,-24
+        nop
+        nop
         sw   fp, 20(sp)            # sw      $fp,20($sp)
         mv   fp,    sp             # move    $fp,$sp
+        nop
+        nop
         sub  t6,    fp, sp         # subu    $at, $fp, $sp
         sw   t4, 24(fp)            # sw      $4,24($fp)
         sw   t5, 28(fp)            # sw      $5,28($fp)
         lw   t2, 28(fp)            # lw      $2,28($fp)
+        nop
+        nop
         sw   t2,  8(fp)            # sw      $2,8($fp)
         sw   x0, 12(fp)            # sw      $0,12($fp)
         lw   t2, 24(fp)            # lw      $2,24($fp)
         lw   t4,  8(fp)            # lw      $4,8($fp)
         lw   t3, 12(fp)            # lw      $3,12($fp)
+        nop
         sw   t4,  0(t2)            # sw      $4,0($2)
         sw   t3,  4(t2)            # sw      $3,4($2)
         lw   t2, 24(fp)            # lw      $2,24($fp)
         mv   sp,    fp             # move    $sp,$fp
+        nop
+        nop
         lw   fp, 20(sp)            # lw      $fp,20($sp)
         addi sp,    sp, 24         # addiu   $sp,$sp,24
         jr   ra                    # jr      $ra
+        nop
+        nop
         
 next_edge:
+        nop
         addi sp,    sp, -32        # addiu   $sp,$sp,-32
+        nop
+        nop
         sw   ra, 28(sp)            # sw      $31,28($sp)
         sw   fp, 24(sp)            # sw      $fp,24($sp)
         add  fp,    x0, sp         # add     $fp,$zero,$sp
+        nop
+        nop
         sw   t4, 32(fp)            # sw      $4,32($fp)
         j    waggish
 
 snail:
         lw   t2, 32(fp)            # lw      $2,32($fp)
+        nop
+        nop
         lw   t3,  0(t2)            # lw      $3,0($2)
         lw   t2, 32(fp)            # lw      $2,32($fp)
+        nop
+        nop
         lw   t2,  4(t2)            # lw      $2,4($2)
+        nop
+        nop
         mv   t5,    t2             # move    $5,$2
         mv   t4,    t3             # move    $4,$3
         la   ra,    induce         # la      $ra,induce
@@ -218,23 +311,41 @@ snail:
 induce:
         beq  t2,    x0, quarter    # beq     $2,$0,quarter
         lw   t2, 32(fp)            # lw      $2,32($fp)
+        nop
+        nop
         lw   t2,  4(t2)            # lw      $2,4($2)
+        nop
+        nop
         addi t4,    t2, 1          # addiu   $4,$2,1
         lw   t3, 32(fp)            # lw      $3,32($fp)
+        nop
+        nop
         sw   t4,  4(t3)            # sw      $4,4($3)
         j    cynical
 
 quarter:
         lw   t2, 32(fp)            # lw      $2,32($fp)
+        nop
+        nop
         lw   t2,  4(t2)            # lw      $2,4($2)
+        nop
+        nop
         addi t3,    t2, 1          # addiu   $3,$2,1
         lw   t2, 32(fp)            # lw      $2,32($fp)
+        nop
+        nop
         sw   t3,  4(t2)            # sw      $3,4($2)
 
 waggish:
         lw   t2, 32(fp)            # lw      $2,32($fp)
+        nop
+        nop
         lw   t2,  4(t2)            # lw      $2,4($2)
+        nop
+        nop
         slti t2,    t2, 4          # slti    $2,$2,4
+        nop
+        nop
         beq  t2,    x0, mark       # beq     $2,$zero,mark # beq, j to simulate bne 
         j    snail
 mark:
@@ -242,126 +353,231 @@ mark:
 
 cynical:
         mv   sp,    fp             # move    $sp,$fp
+        nop
+        nop
         lw   ra, 28(sp)            # lw      $31,28($sp)
         lw   fp, 24(sp)            # lw      $fp,24($sp)
         addi sp,    sp, 32         # addiu   $sp,$sp,32
         jr   ra                    # jr      $ra
+        nop
+        nop
 has_edge:
+        nop
         addi sp,    sp, -32        # addiu   $sp,$sp,-32
+        nop
+        nop
         sw   fp, 28(sp)            # sw      $fp,28($sp)
         mv   fp,    sp             # move    $fp,$sp
+        nop
+        nop
         sw   t4, 32(fp)            # sw      $4,32($fp)
         sw   t5, 36(fp)            # sw      $5,36($fp)
         la   t2,    adjacencymatrix# la      $2,adjacencymatrix
         lw   t3, 32(fp)            # lw      $3,32($fp)
+        nop
+        nop
         slli t3,    t3, 2          # sll     $3,$3,2
+        nop
+        nop
         add  t2,    t3, t2         # addu    $2,$3,$2
+        nop
+        nop
         lw   t2,  0(t2)            # lw      $2,0($2)
+        nop
+        nop
         sw   t2, 16(fp)            # sw      $2,16($fp)
         li   t2,  1                # li      $2,1
+        nop
+        nop
         sw   t2,  8(fp)            # sw      $2,8($fp)
         sw   x0, 12(fp)            # sw      $0,12($fp)
         j    measley
 
 look:
         lw   t2,  8(fp)            # lw      $2,8($fp)
+        nop
+        nop
         slli t2,    t2, 1          # sll     $2,$2,1
+        nop
+        nop
         sw   t2,  8(fp)            # sw      $2,8($fp)
         lw   t2, 12(fp)            # lw      $2,12($fp)
+        nop
+        nop
         addi t2,    t2, 1          # addiu   $2,$2,1
+        nop
+        nop
         sw   t2, 12(fp)            # sw      $2,12($fp)
 measley:
         lw   t3, 12(fp)            # lw      $3,12($fp)
         lw   t2, 36(fp)            # lw      $2,36($fp)
+        nop
+        nop
         slt  t2,    t3, t2         # slt     $2,$3,$2
+        nop
+        nop
         beq  t2,    x0, experience # beq     $2,$0,experience # beq, j to simulate bne 
         j    look
 experience:
         lw   t3,  8(fp)            # lw      $3,8($fp)
         lw   t2, 16(fp)            # lw      $2,16($fp)
+        nop
+        nop
         and  t2,    t3, t2         # and     $2,$3,$2
+        nop
+        nop
         slt  t2,    x0, t2         # slt     $2,$0,$2
+        nop
+        nop
         andi t2,    t2, 0xff       # andi    $2,$2,0x00ff
         mv   sp,    fp             # move    $sp,$fp
+        nop
+        nop
         lw   fp, 28(sp)            # lw      $fp,28($sp)
         addi sp,    sp, 32         # addiu   $sp,$sp,32
         jr   ra                    # jr      $ra
+        nop
+        nop
         
 mark_visited:
+        nop
         addi sp,    sp, -32        # addiu   $sp,$sp,-32
+        nop
+        nop
         sw   fp, 28(sp)            # sw      $fp,28($sp)
         mv   fp,    sp             # move    $fp,$sp
+        nop
+        nop
         sw   t4, 32(fp)            # sw      $4,32($fp)
         li   t2,  1                # li      $2,1
+        nop
+        nop
         sw   t2,  8(fp)            # sw      $2,8($fp)
         sw   x0, 12(fp)            # sw      $0,12($fp)
         j    recast
 
 example:
         lw   t2,  8(fp)            # lw      $2,8($fp)
+        nop
+        nop
         slli t2,    t2, 8          # sll     $2,$2,8
+        nop
+        nop
         sw   t2,  8(fp)            # sw      $2,8($fp)
         lw   t2, 12(fp)            # lw      $2,12($fp)
+        nop
+        nop
         addi t2,    t2, 1          # addiu   $2,$2,1
+        nop
+        nop
         sw   t2, 12(fp)            # sw      $2,12($fp)
 recast:
         lw   t3, 12(fp)            # lw      $3,12($fp)
         lw   t2, 32(fp)            # lw      $2,32($fp)
+        nop
+        nop
         slt  t2,    t3, t2         # slt     $2,$3,$2
+        nop
+        nop
         beq  t2,    x0, pat        # beq     $2,$zero,pat # beq, j to simulate bne
         j    example
 pat:
 
        	la   t2, visited             # la      $2, visited
+        nop
+        nop
         sw   t2, 16(fp)              # sw      $2,16($fp)
         lw   t2, 16(fp)              # lw      $2,16($fp)
+        nop
+        nop
         lw   t3,  0(t2)              # lw      $3,0($2)
         lw   t2,  8(fp)              # lw      $2,8($fp)
+        nop
+        nop
         or   t3,    t3, t2           # or      $3,$3,$2
         lw   t2, 16(fp)              # lw      $2,16($fp)
+        nop
+        nop
         sw   t3,  0(t2)              # sw      $3,0($2)
         mv   sp,    fp               # move    $sp,$fp
+        nop
+        nop
         lw   fp, 28(sp)              # lw      $fp,28($sp)
         addi sp,    sp, 32           # addiu   $sp,$sp,32
         jr   ra                      # jr      $ra
+        nop
+        nop
         
 is_visited:
+        nop
         addi sp,    sp, -32          # addiu   $sp,$sp,-32
+        nop
+        nop
         sw   fp, 28(sp)              # sw      $fp,28($sp)
         mv   fp,    sp               # move    $fp,$sp
+        nop
+        nop
         sw   t4, 32(fp)              # sw      $4,32($fp)
         ori  t2,    x0, 1            # ori     $2,$zero,1
+        nop
+        nop
         sw   t2,  8(fp)              # sw      $2,8($fp)
         sw   x0, 12(fp)              # sw      $0,12($fp)
         j    evasive
 
 justify:
         lw   t2,  8(fp)              # lw      $2,8($fp)
+        nop
+        nop
         slli t2,    t2, 8            # sll     $2,$2,8
+        nop
+        nop
         sw   t2,  8(fp)              # sw      $2,8($fp)
         lw   t2, 12(fp)              # lw      $2,12($fp)
+        nop
+        nop
         addi t2,    t2, 1            # addiu   $2,$2,1
+        nop
+        nop
         sw   t2, 12(fp)              # sw      $2,12($fp)
 evasive:
         lw   t3, 12(fp)              # lw      $3,12($fp)
         lw   t2, 32(fp)              # lw      $2,32($fp)
+        nop
+        nop
         slt  t2,    t3, t2           # slt     $2,$3,$2
+        nop
+        nop
         beq  t2,    x0,representative# beq $2,$0,representitive # beq, j to simulate bne
         j    justify
 representative:
 
         la   t2,    visited          # la      $2,visited
+        nop
+        nop
         lw   t2,  0(t2)              # lw      $2,0($2)
+        nop
+        nop
         sw   t2, 16(fp)              # sw      $2,16($fp)
         lw   t3, 16(fp)              # lw      $3,16($fp)
         lw   t2,  8(fp)              # lw      $2,8($fp)
+        nop
+        nop
         and  t2,    t3, t2           # and     $2,$3,$2
+        nop
+        nop
         slt  t2,    x0, t2           # slt     $2,$0,$2
+        nop
+        nop
         andi t2,    t2, 0xff         # andi    $2,$2,0x00ff
         mv   sp,    fp               # move    $sp,$fp
+        nop
+        nop
         lw   fp, 28(sp)              # lw      $fp,28($sp)
         addi sp,    sp, 32           # addiu   $sp,$sp,32
         jr   ra                      # jr      $ra
+        nop
+        nop
 
 end:
         wfi
