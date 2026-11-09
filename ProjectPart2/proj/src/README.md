@@ -11,4 +11,3 @@ constants, etc.) in this file.
 
 A top level file, TopLevel/RISCV\_processor is included. Please be mindful
 of signals in this processor that are required for the toolflow.
-
