@@ -24,12 +24,22 @@ main:
     addi sp, sp, -16
     nop
     nop
+    nop
     sw ra, 12(sp)
 
     # Call sorting function
-    la a0, array
-    lw a1, array_size
+    lasw3 a0, array
+    lasw3 a1, array_size
+    nop
+    nop
+    nop
+    lw a1, 0(a1)
+    nop
+    nop
+    nop
     jal ra, sort
+    nop
+    nop
 
     # Restore stack
     lw ra, 12(sp)
@@ -37,6 +47,8 @@ main:
 
     # Exit program
     j end
+    nop
+    nop
 
 .globl sort
 
@@ -48,6 +60,7 @@ sort:
     addi sp, sp, -16
     nop
     nop
+    nop
     sw ra, 12(sp)
     sw s0, 8(sp)
     nop
@@ -57,18 +70,26 @@ sort:
 
     addi a2, a1, -1
     li a1, 0
+    nop
 
     # mergeSort(array, left, right)
     mv a0, s0
     jal ra, mergeSort
+    nop
+    nop
 
     lw s0, 8(sp)
     lw ra, 12(sp)
     addi sp, sp, 16
+    nop
+    nop
     jalr zero, 0(ra)
+    nop
+    nop
 
 mergeSort:
     addi sp, sp, -32
+    nop
     nop
     nop
     sw ra, 28(sp)
@@ -81,15 +102,21 @@ mergeSort:
     mv s1, a1
     mv s3, a2
     nop
+    nop
+    nop
 
     # Base case: if left >= right, return
     bge s1, s3, ms_return
+    nop
+    nop
 
     # mid = left + (right - left) / 2
     sub t0, s3, s1
     nop
     nop
+    nop
     srli t0, t0, 1
+    nop
     nop
     nop
     add s2, s1, t0
@@ -97,14 +124,19 @@ mergeSort:
     # mergeSort(array, left, mid)
     mv a0, s0
     mv a1, s1
+    nop
     mv a2, s2
     jal ra, mergeSort
+    nop
+    nop
 
     # mergeSort(array, mid + 1, right)
     mv a0, s0
     addi a1, s2, 1
     mv a2, s3
     jal ra, mergeSort
+    nop
+    nop
 
     # merge(array, left, mid, right)
     mv a0, s0
@@ -112,6 +144,8 @@ mergeSort:
     mv a2, s2
     mv a3, s3
     jal ra, merge
+    nop
+    nop
     
 # Return subarray upwards
 ms_return:
@@ -122,10 +156,13 @@ ms_return:
     lw s3, 12(sp)
     addi sp, sp, 32
     jalr zero, 0(ra)
+    nop
+    nop
 
 # Comine sorted halves
 merge:
     addi sp, sp, -32
+    nop
     nop
     nop
     sw ra, 28(sp)
@@ -141,71 +178,101 @@ merge:
     mv s1, a1
     mv s2, a2
     mv s3, a3
+    nop
     mv s4, s1
+    nop
+    nop
+    nop
     
 # Copy array into temp variable
 copy_loop:
     blt s3, s4, copy_done
+    nop
+    nop
 
     slli t0, s4, 2
+    nop
     nop
     nop
     add t1, s0, t0
     nop
     nop
+    nop
     lw t2, 0(t1)
 
-    la t3, temp
+    lasw3 t3, temp
+    nop
     nop
     nop
     add t3, t3, t0
+    nop
     nop
     nop
     sw t2, 0(t3)
 
     addi s4, s4, 1
     jal zero, copy_loop
+    nop
+    nop
 
 copy_done:
     mv s4, s1
     addi s5, s2, 1
     nop
     mv s6, s1
+    nop
 
 # Choose which value to copy. Then, call the function to copy it.
 # Next, divide the median by 2
 merge_loop:
     blt s2, s4, copy_right
+    nop
+    nop
     blt s3, s5, copy_left
+    nop
+    nop
 
     slli t1, s4, 2
-    la t2, temp
+    lasw3 t2, temp
+    nop
     nop
     nop
     add t2, t2, t1
+    nop
     nop
     nop
     lw t0, 0(t2)
 
     slli t1, s5, 2
-    la t2, temp
+    lasw3 t2, temp
+    nop
     nop
     nop
     add t2, t2, t1
+    nop
+    nop
+    nop
     lw t3, 0(t2)
+    nop
     nop
     nop
     
     # Compare left and right values
     ble t0, t3, choose_left
+    nop
+    nop
     jal zero, choose_right
+    nop
+    nop
 
 # Select the left value as being larger
 choose_left:
     slli t1, s6, 2
     nop
     nop
+    nop
     add t2, s0, t1
+    nop
     nop
     nop
     sw t0, 0(t2)
@@ -213,13 +280,17 @@ choose_left:
     addi s4, s4, 1
     addi s6, s6, 1
     jal zero, merge_loop
+    nop
+    nop
 
 # Select the right value as being larger
 choose_right:
     slli t1, s6, 2
     nop
     nop
+    nop
     add t2, s0, t1
+    nop
     nop
     nop
     sw t3, 0(t2)
@@ -227,39 +298,65 @@ choose_right:
     addi s5, s5, 1
     addi s6, s6, 1
     jal zero, merge_loop
+    nop
+    nop
     
 # Sort the left value, then the right one
 copy_left:
     blt s2, s4, merge_done
+    nop
+    nop
 
     slli t1, s4, 2
-    la t2, temp
+    lasw3 t2, temp
+    nop
     nop
     nop
     add t2, t2, t1
+    nop
+    nop
+    nop
     lw t0, 0(t2)
 
     slli t1, s6, 2
+    nop
+    nop
+    nop
     add t2, s0, t1
+    nop
+    nop
+    nop
     sw t0, 0(t2)
 
     addi s4, s4, 1
     addi s6, s6, 1
     jal zero, copy_left
+    nop
+    nop
     
 # Sort the right value, then the left one
 copy_right:
     blt s3, s5, merge_done
+    nop
+    nop
 
     slli t1, s5, 2
-    la t2, temp
+    lasw3 t2, temp
+    nop
     nop
     nop
     add t2, t2, t1
+    nop
+    nop
+    nop
     lw t0, 0(t2)
 
     slli t1, s6, 2
+    nop
+    nop
+    nop
     add t2, s0, t1
+    nop
     nop
     nop
     sw t0, 0(t2)
@@ -267,6 +364,8 @@ copy_right:
     addi s5, s5, 1
     addi s6, s6, 1
     jal zero, copy_right
+    nop
+    nop
 
 # Load sorted array into registers 
 merge_done:
@@ -280,6 +379,8 @@ merge_done:
     lw s6, 0(sp)
     addi sp, sp, 32
     jalr zero, 0(ra)
+    nop
+    nop
 
 end:
     wfi
