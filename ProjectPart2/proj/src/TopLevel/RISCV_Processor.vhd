@@ -313,6 +313,25 @@ end component;
   signal d_RegWrite : std_logic;
   signal d_MemWrite : std_logic;
   signal d_Halt : std_logic;
+  -- Phase A exception status and protected control signals.
+  signal d_Ebreak           : std_logic; -- High when Decode contains EBREAK.
+  signal d_Illegal : std_logic; -- High for an unsupported instruction encoding.
+  signal d_ExceptionValid : std_logic; -- Only report faults from valid instructions.
+  signal d_InstructionValid : std_logic := '0'; -- Ignore the empty Decode stage during reset.
+  signal s_ExceptionBlock   : std_logic; -- Stop new work when an exception is detected.
+  signal s_ExceptionPending : std_logic := '0'; -- Remember a fault while older work finishes.
+  signal s_ExceptionDone    : std_logic := '0'; -- Mark that the exception has reached completion.
+  signal s_ExceptionPC    : std_logic_vector(31 downto 0); -- Save the address of the faulting instruction.
+  signal s_ExceptionCause : std_logic_vector(3 downto 0); -- Save the breakpoint or illegal-instruction code.
+  signal e_ExceptionValid : std_logic; -- Track the exception through EX.
+  signal m_ExceptionValid : std_logic; -- Track the exception through MEM.
+  signal w_ExceptionValid : std_logic; -- Track the exception through WB.
+  signal s_InstToDecode : std_logic_vector(31 downto 0); -- Send a NOP to IF/ID after a fault.
+  signal d_RegWriteSafe : std_logic; -- Block register writes from the faulting instruction.
+  signal d_MemWriteSafe : std_logic; -- Block memory writes from the faulting instruction.
+  signal d_BranchSafe   : std_logic; -- Block branch changes after a fault.
+  signal d_JumpSafe     : std_logic; -- Block jumps after a fault.
+  signal d_HaltSafe     : std_logic; -- Keep a fault separate from the WFI halt.
   signal e_PC : std_logic_vector(31 downto 0);
   signal e_PC4 : std_logic_vector(31 downto 0);
   signal e_Rs1 : std_logic_vector(31 downto 0);
@@ -390,6 +409,142 @@ end component;
 
 begin
   s_Ovfl <= '0'; -- RISC-V does not have hardware overflow detection.
+  -- Detect EBREAK in Decode so the processor can stop on a breakpoint.
+  d_Ebreak <= '1' when d_Inst = x"00100073" else '0';
+
+  -- Check supported instruction encodings before executing them.
+  -- This is our supported subset, not a complete RV32I legality check.
+  process(d_Inst)
+  begin
+      d_Illegal <= '0';
+
+      -- Decode the opcode, then check the function bits when needed.
+      case d_Inst(6 downto 0) is
+          when "0110111" | "0010111" | "1101111" =>
+              null; -- LUI, AUIPC, JAL
+
+          when "1100111" => -- JALR needs funct3 = 000.
+              if d_Inst(14 downto 12) /= "000" then
+                  d_Illegal <= '1';
+              end if;
+
+          when "1100011" => -- Reject unused branch funct3 values.
+              case d_Inst(14 downto 12) is
+                  when "000" | "001" | "100" | "101" | "110" | "111" => null;
+                  when others => d_Illegal <= '1';
+              end case;
+
+          when "0000011" => -- Accept supported load sizes and signs.
+              case d_Inst(14 downto 12) is
+                  when "000" | "001" | "010" | "100" | "101" => null;
+                  when others => d_Illegal <= '1';
+              end case;
+
+          when "0100011" => -- Accept byte, halfword, or word stores.
+              case d_Inst(14 downto 12) is
+                  when "000" | "001" | "010" => null;
+                  when others => d_Illegal <= '1';
+              end case;
+
+          when "0010011" => -- Reject invalid shift-immediate formats.
+              case d_Inst(14 downto 12) is
+                  when "001" => -- SLLI
+                      if d_Inst(31 downto 25) /= "0000000" then
+                          d_Illegal <= '1';
+                      end if;
+                  when "101" => -- SRLI / SRAI
+                      if d_Inst(31 downto 25) /= "0000000" and
+                         d_Inst(31 downto 25) /= "0100000" then
+                          d_Illegal <= '1';
+                      end if;
+                  when others => null;
+              end case;
+
+          when "0110011" => -- Check the funct7 bits for ALU operations.
+              if d_Inst(14 downto 12) = "000" or
+                 d_Inst(14 downto 12) = "101" then
+                  if d_Inst(31 downto 25) /= "0000000" and
+                     d_Inst(31 downto 25) /= "0100000" then
+                      d_Illegal <= '1';
+                  end if;
+              elsif d_Inst(31 downto 25) /= "0000000" then
+                  d_Illegal <= '1';
+              end if;
+
+          when "1110011" => -- Keep existing ECALL, EBREAK, and WFI behavior.
+              if d_Inst /= x"00000073" and -- ECALL
+                 d_Inst /= x"00100073" and -- EBREAK
+                 d_Inst /= x"10500073" then -- WFI
+                  d_Illegal <= '1';
+              end if;
+
+          when others =>
+              d_Illegal <= '1'; -- Unsupported opcode: report cause 2.
+      end case;
+  end process;
+
+  -- Ignore invalid startup contents until IF/ID holds a real instruction.
+  d_ExceptionValid <= (d_Ebreak or d_Illegal) and d_InstructionValid;
+
+
+
+  -- Stop fetching new work once a fault is seen.
+  s_ExceptionBlock <= d_ExceptionValid or s_ExceptionPending;
+
+  -- Send NOPs to IF/ID so younger instructions cannot run.
+  s_InstToDecode <= x"00000013" when s_ExceptionBlock = '1' else s_Inst;
+
+  -- Disable the faulting instruction's side effects in ID/EX.
+  d_RegWriteSafe <= d_RegWrite and not s_ExceptionBlock; -- Prevent a register write after a fault.
+  d_MemWriteSafe <= d_MemWrite and not s_ExceptionBlock; -- Prevent a store after a fault.
+  d_BranchSafe   <= MID_CONTROL_BRANCH and not s_ExceptionBlock; -- Prevent a branch after a fault.
+  d_JumpSafe     <= MID_CONTROL_JUMP and not s_ExceptionBlock; -- Prevent a jump after a fault.
+  d_HaltSafe     <= d_Halt and not s_ExceptionBlock; -- Keep WFI halt disabled on a fault.
+
+
+  -- Save the fault and let older instructions finish in the pipeline.
+  process(iCLK, iRST)
+  begin
+      if iRST = '1' then
+          -- Clear exception state so reset never looks like a fault.
+          d_InstructionValid <= '0';
+          s_ExceptionPending <= '0';
+          s_ExceptionDone <= '0';
+          s_ExceptionPC <= (others => '0');
+          s_ExceptionCause <= (others => '0');
+
+          e_ExceptionValid <= '0';
+          m_ExceptionValid <= '0';
+          w_ExceptionValid <= '0';
+
+      elsif rising_edge(iCLK) then
+          -- IF/ID holds a fetched instruction after the first clock.
+          d_InstructionValid <= '1';
+          -- Follow the exception across EX, MEM, and WB cycles.
+          e_ExceptionValid <= d_ExceptionValid and not s_ExceptionPending;
+          m_ExceptionValid <= e_ExceptionValid;
+          w_ExceptionValid <= m_ExceptionValid;
+
+          -- Capture only the first exception until reset.
+          if d_ExceptionValid = '1' and s_ExceptionPending = '0' then
+              s_ExceptionPending <= '1';
+              s_ExceptionPC <= d_PC; -- Record the address of the fault.
+
+              if d_Ebreak = '1' then
+                  s_ExceptionCause <= "0011"; -- EBREAK uses cause 3.
+              else
+                  s_ExceptionCause <= "0010"; -- Unsupported/illegal uses cause 2.
+              end if;
+          end if;
+
+          -- Mark completion once the exception reaches the WB timing slot.
+          if w_ExceptionValid = '1' then
+              s_ExceptionDone <= '1';
+          end if;
+      end if;
+  end process;
+
+
   -- TODO: This is required to be your final input to your instruction memory. This provides a feasible method to externally load the memory module which means that the synthesis tool must assume it knows nothing about the values stored in the instruction memory. If this is not included, much, if not all of the design is optimized out because the synthesis tool will believe the memory to be all zeros.
   with iInstLd select
     s_IMemAddr <= s_PC when '0',
@@ -416,23 +571,25 @@ begin
              we   => s_DMemWr,
              q    => s_DMemOut);
 
+  -- Feed NOPs into IF/ID while an exception blocks new instructions.
   FETCH_DECODE: F_D_REG
     port map(i_CLK => iCLK, i_RST => iRST, i_WE => '1',
-             i_PC => s_PC, i_PC4 => MID_PC_NEXT_4, i_Instruction => s_Inst,
+             i_PC => s_PC, i_PC4 => MID_PC_NEXT_4, i_Instruction => s_InstToDecode,
              o_PC => d_PC, o_PC4 => d_PC4, o_Instruction => d_Inst);
 
+  -- Use protected controls so the faulting/younger instructions cannot commit.
   DECODE_EXECUTE: D_E_REG
     port map(i_CLK => iCLK, i_RST => iRST, i_WE => '1',
              i_PC => d_PC, i_PC4 => d_PC4, i_RdAddress => d_Inst(11 downto 7),
              i_Rs1Value => MID_REG_A_OUT, i_Rs2Value => MID_REG_B_OUT,
              i_Immediate => MID_IMMEDIATE_FULL, i_ALUSrcA => MID_ALUSRCA,
              i_ALUSrcB => MID_ALUSRCB, i_ALUControl => MID_CONTROL_ALUCONTROL,
-             i_Funct3 => d_Inst(14 downto 12), i_Branch => MID_CONTROL_BRANCH,
-             i_Jump => MID_CONTROL_JUMP, i_AndLinkReg => MID_CONTROL_ANDLINKREG,
-             i_MemWrite => d_MemWrite, i_MemSize => MID_CONTROL_MEMSIZE,
-             i_LoadUnsigned => MID_CONTROL_LOADUNSIGNED, i_RegWrite => d_RegWrite,
+             i_Funct3 => d_Inst(14 downto 12), i_Branch => d_BranchSafe,
+             i_Jump => d_JumpSafe, i_AndLinkReg => MID_CONTROL_ANDLINKREG,
+             i_MemWrite => d_MemWriteSafe, i_MemSize => MID_CONTROL_MEMSIZE,
+             i_LoadUnsigned => MID_CONTROL_LOADUNSIGNED, i_RegWrite => d_RegWriteSafe,
              i_MemToReg => MID_MEMTOREG, i_AndLink => MID_CONTROL_ANDLINK,
-             i_Halt => d_Halt,
+             i_Halt => d_HaltSafe,
              o_PC => e_PC, o_PC4 => e_PC4, o_RdAddress => e_Rd,
              o_Rs1Value => e_Rs1, o_Rs2Value => e_Rs2, o_Immediate => e_Immediate,
              o_ALUSrcA => e_ALUSrcA, o_ALUSrcB => e_ALUSrcB,
@@ -573,11 +730,12 @@ pc_add_four: add_sub
          i_D1      => MID_PC_JUMP_REG(31 downto 1) & '0',
          o_O       => MID_PC_NEXT);
              
+  -- Hold the PC after a fault; older pipeline stages keep advancing.
   PC_REG: pc
   generic MAP(N => N)
     port MAP(i_CLK => iCLK,
              i_RST => iRST,
-             i_WE  => '1',
+             i_WE => not s_ExceptionBlock,
              i_D   => MID_PC_NEXT,
              o_Q   => s_PC);
 
