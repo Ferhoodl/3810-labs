@@ -10,7 +10,6 @@ work/
 
 # Simulation waveforms, logs, and compiler outputs
 *.opt
-*.ini
 *.log
 transcript
 
